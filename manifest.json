@@ -2,7 +2,41 @@
   "homepages": [],
   "source_base_path": "C:/test/Edge-Adapter-OPC-UA-Docs",
   "xrefmap": "xrefmap.yml",
-  "files": [],
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "PVPdJlyLWoyf6T8fr0/wJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/readme.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/readme.html",
+          "hash": "3xMWHEDZtemviqz8YXHrrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
   "incremental_info": [
     {
       "status": {

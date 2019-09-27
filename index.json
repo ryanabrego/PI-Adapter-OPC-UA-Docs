@@ -1,11 +1,16 @@
 {
-  "README.html": {
-    "href": "README.html",
+  "V1/readme.html": {
+    "href": "V1/readme.html",
     "title": "",
     "keywords": ""
   },
-  "V1/readme.html": {
-    "href": "V1/readme.html",
+  "V1/index.html": {
+    "href": "V1/index.html",
+    "title": "Edge Adapter for OPC UA",
+    "keywords": "Edge Adapter for OPC UA ======="
+  },
+  "README.html": {
+    "href": "README.html",
     "title": "",
     "keywords": ""
   }

@@ -1,9 +1,15 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: EdgeAdapterForOPCUAOperationalOverview
+  name: Edge Adapter for OPC UA operational overview
+  href: V1/Introduction%20to%20Edge%20Adapter%20for%20OPC%20UA/Edge%20Adapter%20for%20OPC%20UA%20operational%20overview.html
 - uid: index
   name: Edge Adapter for OPC UA
   href: V1/index.html
+- uid: IntroductionToEdgeAdapterforOPCUA
+  name: Introduction to Edge Adapter for OPC UA
+  href: V1/Introduction%20to%20Edge%20Adapter%20for%20OPC%20UA/Introduction%20to%20Edge%20Adapter%20for%20OPC%20UA.html
 - uid: SupportedFeaturesOPCUA
   name: Supported features
   href: V1/Introduction%20to%20Edge%20Adapter%20for%20OPC%20UA/Supported%20features.html

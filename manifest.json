@@ -18,7 +18,103 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "+yJXGL9/UGRDg0ZvEc3pug=="
+          "hash": "PVPdJlyLWoyf6T8fr0/wJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/Configure Edge Adapter for OPC UA/Configure Edge Adapter for OPC UA.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/Configure Edge Adapter for OPC UA/Configure Edge Adapter for OPC UA.html",
+          "hash": "TCThijxf+ldQSrjgTCrzAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/Configure Edge Adapter for OPC UA/Configure data selection.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/Configure Edge Adapter for OPC UA/Configure data selection.html",
+          "hash": "j9qE3nhEDaXdQWt8re+hBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/Configure Edge Adapter for OPC UA/Configure data source.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/Configure Edge Adapter for OPC UA/Configure data source.html",
+          "hash": "zOFgI3BmGIYMNNh87Sf6SQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/Configure Edge Adapter for OPC UA/Data selection configuration schema.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/Configure Edge Adapter for OPC UA/Data selection configuration schema.html",
+          "hash": "QNqy9jkLLckoYX63ml0UmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/Configure Edge Adapter for OPC UA/Data source configuration schema.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/Configure Edge Adapter for OPC UA/Data source configuration schema.html",
+          "hash": "sZx+Tx/2RMT8LGSr06JlIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/Edge Adapter for OPC UA diagnostics.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/Edge Adapter for OPC UA diagnostics.html",
+          "hash": "V4BZeH8j9TymRp8RmiXPxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/Introduction to Edge Adapter for OPC UA/Edge Adapter for OPC UA operational overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/Introduction to Edge Adapter for OPC UA/Edge Adapter for OPC UA operational overview.html",
+          "hash": "8Kqt5OzVocditD1AtyhoOg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/Introduction to Edge Adapter for OPC UA/Introduction to Edge Adapter for OPC UA.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/Introduction to Edge Adapter for OPC UA/Introduction to Edge Adapter for OPC UA.html",
+          "hash": "nTZ9sFyCOlnS+UOJhm8Oag=="
         }
       },
       "is_incremental": false,
@@ -30,7 +126,31 @@
       "output": {
         ".html": {
           "relative_path": "V1/Introduction to Edge Adapter for OPC UA/Supported features.html",
-          "hash": "twgznod8QqxkZYKxi6oq/A=="
+          "hash": "sTW0JQ9Ls44rQNXjyHwBzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/Principles of operation.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/Principles of operation.html",
+          "hash": "xE1zvUH9UmB0obX6nRnUWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/Software requirements.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/Software requirements.html",
+          "hash": "OEurE7maJZnbaEEjZTwZgg=="
         }
       },
       "is_incremental": false,
@@ -45,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/index.html",
-          "hash": "Bi2BdzbtymbpqzpppHyKJA=="
+          "hash": "5JnKvm7HDYWc0IUyojIYbg=="
         }
       },
       "is_incremental": false,
@@ -57,22 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/readme.html",
-          "hash": "09fCuS3Fb+rIUkkPd/yLJw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "EmptyTocItemNode"
-      ],
-      "type": "Toc",
-      "source_relative_path": "toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "toc.html",
-          "hash": "KRzjUniJGiyG4dvSVmlUhg=="
+          "hash": "3xMWHEDZtemviqz8YXHrrA=="
         }
       },
       "is_incremental": false,
@@ -90,17 +195,10 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 4,
+          "total_file_count": 14,
           "skipped_file_count": 0
         }
       }

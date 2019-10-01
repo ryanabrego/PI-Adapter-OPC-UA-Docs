@@ -4,13 +4,13 @@
     "title": "Edge Adapter for OPC UA",
     "keywords": "Edge Adapter for OPC UA ======= Introduction to Edge Adapter for OPC UA Edge Adapter for OPC UA operational overview Supported features"
   },
-  "README.html": {
-    "href": "README.html",
+  "V1/readme.html": {
+    "href": "V1/readme.html",
     "title": "",
     "keywords": ""
   },
-  "V1/readme.html": {
-    "href": "V1/readme.html",
+  "README.html": {
+    "href": "README.html",
     "title": "",
     "keywords": ""
   }

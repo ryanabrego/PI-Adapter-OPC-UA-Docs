@@ -4,23 +4,8 @@
     "title": "Introduction to Edge Adapter for OPC UA",
     "keywords": "Introduction to Edge Adapter for OPC UA"
   },
-  "V1/Introduction to Edge Adapter for OPC UA/Edge Adapter for OPC UA operational overview.html": {
-    "href": "V1/Introduction to Edge Adapter for OPC UA/Edge Adapter for OPC UA operational overview.html",
-    "title": "Edge Adapter for OPC UA operational overview",
-    "keywords": "Edge Adapter for OPC UA operational overview"
-  },
-  "V1/Configure Edge Adapter for OPC UA/Configure Edge Adapter for OPC UA.html": {
-    "href": "V1/Configure Edge Adapter for OPC UA/Configure Edge Adapter for OPC UA.html",
-    "title": "",
-    "keywords": ""
-  },
-  "V1/Configure Edge Adapter for OPC UA/Configure data source.html": {
-    "href": "V1/Configure Edge Adapter for OPC UA/Configure data source.html",
-    "title": "",
-    "keywords": ""
-  },
-  "V1/Software requirements.html": {
-    "href": "V1/Software requirements.html",
+  "V1/Configure Edge Adapter for OPC UA/Data selection configuration schema.html": {
+    "href": "V1/Configure Edge Adapter for OPC UA/Data selection configuration schema.html",
     "title": "",
     "keywords": ""
   },
@@ -29,8 +14,28 @@
     "title": "",
     "keywords": ""
   },
-  "README.html": {
-    "href": "README.html",
+  "V1/index.html": {
+    "href": "V1/index.html",
+    "title": "Edge Adapter for OPC UA",
+    "keywords": "Edge Adapter for OPC UA ======= Introduction to Edge Adapter for OPC UA Edge Adapter for OPC UA operational overview Supported features"
+  },
+  "V1/Introduction to Edge Adapter for OPC UA/Edge Adapter for OPC UA operational overview.html": {
+    "href": "V1/Introduction to Edge Adapter for OPC UA/Edge Adapter for OPC UA operational overview.html",
+    "title": "Edge Adapter for OPC UA operational overview",
+    "keywords": "Edge Adapter for OPC UA operational overview"
+  },
+  "V1/Configure Edge Adapter for OPC UA/Configure data source.html": {
+    "href": "V1/Configure Edge Adapter for OPC UA/Configure data source.html",
+    "title": "",
+    "keywords": ""
+  },
+  "V1/Configure Edge Adapter for OPC UA/Configure Edge Adapter for OPC UA.html": {
+    "href": "V1/Configure Edge Adapter for OPC UA/Configure Edge Adapter for OPC UA.html",
+    "title": "",
+    "keywords": ""
+  },
+  "V1/Configure Edge Adapter for OPC UA/Configure data selection.html": {
+    "href": "V1/Configure Edge Adapter for OPC UA/Configure data selection.html",
     "title": "",
     "keywords": ""
   },
@@ -49,13 +54,13 @@
     "title": "",
     "keywords": ""
   },
-  "V1/Configure Edge Adapter for OPC UA/Data selection configuration schema.html": {
-    "href": "V1/Configure Edge Adapter for OPC UA/Data selection configuration schema.html",
+  "V1/Software requirements.html": {
+    "href": "V1/Software requirements.html",
     "title": "",
     "keywords": ""
   },
-  "V1/Configure Edge Adapter for OPC UA/Configure data selection.html": {
-    "href": "V1/Configure Edge Adapter for OPC UA/Configure data selection.html",
+  "README.html": {
+    "href": "README.html",
     "title": "",
     "keywords": ""
   },
@@ -63,10 +68,5 @@
     "href": "V1/Principles of operation.html",
     "title": "",
     "keywords": ""
-  },
-  "V1/index.html": {
-    "href": "V1/index.html",
-    "title": "Edge Adapter for OPC UA",
-    "keywords": "Edge Adapter for OPC UA ======= Introduction to Edge Adapter for OPC UA Edge Adapter for OPC UA operational overview Supported features"
   }
 }

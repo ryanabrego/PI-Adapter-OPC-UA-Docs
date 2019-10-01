@@ -25,6 +25,18 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "V1/Introduction to Edge Adapter for OPC UA/Supported features.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/Introduction to Edge Adapter for OPC UA/Supported features.html",
+          "hash": "twgznod8QqxkZYKxi6oq/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "log_codes": [
         "UidNotFound"
       ],
@@ -33,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/index.html",
-          "hash": "y1cqGlTbdWt3ry2ergV62g=="
+          "hash": "Bi2BdzbtymbpqzpppHyKJA=="
         }
       },
       "is_incremental": false,
@@ -88,7 +100,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 3,
+          "total_file_count": 4,
           "skipped_file_count": 0
         }
       }

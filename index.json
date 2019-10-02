@@ -4,33 +4,13 @@
     "title": "Edge Adapter for OPC UA operational overview",
     "keywords": "Edge Adapter for OPC UA operational overview"
   },
-  "V1/Configure OSIsoft Adapter for OPC UA/Data selection configuration schema.html": {
-    "href": "V1/Configure OSIsoft Adapter for OPC UA/Data selection configuration schema.html",
-    "title": "",
-    "keywords": ""
-  },
-  "V1/Software requirements.html": {
-    "href": "V1/Software requirements.html",
-    "title": "",
-    "keywords": ""
-  },
-  "V1/OSIsoft Adapter for OPC UA diagnostics.html": {
-    "href": "V1/OSIsoft Adapter for OPC UA diagnostics.html",
-    "title": "",
-    "keywords": ""
-  },
   "V1/Introduction to OSIsoft Adapter for OPC UA/Introduction to OSIsoft Adapter for OPC UA.html": {
     "href": "V1/Introduction to OSIsoft Adapter for OPC UA/Introduction to OSIsoft Adapter for OPC UA.html",
     "title": "Introduction to Edge Adapter for OPC UA",
     "keywords": "Introduction to Edge Adapter for OPC UA"
   },
-  "V1/Configure OSIsoft Adapter for OPC UA/Configure OSIsoft Adapter for OPC UA.html": {
-    "href": "V1/Configure OSIsoft Adapter for OPC UA/Configure OSIsoft Adapter for OPC UA.html",
-    "title": "",
-    "keywords": ""
-  },
-  "V1/Principles of operation.html": {
-    "href": "V1/Principles of operation.html",
+  "V1/Configure OSIsoft Adapter for OPC UA/Data selection configuration schema.html": {
+    "href": "V1/Configure OSIsoft Adapter for OPC UA/Data selection configuration schema.html",
     "title": "",
     "keywords": ""
   },
@@ -39,8 +19,13 @@
     "title": "",
     "keywords": ""
   },
-  "V1/Configure OSIsoft Adapter for OPC UA/Configure data selection.html": {
-    "href": "V1/Configure OSIsoft Adapter for OPC UA/Configure data selection.html",
+  "V1/readme.html": {
+    "href": "V1/readme.html",
+    "title": "",
+    "keywords": ""
+  },
+  "V1/OSIsoft Adapter for OPC UA diagnostics.html": {
+    "href": "V1/OSIsoft Adapter for OPC UA diagnostics.html",
     "title": "",
     "keywords": ""
   },
@@ -59,8 +44,18 @@
     "title": "",
     "keywords": ""
   },
-  "V1/readme.html": {
-    "href": "V1/readme.html",
+  "V1/Configure OSIsoft Adapter for OPC UA/Configure OSIsoft Adapter for OPC UA.html": {
+    "href": "V1/Configure OSIsoft Adapter for OPC UA/Configure OSIsoft Adapter for OPC UA.html",
+    "title": "",
+    "keywords": ""
+  },
+  "V1/Configure OSIsoft Adapter for OPC UA/Configure data selection.html": {
+    "href": "V1/Configure OSIsoft Adapter for OPC UA/Configure data selection.html",
+    "title": "",
+    "keywords": ""
+  },
+  "V1/Software requirements.html": {
+    "href": "V1/Software requirements.html",
     "title": "",
     "keywords": ""
   },
@@ -68,5 +63,10 @@
     "href": "V1/index.html",
     "title": "Edge Adapter for OPC UA",
     "keywords": "Edge Adapter for OPC UA ======= Introduction to Edge Adapter for OPC UA Edge Adapter for OPC UA operational overview Supported features"
+  },
+  "V1/Principles of operation.html": {
+    "href": "V1/Principles of operation.html",
+    "title": "",
+    "keywords": ""
   }
 }

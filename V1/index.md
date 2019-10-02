@@ -6,6 +6,6 @@ uid: index
 
 =======
 
-- [Introduction to Edge Adapter for OPC UA](xref:IntroductionToEdgeAdapterForOPCUA)
-  - [Edge Adapter for OPC UA operational overview](xref:EdgeAdapterForOPCUAOperationalOverview)
+- [Introduction to OSIsoft Adapter for OPC UA](xref:IntroductionToOSIsoftAdapterForOPCUA)
+  - [OSIsoft Adapter for OPC UA operational overview](xref:OSIsoftAdapterForOPCUAOperationalOverview)
   - [Supported features](xref:SupportedFeaturesOPCUA)

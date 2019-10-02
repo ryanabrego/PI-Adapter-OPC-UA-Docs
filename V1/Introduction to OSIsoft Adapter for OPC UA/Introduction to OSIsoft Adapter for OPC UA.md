@@ -1,5 +1,5 @@
 ---
-uid: IntroductionToEdgeAdapterforOPCUA
+uid: IntroductionToOSIsoftAdapterforOPCUA
 ---
 
-# Introduction to Edge Adapter for OPC UA
+# Introduction to OSIsoft Adapter for OPC UA

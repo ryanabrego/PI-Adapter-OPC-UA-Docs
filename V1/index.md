@@ -13,7 +13,7 @@ uid: index
   - [Software requirements](xref:SoftwareRequirementsOPCUA)
   - [Hardware requirements](xref:HardwareRequirements)
   - [Download OSIsoft Adapter](xref:DownloadOSIsoftAdapter)
-  - [Adapter Security](xref:AdapterSecurity)
+  - [Adapter security](xref:AdapterSecurity)
 - [Install the adapter](xref:InstallTheAdapter)
   - [Uninstall the adapter](xref:UninstallTheAdapter)
 - [Configure OSIsoft Adapter for OPC UA](xref:ConfigureOSIsoftAdapterForOPCUA)

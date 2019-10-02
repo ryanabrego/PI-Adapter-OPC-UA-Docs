@@ -2,7 +2,7 @@
 uid: index
 ---
 
-# Edge Adapter for OPC UA
+# OSIsoft Adapter for OPC UA
 
 =======
 

@@ -26,30 +26,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/Configure Edge Adapter for OPC UA/Configure data source.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/Configure Edge Adapter for OPC UA/Configure data source.html",
-          "hash": "zOFgI3BmGIYMNNh87Sf6SQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "V1/Configure Edge Adapter for OPC UA/Data selection configuration schema.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/Configure Edge Adapter for OPC UA/Data selection configuration schema.html",
-          "hash": "QNqy9jkLLckoYX63ml0UmQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "V1/Configure Edge Adapter for OPC UA/Data source configuration schema.md",
       "output": {
         ".html": {
@@ -67,6 +43,18 @@
         ".html": {
           "relative_path": "V1/Configure OSIsoft Adapter for OPC UA/Configure OSIsoft Adapter for OPC UA.html",
           "hash": "4yKnWIxpMFjGKCXTFGgwhw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/Configure OSIsoft Adapter for OPC UA/Data selection configuration schema.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/Configure OSIsoft Adapter for OPC UA/Data selection configuration schema.html",
+          "hash": "u1tMSIMGC8o0lTIMTnFguA=="
         }
       },
       "is_incremental": false,
@@ -186,7 +174,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 13,
+          "total_file_count": 12,
           "skipped_file_count": 0
         }
       }

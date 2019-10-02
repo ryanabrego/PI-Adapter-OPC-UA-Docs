@@ -62,11 +62,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/Edge Adapter for OPC UA diagnostics.md",
+      "source_relative_path": "V1/Introduction to OSIsoft Adapter for OPC UA/Introduction to OSIsoft Adapter for OPC UA.md",
       "output": {
         ".html": {
-          "relative_path": "V1/Edge Adapter for OPC UA diagnostics.html",
-          "hash": "V4BZeH8j9TymRp8RmiXPxg=="
+          "relative_path": "V1/Introduction to OSIsoft Adapter for OPC UA/Introduction to OSIsoft Adapter for OPC UA.html",
+          "hash": "vkaiivBtn/0nORYS8d51GA=="
         }
       },
       "is_incremental": false,
@@ -74,11 +74,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/Introduction to Edge Adapter for OPC UA/Introduction to Edge Adapter for OPC UA.md",
+      "source_relative_path": "V1/Introduction to OSIsoft Adapter for OPC UA/Supported features.md",
       "output": {
         ".html": {
-          "relative_path": "V1/Introduction to Edge Adapter for OPC UA/Introduction to Edge Adapter for OPC UA.html",
-          "hash": "nTZ9sFyCOlnS+UOJhm8Oag=="
+          "relative_path": "V1/Introduction to OSIsoft Adapter for OPC UA/Supported features.html",
+          "hash": "gCVKlcRFl/Oh0g1zAweCPQ=="
         }
       },
       "is_incremental": false,
@@ -86,11 +86,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/Introduction to Edge Adapter for OPC UA/Supported features.md",
+      "source_relative_path": "V1/OSIsoft Adapter for OPC UA diagnostics.md",
       "output": {
         ".html": {
-          "relative_path": "V1/Introduction to Edge Adapter for OPC UA/Supported features.html",
-          "hash": "sTW0JQ9Ls44rQNXjyHwBzQ=="
+          "relative_path": "V1/OSIsoft Adapter for OPC UA diagnostics.html",
+          "hash": "RXVerJuz1nwpHDLNpPbYPg=="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/index.html",
-          "hash": "YAu8J2APippfznaYh3ituQ=="
+          "hash": "KbW6XABWiy7+1IY3v2NcpQ=="
         }
       },
       "is_incremental": false,

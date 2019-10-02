@@ -4,53 +4,13 @@
     "title": "Edge Adapter for OPC UA operational overview",
     "keywords": "Edge Adapter for OPC UA operational overview"
   },
-  "V1/Software requirements.html": {
-    "href": "V1/Software requirements.html",
-    "title": "",
-    "keywords": ""
-  },
-  "V1/Principles of operation.html": {
-    "href": "V1/Principles of operation.html",
-    "title": "",
-    "keywords": ""
-  },
-  "V1/Configure OSIsoft Adapter for OPC UA/Configure OSIsoft Adapter for OPC UA.html": {
-    "href": "V1/Configure OSIsoft Adapter for OPC UA/Configure OSIsoft Adapter for OPC UA.html",
-    "title": "",
-    "keywords": ""
-  },
-  "V1/Configure Edge Adapter for OPC UA/Configure data selection.html": {
-    "href": "V1/Configure Edge Adapter for OPC UA/Configure data selection.html",
-    "title": "",
-    "keywords": ""
-  },
   "V1/index.html": {
     "href": "V1/index.html",
     "title": "Edge Adapter for OPC UA",
     "keywords": "Edge Adapter for OPC UA ======= Introduction to Edge Adapter for OPC UA Edge Adapter for OPC UA operational overview Supported features"
   },
-  "V1/Configure Edge Adapter for OPC UA/Data source configuration schema.html": {
-    "href": "V1/Configure Edge Adapter for OPC UA/Data source configuration schema.html",
-    "title": "",
-    "keywords": ""
-  },
-  "V1/Configure Edge Adapter for OPC UA/Configure data source.html": {
-    "href": "V1/Configure Edge Adapter for OPC UA/Configure data source.html",
-    "title": "",
-    "keywords": ""
-  },
-  "V1/Edge Adapter for OPC UA diagnostics.html": {
-    "href": "V1/Edge Adapter for OPC UA diagnostics.html",
-    "title": "",
-    "keywords": ""
-  },
-  "V1/Introduction to Edge Adapter for OPC UA/Introduction to Edge Adapter for OPC UA.html": {
-    "href": "V1/Introduction to Edge Adapter for OPC UA/Introduction to Edge Adapter for OPC UA.html",
-    "title": "Introduction to Edge Adapter for OPC UA",
-    "keywords": "Introduction to Edge Adapter for OPC UA"
-  },
-  "V1/Configure Edge Adapter for OPC UA/Data selection configuration schema.html": {
-    "href": "V1/Configure Edge Adapter for OPC UA/Data selection configuration schema.html",
+  "README.html": {
+    "href": "README.html",
     "title": "",
     "keywords": ""
   },
@@ -59,8 +19,23 @@
     "title": "",
     "keywords": ""
   },
-  "README.html": {
-    "href": "README.html",
+  "V1/Edge Adapter for OPC UA diagnostics.html": {
+    "href": "V1/Edge Adapter for OPC UA diagnostics.html",
+    "title": "",
+    "keywords": ""
+  },
+  "V1/Configure Edge Adapter for OPC UA/Data source configuration schema.html": {
+    "href": "V1/Configure Edge Adapter for OPC UA/Data source configuration schema.html",
+    "title": "",
+    "keywords": ""
+  },
+  "V1/Configure Edge Adapter for OPC UA/Data selection configuration schema.html": {
+    "href": "V1/Configure Edge Adapter for OPC UA/Data selection configuration schema.html",
+    "title": "",
+    "keywords": ""
+  },
+  "V1/Software requirements.html": {
+    "href": "V1/Software requirements.html",
     "title": "",
     "keywords": ""
   },
@@ -68,5 +43,25 @@
     "href": "V1/Introduction to Edge Adapter for OPC UA/Supported features.html",
     "title": "Supported features",
     "keywords": "Supported features"
+  },
+  "V1/Principles of operation.html": {
+    "href": "V1/Principles of operation.html",
+    "title": "",
+    "keywords": ""
+  },
+  "V1/Introduction to Edge Adapter for OPC UA/Introduction to Edge Adapter for OPC UA.html": {
+    "href": "V1/Introduction to Edge Adapter for OPC UA/Introduction to Edge Adapter for OPC UA.html",
+    "title": "Introduction to Edge Adapter for OPC UA",
+    "keywords": "Introduction to Edge Adapter for OPC UA"
+  },
+  "V1/Configure OSIsoft Adapter for OPC UA/Configure OSIsoft Adapter for OPC UA.html": {
+    "href": "V1/Configure OSIsoft Adapter for OPC UA/Configure OSIsoft Adapter for OPC UA.html",
+    "title": "",
+    "keywords": ""
+  },
+  "V1/Configure Edge Adapter for OPC UA/Configure data source.html": {
+    "href": "V1/Configure Edge Adapter for OPC UA/Configure data source.html",
+    "title": "",
+    "keywords": ""
   }
 }

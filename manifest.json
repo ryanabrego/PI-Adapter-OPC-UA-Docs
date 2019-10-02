@@ -26,18 +26,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/Configure Edge Adapter for OPC UA/Configure data selection.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/Configure Edge Adapter for OPC UA/Configure data selection.html",
-          "hash": "j9qE3nhEDaXdQWt8re+hBg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "V1/Configure Edge Adapter for OPC UA/Configure data source.md",
       "output": {
         ".html": {
@@ -198,7 +186,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 14,
+          "total_file_count": 13,
           "skipped_file_count": 0
         }
       }

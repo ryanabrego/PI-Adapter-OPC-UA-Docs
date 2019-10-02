@@ -26,18 +26,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/Configure Edge Adapter for OPC UA/Data source configuration schema.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/Configure Edge Adapter for OPC UA/Data source configuration schema.html",
-          "hash": "sZx+Tx/2RMT8LGSr06JlIg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "V1/Configure OSIsoft Adapter for OPC UA/Configure OSIsoft Adapter for OPC UA.md",
       "output": {
         ".html": {
@@ -55,6 +43,18 @@
         ".html": {
           "relative_path": "V1/Configure OSIsoft Adapter for OPC UA/Data selection configuration schema.html",
           "hash": "u1tMSIMGC8o0lTIMTnFguA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/Configure OSIsoft Adapter for OPC UA/Data source configuration schema.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/Configure OSIsoft Adapter for OPC UA/Data source configuration schema.html",
+          "hash": "98X5sCgA4wCO1N+D8QiSWg=="
         }
       },
       "is_incremental": false,

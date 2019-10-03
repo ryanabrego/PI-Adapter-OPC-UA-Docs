@@ -10,6 +10,12 @@ references:
 - uid: ConfigureOSIsoftAdapterForOPCUA
   name: Configure OSIsoft Adapter for OPC UA
   href: V1/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA.html
+- uid: DataSelectionOPCUA
+  name: Data selection
+  href: V1/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA/Data%20selection.html
+- uid: DataSourceOPCUA
+  name: Data source
+  href: V1/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA/Data%20source.html
 - uid: index
   name: OSIsoft Adapter for OPC UA
   href: V1/index.html

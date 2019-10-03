@@ -62,11 +62,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/Configure OSIsoft Adapter for OPC UA/Data selection configuration schema.md",
+      "source_relative_path": "V1/Configure OSIsoft Adapter for OPC UA/Data selection.md",
       "output": {
         ".html": {
-          "relative_path": "V1/Configure OSIsoft Adapter for OPC UA/Data selection configuration schema.html",
-          "hash": "u1tMSIMGC8o0lTIMTnFguA=="
+          "relative_path": "V1/Configure OSIsoft Adapter for OPC UA/Data selection.html",
+          "hash": "jsnFJ+PcBcs1FUI2X6dWMA=="
         }
       },
       "is_incremental": false,
@@ -74,11 +74,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/Configure OSIsoft Adapter for OPC UA/Data source configuration schema.md",
+      "source_relative_path": "V1/Configure OSIsoft Adapter for OPC UA/Data source.md",
       "output": {
         ".html": {
-          "relative_path": "V1/Configure OSIsoft Adapter for OPC UA/Data source configuration schema.html",
-          "hash": "98X5sCgA4wCO1N+D8QiSWg=="
+          "relative_path": "V1/Configure OSIsoft Adapter for OPC UA/Data source.html",
+          "hash": "KrTF7CAUM8g8goE9ssPcxA=="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/index.html",
-          "hash": "qHTWvr0C3Ku1jVQrcyUu0A=="
+          "hash": "BNosV9b+s4+Vx95eIbgfpQ=="
         }
       },
       "is_incremental": false,

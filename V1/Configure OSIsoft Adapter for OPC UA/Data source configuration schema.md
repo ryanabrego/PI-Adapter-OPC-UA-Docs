@@ -1,1 +1,5 @@
+---
+uid: DataSourceOPCUA
+---
 
+# Data source

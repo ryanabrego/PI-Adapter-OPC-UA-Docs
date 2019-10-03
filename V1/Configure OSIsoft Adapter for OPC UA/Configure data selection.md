@@ -2,4 +2,4 @@
 uid: ConfigureDataSelectionOPCUA
 ---
 
-# Configure data selection OPC UA
+# Configure data selection

@@ -1,48 +1,13 @@
 {
-  "V1/index.html": {
-    "href": "V1/index.html",
-    "title": "OSIsoft Adapter for OPC UA",
-    "keywords": "OSIsoft Adapter for OPC UA ======= Introduction to OSIsoft Adapter for OPC UA OSIsoft Adapter for OPC UA operational overview Supported features Prepare for adapter installation Software requirements Hardware requirements Download OSIsoft Adapter Adapter security Install the adapter Uninstall the adapter Configure OSIsoft Adapter for OPC UA Configuration schemas Data source Data selection Logging Endpoint Configure data source Configure data selection Configure message logging Configure enpoints Data collection and connection Verify connection from data source to the adapter Verify data collection Start or stop the adapter Start or stop the data source Adapter administration Data buffering Adapter to OCS buffering Adapter to PI Server buffering Health Device status Next health message expected Diagnostics OSIsoft Adapter diagnostics OSIsoft Adapter for OPC UA diagnostics Troubleshooting Logging Data buffering"
-  },
-  "README.html": {
-    "href": "README.html",
-    "title": "",
-    "keywords": ""
-  },
-  "V1/Introduction to OSIsoft Adapter for OPC UA/Supported features.html": {
-    "href": "V1/Introduction to OSIsoft Adapter for OPC UA/Supported features.html",
-    "title": "Supported features",
-    "keywords": "Supported features"
-  },
-  "V1/Configure OSIsoft Adapter for OPC UA/Data source.html": {
-    "href": "V1/Configure OSIsoft Adapter for OPC UA/Data source.html",
-    "title": "Data source",
-    "keywords": "Data source"
-  },
-  "V1/Configure OSIsoft Adapter for OPC UA/Data selection.html": {
-    "href": "V1/Configure OSIsoft Adapter for OPC UA/Data selection.html",
-    "title": "Data selection",
-    "keywords": "Data selection"
-  },
-  "V1/Configure OSIsoft Adapter for OPC UA/Configure data selection.html": {
-    "href": "V1/Configure OSIsoft Adapter for OPC UA/Configure data selection.html",
-    "title": "Configure data selection",
-    "keywords": "Configure data selection"
-  },
-  "V1/readme.html": {
-    "href": "V1/readme.html",
-    "title": "",
-    "keywords": ""
-  },
   "V1/OSIsoft Adapter for OPC UA diagnostics.html": {
     "href": "V1/OSIsoft Adapter for OPC UA diagnostics.html",
     "title": "OSIsoft Adapter for OPC UA diagnostics",
     "keywords": "OSIsoft Adapter for OPC UA diagnostics"
   },
-  "V1/Introduction to OSIsoft Adapter for OPC UA/OSIsoft Adapter for OPC UA operational overview.html": {
-    "href": "V1/Introduction to OSIsoft Adapter for OPC UA/OSIsoft Adapter for OPC UA operational overview.html",
-    "title": "OSIsoft Adapter for OPC UA operational overview",
-    "keywords": "OSIsoft Adapter for OPC UA operational overview"
+  "V1/index.html": {
+    "href": "V1/index.html",
+    "title": "OSIsoft Adapter for OPC UA",
+    "keywords": "OSIsoft Adapter for OPC UA ======= Introduction to OSIsoft Adapter for OPC UA OSIsoft Adapter for OPC UA operational overview Supported features Prepare for adapter installation Software requirements Hardware requirements Download OSIsoft Adapter Adapter security Install the adapter Uninstall the adapter Configure OSIsoft Adapter for OPC UA Configuration schemas Data source Data selection Logging Endpoint Configure data source Configure data selection Configure message logging Configure enpoints Data collection and connection Verify connection from data source to the adapter Verify data collection Start or stop the adapter Start or stop the data source Adapter administration Data buffering Adapter to OCS buffering Adapter to PI Server buffering Health Device status Next health message expected Diagnostics OSIsoft Adapter diagnostics OSIsoft Adapter for OPC UA diagnostics Troubleshooting Logging Data buffering"
   },
   "V1/Introduction to OSIsoft Adapter for OPC UA/Introduction to OSIsoft Adapter for OPC UA.html": {
     "href": "V1/Introduction to OSIsoft Adapter for OPC UA/Introduction to OSIsoft Adapter for OPC UA.html",
@@ -54,10 +19,45 @@
     "title": "Configure OSIsoft Adapter for OPC UA",
     "keywords": "Configure OSIsoft Adapter for OPC UA"
   },
+  "README.html": {
+    "href": "README.html",
+    "title": "",
+    "keywords": ""
+  },
+  "V1/readme.html": {
+    "href": "V1/readme.html",
+    "title": "",
+    "keywords": ""
+  },
+  "V1/Introduction to OSIsoft Adapter for OPC UA/Supported features.html": {
+    "href": "V1/Introduction to OSIsoft Adapter for OPC UA/Supported features.html",
+    "title": "Supported features",
+    "keywords": "Supported features"
+  },
+  "V1/Introduction to OSIsoft Adapter for OPC UA/OSIsoft Adapter for OPC UA operational overview.html": {
+    "href": "V1/Introduction to OSIsoft Adapter for OPC UA/OSIsoft Adapter for OPC UA operational overview.html",
+    "title": "OSIsoft Adapter for OPC UA operational overview",
+    "keywords": "OSIsoft Adapter for OPC UA operational overview"
+  },
+  "V1/Configure OSIsoft Adapter for OPC UA/Data source.html": {
+    "href": "V1/Configure OSIsoft Adapter for OPC UA/Data source.html",
+    "title": "Data source",
+    "keywords": "Data source"
+  },
+  "V1/Configure OSIsoft Adapter for OPC UA/Data selection.html": {
+    "href": "V1/Configure OSIsoft Adapter for OPC UA/Data selection.html",
+    "title": "Data selection",
+    "keywords": "Data selection"
+  },
   "V1/Configure OSIsoft Adapter for OPC UA/Configure data source.html": {
     "href": "V1/Configure OSIsoft Adapter for OPC UA/Configure data source.html",
     "title": "Configure data source",
     "keywords": "Configure data source"
+  },
+  "V1/Configure OSIsoft Adapter for OPC UA/Configure data selection.html": {
+    "href": "V1/Configure OSIsoft Adapter for OPC UA/Configure data selection.html",
+    "title": "Configure data selection",
+    "keywords": "Configure data selection"
   },
   "V1/Software requirements.html": {
     "href": "V1/Software requirements.html",

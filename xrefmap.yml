@@ -1,6 +1,12 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: ConfigureDataSelectionOPCUA
+  name: Configure data selection OPC UA
+  href: V1/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA/Configure%20data%20selection.html
+- uid: ConfigureOSIsoftAdapterForOPCUA
+  name: Configure OSIsoft Adapter for OPC UA
+  href: V1/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA.html
 - uid: index
   name: OSIsoft Adapter for OPC UA
   href: V1/index.html

@@ -19,7 +19,7 @@ references:
 - uid: index
   name: OSIsoft Adapter for OPC UA
   href: V1/index.html
-- uid: IntroductionToOSIsoftAdapterforOPCUA
+- uid: IntroductionToOSIsoftAdapterForOPCUA
   name: Introduction to OSIsoft Adapter for OPC UA
   href: V1/Introduction%20to%20OSIsoft%20Adapter%20for%20OPC%20UA/Introduction%20to%20OSIsoft%20Adapter%20for%20OPC%20UA.html
 - uid: OSIsoftAdapterForOPCUADiagnostics

@@ -9,7 +9,7 @@ uid: index
 - [Introduction to OSIsoft Adapter for OPC UA](xref:IntroductionToOSIsoftAdapterForOPCUA)
   - [OSIsoft Adapter for OPC UA operational overview](xref:OSIsoftAdapterForOPCUAOperationalOverview)
   - [Supported features](xref:SupportedFeaturesOPCUA)
-- [Prepare for adapter installation](xref:V1/Prepare for adapter installation/PrepareForAdapterInstallation)
+- [Prepare for adapter installation](xref:https://github.com/osisoft/Edge-Adapter/blob/master/V1/Prepare%20for%20adapter%20installation/Prepare%20for%20adapter%20installation.md)
   - [Software requirements](xref:SoftwareRequirementsOPCUA)
   - [Hardware requirements](xref:HardwareRequirements)
   - [Download OSIsoft Adapter](xref:DownloadOSIsoftAdapter)

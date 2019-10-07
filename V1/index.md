@@ -43,5 +43,5 @@ uid: index
     - [OSIsoft Adapter for OPC UA diagnostics](xref:OSIsoftAdapterForOPCUADiagnostics)
 - [Troubleshooting](xref:Troubleshooting)
   - [Logging](xref:TroubleshootingLogging)
-  - [Data buffering](xref:TroublshootingDataBuffering)
+  - [Data buffering](xref:TroubleshootingDataBuffering)
   

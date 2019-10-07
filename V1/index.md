@@ -25,7 +25,7 @@ uid: index
   - [Configure data source](xref:ConfigureDataSourceOPCUA)
   - [Configure data selection](xref:ConfigureDataSelectionOPCUA)
   - [Configure message logging](xref:ConfigureMessageLogging)
-  - [Configure enpoints](xref:ConfigureEndpoints)
+  - [Configure endpoints](xref:ConfigureEndpoints)
 - [Data collection and connection](xref:DataCollectionAndConnection)
   - [Verify connection from data source to the adapter](xref:VerifyConnectionFromDataSourceToTheAdapter)
   - [Verify data collection](xref:VerifyDataCollection)

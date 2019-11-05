@@ -62,11 +62,11 @@ references:
   name: Hardware requirements
   href: V1/main/V1/Prepare%20for%20adapter%20installation/Hardware%20requirements.html
 - uid: Health
-  name: Health
+  name: Adapter Health
   href: V1/main/V1/Adapter%20administration/Health.html
 - uid: index
   name: OSIsoft Adapter for OPC UA
-  href: V1/index.html
+  href: index.html
 - uid: InstallTheAdapter
   name: Install the adapter
   href: V1/main/V1/Install%20the%20adapter/Install%20the%20adapter.html

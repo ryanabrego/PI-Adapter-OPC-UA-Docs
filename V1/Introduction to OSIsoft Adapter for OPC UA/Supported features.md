@@ -1,5 +1,0 @@
----
-uid: SupportedFeaturesOPCUA
----
-
-# Supported features

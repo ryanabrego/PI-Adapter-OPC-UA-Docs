@@ -4,9 +4,6 @@ references:
 - uid: AdapterAdministration
   name: Adapter administration
   href: V1/main/V1/Adapter%20administration/Adapter%20administration.html
-- uid: AdapterSecurity
-  name: Adapter Security
-  href: V1/main/V1/Prepare%20for%20adapter%20installation/Adapter%20security.html
 - uid: AdapterToOCSBuffering
   name: Adapter to OCS buffering
   href: V1/main/V1/Adapter%20administration/Adapter%20to%20OCS%20buffering.html
@@ -58,9 +55,6 @@ references:
 - uid: Endpoint
   name: Endpoint
   href: V1/main/V1/Configure%20the%20adapter/Endpoint.html
-- uid: HardwareRequirements
-  name: Hardware requirements
-  href: V1/main/V1/Prepare%20for%20adapter%20installation/Hardware%20requirements.html
 - uid: Health
   name: Adapter Health
   href: V1/main/V1/Adapter%20administration/Health.html
@@ -88,6 +82,9 @@ references:
 - uid: OSIsoftAdapterForOPCUAOverview
   name: OSIsoft Adapter for OPC UA overview
   href: V1/OSIsoft%20Adapter%20for%20OPC%20UA%20overview/OSIsoft%20Adapter%20for%20OPC%20UA%20overview.html
+- uid: OSIsoftAdapterForOPCUAPrinciplesOfOperation
+  name: OSIsoftAdapterForOPCUAPrinciplesOfOperation
+  href: V1/OSIsoft%20Adapter%20for%20OPC%20UA%20overview/OSIsoft%20Adapter%20for%20OPC%20UA%20principles%20of%20operation.html
 - uid: OSIsoftAdapterForOPCUASupportedFeatures
   name: OSIsoft Adapter for OPC UA supported features
   href: V1/OSIsoft%20Adapter%20for%20OPC%20UA%20overview/OSIsoft%20Adapter%20for%20OPC%20UA%20supported%20features.html
@@ -97,6 +94,9 @@ references:
 - uid: PrinciplesOfOperationOPCUA
   name: Principles of operation
   href: V1/Principles%20of%20operation.html
+- uid: SoftwareAndHardwareRequirements
+  name: Software and hardware requirements
+  href: V1/main/V1/Prepare%20for%20adapter%20installation/Software%20and%20hardware%20requirements.html
 - uid: SoftwareRequirementsOPCUA
   name: Software requirements
   href: V1/Software%20requirements.html
@@ -106,6 +106,9 @@ references:
 - uid: StartOrStopTheDataSource
   name: Start or stop the data source
   href: V1/main/V1/Data%20collection%20and%20connection/Start%20or%20stop%20the%20data%20source.html
+- uid: SupportedFeatures
+  name: Supported features
+  href: V1/main/V1/Supported%20features.html
 - uid: Troubleshooting
   name: Troubleshooting
   href: V1/main/V1/Troubleshooting/Troubleshooting.html

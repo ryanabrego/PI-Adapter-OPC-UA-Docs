@@ -88,6 +88,9 @@ references:
 - uid: OSIsoftAdapterForOPCUAOverview
   name: OSIsoft Adapter for OPC UA overview
   href: V1/OSIsoft%20Adapter%20for%20OPC%20UA%20overview/OSIsoft%20Adapter%20for%20OPC%20UA%20overview.html
+- uid: OSIsoftAdapterForOPCUASupportedFeatures
+  name: OSIsoft Adapter for OPC UA supported features
+  href: V1/OSIsoft%20Adapter%20for%20OPC%20UA%20overview/OSIsoft%20Adapter%20for%20OPC%20UA%20supported%20features.html
 - uid: PrepareForAdapterInstallation
   name: Prepare for adapter installation
   href: V1/main/V1/Prepare%20for%20adapter%20installation/Prepare%20for%20adapter%20installation.html
@@ -103,9 +106,6 @@ references:
 - uid: StartOrStopTheDataSource
   name: Start or stop the data source
   href: V1/main/V1/Data%20collection%20and%20connection/Start%20or%20stop%20the%20data%20source.html
-- uid: SupportedFeaturesOPCUA
-  name: Supported features
-  href: V1/Introduction%20to%20OSIsoft%20Adapter%20for%20OPC%20UA/Supported%20features.html
 - uid: Troubleshooting
   name: Troubleshooting
   href: V1/main/V1/Troubleshooting/Troubleshooting.html

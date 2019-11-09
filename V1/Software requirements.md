@@ -1,5 +1,0 @@
----
-uid: SoftwareRequirementsOPCUA
----
-
-# Software requirements

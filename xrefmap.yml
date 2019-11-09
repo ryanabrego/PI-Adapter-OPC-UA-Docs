@@ -6,10 +6,10 @@ references:
   href: V1/main/V1/Adapter%20administration/Adapter%20administration.html
 - uid: AdapterToOCSBuffering
   name: Adapter to OCS buffering
-  href: V1/main/V1/Adapter%20administration/Adapter%20to%20OCS%20buffering.html
+  href: V1/main/V1/Adapter%20to%20OCS%20buffering.html
 - uid: AdapterToPIServerBuffering
   name: Adapter to PI Server buffering
-  href: V1/main/V1/Adapter%20administration/Adapter%20to%20PI%20Server%20buffering.html
+  href: V1/main/V1/Adapter%20to%20PI%20Server%20buffering.html
 - uid: ConfigurationSchemas
   name: Configuration schemas
   href: V1/main/V1/Configure%20the%20adapter/Configuration%20schemas.html
@@ -30,7 +30,7 @@ references:
   href: V1/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA.html
 - uid: DataBuffering
   name: Data buffering
-  href: V1/main/V1/Adapter%20administration/Data%20buffering.html
+  href: V1/main/V1/Data%20buffering.html
 - uid: DataCollectionAndConnection
   name: Data collection and connection
   href: V1/main/V1/Data%20collection%20and%20connection/Data%20collection%20and%20connection.html
@@ -52,9 +52,9 @@ references:
 - uid: Egress_DataEndpoints_schema
   name: Egress endpoint configuration schema
   href: V1/main/V1/Configure%20the%20adapter/Egress_DataEndpoints_schema.html
-- uid: Endpoint
-  name: Endpoint
-  href: V1/main/V1/Configure%20the%20adapter/Endpoint.html
+- uid: Endpoints
+  name: Endpoints
+  href: V1/main/V1/Configure%20the%20adapter/Endpoints.html
 - uid: Health
   name: Adapter Health
   href: V1/main/V1/Adapter%20administration/Health.html
@@ -64,9 +64,9 @@ references:
 - uid: InstallTheAdapter
   name: Install the adapter
   href: V1/main/V1/Install%20the%20adapter/Install%20the%20adapter.html
-- uid: Logging
-  name: Logging
-  href: V1/main/V1/Configure%20the%20adapter/Logging.html
+- uid: MessageLogging
+  name: Message logging
+  href: V1/main/V1/Configure%20the%20adapter/Message%20logging.html
 - uid: NextHealthMessageExpected
   name: Next health message expected
   href: V1/main/V1/Adapter%20administration/Next%20health%20message%20expected.html
@@ -94,6 +94,9 @@ references:
 - uid: PrinciplesOfOperationOPCUA
   name: Principles of operation
   href: V1/Principles%20of%20operation.html
+- uid: RunOSIsoftAdapterForOPCUA
+  name: Run OSIsoft Adapter for OPC UA
+  href: V1/Run%20OSIsoft%20Adapter%20for%20OPC%20UA.html
 - uid: SoftwareAndHardwareRequirements
   name: Software and hardware requirements
   href: V1/main/V1/Prepare%20for%20adapter%20installation/Software%20and%20hardware%20requirements.html

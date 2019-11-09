@@ -1,9 +1,6 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: AdapterAdministration
-  name: Adapter administration
-  href: V1/main/V1/Adapter%20administration/Adapter%20administration.html
 - uid: AdapterToOCSBuffering
   name: Adapter to OCS buffering
   href: V1/main/V1/Adapter%20to%20OCS%20buffering.html
@@ -42,10 +39,10 @@ references:
   href: V1/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA/Data%20source.html
 - uid: DeviceStatus
   name: Device status
-  href: V1/main/V1/Adapter%20administration/Device%20status.html
+  href: V1/main/V1/Health/Device%20status.html
 - uid: Diagnostics
   name: Diagnostics
-  href: V1/main/V1/Adapter%20administration/Diagnostics.html
+  href: V1/main/V1/Diagnostics/Diagnostics.html
 - uid: DownloadOSIsoftAdapter
   name: Download OSIsoft Adapter
   href: V1/main/V1/Prepare%20for%20adapter%20installation/Download%20OSIsoft%20Adapter.html
@@ -57,7 +54,7 @@ references:
   href: V1/main/V1/Configure%20the%20adapter/Endpoints.html
 - uid: Health
   name: Adapter Health
-  href: V1/main/V1/Adapter%20administration/Health.html
+  href: V1/main/V1/Health/Health.html
 - uid: index
   name: OSIsoft Adapter for OPC UA
   href: index.html
@@ -69,10 +66,10 @@ references:
   href: V1/main/V1/Configure%20the%20adapter/Message%20logging.html
 - uid: NextHealthMessageExpected
   name: Next health message expected
-  href: V1/main/V1/Adapter%20administration/Next%20health%20message%20expected.html
+  href: V1/main/V1/Health/Next%20health%20message%20expected.html
 - uid: OSIsoftAdapterDiagnostics
   name: OSIsoft Adapter diagnostics
-  href: V1/main/V1/Adapter%20administration/OSIsoft%20OSIsoft%20Adapter%20diagnostics.html
+  href: V1/main/V1/Diagnostics/OSIsoft%20Adapter%20diagnostics.html
 - uid: OSIsoftAdapterForOPCUADiagnostics
   name: OSIsoft Adapter for OPC UA diagnostics
   href: V1/OSIsoft%20Adapter%20for%20OPC%20UA%20diagnostics.html
@@ -83,7 +80,7 @@ references:
   name: OSIsoft Adapter for OPC UA overview
   href: V1/OSIsoft%20Adapter%20for%20OPC%20UA%20overview/OSIsoft%20Adapter%20for%20OPC%20UA%20overview.html
 - uid: OSIsoftAdapterForOPCUAPrinciplesOfOperation
-  name: OSIsoftAdapterForOPCUAPrinciplesOfOperation
+  name: OSIsoft Adapter for OPC UA principles of operation
   href: V1/OSIsoft%20Adapter%20for%20OPC%20UA%20overview/OSIsoft%20Adapter%20for%20OPC%20UA%20principles%20of%20operation.html
 - uid: OSIsoftAdapterForOPCUASupportedFeatures
   name: OSIsoft Adapter for OPC UA supported features
@@ -91,18 +88,12 @@ references:
 - uid: PrepareForAdapterInstallation
   name: Prepare for adapter installation
   href: V1/main/V1/Prepare%20for%20adapter%20installation/Prepare%20for%20adapter%20installation.html
-- uid: PrinciplesOfOperationOPCUA
-  name: Principles of operation
-  href: V1/Principles%20of%20operation.html
 - uid: RunOSIsoftAdapterForOPCUA
   name: Run OSIsoft Adapter for OPC UA
   href: V1/Run%20OSIsoft%20Adapter%20for%20OPC%20UA.html
 - uid: SoftwareAndHardwareRequirements
   name: Software and hardware requirements
   href: V1/main/V1/Prepare%20for%20adapter%20installation/Software%20and%20hardware%20requirements.html
-- uid: SoftwareRequirementsOPCUA
-  name: Software requirements
-  href: V1/Software%20requirements.html
 - uid: StartOrStopTheAdapter
   name: Start or stop the adapter
   href: V1/main/V1/Data%20collection%20and%20connection/Start%20or%20stop%20the%20adapter.html

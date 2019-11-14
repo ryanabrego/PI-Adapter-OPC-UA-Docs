@@ -1,5 +1,0 @@
----
-uid: DataSelectionOPCUA
----
-
-# Data selection

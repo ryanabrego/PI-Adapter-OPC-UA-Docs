@@ -34,12 +34,6 @@ references:
 - uid: DataCollectionAndConnection
   name: Data collection and connection
   href: V1/main/V1/Data%20collection%20and%20connection/Data%20collection%20and%20connection.html
-- uid: DataSelectionOPCUA
-  name: Data selection
-  href: V1/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA/Data%20selection.html
-- uid: DataSourceOPCUA
-  name: Data source
-  href: V1/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA/Data%20source.html
 - uid: DeviceStatus
   name: Device status
   href: V1/main/V1/Health/Device%20status.html

@@ -7,6 +7,9 @@ references:
 - uid: AdapterToPIServerBuffering
   name: Adapter to PI Server buffering
   href: V1/main/V1/Adapter%20to%20PI%20Server%20buffering.html
+- uid: BufferingConfiguration
+  name: Overview
+  href: V1/main/V1/Buffering/Buffering.html
 - uid: ConfigurationSchemas
   name: Configuration schemas
   href: V1/main/V1/Configure%20the%20adapter/Configuration%20schemas.html

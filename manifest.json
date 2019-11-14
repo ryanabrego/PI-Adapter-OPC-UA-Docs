@@ -205,6 +205,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "V1/main/V1/Buffering/Buffering.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1/Buffering/Buffering.html",
+          "hash": "FwdM8qksAk+Yld8hQOLSHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Configure the adapter/Configuration schemas.md",
       "output": {
         ".html": {
@@ -567,14 +579,14 @@
     },
     {
       "log_codes": [
-        "InvalidFileLink"
+        "InvalidTocInclude"
       ],
       "type": "Toc",
       "source_relative_path": "V1/toc.yml",
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "cqvnWTacFRsAzQH/8oxaXw=="
+          "hash": "le6ixJv6RjR5Y3yV0gCv5g=="
         }
       },
       "is_incremental": false,
@@ -629,7 +641,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 45,
+          "total_file_count": 46,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

@@ -1,5 +1,3 @@
-- name: Configuration schemas
-  href: Configuration schemas.md
 - name: Configure data source
   href: Configure data source.md
 - name: Configure data selection

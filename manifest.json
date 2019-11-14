@@ -157,47 +157,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Adapter to OCS buffering.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/main/V1/Adapter to OCS buffering.html",
-          "hash": "tPdLhSmZ/F2grqkJM7KyJg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Adapter to PI Server buffering.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/main/V1/Adapter to PI Server buffering.html",
-          "hash": "rsZvg1CzCoNHTetwFbKjqg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Buffering/Buffering.md",
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Buffering/Buffering.html",
           "hash": "FwdM8qksAk+Yld8hQOLSHQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Configure the adapter/Configuration schemas.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/main/V1/Configure the adapter/Configuration schemas.html",
-          "hash": "Kf1ugPjvT63QP+/RSJ0W/w=="
         }
       },
       "is_incremental": false,
@@ -237,30 +201,6 @@
         ".html": {
           "relative_path": "V1/main/V1/Configure the adapter/Egress_DataEndpoints_schema.html",
           "hash": "Oww/W+EolR8JDRBEFMTM2g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Configure the adapter/Endpoints.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/main/V1/Configure the adapter/Endpoints.html",
-          "hash": "HuhbpF7lbOkmpeZ4hkIBmQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Configure the adapter/Message logging.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/main/V1/Configure the adapter/Message logging.html",
-          "hash": "oQWrAKmfmUYrO27/rfMblQ=="
         }
       },
       "is_incremental": false,
@@ -614,7 +554,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 44,
+          "total_file_count": 39,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

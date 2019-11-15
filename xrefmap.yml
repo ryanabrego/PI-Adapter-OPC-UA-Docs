@@ -22,6 +22,9 @@ references:
 - uid: DataBuffering
   name: Data buffering
   href: V1/main/V1/Data%20buffering.html
+- uid: DeleteAdapter
+  name: Delete an Adapter
+  href: V1/main/V1/AdapterDeletion/DeleteAdapter.html
 - uid: DeviceStatus
   name: Device status
   href: V1/main/V1/Health/Device%20status.html

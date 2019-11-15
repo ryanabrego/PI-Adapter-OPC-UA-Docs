@@ -284,7 +284,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Diagnostics/Diagnostics.html",
-          "hash": "LJw084BCgTlk35j69bDHkg=="
+          "hash": "mh4AOKCukajEJFFOx1wjzQ=="
         }
       },
       "is_incremental": false,
@@ -296,7 +296,22 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Diagnostics/OSIsoft Adapter diagnostics.html",
-          "hash": "fgKhjnpGjxAOAFX6XUhyoQ=="
+          "hash": "RwfoXEzjzqA13vUmceJeaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
+      "source_relative_path": "V1/main/V1/Diagnostics/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1/Diagnostics/toc.html",
+          "hash": "6TeyDCmn9qkZCzTKRJTLiQ=="
         }
       },
       "is_incremental": false,
@@ -308,7 +323,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Health/Device status.html",
-          "hash": "SECXXdHMZeRyACxwFY0Nlw=="
+          "hash": "TUWtyyUwTuy+tJgmpL2QCg=="
         }
       },
       "is_incremental": false,
@@ -320,7 +335,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Health/Health.html",
-          "hash": "C7+7iwmWpa4btXLTqZmCgQ=="
+          "hash": "r3t4U56+7AY0dwTtbdoyqA=="
         }
       },
       "is_incremental": false,
@@ -332,7 +347,19 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Health/Next health message expected.html",
-          "hash": "5I89PosttkEzjkE9mX/ZfQ=="
+          "hash": "27PQbD0GZLMWqR6r7HlGVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "V1/main/V1/Health/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1/Health/toc.html",
+          "hash": "MyucJM/hWa2ReRuUzQbl6A=="
         }
       },
       "is_incremental": false,
@@ -344,7 +371,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Install the adapter/Install the adapter.html",
-          "hash": "M2P5UFYuYlIpnDXxi7Q+vA=="
+          "hash": "sINT2eKhKoJU5/zl5LrSMA=="
         }
       },
       "is_incremental": false,
@@ -356,7 +383,19 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Install the adapter/Uninstall the adapter.html",
-          "hash": "++uzgywfCh7c++am7Y3qNA=="
+          "hash": "o+dGIfoiwt7dByC7ZsFYlg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "V1/main/V1/Install the adapter/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1/Install the adapter/toc.html",
+          "hash": "Z6VmMWZI8yTf5cTX1KGTCA=="
         }
       },
       "is_incremental": false,
@@ -428,7 +467,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Troubleshooting/Data buffering.html",
-          "hash": "7st6Zn0BRPuI4gvYtCJzNg=="
+          "hash": "9Y0M9KL2OzlMN8fXe4USYA=="
         }
       },
       "is_incremental": false,
@@ -440,7 +479,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Troubleshooting/Logging.html",
-          "hash": "lM8g9DiOMXcual3lJCkH8g=="
+          "hash": "VIviv/h0SdrgrUxE9QKMCg=="
         }
       },
       "is_incremental": false,
@@ -452,7 +491,19 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Troubleshooting/Troubleshooting.html",
-          "hash": "bdCYkpYnyQLxwpI/Kg+IXQ=="
+          "hash": "Gwx09EDNHsUuUz9h+osTUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "V1/main/V1/Troubleshooting/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1/Troubleshooting/toc.html",
+          "hash": "eOaW0wvgLnZPjia590tr2A=="
         }
       },
       "is_incremental": false,
@@ -514,7 +565,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "73dVBkOj0Cm0IL688w/SYg=="
+          "hash": "CcaEKzWuA5xEeel2x5fi0g=="
         }
       },
       "is_incremental": false,
@@ -563,17 +614,17 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 39,
+          "skipped_file_count": 0
+        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
-          "skipped_file_count": 0
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 39,
           "skipped_file_count": 0
         }
       }

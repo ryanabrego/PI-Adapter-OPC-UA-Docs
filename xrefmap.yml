@@ -22,9 +22,6 @@ references:
 - uid: DataBuffering
   name: Data buffering
   href: V1/main/V1/Data%20buffering.html
-- uid: DataCollectionAndConnection
-  name: Data collection and connection
-  href: V1/main/V1/Data%20collection%20and%20connection/Data%20collection%20and%20connection.html
 - uid: DeviceStatus
   name: Device status
   href: V1/main/V1/Health/Device%20status.html
@@ -76,12 +73,6 @@ references:
 - uid: SoftwareAndHardwareRequirements
   name: Software and hardware requirements
   href: V1/main/V1/Prepare%20for%20adapter%20installation/Software%20and%20hardware%20requirements.html
-- uid: StartOrStopTheAdapter
-  name: Start or stop the adapter
-  href: V1/main/V1/Data%20collection%20and%20connection/Start%20or%20stop%20the%20adapter.html
-- uid: StartOrStopTheDataSource
-  name: Start or stop the data source
-  href: V1/main/V1/Data%20collection%20and%20connection/Start%20or%20stop%20the%20data%20source.html
 - uid: SupportedFeatures
   name: Supported features
   href: V1/main/V1/Supported%20features.html
@@ -97,9 +88,3 @@ references:
 - uid: UninstallTheAdapter
   name: Uninstall the adapter
   href: V1/main/V1/Install%20the%20adapter/Uninstall%20the%20adapter.html
-- uid: VerifyConnectionFromDataSourceToTheAdapter
-  name: Verify connection from data source to the adapter
-  href: V1/main/V1/Data%20collection%20and%20connection/Verify%20connection%20from%20data%20source%20to%20the%20adapter.html
-- uid: VerifyDataCollection
-  name: Verify data collection
-  href: V1/main/V1/Data%20collection%20and%20connection/Verify%20data%20collection.html

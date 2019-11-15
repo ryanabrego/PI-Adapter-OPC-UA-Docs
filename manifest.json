@@ -558,14 +558,15 @@
     },
     {
       "log_codes": [
-        "InvalidTocInclude"
+        "InvalidTocInclude",
+        "InvalidFileLink"
       ],
       "type": "Toc",
       "source_relative_path": "V1/toc.yml",
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "CcaEKzWuA5xEeel2x5fi0g=="
+          "hash": "WA5xsLZ9K1Cxbn8BNhTs6Q=="
         }
       },
       "is_incremental": false,

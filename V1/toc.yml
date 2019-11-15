@@ -2,22 +2,22 @@
   href: OSIsoft Adapter for OPC UA overview/toc.yml
   topicHref: OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA overview.md
 - name: Prepare for adapter installation
-  href: Prepare for adapter installation/toc.yml
-  topicref: Prepare for adapter installation/Prepare for adapter installation.md
+  href: main @ 86faa3e/Prepare for adapter installation/toc.yml
+  topicref: main @ 86faa3e/Prepare for adapter installation/Prepare for adapter installation.md
 - name: Install the adapter
-  href: Install the adapter/toc.yml
-  topicref: Install the adapter/Install the adapter.md
+  href: main @ 86faa3e/Install the adapter/toc.yml
+  topicref: main @ 86faa3e/Install the adapter/Install the adapter.md
 - name: Configure OSIsoft Adapter for OPC UA
   href: Configure OSIsoft Adapter for OPC UA/toc.yml
   topicref: Configure OSIsoft Adapter for OPC UA/Configure OSIsoft Adapter for OPC UA.md
 - name: Run OSIsoft Adapter for OPC UA
   href: Run OSIsoft Adapter for OPC UA.md
 - name: Health
-  href: Health/toc.yml
-  topicref: Health/Health.md
+  href: main @ 86faa3e/Health/toc.yml
+  topicref: main @ 86faa3e/Health/Health.md
 - name: Diagnostics
-  href: Diagnostics/toc.yml
-  topicref: Diagnostics/Diagnostics.md
+  href: main @ 86faa3e/Diagnostics/toc.yml
+  topicref: main @ 86faa3e/Diagnostics/Diagnostics.md
 - name: Troubleshooting
-  href: Troubleshooting/toc.yml
-  topicref: Troubleshooting/Troubleshooting.md
+  href: main @ 86faa3e/Troubleshooting/toc.yml
+  topicref: main @ 86faa3e/Troubleshooting/Troubleshooting.md

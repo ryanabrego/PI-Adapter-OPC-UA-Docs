@@ -3,7 +3,7 @@
 - name: Configure data selection
   href: Configure data selection.md
 - name: Configure message logging
-  href: main @ 86faa3e/V1/Configure the adapter/Configure message logging.md
+  xref: https://github.com/osisoft/OSIsoft-Adapter/blob/master/V1/Configure%20the%20adapter/Configure%20message%20logging.md
 - name: Configure endpoints
-  href: main @ 86faa3e/V1/Configure the adapter/Configure endpoints.md
+  xref: https://github.com/osisoft/OSIsoft-Adapter/blob/master/V1/Configure%20the%20adapter/Configure%20endpoints.md
 

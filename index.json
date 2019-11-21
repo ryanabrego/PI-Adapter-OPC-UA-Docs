@@ -1,4 +1,44 @@
 {
+  "V1/main/test.html": {
+    "href": "V1/main/test.html",
+    "title": "",
+    "keywords": ""
+  },
+  "V1/main/README.html": {
+    "href": "V1/main/README.html",
+    "title": "OSIsoft Adapter Docs",
+    "keywords": "OSIsoft Adapter Docs"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "OSIsoft Adapter for OPC UA",
+    "keywords": "OSIsoft Adapter for OPC UA ======= OSIsoft Adapter for OPC UA overview OSIsoft Adapter for OPC UA operational overview Supported features OSIsoft Adapter for OPC UA supported features OSIsoft Adapter for OPC UA principles of operation Data buffering Prepare for adapter installation Software and hardware requirements Download OSIsoft Adapter Install the adapter Uninstall the adapter Configure OSIsoft Adapter for OPC UA Configure data source Configure data selection Configure message logging Configure endpoints Run OSIsoft Adapter for OPC UA Health Device status Next health message expected Diagnostics OSIsoft Adapter diagnostics OSIsoft Adapter for OPC UA diagnostics Troubleshooting Logging Data buffering"
+  },
+  "V1/OSIsoft Adapter for OPC UA overview/OSIsoft_Adapter_for_OPC_UA_overview.html": {
+    "href": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft_Adapter_for_OPC_UA_overview.html",
+    "title": "OSIsoft Adapter for OPC UA overview",
+    "keywords": "OSIsoft Adapter for OPC UA overview"
+  },
+  "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA supported features.html": {
+    "href": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA supported features.html",
+    "title": "OSIsoft Adapter for OPC UA supported features",
+    "keywords": "OSIsoft Adapter for OPC UA supported features"
+  },
+  "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA principles of operation.html": {
+    "href": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA principles of operation.html",
+    "title": "OSIsoft Adapter for OPC UA principles of operation",
+    "keywords": "OSIsoft Adapter for OPC UA principles of operation"
+  },
+  "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA operational overview.html": {
+    "href": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA operational overview.html",
+    "title": "OSIsoft Adapter for OPC UA operational overview",
+    "keywords": "OSIsoft Adapter for OPC UA operational overview"
+  },
+  "V1/OSIsoft Adapter for OPC UA diagnostics/OSIsoft Adapter for OPC UA diagnostics.html": {
+    "href": "V1/OSIsoft Adapter for OPC UA diagnostics/OSIsoft Adapter for OPC UA diagnostics.html",
+    "title": "OSIsoft Adapter for OPC UA diagnostics",
+    "keywords": "OSIsoft Adapter for OPC UA diagnostics"
+  },
   "V1/main/V1/Prepare for adapter installation/Software and hardware requirements.html": {
     "href": "V1/main/V1/Prepare for adapter installation/Software and hardware requirements.html",
     "title": "Software and hardware requirements",
@@ -13,11 +53,6 @@
     "href": "V1/main/V1/Prepare for adapter installation/Download OSIsoft Adapter.html",
     "title": "Download OSIsoft Adapter",
     "keywords": "Download OSIsoft Adapter"
-  },
-  "V1/main/V1/Install the adapter/Uninstall the adapter.html": {
-    "href": "V1/main/V1/Install the adapter/Uninstall the adapter.html",
-    "title": "Uninstall the adapter",
-    "keywords": "Uninstall the adapter"
   },
   "V1/main/V1/Install the adapter/Install the adapter.html": {
     "href": "V1/main/V1/Install the adapter/Install the adapter.html",
@@ -39,91 +74,6 @@
     "title": "Device status",
     "keywords": "Device status"
   },
-  "V1/main/V1/AdapterDeletion/DeleteAdapter.html": {
-    "href": "V1/main/V1/AdapterDeletion/DeleteAdapter.html",
-    "title": "Delete an Adapter",
-    "keywords": "Delete an Adapter An adapter instance can be removed by making a DELETE call with either a REST client or the EdgeCmd utility. When an adapter instance is removed, the configuration and log files are saved into a sub-directory in case they are needed later. Any associated types, streams, and data will remain on respective endpoints. File Relocation All configuration and log files will be renamed and moved to a folder called \"Removed\" within the respective directory. Configuration files will be moved to .\\Configuration\\Removed; logs files to .\\Logs\\Removed. The files are renamed according to the timestamp of removal, e.g. FileName.json_removed_yyyy-MM-dd--hh-mm-ss. In the following example, one Modbus Adapter service is installed on a particular Windows node with the name \"ModbusService1\". A Modbus component with the name \"ModbusDeviceX\" was added and configured to this Modbus adapter and later removed. Similar behavior will be seen on Linux. This is the resulting relocation and renaming scheme after deletion: REST Command: DELETE An empty DELETE command must be made against the Id of the component to be deleted. Using cURL: curl -v -X DELETE \"http://localhost:5595/api/v1/configuration/system/components/ComponentIdToBeDeleted\" REST URLs Relative URL HTTP verb Action api/v1/configuration/system/components/{id} DELETE Deletes specified component"
-  },
-  "V1/main/V1/Supported features.html": {
-    "href": "V1/main/V1/Supported features.html",
-    "title": "Supported features",
-    "keywords": "Supported features"
-  },
-  "V1/main/V1/Data buffering.html": {
-    "href": "V1/main/V1/Data buffering.html",
-    "title": "Data buffering",
-    "keywords": "Data buffering"
-  },
-  "V1/main/test.html": {
-    "href": "V1/main/test.html",
-    "title": "",
-    "keywords": ""
-  },
-  "V1/Configure OSIsoft Adapter for OPC UA/Configure data source.html": {
-    "href": "V1/Configure OSIsoft Adapter for OPC UA/Configure data source.html",
-    "title": "Configure data source",
-    "keywords": "Configure data source"
-  },
-  "V1/Run OSIsoft Adapter for OPC UA.html": {
-    "href": "V1/Run OSIsoft Adapter for OPC UA.html",
-    "title": "Run OSIsoft Adapter for OPC UA",
-    "keywords": "Run OSIsoft Adapter for OPC UA"
-  },
-  "V1/OSIsoft Adapter for OPC UA overview/OSIsoft_Adapter_for_OPC_UA_overview.html": {
-    "href": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft_Adapter_for_OPC_UA_overview.html",
-    "title": "OSIsoft Adapter for OPC UA overview",
-    "keywords": "OSIsoft Adapter for OPC UA overview"
-  },
-  "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA principles of operation.html": {
-    "href": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA principles of operation.html",
-    "title": "OSIsoft Adapter for OPC UA principles of operation",
-    "keywords": "OSIsoft Adapter for OPC UA principles of operation"
-  },
-  "index.html": {
-    "href": "index.html",
-    "title": "OSIsoft Adapter for OPC UA",
-    "keywords": "OSIsoft Adapter for OPC UA ======= OSIsoft Adapter for OPC UA overview OSIsoft Adapter for OPC UA operational overview Supported features OSIsoft Adapter for OPC UA supported features OSIsoft Adapter for OPC UA principles of operation Data buffering Prepare for adapter installation Software and hardware requirements Download OSIsoft Adapter Install the adapter Uninstall the adapter Configure OSIsoft Adapter for OPC UA Configure data source Configure data selection Configure message logging Configure endpoints Run OSIsoft Adapter for OPC UA Health Device status Next health message expected Diagnostics OSIsoft Adapter diagnostics OSIsoft Adapter for OPC UA diagnostics Troubleshooting Logging Data buffering"
-  },
-  "README.html": {
-    "href": "README.html",
-    "title": "OSIsoft Adapter OPC UA Docs",
-    "keywords": "OSIsoft Adapter OPC UA Docs"
-  },
-  "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA supported features.html": {
-    "href": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA supported features.html",
-    "title": "OSIsoft Adapter for OPC UA supported features",
-    "keywords": "OSIsoft Adapter for OPC UA supported features"
-  },
-  "V1/main/V1/Troubleshooting/Logging.html": {
-    "href": "V1/main/V1/Troubleshooting/Logging.html",
-    "title": "Logging",
-    "keywords": "Logging"
-  },
-  "V1/Configure OSIsoft Adapter for OPC UA/Configure data selection.html": {
-    "href": "V1/Configure OSIsoft Adapter for OPC UA/Configure data selection.html",
-    "title": "Configure data selection",
-    "keywords": "Configure data selection"
-  },
-  "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA operational overview.html": {
-    "href": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA operational overview.html",
-    "title": "OSIsoft Adapter for OPC UA operational overview",
-    "keywords": "OSIsoft Adapter for OPC UA operational overview"
-  },
-  "V1/OSIsoft Adapter for OPC UA diagnostics/OSIsoft Adapter for OPC UA diagnostics.html": {
-    "href": "V1/OSIsoft Adapter for OPC UA diagnostics/OSIsoft Adapter for OPC UA diagnostics.html",
-    "title": "OSIsoft Adapter for OPC UA diagnostics",
-    "keywords": "OSIsoft Adapter for OPC UA diagnostics"
-  },
-  "V1/main/V1/Troubleshooting/Troubleshooting.html": {
-    "href": "V1/main/V1/Troubleshooting/Troubleshooting.html",
-    "title": "Troubleshooting",
-    "keywords": "Troubleshooting"
-  },
-  "V1/main/V1/Troubleshooting/Data buffering.html": {
-    "href": "V1/main/V1/Troubleshooting/Data buffering.html",
-    "title": "Data buffering",
-    "keywords": "Data buffering"
-  },
   "V1/main/V1/Configure the adapter/Egress_DataEndpoints_schema.html": {
     "href": "V1/main/V1/Configure the adapter/Egress_DataEndpoints_schema.html",
     "title": "Egress endpoint configuration schema",
@@ -144,6 +94,16 @@
     "title": "Overview",
     "keywords": "Overview"
   },
+  "V1/main/V1/AdapterDeletion/DeleteAdapter.html": {
+    "href": "V1/main/V1/AdapterDeletion/DeleteAdapter.html",
+    "title": "Delete an Adapter",
+    "keywords": "Delete an Adapter An adapter instance can be removed by making a DELETE call with either a REST client or the EdgeCmd utility. When an adapter instance is removed, the configuration and log files are saved into a sub-directory in case they are needed later. Any associated types, streams, and data will remain on respective endpoints. File Relocation All configuration and log files will be renamed and moved to a folder called \"Removed\" within the respective directory. Configuration files will be moved to .\\Configuration\\Removed; logs files to .\\Logs\\Removed. The files are renamed according to the timestamp of removal, e.g. FileName.json_removed_yyyy-MM-dd--hh-mm-ss. In the following example, one Modbus Adapter service is installed on a particular Windows node with the name \"ModbusService1\". A Modbus component with the name \"ModbusDeviceX\" was added and configured to this Modbus adapter and later removed. Similar behavior will be seen on Linux. This is the resulting relocation and renaming scheme after deletion: REST Command: DELETE An empty DELETE command must be made against the Id of the component to be deleted. Using cURL: curl -v -X DELETE \"http://localhost:5595/api/v1/configuration/system/components/ComponentIdToBeDeleted\" REST URLs Relative URL HTTP verb Action api/v1/configuration/system/components/{id} DELETE Deletes specified component"
+  },
+  "V1/main/V1/Supported features.html": {
+    "href": "V1/main/V1/Supported features.html",
+    "title": "Supported features",
+    "keywords": "Supported features"
+  },
   "V1/main/V1/readme.html": {
     "href": "V1/main/V1/readme.html",
     "title": "",
@@ -154,19 +114,59 @@
     "title": "OSIsoft Adapter diagnostics",
     "keywords": "OSIsoft Adapter diagnostics"
   },
-  "V1/main/README.html": {
-    "href": "V1/main/README.html",
-    "title": "OSIsoft Adapter Docs",
-    "keywords": "OSIsoft Adapter Docs"
+  "V1/main/V1/Data buffering.html": {
+    "href": "V1/main/V1/Data buffering.html",
+    "title": "Data buffering",
+    "keywords": "Data buffering"
+  },
+  "V1/main/V1/Troubleshooting/Troubleshooting.html": {
+    "href": "V1/main/V1/Troubleshooting/Troubleshooting.html",
+    "title": "Troubleshooting",
+    "keywords": "Troubleshooting"
+  },
+  "V1/main/V1/Troubleshooting/Logging.html": {
+    "href": "V1/main/V1/Troubleshooting/Logging.html",
+    "title": "Logging",
+    "keywords": "Logging"
+  },
+  "V1/main/V1/Troubleshooting/Data buffering.html": {
+    "href": "V1/main/V1/Troubleshooting/Data buffering.html",
+    "title": "Data buffering",
+    "keywords": "Data buffering"
+  },
+  "V1/main/V1/Install the adapter/Uninstall the adapter.html": {
+    "href": "V1/main/V1/Install the adapter/Uninstall the adapter.html",
+    "title": "Uninstall the adapter",
+    "keywords": "Uninstall the adapter"
   },
   "V1/Configure OSIsoft Adapter for OPC UA/Configure OSIsoft Adapter for OPC UA.html": {
     "href": "V1/Configure OSIsoft Adapter for OPC UA/Configure OSIsoft Adapter for OPC UA.html",
     "title": "Configure OSIsoft Adapter for OPC UA",
     "keywords": "Configure OSIsoft Adapter for OPC UA"
   },
+  "V1/Configure OSIsoft Adapter for OPC UA/Configure data source.html": {
+    "href": "V1/Configure OSIsoft Adapter for OPC UA/Configure data source.html",
+    "title": "Configure data source",
+    "keywords": "Configure data source"
+  },
+  "V1/Configure OSIsoft Adapter for OPC UA/Configure data selection.html": {
+    "href": "V1/Configure OSIsoft Adapter for OPC UA/Configure data selection.html",
+    "title": "Configure data selection",
+    "keywords": "Configure data selection"
+  },
+  "V1/Run OSIsoft Adapter for OPC UA.html": {
+    "href": "V1/Run OSIsoft Adapter for OPC UA.html",
+    "title": "Run OSIsoft Adapter for OPC UA",
+    "keywords": "Run OSIsoft Adapter for OPC UA"
+  },
   "V1/readme.html": {
     "href": "V1/readme.html",
     "title": "",
     "keywords": ""
+  },
+  "README.html": {
+    "href": "README.html",
+    "title": "OSIsoft Adapter OPC UA Docs",
+    "keywords": "OSIsoft Adapter OPC UA Docs"
   }
 }

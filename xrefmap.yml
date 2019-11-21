@@ -54,7 +54,7 @@ references:
   href: V1/main/V1/Diagnostics/OSIsoft%20Adapter%20diagnostics.html
 - uid: OSIsoftAdapterForOPCUADiagnostics
   name: OSIsoft Adapter for OPC UA diagnostics
-  href: V1/OSIsoft%20Adapter%20for%20OPC%20UA%20diagnostics.html
+  href: OSIsoft%20Adapter%20for%20OPC%20UA%20diagnostics/OSIsoft%20Adapter%20for%20OPC%20UA%20diagnostics.html
 - uid: OSIsoftAdapterForOPCUAOperationalOverview
   name: OSIsoft Adapter for OPC UA operational overview
   href: V1/OSIsoft%20Adapter%20for%20OPC%20UA%20overview/OSIsoft%20Adapter%20for%20OPC%20UA%20operational%20overview.html

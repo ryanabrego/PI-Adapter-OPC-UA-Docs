@@ -14,18 +14,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "OSIsoft Adapter for OPC UA diagnostics/OSIsoft Adapter for OPC UA diagnostics.md",
-      "output": {
-        ".html": {
-          "relative_path": "OSIsoft Adapter for OPC UA diagnostics/OSIsoft Adapter for OPC UA diagnostics.html",
-          "hash": "d6Lf+8v8k4FRl1CORZQB7g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "README.md",
       "output": {
         ".html": {
@@ -67,6 +55,18 @@
         ".html": {
           "relative_path": "V1/Configure OSIsoft Adapter for OPC UA/Configure data source.html",
           "hash": "Q7rpnOtN5+QxGkoCrGJhzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/OSIsoft Adapter for OPC UA diagnostics/OSIsoft Adapter for OPC UA diagnostics.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/OSIsoft Adapter for OPC UA diagnostics/OSIsoft Adapter for OPC UA diagnostics.html",
+          "hash": "WClK2Qjo9N0rwSbqGHfxSQ=="
         }
       },
       "is_incremental": false,
@@ -235,30 +235,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Diagnostics/Diagnostics.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/main/V1/Diagnostics/Diagnostics.html",
-          "hash": "LJw084BCgTlk35j69bDHkg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Diagnostics/OSIsoft Adapter diagnostics.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/main/V1/Diagnostics/OSIsoft Adapter diagnostics.html",
-          "hash": "fgKhjnpGjxAOAFX6XUhyoQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Health/Device status.md",
       "output": {
         ".html": {
@@ -312,6 +288,18 @@
         ".html": {
           "relative_path": "V1/main/V1/Install the adapter/Uninstall the adapter.html",
           "hash": "++uzgywfCh7c++am7Y3qNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/main/V1/OSIsoft Adapter diagnostics.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1/OSIsoft Adapter diagnostics.html",
+          "hash": "5t16oPHnPRbpoHzOXM+txg=="
         }
       },
       "is_incremental": false,
@@ -449,24 +437,31 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidTocInclude",
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "V1/toc.yml",
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "uJSFTg7QUaL5Q00uRVC3IQ=="
+          "hash": "yyEdznQYPIBmaozGBcIh1A=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "QXrSNekOz8BRUP1yqdFi7A=="
+          "hash": "g0T7+bKG6gl36XHk7NeFuQ=="
         }
       },
       "is_incremental": false,
@@ -506,7 +501,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 35,
+          "total_file_count": 34,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

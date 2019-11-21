@@ -74,11 +74,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA operational overview.md",
+      "source_relative_path": "V1/OSIsoft Adapter for OPC UA overview.md",
       "output": {
         ".html": {
-          "relative_path": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA operational overview.html",
-          "hash": "J6jRPxZGAOWGoibnXHVhPA=="
+          "relative_path": "V1/OSIsoft Adapter for OPC UA overview.html",
+          "hash": "evhQ9wtn7BLQOZPC/x8R2w=="
         }
       },
       "is_incremental": false,
@@ -86,11 +86,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA overview.md",
+      "source_relative_path": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA operational overview.md",
       "output": {
         ".html": {
-          "relative_path": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA overview.html",
-          "hash": "VuSy4mYooP9KtPkQ1cjN3w=="
+          "relative_path": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA operational overview.html",
+          "hash": "J6jRPxZGAOWGoibnXHVhPA=="
         }
       },
       "is_incremental": false,
@@ -437,12 +437,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "V1/toc.yml",
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "SI+9Oi5IE/gJvXw3+S2oJg=="
+          "hash": "U+IneqROIczSkdZBEfMw3A=="
         }
       },
       "is_incremental": false,
@@ -457,19 +460,22 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "g0T7+bKG6gl36XHk7NeFuQ=="
+          "hash": "ZDTO+PX9v/FzzvUAKfNZDQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "6RqaQWCrdzJsctbzeZcr7g=="
+          "hash": "usfEW6AaOhMAGGIEd/cEtg=="
         }
       },
       "is_incremental": false,
@@ -487,6 +493,13 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -498,13 +511,6 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 34,
-          "skipped_file_count": 0
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
           "skipped_file_count": 0
         }
       }

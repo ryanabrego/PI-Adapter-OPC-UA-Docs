@@ -437,16 +437,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidTocInclude",
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "V1/toc.yml",
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "yyEdznQYPIBmaozGBcIh1A=="
+          "hash": "oIzTuYaUXYswocIJw5lRGQ=="
         }
       },
       "is_incremental": false,

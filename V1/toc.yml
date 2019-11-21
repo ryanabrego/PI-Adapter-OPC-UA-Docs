@@ -15,9 +15,9 @@
 - name: Health
   href: main/V1/Health/toc.yml
   topicHref: main/V1/Health/Health.md
-- name: Diagnostics
-  href: main/V1/Diagnostics/toc.yml
-  topicHref: main/V1/Diagnostics/Diagnostics.md
+- name: OSIsoft Adapter for OPC UA diagnostics
+  href: OSIsoft Adapter for OPC UA diagnostics/toc.yml
+  topicHref: OSIsoft Adapter for OPC UA diagnostics/OSIsoft Adapter for OPC UA diagnostics.md
 - name: Troubleshooting
   href: main/V1/Troubleshooting/toc.yml
   topicHref: main/V1/Troubleshooting/Troubleshooting.md

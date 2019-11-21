@@ -1,3 +1,6 @@
+- name: Home
+  href: index.md
+  homepage: index.md
 - name: Docs
   href: V1/
   topicHref: V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA overview.md

@@ -94,3 +94,6 @@ references:
 - uid: UninstallTheAdapter
   name: Uninstall the adapter
   href: V1/main/V1/Install%20the%20adapter/Uninstall%20the%20adapter.html
+- uid: WholeAdapterConfiguration
+  name: Overview
+  href: V1/main/V1/Configure%20the%20adapter/Configure%20whole%20adapter.html

@@ -207,6 +207,18 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "V1/main/V1/Configure the adapter/Configure whole adapter.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1/Configure the adapter/Configure whole adapter.html",
+          "hash": "h0yjlSh2n9KuakSQueo5bg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "log_codes": [
         "InvalidFileLink"
       ],
@@ -469,7 +481,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "Glb/YIaR+N6MXD9MT+aLWQ=="
+          "hash": "4KewUkNZH8Yv87SPDrpC7Q=="
         }
       },
       "is_incremental": false,
@@ -524,7 +536,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 36,
+          "total_file_count": 37,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

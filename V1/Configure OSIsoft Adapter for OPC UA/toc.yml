@@ -1,3 +1,7 @@
+- name: System components configuration
+  href: ../main/V1/Configure the adapter/System components configuration.md
+- name: Configure whole adapter
+  href: ../main/V1/Configure the adapter/Configure whole adapter.md
 - name: Configure data source
   href: Configure data source.md
 - name: Configure data selection

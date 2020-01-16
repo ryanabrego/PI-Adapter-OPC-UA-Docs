@@ -25,6 +25,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Administration.md",
       "output": {
@@ -172,6 +175,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "V1/main/V1/Administration/Administration.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1/Administration/Administration.html",
+          "hash": "7iklrm/9cMzI5SHXDKs7iQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Buffering/Buffering.md",
       "output": {
         ".html": {
@@ -258,9 +273,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Diagnostics/Adapter Diagnostics.md",
       "output": {
@@ -274,6 +286,7 @@
     },
     {
       "log_codes": [
+        "DuplicateUids",
         "InvalidFileLink"
       ],
       "type": "Conceptual",
@@ -569,7 +582,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 38,
+          "total_file_count": 39,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

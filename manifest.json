@@ -187,6 +187,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "V1/main/V1/Administration/Stop and start an OSIsoft adapter.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1/Administration/Stop and start an OSIsoft adapter.html",
+          "hash": "cp0cUcVYv2E2zs14OqLz+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Buffering/Buffering.md",
       "output": {
         ".html": {
@@ -273,6 +285,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Diagnostics/Adapter Diagnostics.md",
       "output": {
@@ -286,7 +301,6 @@
     },
     {
       "log_codes": [
-        "DuplicateUids",
         "InvalidFileLink"
       ],
       "type": "Conceptual",
@@ -582,7 +596,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 39,
+          "total_file_count": 40,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

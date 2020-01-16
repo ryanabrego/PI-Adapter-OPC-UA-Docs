@@ -76,6 +76,9 @@ references:
 - uid: SoftwareAndHardwareRequirements
   name: Software and hardware requirements
   href: V1/main/V1/Prepare%20for%20adapter%20installation/Software%20and%20hardware%20requirements.html
+- uid: StopAndStartAnOSIsoftAdapter
+  name: Stop and start an OSIsoft adapter
+  href: V1/main/V1/Administration/Stop%20and%20start%20an%20OSIsoft%20adapter.html
 - uid: SupportedFeatures
   name: Supported features
   href: V1/main/V1/Supported%20features.html

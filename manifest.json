@@ -258,12 +258,30 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Diagnostics/Adapter Diagnostics.md",
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Diagnostics/Adapter Diagnostics.html",
           "hash": "18ntx+ZZERORfuI3tGCJFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "V1/main/V1/Diagnostics/Diagnostics.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1/Diagnostics/Diagnostics.html",
+          "hash": "B3AqdXhWrdYSXxkX6bQYCQ=="
         }
       },
       "is_incremental": false,
@@ -398,7 +416,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Troubleshooting/Data buffering.html",
-          "hash": "UelbNuPvWKlkNB2L8FLntg=="
+          "hash": "Sa8j9m4poMiIwx9b1kohZA=="
         }
       },
       "is_incremental": false,
@@ -410,7 +428,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Troubleshooting/Logging.html",
-          "hash": "yOTi8LJUO7+UH+g6GhVvVg=="
+          "hash": "BrU9CuQ893lowntR+W4TOg=="
         }
       },
       "is_incremental": false,
@@ -422,7 +440,19 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Troubleshooting/Troubleshooting.html",
-          "hash": "5FQVFeu8FgYp4Nr6DCiYtA=="
+          "hash": "bon1yc/cYieLRC4i6KcQgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "V1/main/V1/Troubleshooting/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1/Troubleshooting/toc.html",
+          "hash": "eOaW0wvgLnZPjia590tr2A=="
         }
       },
       "is_incremental": false,
@@ -481,7 +511,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "4KewUkNZH8Yv87SPDrpC7Q=="
+          "hash": "n3vTWHjRurUT+Gy+p+J3qQ=="
         }
       },
       "is_incremental": false,
@@ -536,7 +566,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 37,
+          "total_file_count": 38,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

@@ -39,7 +39,7 @@ references:
   href: V1/main/V1/Prepare%20for%20adapter%20installation/Download%20OSIsoft%20Adapter.html
 - uid: EdgeDataStoreDiagnostics-ProductInformation
   name: Product versions
-  href: V1/main/V1/Diagnostics/ProductInformation.html
+  href: V1/main/V1/Administration/ProductInformation.html
 - uid: Egress_DataEndpoints_schema
   name: Egress endpoint configuration schema
   href: V1/main/V1/Configure%20the%20adapter/Egress_DataEndpoints_schema.html

@@ -187,6 +187,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "V1/main/V1/Administration/ProductInformation.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1/Administration/ProductInformation.html",
+          "hash": "yRGH4O6sHjnIiXBB2sZ33w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Administration/Stop and start an OSIsoft adapter.md",
       "output": {
         ".html": {
@@ -309,18 +321,6 @@
         ".html": {
           "relative_path": "V1/main/V1/Diagnostics/Diagnostics.html",
           "hash": "B3AqdXhWrdYSXxkX6bQYCQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Diagnostics/ProductInformation.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/main/V1/Diagnostics/ProductInformation.html",
-          "hash": "kkQV6JaRn3bYK4csLY4b3w=="
         }
       },
       "is_incremental": false,
@@ -534,14 +534,14 @@
     },
     {
       "log_codes": [
-        "InvalidFileLink"
+        "InvalidTocInclude"
       ],
       "type": "Toc",
       "source_relative_path": "V1/toc.yml",
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "Q0CkVr5mH/gqwKjKIji/Sw=="
+          "hash": "32XqORqebjTNgCE5da46bg=="
         }
       },
       "is_incremental": false,

@@ -4,6 +4,9 @@ references:
 - uid: AdapterDiagnostics
   name: Adapter diagnostics
   href: V1/main/V1/Diagnostics/Adapter%20Diagnostics.html
+- uid: Administration
+  name: Administration
+  href: V1/Administration.html
 - uid: BufferingConfiguration
   name: Overview
   href: V1/main/V1/Buffering/Buffering.html
@@ -70,9 +73,6 @@ references:
 - uid: PrepareForAdapterInstallation
   name: Prepare for adapter installation
   href: V1/main/V1/Prepare%20for%20adapter%20installation/Prepare%20for%20adapter%20installation.html
-- uid: RunOSIsoftAdapterForOPCUA
-  name: Run OSIsoft Adapter for OPC UA
-  href: V1/Run%20OSIsoft%20Adapter%20for%20OPC%20UA.html
 - uid: SoftwareAndHardwareRequirements
   name: Software and hardware requirements
   href: V1/main/V1/Prepare%20for%20adapter%20installation/Software%20and%20hardware%20requirements.html

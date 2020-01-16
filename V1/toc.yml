@@ -10,8 +10,9 @@
 - name: Configure OSIsoft Adapter for OPC UA
   href: Configure OSIsoft Adapter for OPC UA/toc.yml
   topicHref: Configure OSIsoft Adapter for OPC UA/Configure OSIsoft Adapter for OPC UA.md
-- name: Run OSIsoft Adapter for OPC UA
-  topicHref: Run OSIsoft Adapter for OPC UA.md
+- name: Administration
+  href: main/V1/Administration/toc.yml
+  topicHref: Administration.md
 - name: Health
   href: main/V1/Health/toc.yml
   topicHref: main/V1/Health/Health.md

@@ -25,9 +25,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Administration.md",
       "output": {
@@ -174,6 +171,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Administration/Administration.md",
       "output": {
@@ -187,11 +187,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Administration/ProductInformation.md",
+      "source_relative_path": "V1/main/V1/Administration/Retrieve product version information.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Administration/ProductInformation.html",
-          "hash": "yRGH4O6sHjnIiXBB2sZ33w=="
+          "relative_path": "V1/main/V1/Administration/Retrieve product version information.html",
+          "hash": "9y9TvUDnfUnNhKvGDia1jQ=="
         }
       },
       "is_incremental": false,
@@ -533,15 +533,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidTocInclude"
-      ],
       "type": "Toc",
       "source_relative_path": "V1/toc.yml",
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "32XqORqebjTNgCE5da46bg=="
+          "hash": "NEkhFLlMTOT66KOD40EP2A=="
         }
       },
       "is_incremental": false,

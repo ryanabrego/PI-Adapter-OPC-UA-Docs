@@ -112,12 +112,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA principles of operation.md",
       "output": {
         ".html": {
           "relative_path": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA principles of operation.html",
-          "hash": "QR9Y63itqMYQQ9ZvEsB3NA=="
+          "hash": "MuhT3EcujCf7Khc2dK6sjA=="
         }
       },
       "is_incremental": false,
@@ -129,7 +132,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA supported features.html",
-          "hash": "FEPsM+zsfiBw9MTujg12nQ=="
+          "hash": "DFd6LPhV7spifogf9OPk3w=="
         }
       },
       "is_incremental": false,

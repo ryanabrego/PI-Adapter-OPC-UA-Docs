@@ -82,7 +82,7 @@ Complete the following steps in order for this template data selection to be gen
 
 1. Add an [OPC UA adapter](xref:EdgeDataStoreConfiguration) with a unique ComponentId. 
 
-  During the installation of Edge Data Store, enabling the OPC UA adapter results in addition of a unique component that also satisfies this condition.
+    During the installation of Edge Data Store, enabling the OPC UA adapter results in addition of a unique component that also satisfies this condition.
   
 2. Configure a valid [OPC UA Data Source](xref:opcUaOverview).
 

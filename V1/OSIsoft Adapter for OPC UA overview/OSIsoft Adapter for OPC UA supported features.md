@@ -6,7 +6,7 @@ uid: OSIsoftAdapterForOPCUASupportedFeatures
 
 ## Data types
 
-The following table lists OPC UA variable types that the OPC UA EDS adapter supports data collection from and types of streams that are going to be created in Edge Data Store.
+The following table lists OPC UA variable types that the OPC UA adapter supports data collection from and types of streams that are going to be created.
 
 | OPC UA data type | Stream data type |
 |------------------|------------------|
@@ -26,6 +26,6 @@ The following table lists OPC UA variable types that the OPC UA EDS adapter supp
 
 ## Export operation
 
-The OPC UA EDS adapter is able to export available OPC UA dynamic variables by browsing the OPC UA hierarchies or sub-hierarchies. You can limit browsing by specifying a comma-separated collection of nodeIds in data source configuration (RootNodeIds) which are treated as a roots from where the adapter starts the browse operation. The adapter triggers an export operation after a successful connection to the OPC UA server when the data selection file does not exist in configuration directory. You can copy the exported data selection JSON file from the directory or retrieve it using a REST API call.
+The OPC UA adapter is able to export available OPC UA dynamic variables by browsing the OPC UA hierarchies or sub-hierarchies. You can limit browsing by specifying a comma-separated collection of nodeIds in data source configuration (RootNodeIds) which are treated as a roots from where the adapter starts the browse operation. The adapter triggers an export operation after a successful connection to the OPC UA server when the data selection file does not exist in configuration directory. You can copy the exported data selection JSON file from the directory or retrieve it using a REST API call.
 
 You can also create the data selection file manually in order to avoid a potentially long and expensive browse operation. You can configure it before you configure the data source or push both in one configuration call together.

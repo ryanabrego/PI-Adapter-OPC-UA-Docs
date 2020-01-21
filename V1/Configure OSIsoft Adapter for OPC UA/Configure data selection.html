@@ -78,6 +78,154 @@
             <article class="content wrap" id="_content" data-uid="ConfigureDataSelectionOPCUA">
 <h1 id="configure-data-selection">Configure data selection</h1>
 
+<p>In addition to the data source configuration, you need to provide a data selection configuration to specify the data you want the OPC UA adapter to collect from the data sources.</p>
+<h2 id="configure-opc-ua-data-selection">Configure OPC UA data selection</h2>
+<blockquote><p><strong>Note:</strong> You cannot modify OPC UA data selection configurations manually. You must use the REST endpoints to add or edit the configuration.</p>
+</blockquote>
+<p>Complete the following to configure the OPC UA data selection:</p>
+<ol>
+<li>Using any text editor, create a file that contains an OPC UA data selection in JSON form.<ul>
+<li>For content structure, see <a href="#opc-ua-data-selection-example">OPC UA data selection example</a>.</li>
+<li>For a table of all available parameters, see <a href="#parameters-for-opc-ua-data-selection">Parameters for OPC UA data selection</a>.</li>
+</ul>
+</li>
+<li>Save the file as <em>DataSelection.config.json</em>.</li>
+<li>Use any <a href="xref:ConfigurationTools">Configuration tool</a> capable of making HTTP requests to execute a POST command with the contents of that file to the following endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;EDS adapterId&gt;/DataSelection/</code></li>
+</ol>
+<p>The following example shows the HTTPS request using curl (run this command from the same directory where the file is located):</p>
+<blockquote><p><strong>Note:</strong> During installation, you can add a single OPC UA adapter named OpcUA1. The following example uses this component name.</p>
+</blockquote>
+<pre><code class="lang-bash">curl -v -d &quot;@DataSelection.config.json&quot; -H &quot;Content-Type: application/json&quot; &quot;http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection&quot;
+</code></pre><h2 id="opc-ua-data-selection-schema">OPC UA data selection schema</h2>
+<p>The following table shows the basic behavior of the <em>OpcUa_DataSelection_schema.json</em> file.</p>
+<table>
+<thead>
+<tr>
+<th>Abstract</th>
+<th>Extensible</th>
+<th>Status</th>
+<th>Identifiable</th>
+<th>Custom properties</th>
+<th>Additional properties</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Can be instantiated</td>
+<td>Yes</td>
+<td>Experimental</td>
+<td>No</td>
+<td>Forbidden</td>
+<td>Forbidden</td>
+</tr>
+</tbody>
+</table>
+<h2 id="parameters-for-opc-ua-data-selection">Parameters for OPC UA data selection</h2>
+<p>The following parameters can be used to configure OPC UA data selection:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Type</th>
+<th>Nullable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Selected</strong></td>
+<td>Optional</td>
+<td><code>boolean</code></td>
+<td>No</td>
+<td>Use this field to select or clear a measurement. To select an item, set to true. To remove an item, leave the field empty or set to false.  If not configured, the default value is false.</td>
+</tr>
+<tr>
+<td><strong>Name</strong></td>
+<td>Optional</td>
+<td><code>string</code></td>
+<td>Yes</td>
+<td>The optional friendly name of the data item collected from the data source. If not configured, the default value will be the stream id.</td>
+</tr>
+<tr>
+<td><strong>NodeId</strong></td>
+<td>Required</td>
+<td><code>string</code></td>
+<td>Yes</td>
+<td>The NodeId of the variable.</td>
+</tr>
+<tr>
+<td><strong>StreamID</strong></td>
+<td>Optional</td>
+<td><code>string</code></td>
+<td>Yes</td>
+<td>The custom stream ID used to create the streams. If not specified, the OPC UA adapter will generate a default stream ID based on the measurement configuration. A properly configured custom stream ID follows these rules:<br><br>Is not case-sensitive.<br>Can contain spaces.<br>Cannot start with two underscores (&quot;__&quot;).<br>Can contain a maximum of 100 characters.<br>Cannot use the following characters: / : ? # [ ] @ ! $ &amp; &#39; ( ) \ * + , ; = % &lt; &gt; &#124;<br>Cannot start or end with a period.<br>Cannot contain consecutive periods.<br>Cannot consist of only periods.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="opc-ua-data-selection-example">OPC UA data selection example</h2>
+<p>The following is an example of valid OPC UA data selection configuration:</p>
+<pre><code class="lang-json">[
+ {
+    &quot;Selected&quot;: true,
+    &quot;Name&quot;: &quot;Random1&quot;,
+    &quot;NodeId&quot;: &quot;ns=5;s=Random1&quot;,
+    &quot;StreamId&quot;: &quot;CustomStreamName&quot;
+  },
+  {
+    &quot;Selected&quot;: false,
+    &quot;Name&quot;: &quot;Sawtooth1&quot;,
+    &quot;NodeId&quot;: &quot;ns=5;s=Sawtooth1&quot;,
+    &quot;StreamId&quot;: null
+  },
+  {
+    &quot;Selected&quot;: true,
+    &quot;Name&quot;: &quot;Sinusoid1&quot;,
+    &quot;NodeId&quot;: &quot;ns=5;s=Sinusoid1&quot;,
+    &quot;StreamId&quot;: null
+  }
+]
+</code></pre><h2 id="generate-template-opc-ua-data-selection-configuration-file">Generate template OPC UA data selection configuration file</h2>
+<p>When you add a data source, the OPC UA adapter browses the entire OPC UA server address space and exports the available OPC UA variables into a JSON file for data selection. Data is collected automatically based upon user demands. OPC UA data from OPC UA variables is read through subscriptions (unsolicited reads).</p>
+<p>A default OPC UA data source template file will be created if there is no OPC UA data selection configuration, but a valid OPC UA data source exists.</p>
+<p>Complete the following steps in order for this template data selection to be generated:</p>
+<ol>
+<li><p>Add an <a href="xref:EdgeDataStoreConfiguration">OPC UA adapter</a> with a unique ComponentId. </p>
+<p> During the installation of Edge Data Store, enabling the OPC UA adapter results in addition of a unique component that also satisfies this condition.</p>
+</li>
+<li><p>Configure a valid <a href="xref:opcUaOverview">OPC UA Data Source</a>.</p>
+<p>Once you complete these steps, a template OPC UA data selection will be generated in the Configuration directory for the corresponding platform. Also see <a href="xref:linuxWindows">Linux and Windows platform differences</a>. The following are example locations of the file created. In this example, it is assumed that the ComponentId of the OPC UA component is the default OpcUa1:</p>
+<pre><code class="lang-bash">Windows: %programdata%\OSIsoft\EdgeDataStore\Configuration\OpcUa1_DataSelection.json
+
+Linux: /usr/share/OSIsoft/EdgeDataStore/Configuration/OpcUa1_DataSelection.json
+</code></pre></li>
+<li><p>Copy the file to a different directory to edit it. </p>
+<p>The contents of the file will look something like:</p>
+<pre><code class="lang-json">[
+{
+  &quot;Selected&quot;: false,
+  &quot;Name&quot;: &quot;Cold Side Inlet Temperature&quot;,
+  &quot;NodeId&quot;: &quot;ns=2;s=Line1.HeatExchanger1001.ColdSideInletTemperature&quot;,
+  &quot;StreamId&quot;: null
+ },
+ {
+  &quot;Selected&quot;: false,
+  &quot;Name&quot;: &quot;Cold Side Outlet Temperature&quot;,
+  &quot;NodeId&quot;: &quot;ns=2;s=Line1.HeatExchanger1001.ColdSideOutletTemperature&quot;,
+  &quot;StreamId&quot;: null
+ }
+]
+</code></pre></li>
+<li><p>In a text editor, edit the file and change the value of any Selected key from false to true in order to transfer the OPC UA data to be stored in Edge Data Store. </p>
+</li>
+<li><p>In the same directory where you edited the file, run the following curl command:</p>
+<pre><code class="lang-bash">curl -i -d &quot;@OpcUa1_DataSelection.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT http://localhost:5590/api/v1/configuration/OpcUa1/Dataselection
+</code></pre></li>
+</ol>
+<p>To see the streams that have been created in Edge Storage to store the data you are writing, run the following curl script:</p>
+<pre><code class="lang-bash">curl http://localhost:5590/api/v1/tenants/default/namespaces/default/streams/
+</code></pre><p>To view the data in the streams being written, refer to <a href="xref:sdsOverview">Sequential Data Store (SDS)</a>.</p>
+<p>To egress the data to OSIsoft Cloud Services or the PI System, see <a href="xref:egress">Data egress configuration</a>.</p>
 </article>
           </div>
           

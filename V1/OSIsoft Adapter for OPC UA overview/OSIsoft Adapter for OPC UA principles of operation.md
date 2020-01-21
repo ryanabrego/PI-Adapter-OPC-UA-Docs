@@ -18,7 +18,7 @@ For more information, see [OPC UA data source configuration](xref:OPCUADataSourc
 
 ## Connection
 
-The OPC UA adapter uses the binary opc.tcp protocol to communicate with the OPC UA servers. When security is enabled, the X.509-type client and server certificates are exchanged and verified and the connection to the configured OPC UA server is established.
+The OPC UA adapter uses the binary opc.tcp protocol to communicate with the OPC UA servers. When a secured connection is enabled, the X.509-type client and server certificates are exchanged and verified and the connection between the OPC UA adapter and the configured OPC UA server is established.
 
 ## Stream creation
 

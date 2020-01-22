@@ -78,6 +78,31 @@
             <article class="content wrap" id="_content" data-uid="StopAndStartAnOSIsoftAdapter">
 <h1 id="stop-and-start-an-osisoft-adapter">Stop and start an OSIsoft adapter</h1>
 
+<p>You can stop and start OSIsoft adapters. By default, all currently configured OSIsoft adapters are started and remain running until the product shuts down.</p>
+<h2 id="stop-an-osisoft-adapter">Stop an OSIsoft adapter</h2>
+<ul>
+<li><p>To stop an individual OSIsoft adapter, use any REST client and make a request using the following:</p>
+<pre><code class="lang-http">Method: POST
+Endpoint: http://localhost:5590/api/v1/administration/OSIsoft adapterId/Stop
+Header: Content-Type application/json
+</code></pre><p>  Example using cURL:</p>
+<pre><code class="lang-bash">curl -v -d &quot;&quot; http://localhost:5590/api/v1/Administration/OSIsoft adapterId/Stop
+</code></pre><p>  <strong>Note:</strong> Replace <em>OSIsoft adapterId</em> with the ID of the OSIsoft adapter you want to stop.</p>
+<p>  An HTTP status 204 message indicates success.</p>
+</li>
+</ul>
+<h2 id="start-an-osisoft-adapter">Start an OSIsoft adapter</h2>
+<ul>
+<li><p>To start an individual OSIsoft adapter, use any REST client and make a request using the following:</p>
+<pre><code class="lang-http">Method: POST
+Endpoint: http://localhost:5590/api/v1/administration/OSIsoft adapterId/Start
+Header: Content-Type application/json
+</code></pre><p>  Example using cURL:</p>
+<pre><code class="lang-bash">curl -v -d &quot;&quot; http://localhost:5590/api/v1/Administration/OSIsoft adapterId/Start
+</code></pre><p>  <strong>Note:</strong> Replace <em>OSIsoft adapterId</em> with the ID of the OSIsoft adapter you want to start.</p>
+<p>  An HTTP status 204 message indicates success.</p>
+</li>
+</ul>
 </article>
           </div>
           

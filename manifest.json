@@ -25,6 +25,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Administration.md",
       "output": {
@@ -64,12 +67,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Configure OSIsoft Adapter for OPC UA/Configure data source.md",
       "output": {
         ".html": {
           "relative_path": "V1/Configure OSIsoft Adapter for OPC UA/Configure data source.html",
-          "hash": "PSdZOqLnoMn6XXw2sN/PJw=="
+          "hash": "WTEEWTlWtiJaE50GlusPhQ=="
         }
       },
       "is_incremental": false,
@@ -195,9 +201,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Administration/Administration.md",
       "output": {
@@ -321,6 +324,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Diagnostics/Adapter Diagnostics.md",
       "output": {
@@ -334,7 +340,6 @@
     },
     {
       "log_codes": [
-        "DuplicateUids",
         "InvalidFileLink"
       ],
       "type": "Conceptual",

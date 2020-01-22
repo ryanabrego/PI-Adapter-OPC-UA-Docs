@@ -4,8 +4,8 @@
 - name: Prepare for adapter installation
   href: main/V1/Prepare for adapter installation/toc.yml
   topicHref: main/V1/Prepare for adapter installation/Prepare for adapter installation.md
-- name: Install the adapter
-  href: main/V1/Install the adapter/toc.yml
+- name: Installation
+  href: main/V1/Installation/toc.yml
   topicHref: main/V1/Install the adapter/Install the adapter.md
 - name: Configure OSIsoft Adapter for OPC UA
   href: Configure OSIsoft Adapter for OPC UA/toc.yml

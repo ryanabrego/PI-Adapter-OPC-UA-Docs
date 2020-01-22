@@ -55,6 +55,9 @@ references:
 - uid: NextHealthMessageExpected
   name: Next Health Message Expected
   href: V1/main/V1/Health/Next%20health%20message%20expected.html
+- uid: OPCUAInstallation
+  name: Installation
+  href: V1/main/V1/Installation/Installation.html
 - uid: OSIsoftAdapterForOPCUADiagnostics
   name: OSIsoft Adapter for OPC UA diagnostics
   href: V1/OSIsoft%20Adapter%20for%20OPC%20UA%20diagnostics/OSIsoft%20Adapter%20for%20OPC%20UA%20diagnostics.html

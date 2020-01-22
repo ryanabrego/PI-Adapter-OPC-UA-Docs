@@ -34,9 +34,6 @@ references:
 - uid: DeviceStatus
   name: Device Status
   href: V1/main/V1/Health/Device%20status.html
-- uid: DownloadOSIsoftAdapter
-  name: Download OSIsoft Adapter
-  href: V1/main/V1/Prepare%20for%20adapter%20installation/Download%20OSIsoft%20Adapter.html
 - uid: Egress_DataEndpoints_schema
   name: Egress endpoint configuration schema
   href: V1/main/V1/Configure%20the%20adapter/Egress_DataEndpoints_schema.html
@@ -54,7 +51,7 @@ references:
   href: V1/main/V1/Installation/Installation%20prerequisites.html
 - uid: InstallTheAdapter
   name: Install the adapter
-  href: V1/main/V1/Install%20the%20adapter/Install%20the%20adapter.html
+  href: V1/main/V1/Installation/Install%20the%20adapter.html
 - uid: NextHealthMessageExpected
   name: Next Health Message Expected
   href: V1/main/V1/Health/Next%20health%20message%20expected.html
@@ -93,7 +90,7 @@ references:
   href: V1/main/V1/Troubleshooting/Logging.html
 - uid: UninstallTheAdapter
   name: Uninstall the adapter
-  href: V1/main/V1/Install%20the%20adapter/Uninstall%20the%20adapter.html
+  href: V1/main/V1/Installation/Uninstall%20the%20adapter.html
 - uid: WholeAdapterConfiguration
   name: Configure whole adapter
   href: V1/main/V1/Configure%20the%20adapter/Configure%20whole%20adapter.html

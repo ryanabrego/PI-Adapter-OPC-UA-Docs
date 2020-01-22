@@ -25,9 +25,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Administration.md",
       "output": {
@@ -156,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA supported features.html",
-          "hash": "DFd6LPhV7spifogf9OPk3w=="
+          "hash": "PRPN7H2LJIcoHs0Sys0rQw=="
         }
       },
       "is_incremental": false,
@@ -201,6 +198,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Administration/Administration.md",
       "output": {
@@ -324,9 +324,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Diagnostics/Adapter Diagnostics.md",
       "output": {
@@ -340,6 +337,7 @@
     },
     {
       "log_codes": [
+        "DuplicateUids",
         "InvalidFileLink"
       ],
       "type": "Conceptual",
@@ -394,23 +392,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Install the adapter/Install the adapter.md",
+      "source_relative_path": "V1/main/V1/Installation/Install the adapter.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Install the adapter/Install the adapter.html",
-          "hash": "wB5v2YY99S7FGs6RpCdedA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Install the adapter/Uninstall the adapter.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/main/V1/Install the adapter/Uninstall the adapter.html",
-          "hash": "RZsmG9HM4V7r+wx/IvL26w=="
+          "relative_path": "V1/main/V1/Installation/Install the adapter.html",
+          "hash": "lShWJRYAmCv2hVtwSME2YA=="
         }
       },
       "is_incremental": false,
@@ -422,7 +408,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Installation/Installation prerequisites.html",
-          "hash": "Ny9PAEJfIn8sURKU9VCUTw=="
+          "hash": "VR0zCZMTh61whbLCB5AXOA=="
         }
       },
       "is_incremental": false,
@@ -430,11 +416,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Prepare for adapter installation/Download OSIsoft Adapter.md",
+      "source_relative_path": "V1/main/V1/Installation/Uninstall the adapter.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Prepare for adapter installation/Download OSIsoft Adapter.html",
-          "hash": "V8z+mnn+eztfHHRet/9xLw=="
+          "relative_path": "V1/main/V1/Installation/Uninstall the adapter.html",
+          "hash": "UFENFWaDMqrsgdDNjRIPDQ=="
         }
       },
       "is_incremental": false,
@@ -545,7 +531,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "brfVZq5RIhzKvyk6G/jUmw=="
+          "hash": "rrS5N3xCPWrAvcHuEToBAw=="
         }
       },
       "is_incremental": false,
@@ -560,7 +546,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "52dy67Rqr3fj1vCn1NoIiA=="
+          "hash": "ZwqMb2fYflANzAARO2TH5g=="
         }
       },
       "is_incremental": false,
@@ -600,7 +586,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 39,
+          "total_file_count": 38,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

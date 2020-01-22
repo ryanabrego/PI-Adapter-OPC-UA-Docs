@@ -4,6 +4,8 @@
   href: ../main/V1/Configure the adapter/Configure whole adapter.md
 - name: Configure data source
   href: Configure data source.md
+- name: Generate default OPC UA data selection configuration file
+  href: Generate default OPC UA data selection configuration file.md
 - name: Configure data selection
   href: Configure data selection.md
 - name: Configure message logging

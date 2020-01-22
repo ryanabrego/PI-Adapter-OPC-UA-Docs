@@ -40,6 +40,9 @@ references:
 - uid: Egress_DataEndpoints_schema
   name: Egress endpoint configuration schema
   href: V1/main/V1/Configure%20the%20adapter/Egress_DataEndpoints_schema.html
+- uid: GenerateDefaultDataSelectionConfigFile
+  name: Generate default OPC UA data selection configuration file
+  href: V1/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA/Generate%20default%20OPC%20UA%20data%20selection%20configuration%20file.html
 - uid: Health
   name: Adapter health
   href: V1/main/V1/Health/Health.html

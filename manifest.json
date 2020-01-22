@@ -79,6 +79,21 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "V1/Configure OSIsoft Adapter for OPC UA/Generate default OPC UA data selection configuration file.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/Configure OSIsoft Adapter for OPC UA/Generate default OPC UA data selection configuration file.html",
+          "hash": "FSMeVva2ocf8H79OzPI2Ww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "V1/OSIsoft Adapter for OPC UA diagnostics/OSIsoft Adapter for OPC UA diagnostics.md",
       "output": {
@@ -306,9 +321,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Diagnostics/Adapter Diagnostics.md",
       "output": {
@@ -322,6 +334,7 @@
     },
     {
       "log_codes": [
+        "DuplicateUids",
         "InvalidFileLink"
       ],
       "type": "Conceptual",
@@ -535,7 +548,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "N/AbVGUpBbhDzAkg4Flw0Q=="
+          "hash": "Dsf9Iex97nRh6xDYsF8kfw=="
         }
       },
       "is_incremental": false,
@@ -597,7 +610,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 39,
+          "total_file_count": 40,
           "skipped_file_count": 0
         }
       }

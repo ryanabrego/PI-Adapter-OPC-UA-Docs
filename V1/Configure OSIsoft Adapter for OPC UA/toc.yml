@@ -9,5 +9,5 @@
 - name: Configure message logging
   href: ../main/V1/Configure the adapter/Configure message logging.md
 - name: Configure endpoints
-  href: ../main/V1/Configure the adapter/Configure endpoints.md
-
+  href: ../main/V1/Configure the adapter/toc.yml
+  topicHref: ../main/V1/Configure the adapter/Configure endpoints.md

@@ -185,48 +185,7 @@
     &quot;StreamId&quot;: null
   }
 ]
-</code></pre><h2 id="generate-template-opc-ua-data-selection-configuration-file">Generate template OPC UA data selection configuration file</h2>
-<p>When you add a data source, the OPC UA adapter browses the entire OPC UA server address space and exports the available OPC UA variables into a JSON file for data selection. Data is collected automatically based upon user demands. OPC UA data from OPC UA variables is read through subscriptions (unsolicited reads).</p>
-<p>A default OPC UA data source template file will be created if there is no OPC UA data selection configuration, but a valid OPC UA data source exists.</p>
-<p>Complete the following steps in order for this template data selection to be generated:</p>
-<ol>
-<li><p>Add an <a href="xref:EdgeDataStoreConfiguration">OPC UA adapter</a> with a unique ComponentId. </p>
-<p> During the installation of Edge Data Store, enabling the OPC UA adapter results in addition of a unique component that also satisfies this condition.</p>
-</li>
-<li><p>Configure a valid <a href="xref:opcUaOverview">OPC UA Data Source</a>.</p>
-<p>Once you complete these steps, a template OPC UA data selection will be generated in the Configuration directory for the corresponding platform. Also see <a href="xref:linuxWindows">Linux and Windows platform differences</a>. The following are example locations of the file created. In this example, it is assumed that the ComponentId of the OPC UA component is the default OpcUa1:</p>
-<pre><code class="lang-bash">Windows: %programdata%\OSIsoft\EdgeDataStore\Configuration\OpcUa1_DataSelection.json
-
-Linux: /usr/share/OSIsoft/EdgeDataStore/Configuration/OpcUa1_DataSelection.json
-</code></pre></li>
-<li><p>Copy the file to a different directory to edit it. </p>
-<p>The contents of the file will look something like:</p>
-<pre><code class="lang-json">[
-{
-  &quot;Selected&quot;: false,
-  &quot;Name&quot;: &quot;Cold Side Inlet Temperature&quot;,
-  &quot;NodeId&quot;: &quot;ns=2;s=Line1.HeatExchanger1001.ColdSideInletTemperature&quot;,
-  &quot;StreamId&quot;: null
- },
- {
-  &quot;Selected&quot;: false,
-  &quot;Name&quot;: &quot;Cold Side Outlet Temperature&quot;,
-  &quot;NodeId&quot;: &quot;ns=2;s=Line1.HeatExchanger1001.ColdSideOutletTemperature&quot;,
-  &quot;StreamId&quot;: null
- }
-]
-</code></pre></li>
-<li><p>In a text editor, edit the file and change the value of any Selected key from false to true in order to transfer the OPC UA data to be stored in Edge Data Store. </p>
-</li>
-<li><p>In the same directory where you edited the file, run the following curl command:</p>
-<pre><code class="lang-bash">curl -i -d &quot;@OpcUa1_DataSelection.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT http://localhost:5590/api/v1/configuration/OpcUa1/Dataselection
-</code></pre></li>
-</ol>
-<p>To see the streams that have been created in Edge Storage to store the data you are writing, run the following curl script:</p>
-<pre><code class="lang-bash">curl http://localhost:5590/api/v1/tenants/default/namespaces/default/streams/
-</code></pre><p>To view the data in the streams being written, refer to <a href="xref:sdsOverview">Sequential Data Store (SDS)</a>.</p>
-<p>To egress the data to OSIsoft Cloud Services or the PI System, see <a href="xref:egress">Data egress configuration</a>.</p>
-</article>
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

@@ -25,9 +25,6 @@ references:
 - uid: ConfigureOSIsoftAdapterForOPCUA
   name: Configure OSIsoft Adapter for OPC UA
   href: V1/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA.html
-- uid: DataBuffering
-  name: Data buffering
-  href: V1/main/V1/Data%20buffering.html
 - uid: DeleteAdapter
   name: Delete an Adapter
   href: V1/main/V1/AdapterDeletion/DeleteAdapter.html
@@ -79,9 +76,6 @@ references:
 - uid: StopAndStartAnOSIsoftAdapter
   name: Stop and start an OSIsoft adapter
   href: V1/main/V1/Administration/Stop%20and%20start%20an%20OSIsoft%20adapter.html
-- uid: SupportedFeatures
-  name: Supported features
-  href: V1/main/V1/Supported%20features.html
 - uid: SystemComponentsConfiguration
   name: System components configuration
   href: V1/main/V1/Configure%20the%20adapter/System%20components%20configuration.html

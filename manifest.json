@@ -291,18 +291,6 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Data buffering.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/main/V1/Data buffering.html",
-          "hash": "76EBO8LOkjGQ3JjgtKECMA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "log_codes": [
         "DuplicateUids"
       ],
@@ -433,18 +421,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Supported features.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/main/V1/Supported features.html",
-          "hash": "SOYzUceDKxYK17cUPac3nA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Troubleshooting/Data buffering.md",
       "output": {
         ".html": {
@@ -544,7 +520,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "HwPBC1WAstoIpBcnLqFJbg=="
+          "hash": "omH3IWXnSNTvqYoVSQQGug=="
         }
       },
       "is_incremental": false,
@@ -559,7 +535,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "Xd5t1IAnl75Jx38+9D0bZA=="
+          "hash": "qbJnpXRikVdJldh34Nm7Rg=="
         }
       },
       "is_incremental": false,
@@ -599,7 +575,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 40,
+          "total_file_count": 38,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

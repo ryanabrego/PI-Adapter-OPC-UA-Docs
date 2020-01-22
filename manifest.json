@@ -103,12 +103,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA overview.md",
       "output": {
         ".html": {
           "relative_path": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA overview.html",
-          "hash": "6eDxaqwHWsXt3RGXuBaa2A=="
+          "hash": "vAtBOZ5PqcB1t2XYGP4T3g=="
         }
       },
       "is_incremental": false,
@@ -217,11 +220,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Buffering/Buffering.md",
+      "source_relative_path": "V1/main/V1/Configure the adapter/Configure buffering.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Buffering/Buffering.html",
-          "hash": "3fSUPCg/Hs+LNWi2XPpYXw=="
+          "relative_path": "V1/main/V1/Configure the adapter/Configure buffering.html",
+          "hash": "Y4+0kdHJa1YGcEDgKt35dA=="
         }
       },
       "is_incremental": false,
@@ -234,6 +237,18 @@
         ".html": {
           "relative_path": "V1/main/V1/Configure the adapter/Configure endpoints.html",
           "hash": "ELlOEMfMB3E57UMYnQMoBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/main/V1/Configure the adapter/Configure health and diagnostics.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1/Configure the adapter/Configure health and diagnostics.html",
+          "hash": "rhiauLjnpOVeNlhGAVFzpQ=="
         }
       },
       "is_incremental": false,
@@ -520,7 +535,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "omH3IWXnSNTvqYoVSQQGug=="
+          "hash": "N/AbVGUpBbhDzAkg4Flw0Q=="
         }
       },
       "is_incremental": false,
@@ -572,17 +587,17 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 38,
-          "skipped_file_count": 0
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 39,
           "skipped_file_count": 0
         }
       }

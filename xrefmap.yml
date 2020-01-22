@@ -51,7 +51,7 @@ references:
   href: index.html
 - uid: Installation prerequisites
   name: Installation prerequisites
-  href: V1/main/V1/Prepare%20for%20adapter%20installation/Installation%20prerequisites.html
+  href: V1/main/V1/Installation/Installation%20prerequisites.html
 - uid: InstallTheAdapter
   name: Install the adapter
   href: V1/main/V1/Install%20the%20adapter/Install%20the%20adapter.html
@@ -73,9 +73,6 @@ references:
 - uid: OSIsoftAdapterForOPCUASupportedFeatures
   name: OSIsoft Adapter for OPC UA supported features
   href: V1/OSIsoft%20Adapter%20for%20OPC%20UA%20overview/OSIsoft%20Adapter%20for%20OPC%20UA%20supported%20features.html
-- uid: PrepareForAdapterInstallation
-  name: Prepare for adapter installation
-  href: V1/main/V1/Prepare%20for%20adapter%20installation/Prepare%20for%20adapter%20installation.html
 - uid: RetrieveProductVersionInformation
   name: Retrieve product version information
   href: V1/main/V1/Administration/Retrieve%20product%20version%20information.html

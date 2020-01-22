@@ -25,6 +25,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Administration.md",
       "output": {
@@ -198,9 +201,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Administration/Administration.md",
       "output": {
@@ -324,6 +324,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Diagnostics/Adapter Diagnostics.md",
       "output": {
@@ -337,7 +340,6 @@
     },
     {
       "log_codes": [
-        "DuplicateUids",
         "InvalidFileLink"
       ],
       "type": "Conceptual",
@@ -416,35 +418,23 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "V1/main/V1/Installation/Installation prerequisites.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1/Installation/Installation prerequisites.html",
+          "hash": "Ny9PAEJfIn8sURKU9VCUTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Prepare for adapter installation/Download OSIsoft Adapter.md",
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Prepare for adapter installation/Download OSIsoft Adapter.html",
           "hash": "V8z+mnn+eztfHHRet/9xLw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Prepare for adapter installation/Installation prerequisites.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/main/V1/Prepare for adapter installation/Installation prerequisites.html",
-          "hash": "DfwDkRwtK8538oMuR3FWLQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Prepare for adapter installation/Prepare for adapter installation.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/main/V1/Prepare for adapter installation/Prepare for adapter installation.html",
-          "hash": "DZdpof+bnv/1A/rdoAagpw=="
         }
       },
       "is_incremental": false,
@@ -546,12 +536,16 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidTocInclude",
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "V1/toc.yml",
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "iEpd87+OPOS1yZ25RQ3n7g=="
+          "hash": "brfVZq5RIhzKvyk6G/jUmw=="
         }
       },
       "is_incremental": false,
@@ -566,7 +560,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "kbVoHQ9l2QQWPhohzrPX2Q=="
+          "hash": "52dy67Rqr3fj1vCn1NoIiA=="
         }
       },
       "is_incremental": false,
@@ -606,7 +600,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 40,
+          "total_file_count": 39,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

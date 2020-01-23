@@ -28,9 +28,9 @@ references:
 - uid: ConfigureOSIsoftAdapterForOPCUA
   name: Configure OSIsoft Adapter for OPC UA
   href: V1/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA.html
-- uid: DeleteAdapter
-  name: Delete an Adapter
-  href: V1/main/V1/AdapterDeletion/DeleteAdapter.html
+- uid: DeleteAnAdapterComponent
+  name: Delete an adapter component
+  href: V1/main/V1/Administration/Delete%20an%20adapter%20component.html
 - uid: DeviceStatus
   name: Device Status
   href: V1/main/V1/Health/Device%20status.html
@@ -76,9 +76,9 @@ references:
 - uid: RetrieveProductVersionInformation
   name: Retrieve product version information
   href: V1/main/V1/Administration/Retrieve%20product%20version%20information.html
-- uid: StopAndStartAnOSIsoftAdapter
-  name: Stop and start an OSIsoft adapter
-  href: V1/main/V1/Administration/Stop%20and%20start%20an%20OSIsoft%20adapter.html
+- uid: StartAndStopAnAdapter
+  name: Start and stop an adapter
+  href: V1/main/V1/Administration/Start%20and%20stop%20an%20adapter.html
 - uid: SystemComponentsConfiguration
   name: System components configuration
   href: V1/main/V1/Configure%20the%20adapter/System%20components%20configuration.html

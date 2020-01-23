@@ -25,6 +25,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Administration.md",
       "output": {
@@ -57,7 +60,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Configure OSIsoft Adapter for OPC UA/Configure data selection.html",
-          "hash": "Bne6SBvgbDkbRywSS1zxRQ=="
+          "hash": "lC5YTNhBMecSV/lp0pNslg=="
         }
       },
       "is_incremental": false,
@@ -180,15 +183,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/AdapterDeletion/DeleteAdapter.md",
+      "source_relative_path": "V1/main/V1/Administration/Administration.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/AdapterDeletion/DeleteAdapter.html",
-          "hash": "4qsNGhQSCo+cbmf0xCWAcg=="
+          "relative_path": "V1/main/V1/Administration/Administration.html",
+          "hash": "7iklrm/9cMzI5SHXDKs7iQ=="
         }
       },
       "is_incremental": false,
@@ -196,14 +196,14 @@
     },
     {
       "log_codes": [
-        "DuplicateUids"
+        "InvalidFileLink"
       ],
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Administration/Administration.md",
+      "source_relative_path": "V1/main/V1/Administration/Delete an adapter component.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Administration/Administration.html",
-          "hash": "7iklrm/9cMzI5SHXDKs7iQ=="
+          "relative_path": "V1/main/V1/Administration/Delete an adapter component.html",
+          "hash": "gDVL7aiCB3mIbCW7h18/TA=="
         }
       },
       "is_incremental": false,
@@ -223,11 +223,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Administration/Stop and start an OSIsoft adapter.md",
+      "source_relative_path": "V1/main/V1/Administration/Start and stop an adapter.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Administration/Stop and start an OSIsoft adapter.html",
-          "hash": "IB1PZiv+X2zZMn3hhPU5jA=="
+          "relative_path": "V1/main/V1/Administration/Start and stop an adapter.html",
+          "hash": "0S0By7WBVJv2TOPefv7JKg=="
         }
       },
       "is_incremental": false,
@@ -538,7 +538,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "bW4QGxnDSMbQPXl1ltUDJQ=="
+          "hash": "oJf+wgW0LGa2rWAkHaR/Rw=="
         }
       },
       "is_incremental": false,

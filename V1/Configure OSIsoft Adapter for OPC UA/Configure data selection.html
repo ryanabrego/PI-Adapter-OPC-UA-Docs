@@ -78,7 +78,48 @@
             <article class="content wrap" id="_content" data-uid="ConfigureDataSelectionOPCUA">
 <h1 id="configure-data-selection">Configure data selection</h1>
 
-<p>In addition to the data source configuration, you need to provide a data selection configuration to specify the data you want the OPC UA adapter to collect from the data sources.</p>
+<p>In addition to the data source configuration, you need to provide a data selection configuration to specify the data you want the OPC UA adapter to collect from the data sources. </p>
+<p>When you add a data source, the OPC UA adapter browses the entire OPC UA server address space and exports the available OPC UA variables into a JSON file for data selection. Data is collected automatically based upon user demands. OPC UA data from OPC UA variables is read through subscriptions (unsolicited reads).</p>
+<p>You can either have the data selection configuration file generated for you or you can create it manually yourself.</p>
+<h2 id="generate-default-opc-ua-data-selection-configuration-file">Generate default OPC UA data selection configuration file</h2>
+<p>A default OPC UA data selection file will be created if there is no OPC UA data selection configuration, but a valid OPC UA data source exists.</p>
+<blockquote><p><strong>Note:</strong> To avoid possibly expensive browse operations, OSIsoft recommends that you manually create a data selection file instead of generating the default data selection file. For more information, see <a href="#configure-opc-ua-data-selection">Configure OPC UA data selection</a></p>
+</blockquote>
+<p>Complete the following steps in order for this default data selection file to be generated:</p>
+<ol>
+<li><p>Add an <a href="xref:EdgeDataStoreConfiguration">OPC UA adapter</a> with a unique ComponentId. </p>
+<p>During the installation of Edge Data Store, enabling the OPC UA adapter results in addition of a unique component that also satisfies this condition.</p>
+</li>
+<li><p>Configure a valid <a href="xref:opcUaOverview">OPC UA data source</a>.</p>
+<p>Once you complete these steps, a default OPC UA data selection configuration file will be generated in the configuration directory for the corresponding platform.</p>
+<p>The following are example locations of the file created. In this example, it is assumed that the ComponentId of the OPC UA component is the default OpcUa1:</p>
+<pre><code class="lang-bash">Windows: %programdata%\OSIsoft\EdgeDataStore\Configuration\OpcUa1_DataSelection.json
+
+Linux: /usr/share/OSIsoft/EdgeDataStore/Configuration/OpcUa1_DataSelection.json
+</code></pre></li>
+<li><p>Copy the file to a different directory.</p>
+<p>The contents of the file will look something like:</p>
+<pre><code class="lang-json">[
+{
+  &quot;Selected&quot;: false,
+  &quot;Name&quot;: &quot;Cold Side Inlet Temperature&quot;,
+  &quot;NodeId&quot;: &quot;ns=2;s=Line1.HeatExchanger1001.ColdSideInletTemperature&quot;,
+  &quot;StreamId&quot;: null
+ },
+ {
+  &quot;Selected&quot;: false,
+  &quot;Name&quot;: &quot;Cold Side Outlet Temperature&quot;,
+  &quot;NodeId&quot;: &quot;ns=2;s=Line1.HeatExchanger1001.ColdSideOutletTemperature&quot;,
+  &quot;StreamId&quot;: null
+ }
+]
+</code></pre></li>
+<li><p>In a text editor, edit the file and change the value of any Selected key from false to true in order to transfer the OPC UA data to be stored in Edge Data Store. </p>
+</li>
+<li><p>In the same directory where you edited the file, run the following curl command:</p>
+<pre><code class="lang-bash">curl -i -d &quot;@OpcUa1_DataSelection.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT http://localhost:5590/api/v1/configuration/OpcUa1/Dataselection
+</code></pre></li>
+</ol>
 <h2 id="configure-opc-ua-data-selection">Configure OPC UA data selection</h2>
 <blockquote><p><strong>Note:</strong> You cannot modify OPC UA data selection configurations manually. You must use the REST endpoints to add or edit the configuration.</p>
 </blockquote>

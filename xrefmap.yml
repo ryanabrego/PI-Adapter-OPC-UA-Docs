@@ -2,8 +2,8 @@
 sorted: true
 references:
 - uid: AdapterDiagnostics
-  name: Adapter diagnostics
-  href: V1/main/V1/Diagnostics/Adapter%20Diagnostics.html
+  name: Diagnostics configuration
+  href: V1/main/V1/Diagnostics/Diagnostics.html
 - uid: Administration
   name: Administration
   href: V1/Administration.html
@@ -43,6 +43,9 @@ references:
 - uid: Health
   name: Adapter health
   href: V1/main/V1/Health/Health.html
+- uid: HealthAndDiagnostics
+  name: Health and Diagnostics
+  href: V1/main/V1/Health/Health%20and%20diagnostics.html
 - uid: index
   name: OSIsoft Adapter for OPC UA
   href: index.html
@@ -79,6 +82,9 @@ references:
 - uid: StartAndStopAnAdapter
   name: Start and stop an adapter
   href: V1/main/V1/Administration/Start%20and%20stop%20an%20adapter.html
+- uid: StartAndStopIngressComponent
+  name: Start and stop ingress component
+  href: V1/main/V1/Administration/Start%20and%20stop%20ingress%20component.html
 - uid: SystemComponentsConfiguration
   name: System components configuration
   href: V1/main/V1/Configure%20the%20adapter/System%20components%20configuration.html

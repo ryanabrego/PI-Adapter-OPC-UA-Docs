@@ -235,6 +235,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "V1/main/V1/Administration/Start and stop ingress component.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1/Administration/Start and stop ingress component.html",
+          "hash": "zvDqPf2exzfAVXszLeP6qQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Configure the adapter/Configure buffering.md",
       "output": {
         ".html": {
@@ -322,21 +334,6 @@
     },
     {
       "log_codes": [
-        "DuplicateUids"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Diagnostics/Adapter Diagnostics.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/main/V1/Diagnostics/Adapter Diagnostics.html",
-          "hash": "18ntx+ZZERORfuI3tGCJFg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
         "InvalidFileLink"
       ],
       "type": "Conceptual",
@@ -351,12 +348,39 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "V1/main/V1/Health/Adapter Diagnostics.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1/Health/Adapter Diagnostics.html",
+          "hash": "Aa77iWTEINkkVYjTSWyoDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Health/Device status.md",
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Health/Device status.html",
           "hash": "BkcJCye8aVbEO7KxcoO8iA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/main/V1/Health/Health and diagnostics.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1/Health/Health and diagnostics.html",
+          "hash": "qF+ywvHgYiLTtTzUHdbPKg=="
         }
       },
       "is_incremental": false,
@@ -538,7 +562,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "oJf+wgW0LGa2rWAkHaR/Rw=="
+          "hash": "eIEpjYg28SBwN3SBLD5XxQ=="
         }
       },
       "is_incremental": false,
@@ -593,7 +617,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 39,
+          "total_file_count": 41,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

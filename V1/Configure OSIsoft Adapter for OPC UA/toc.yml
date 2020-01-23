@@ -1,15 +1,16 @@
-- name: System components configuration
+- name: Configure system components
   href: ../main/V1/Configure the adapter/System components configuration.md
-- name: Configure whole adapter
-  href: ../main/V1/Configure the adapter/Configure whole adapter.md
 - name: Configure data source
   href: Configure data source.md
-- name: Generate default OPC UA data selection configuration file
-  href: Generate default OPC UA data selection configuration file.md
 - name: Configure data selection
   href: Configure data selection.md
+- name: Configure endpoints
+  href: ../main/V1/Configure the adapter/Configure endpoints.md
+- name: Configure health and diagnostics
+  href: ../main/V1/Configure the adapter/Configure health and diagnostics.md
+- name: Configure buffering
+  href: ../main/V1/Configure the adapter/Configure buffering.md
 - name: Configure message logging
   href: ../main/V1/Configure the adapter/Configure message logging.md
-- name: Configure endpoints
-  href: ../main/V1/Configure the adapter/toc.yml
-  topicHref: ../main/V1/Configure the adapter/Configure endpoints.md
+- name: Configure whole adapter
+  href: ../main/V1/Configure the adapter/Configure whole adapter.md

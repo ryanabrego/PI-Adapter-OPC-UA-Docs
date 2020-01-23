@@ -121,15 +121,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA overview.md",
       "output": {
         ".html": {
           "relative_path": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA overview.html",
-          "hash": "+donOfAB+TdDw+Rx5KHYQA=="
+          "hash": "yihpl3cqsGUqRhGhNjCO2g=="
         }
       },
       "is_incremental": false,

@@ -4,6 +4,9 @@ references:
 - uid: AdapterDiagnostics
   name: Diagnostics configuration
   href: V1/main/V1/Diagnostics/Diagnostics.html
+- uid: AdapterHealth
+  name: Adapter health
+  href: V1/main/V1/Health/Adapter%20health.html
 - uid: Administration
   name: Administration
   href: V1/Administration.html
@@ -40,9 +43,6 @@ references:
 - uid: GenerateDefaultDataSelectionConfigFile
   name: Generate default OPC UA data selection configuration file
   href: V1/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA/Generate%20default%20OPC%20UA%20data%20selection%20configuration%20file.html
-- uid: Health
-  name: Adapter health
-  href: V1/main/V1/Health/Health.html
 - uid: HealthAndDiagnostics
   name: Health and Diagnostics
   href: V1/main/V1/Health/Health%20and%20diagnostics.html

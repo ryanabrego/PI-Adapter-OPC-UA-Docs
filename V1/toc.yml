@@ -13,6 +13,3 @@
 - name: Health and diagnostics
   href: main/V1/Health/toc.yml
   topicHref: main/V1/Health/Health and diagnostics.md
-- name: OSIsoft Adapter for OPC UA diagnostics
-  href: OSIsoft Adapter for OPC UA diagnostics/toc.yml
-  topicHref: OSIsoft Adapter for OPC UA diagnostics/OSIsoft Adapter for OPC UA diagnostics.md

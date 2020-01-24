@@ -76,6 +76,9 @@ references:
 - uid: OSIsoftAdapterForOPCUAPrinciplesOfOperation
   name: OSIsoft Adapter for OPC UA principles of operation
   href: V1/OSIsoft%20Adapter%20for%20OPC%20UA%20overview/OSIsoft%20Adapter%20for%20OPC%20UA%20principles%20of%20operation.html
+- uid: OSIsoftAdapterForOPCUASecurityConfiguration
+  name: OSIsoft Adapter for OPC UA security configuration
+  href: V1/Configuration/OSIsoft%20Adapter%20for%20OPC%20UA%20security%20configuration.html
 - uid: OSIsoftAdapterForOPCUASupportedFeatures
   name: OSIsoft Adapter for OPC UA supported features
   href: V1/OSIsoft%20Adapter%20for%20OPC%20UA%20overview/OSIsoft%20Adapter%20for%20OPC%20UA%20supported%20features.html

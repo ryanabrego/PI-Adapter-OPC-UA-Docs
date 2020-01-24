@@ -352,7 +352,6 @@
     },
     {
       "log_codes": [
-        "DuplicateUids",
         "InvalidFileLink",
         "UidNotFound"
       ],
@@ -368,6 +367,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Health/Adapter diagnostics.md",
       "output": {

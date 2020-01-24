@@ -1,5 +1,5 @@
 ---
-uid: ConfigureOSIsoftAdapterForOPCUA
+uid: Configuration
 ---
 
-# Configure OSIsoft Adapter for OPC UA
+# Configuration

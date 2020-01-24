@@ -4,8 +4,8 @@
 - name: Installation
   href: main/V1/Installation/toc.yml
   topicHref: main/V1/Installation/Installation.md
-- name: Configure OSIsoft Adapter for OPC UA
-  href: Configure OSIsoft Adapter for OPC UA/toc.yml
+- name: Configuration
+  href: Configuration/toc.yml
   topicHref: Configure OSIsoft Adapter for OPC UA/Configure OSIsoft Adapter for OPC UA.md
 - name: Administration
   href: main/V1/Administration/toc.yml

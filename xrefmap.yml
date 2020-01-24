@@ -16,12 +16,6 @@ references:
 - uid: BufferingConfiguration
   name: Configure buffering
   href: V1/main/V1/Configuration/Buffering%20configuration.html
-- uid: Configuration
-  name: Configuration
-  href: V1/Configuration/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA.html
-- uid: ConfigureDataSelectionOPCUA
-  name: Configure data selection
-  href: V1/Configuration/Configure%20data%20selection.html
 - uid: ConfigureDataSourceOPCUA
   name: Configure data source
   href: V1/Configuration/Configure%20data%20source.html
@@ -64,6 +58,9 @@ references:
 - uid: OPCUAInstallation
   name: Installation
   href: V1/main/V1/Installation/Installation.html
+- uid: OSIsoftAdapterForOPCUADataSelectionConfiguration
+  name: OSIsoft Adapter for OPC UA data selection configuration
+  href: V1/Configuration/OSIsoft%20Adapter%20for%20OPC%20UA%20data%20selection%20configuration.html
 - uid: OSIsoftAdapterForOPCUADiagnostics
   name: OSIsoft Adapter for OPC UA diagnostics
   href: V1/OSIsoft%20Adapter%20for%20OPC%20UA%20diagnostics/OSIsoft%20Adapter%20for%20OPC%20UA%20diagnostics.html

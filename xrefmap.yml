@@ -1,6 +1,9 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: AdapterConfiguration
+  name: Adapter configuration
+  href: V1/main/V1/Configuration/Adapter%20configuration.html
 - uid: AdapterDiagnostics
   name: Diagnostics configuration
   href: V1/main/V1/Diagnostics/Diagnostics.html
@@ -12,7 +15,7 @@ references:
   href: V1/Administration.html
 - uid: BufferingConfiguration
   name: Configure buffering
-  href: V1/main/V1/Configure%20the%20adapter/Configure%20buffering.html
+  href: V1/main/V1/Configuration/Buffering%20configuration.html
 - uid: Configuration
   name: Configuration
   href: V1/Configuration/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA.html
@@ -22,15 +25,6 @@ references:
 - uid: ConfigureDataSourceOPCUA
   name: Configure data source
   href: V1/Configuration/Configure%20data%20source.html
-- uid: ConfigureEndpoints
-  name: Configure endpoints
-  href: V1/main/V1/Configure%20the%20adapter/Configure%20endpoints.html
-- uid: ConfigureHealthAndDiagnostics
-  name: Configure health and diagnostics
-  href: V1/main/V1/Configure%20the%20adapter/Configure%20health%20and%20diagnostics.html
-- uid: ConfigureMessageLogging
-  name: Configure message logging
-  href: V1/main/V1/Configure%20the%20adapter/Configure%20message%20logging.html
 - uid: DeleteAnAdapterComponent
   name: Delete an adapter component
   href: V1/main/V1/Administration/Delete%20an%20adapter%20component.html
@@ -40,12 +34,18 @@ references:
 - uid: Egress_DataEndpoints_schema
   name: Egress endpoint configuration schema
   href: V1/main/V1/Configure%20the%20adapter/Egress_DataEndpoints_schema.html
+- uid: EndpointsConfiguration
+  name: Configure endpoints
+  href: V1/main/V1/Configuration/Endpoints%20configuration.html
 - uid: GenerateDefaultDataSelectionConfigFile
   name: Generate default OPC UA data selection configuration file
   href: V1/Configuration/Generate%20default%20OPC%20UA%20data%20selection%20configuration%20file.html
 - uid: HealthAndDiagnostics
   name: Health and Diagnostics
   href: V1/main/V1/Health/Health%20and%20diagnostics.html
+- uid: HealthAndDiagnosticsConfiguration
+  name: Health and diagnostics configuration
+  href: V1/main/V1/Configuration/Health%20and%20diagnostics%20configuration.html
 - uid: index
   name: OSIsoft Adapter for OPC UA
   href: index.html
@@ -55,6 +55,9 @@ references:
 - uid: InstallTheAdapter
   name: Install the adapter
   href: V1/main/V1/Installation/Install%20the%20adapter.html
+- uid: MessageLoggingConfiguration
+  name: Message logging configuration
+  href: V1/main/V1/Configuration/Message%20logging%20configuration.html
 - uid: NextHealthMessageExpected
   name: Next Health Message Expected
   href: V1/main/V1/Health/Next%20health%20message%20expected.html
@@ -87,7 +90,7 @@ references:
   href: V1/main/V1/Administration/Start%20and%20stop%20ingress%20component.html
 - uid: SystemComponentsConfiguration
   name: System components configuration
-  href: V1/main/V1/Configure%20the%20adapter/System%20components%20configuration.html
+  href: V1/main/V1/Configuration/System%20components%20configuration.html
 - uid: Troubleshooting
   name: Troubleshooting
   href: V1/main/V1/Troubleshooting/Troubleshooting.html
@@ -100,6 +103,3 @@ references:
 - uid: UninstallTheAdapter
   name: Uninstall the adapter
   href: V1/main/V1/Installation/Uninstall%20the%20adapter.html
-- uid: WholeAdapterConfiguration
-  name: Configure whole adapter
-  href: V1/main/V1/Configure%20the%20adapter/Configure%20whole%20adapter.html

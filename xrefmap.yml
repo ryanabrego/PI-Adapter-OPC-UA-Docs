@@ -15,10 +15,10 @@ references:
   href: V1/main/V1/Configure%20the%20adapter/Configure%20buffering.html
 - uid: ConfigureDataSelectionOPCUA
   name: Configure data selection
-  href: V1/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA/Configure%20data%20selection.html
+  href: V1/Configuration/Configure%20data%20selection.html
 - uid: ConfigureDataSourceOPCUA
   name: Configure data source
-  href: V1/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA/Configure%20data%20source.html
+  href: V1/Configuration/Configure%20data%20source.html
 - uid: ConfigureEndpoints
   name: Configure endpoints
   href: V1/main/V1/Configure%20the%20adapter/Configure%20endpoints.html
@@ -42,7 +42,7 @@ references:
   href: V1/main/V1/Configure%20the%20adapter/Egress_DataEndpoints_schema.html
 - uid: GenerateDefaultDataSelectionConfigFile
   name: Generate default OPC UA data selection configuration file
-  href: V1/Configure%20OSIsoft%20Adapter%20for%20OPC%20UA/Generate%20default%20OPC%20UA%20data%20selection%20configuration%20file.html
+  href: V1/Configuration/Generate%20default%20OPC%20UA%20data%20selection%20configuration%20file.html
 - uid: HealthAndDiagnostics
   name: Health and Diagnostics
   href: V1/main/V1/Health/Health%20and%20diagnostics.html

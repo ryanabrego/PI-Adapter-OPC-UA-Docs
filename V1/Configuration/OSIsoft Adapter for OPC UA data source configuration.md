@@ -1,8 +1,8 @@
 ---
-uid: ConfigureDataSourceOPCUA
+uid: OSIsoftAdapterForOPCUADataSourceConfiguration
 ---
 
-# Configure data source
+# OSIsoft Adapter for OPC UA data source configuration
 
 In order to use the OPC UA adapter, you must configure the data source from which it will receive data.
 

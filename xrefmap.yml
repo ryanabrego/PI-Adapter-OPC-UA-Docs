@@ -16,6 +16,9 @@ references:
 - uid: BufferingConfiguration
   name: Configure buffering
   href: V1/main/V1/Configuration/Buffering%20configuration.html
+- uid: Configuration
+  name: Configuration
+  href: V1/Configuration/Configuration.html
 - uid: ConfigureDataSourceOPCUA
   name: Configure data source
   href: V1/Configuration/Configure%20data%20source.html

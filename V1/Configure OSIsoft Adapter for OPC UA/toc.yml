@@ -1,9 +1,0 @@
-- name: Configure data source
-  href: Configure data source.md
-- name: Configure data selection
-  href: Configure data selection.md
-- name: Configure message logging
-  href: ../main/V1/Configure the adapter/Configure message logging.md
-- name: Configure endpoints
-  href: ../main/V1/Configure the adapter/Configure endpoints.md
-

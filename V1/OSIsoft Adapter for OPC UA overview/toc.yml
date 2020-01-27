@@ -1,6 +1,4 @@
-- name: OSIsoft Adapter for OPC UA operational overview
-  href: OSIsoft Adapter for OPC UA operational overview.md
-- name: Supported features
-  href: ../main/V1/Supported features.md
+- name: OSIsoft Adapter for OPC UA supported features
+  href: OSIsoft Adapter for OPC UA supported features.md
 - name: OSIsoft Adapter for OPC UA principles of operation
   href: OSIsoft Adapter for OPC UA principles of operation.md

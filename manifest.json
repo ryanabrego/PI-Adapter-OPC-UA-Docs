@@ -25,6 +25,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Administration.md",
       "output": {
@@ -100,18 +103,6 @@
         ".html": {
           "relative_path": "V1/Configuration/OSIsoft Adapter for OPC UA security configuration.html",
           "hash": "KB9fYXw7U0ei2Cqx2OLxeQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "V1/Edgecmd/README.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/Edgecmd/README.html",
-          "hash": "ubl0FPafs9sWzQJwn8Q+Ng=="
         }
       },
       "is_incremental": false,
@@ -222,9 +213,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Administration/Administration.md",
       "output": {
@@ -376,7 +364,6 @@
     },
     {
       "log_codes": [
-        "DuplicateUids",
         "InvalidFileLink",
         "UidNotFound"
       ],
@@ -392,6 +379,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Health/Adapter diagnostics.md",
       "output": {
@@ -658,7 +648,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 43,
+          "total_file_count": 42,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

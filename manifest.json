@@ -26,18 +26,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/Administration.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/Administration.html",
-          "hash": "OANNV5TuqRN/Tvpt94QONQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "V1/Configuration/Configuration.md",
       "output": {
         ".html": {
@@ -100,33 +88,6 @@
         ".html": {
           "relative_path": "V1/Configuration/OSIsoft Adapter for OPC UA security configuration.html",
           "hash": "KB9fYXw7U0ei2Cqx2OLxeQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "V1/OSIsoft Adapter for OPC UA diagnostics/OSIsoft Adapter for OPC UA diagnostics.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/OSIsoft Adapter for OPC UA diagnostics/OSIsoft Adapter for OPC UA diagnostics.html",
-          "hash": "MvbHxK6AlDb3jA9u1HOJBQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
-      "type": "Toc",
-      "source_relative_path": "V1/OSIsoft Adapter for OPC UA diagnostics/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "V1/OSIsoft Adapter for OPC UA diagnostics/toc.html",
-          "hash": "Y6kWu9O7WrH4mPsM+77UTA=="
         }
       },
       "is_incremental": false,
@@ -198,9 +159,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Administration/Administration.md",
       "output": {
@@ -598,7 +556,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "qovCGicROXzvfapLoBYBkw=="
+          "hash": "h3R7uFkMUwgvsBspPUxgfA=="
         }
       },
       "is_incremental": false,
@@ -638,7 +596,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 41,
+          "total_file_count": 39,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

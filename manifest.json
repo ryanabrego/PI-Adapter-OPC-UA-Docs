@@ -133,18 +133,6 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA operational overview.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA operational overview.html",
-          "hash": "kbLLqAl1oXTzk1sVNna+LA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "log_codes": [
         "UidNotFound"
       ],
@@ -610,7 +598,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "jQ6d/AQwCjZSr4My9V2Bcg=="
+          "hash": "qovCGicROXzvfapLoBYBkw=="
         }
       },
       "is_incremental": false,
@@ -650,7 +638,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 42,
+          "total_file_count": 41,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

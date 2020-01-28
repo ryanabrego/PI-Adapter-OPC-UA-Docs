@@ -1,6 +1,6 @@
 - name: OSIsoft Adapter for OPC UA overview
   href: OSIsoft Adapter for OPC UA overview/toc.yml
-  topicHref: OSIsoft_Adapter_for_OPC_UA _overview.md
+  topicHref: OSIsoft_Adapter_for_OPC_UA_overview.md
 - name: Installation
   href: main/V1/Installation/toc.yml
   topicHref: main/V1/Installation/Installation.md

@@ -1,5 +1,0 @@
----
-uid: Administration
----
-
-# Administration

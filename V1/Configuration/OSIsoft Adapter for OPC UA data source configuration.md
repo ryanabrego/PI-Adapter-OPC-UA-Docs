@@ -62,7 +62,8 @@ The following is an example of valid OPC UA data source configuration:
     "Password": null,
     "RootNodeIds": null,
     "IncomingTimestamp": "Source",
-    "StreamIdPrefix": null
+    "StreamPrefix": null,
+    "ApplyPrefixToStreamId": false
 }
 ```
 

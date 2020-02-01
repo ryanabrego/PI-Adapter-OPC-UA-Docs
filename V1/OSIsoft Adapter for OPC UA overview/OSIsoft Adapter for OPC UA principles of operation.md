@@ -14,7 +14,7 @@ In order for the OPC UA adapter to start data collection, you need to configure 
 - Data selection: Perform selection of OPC UA items to which the adapter should subscribe for data.
 - Logging: Set up the logging attributes to manage the adapter logging behavior.
 
-For more information, see [OPC UA data source configuration](xref:OPCUADataSourceConfiguration) and [OPC UA data selection configuration](xref:OPCUADataSelectionConfiguration). 
+For more information, see [OSIsoft Adapter for OPC UA data source configuration](xref:OSIsoftAdapterForOPCUADataSourceConfiguration) and [OSIsoft Adapter for OPC UA data selection configuration](xref:OSIsoftAdapterForOPCUADataSelectionConfiguration). 
 
 ## Connection
 
@@ -43,4 +43,4 @@ Stream ID is a unique identifier for each stream created by the adapter for a gi
 <Adapter Component ID>.<Namespace>.<Identifier>
 ```
 
-> **Note:** The naming convention is affected by StreamIdPrefix and ApplyPrefixToStreamID settings in data source configuration. For more informaton, see [OPC UA data source configuration](xref:OPCUADataSourceConfiguration).
+**Note:** The naming convention is affected by StreamIdPrefix and ApplyPrefixToStreamID settings in data source configuration. For more informaton, see [OPC UA data source configuration](xref:OPCUADataSourceConfiguration).

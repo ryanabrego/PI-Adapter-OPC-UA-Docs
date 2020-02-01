@@ -102,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA supported features.html",
-          "hash": "PRPN7H2LJIcoHs0Sys0rQw=="
+          "hash": "Hjl22KCrirzufL1EDBJW2g=="
         }
       },
       "is_incremental": false,
@@ -397,6 +397,7 @@
     },
     {
       "log_codes": [
+        "DuplicateUids",
         "InvalidFileLink",
         "UidNotFound"
       ],
@@ -412,9 +413,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Health/Adapter diagnostics.md",
       "output": {

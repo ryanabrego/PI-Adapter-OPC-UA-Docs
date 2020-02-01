@@ -22,6 +22,9 @@ references:
 - uid: Configuration
   name: Configuration
   href: V1/Configuration/Configuration.html
+- uid: Configuration tools
+  name: Configuration tools
+  href: V1/Configuration/Configuration%20tools.html
 - uid: DeleteAnAdapterComponent
   name: Delete an adapter component
   href: V1/main/V1/Administration/Delete%20an%20adapter%20component.html
@@ -52,9 +55,6 @@ references:
 - uid: index
   name: OSIsoft Adapter for OPC UA
   href: index.html
-- uid: Installation prerequisites
-  name: Installation prerequisites
-  href: V1/main/V1/Installation/Installation%20prerequisites.html
 - uid: InstallTheAdapter
   name: Install the adapter
   href: V1/main/V1/Installation/Install%20the%20adapter.html

@@ -46,7 +46,7 @@ The following parameters can be used to configure an OPC UA data source:
 | **Password** | Optional | `string` | Yes | Password for accessing the OPC UA server.<br><br>**Note:** OSIsoft recommends using REST to configure the data source when the password must be specified.|
 | **RootNodeIds** | Optional | `string` | Yes |List of comma-separated NodeIds of those objects from which the OPC UA adapter browses the OPC UA server address space. This option allows selecting only subsets of the OPC UA address by explicitly listing one or more NodeIds which are used to start the initial browse. For example: ns=5;s=85/0:Simulation, ns=3;s=DataItems. If not specified, it means that the whole address space will be browsed.|
 | **IncomingTimestamp**	| Optional | `string` | No | Specifies whether the incoming timestamp is taken from the source, from the OPC UA server, or should be created by the OPC UA adapter instance. **Source** - Default and recommended setting. The timestamp is taken from the source timestamp field. The source is what provides data for the item to the OPC UA server, such as a field device. **Server** - In case the OPC UA item has an invalid source timestamp field, the Server timestamp can be used. **Connector** - The OPC UA adapter generates a timestamp for the item upon receiving it from the OPC UA server.|
-| **StreamIdPrefix** | Optional | `string` | Yes | Specifies what prefix is used for Stream IDs. Naming convention is StreamIdPrefixNodeId. **Note:** An empty string means no prefix will be added to the Stream IDs. Null value means ComponentID followed by dot character will be added to the stream IDs (for example, OpcUa1.NodeId).|
+| **StreamPrefix** | Optional | `string` | Yes | Specifies what prefix is used for Stream IDs and names. Naming convention is StreamPrefixNodeId and StreamPrefixName. **Note:** An empty string means no prefix will be added to the Stream IDs and names. Null value means ComponentID followed by dot character will be added to the stream IDs and names (for example, OpcUa1.NodeId).|
 | **ApplyPrefixToStreamId** | Optional          | `boolean` | No | Parameter applied to all data items collected from the data source that have custom stream ID configured. If configured, the adapter will apply the StreamIdPrefix property to all the streams with custom ID configured. The property does not affect any streams with default ID configured|
 
 
@@ -62,7 +62,8 @@ The following is an example of valid OPC UA data source configuration:
     "Password": null,
     "RootNodeIds": null,
     "IncomingTimestamp": "Source",
-    "StreamIdPrefix": null
+    "StreamPrefix": null,
+    "ApplyPrefixToStreamId": false
 }
 ```
 

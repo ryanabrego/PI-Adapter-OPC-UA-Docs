@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA principles of operation.html",
-          "hash": "bXwpvuA/YO4Q3eLngrZ+4A=="
+          "hash": "knlHGikcyVk6oyzPBH26LA=="
         }
       },
       "is_incremental": false,
@@ -409,7 +409,6 @@
     },
     {
       "log_codes": [
-        "DuplicateUids",
         "InvalidFileLink"
       ],
       "type": "Conceptual",
@@ -429,7 +428,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Diagnostics/Adapter diagnostics_old.html",
-          "hash": "G7EmQFlJmCCRpx8CM69eEA=="
+          "hash": "kx+srMdPFYWugJ3u02YncQ=="
         }
       },
       "is_incremental": false,
@@ -671,7 +670,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "t441o3fkZE9c4jn9/zihVA=="
+          "hash": "vdf62fKc81nmVxidodBVKw=="
         }
       },
       "is_incremental": false,
@@ -716,6 +715,13 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -727,13 +733,6 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 50,
-          "skipped_file_count": 0
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
           "skipped_file_count": 0
         }
       }

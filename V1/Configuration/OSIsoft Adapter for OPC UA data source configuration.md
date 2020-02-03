@@ -4,7 +4,9 @@ uid: OSIsoftAdapterForOPCUADataSourceConfiguration
 
 # OSIsoft Adapter for OPC UA data source configuration
 
-In order to use the OPC UA adapter, you must configure the data source from which it will receive data.
+To use the OPC UA adapter, you must configure the data source from which it will receive data.
+
+## Configure OPC UA data source
 
 **Note:** You cannot modify OPC UA data source configurations manually. You must use the REST endpoints to add or edit the configuration.
 

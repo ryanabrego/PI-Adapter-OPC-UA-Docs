@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA principles of operation.html",
-          "hash": "knlHGikcyVk6oyzPBH26LA=="
+          "hash": "bXwpvuA/YO4Q3eLngrZ+4A=="
         }
       },
       "is_incremental": false,
@@ -326,7 +326,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Configuration/Buffering configuration.html",
-          "hash": "Hv577pv55AeK5b+1sPBuFA=="
+          "hash": "G8wh+0mzEXLUWotEpK2uyQ=="
         }
       },
       "is_incremental": false,
@@ -350,7 +350,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Configuration/Endpoints configuration.html",
-          "hash": "LvX4TabfIPwbgir22Hi2zg=="
+          "hash": "tt/wXBwm0Kf2GtsdcjJytA=="
         }
       },
       "is_incremental": false,
@@ -362,7 +362,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Configuration/Health and diagnostics configuration.html",
-          "hash": "4B/JX4LXqE4ZIhFLhl4tOw=="
+          "hash": "KabzBqyh82+KtCFa7tjmKg=="
         }
       },
       "is_incremental": false,
@@ -374,7 +374,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Configuration/Message logging configuration.html",
-          "hash": "aNec42tNoSBTUy1L2UhQag=="
+          "hash": "qz2xdqb8Bn1hLEyPcfSNQg=="
         }
       },
       "is_incremental": false,
@@ -386,7 +386,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Configuration/System components configuration.html",
-          "hash": "HZdW+AiPZBSf06iBWn3nEw=="
+          "hash": "M4pN91HSQszLYowP5mHDGg=="
         }
       },
       "is_incremental": false,
@@ -410,15 +410,14 @@
     {
       "log_codes": [
         "DuplicateUids",
-        "InvalidFileLink",
-        "UidNotFound"
+        "InvalidFileLink"
       ],
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Diagnostics/Diagnostics.md",
+      "source_relative_path": "V1/main/V1/Diagnostics/Adapter diagnostics.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Diagnostics/Diagnostics.html",
-          "hash": "E3aK+OKdSeAVwRFcf0/sdA=="
+          "relative_path": "V1/main/V1/Diagnostics/Adapter diagnostics.html",
+          "hash": "MUqk60b9dhqkckTZdVs0Sw=="
         }
       },
       "is_incremental": false,
@@ -426,11 +425,59 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Health/Adapter diagnostics.md",
+      "source_relative_path": "V1/main/V1/Diagnostics/Adapter diagnostics_old.md",
       "output": {
         ".html": {
-          "relative_path": "V1/main/V1/Health/Adapter diagnostics.html",
-          "hash": "6VKLb7N5qTPb/f8CKWa4VQ=="
+          "relative_path": "V1/main/V1/Diagnostics/Adapter diagnostics_old.html",
+          "hash": "G7EmQFlJmCCRpx8CM69eEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/main/V1/Diagnostics/Egress diagnostics.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1/Diagnostics/Egress diagnostics.html",
+          "hash": "zvnf9KJhPmqIliTKcDSiUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/main/V1/Diagnostics/Error rate.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1/Diagnostics/Error rate.html",
+          "hash": "P5qmyerpzW9X1ukAtAe+iQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/main/V1/Diagnostics/IO rate.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1/Diagnostics/IO rate.html",
+          "hash": "eeBHgG4T5RL6q0NquNEgSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/main/V1/Diagnostics/Stream count.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1/Diagnostics/Stream count.html",
+          "hash": "GC+NO17buUoqVJzDlcFBnQ=="
         }
       },
       "is_incremental": false,
@@ -445,7 +492,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Health/Adapter health.html",
-          "hash": "U9giWKZz9CWuINdjmuRH/Q=="
+          "hash": "rT1AE6DTpijEBlLRJHAA3Q=="
         }
       },
       "is_incremental": false,
@@ -624,7 +671,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "u1e20d8R2P+Y2IRSebWgFw=="
+          "hash": "t441o3fkZE9c4jn9/zihVA=="
         }
       },
       "is_incremental": false,
@@ -679,7 +726,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 46,
+          "total_file_count": 50,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

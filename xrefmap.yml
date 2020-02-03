@@ -44,7 +44,7 @@ references:
   name: Egress endpoint configuration schema
   href: V1/main/V1/Configure%20the%20adapter/Egress_DataEndpoints_schema.html
 - uid: EndpointsConfiguration
-  name: Configure endpoints
+  name: Endpoints configuration
   href: V1/main/V1/Configuration/Endpoints%20configuration.html
 - uid: HealthAndDiagnostics
   name: Health and Diagnostics

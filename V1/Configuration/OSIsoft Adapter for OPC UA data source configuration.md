@@ -37,6 +37,12 @@ The following table shows the basic behavior of the _OpcUa_DataSource_schema.jso
 | ------------------- | ---------- | ------------ | ------------ | ----------------- | --------------------- |
 | Can be instantiated | Yes        | Experimental | No           | Forbidden         | Forbidden             |
 
+The full schema definition for the OPC UA data source configuration is in the _OpcUa_DataSource_schema.json_ here:
+
+Windows: *%Program Files%\OSIsoft\Adapters\AdapterName\Schemas*
+
+Linux: */opt/OSIsoft/Adapters/AdapterName/Schemas*
+
 ## Parameters for OPC UA data source
 
 The following parameters can be used to configure an OPC UA data source:

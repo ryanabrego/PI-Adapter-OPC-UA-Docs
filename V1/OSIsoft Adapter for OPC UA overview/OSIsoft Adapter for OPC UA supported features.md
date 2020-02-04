@@ -28,14 +28,17 @@ The following table lists OPC UA variable types that the OPC UA adapter supports
 
 ## Export operation
 
-The OPC UA adapter is able to export available OPC UA dynamic variables by browsing the OPC UA hierarchies or sub-hierarchies.
 
-### Limit browsing
+The OPC UA EDS adapter is able to export available OPC UA dynamic variables by browsing the OPC UA hierarchies or sub-hierarchies.
 
-Browsing can be limited by specifying a comma-separated collection of nodeIds in data source configuration (RootNodeIds) which are treated as a roots from where the adapter starts the browse operation. For more information, see [OSIsoft Adapter for OPC UA data source configuration](xref:OSIsoftAdapterForOPCUADataSourceConfiguration).
+### Export operation actions
 
-The adapter triggers an export operation after a successful connection to the OPC UA server when the data selection file does not exist in configuration directory. The exported data selection JSON file can be copied from the directory or retrieved using a REST API call.
+1. To limit browsing, specify a comma-separated collection of nodeIds in data source configuration (RootNodeIds).
+   
+   **Note:** They are treated as roots from where the adapter starts the browse operation.
+   
+   The adapter triggers an export operation after a successful connection to the OPC UA server when the data selection file does not exist in configuration directory.
+  
+2. Copy the exported data selection JSON file from the directory or retrieve it using a REST API call.
 
-### Manually create data selection file
-
-The data selection file can be created manually in order to avoid a potentially long and expensive browse operation. It can be configured the data source is configured or both pushed in one configuration call together. For more information, see [OSIsoft Adapter for OPC UA data selection configuration](xref:OSIsoftAdapterForOPCUADataSelectionConfiguration#generate-default-opc-ua-data-selection-configuration-file).
+3. Optional: To avoid a potentially long and expensive browse operation, create the data selection file manually. Configure it before you configure the data source or push both in one configuration call together.

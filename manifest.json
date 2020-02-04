@@ -175,12 +175,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/edgecmd/V1/EdgeCmd utility/EdgeCmd utility.md",
       "output": {
         ".html": {
           "relative_path": "V1/edgecmd/V1/EdgeCmd utility/EdgeCmd utility.html",
-          "hash": "uY/TKNX9PtY4bP7sthpS+w=="
+          "hash": "5swBdWgpg1ybLgcunPlMug=="
         }
       },
       "is_incremental": false,
@@ -287,7 +290,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Administration/Start and stop an adapter.html",
-          "hash": "C0O1beeUk+yoHCL0m4MUxg=="
+          "hash": "NloJbhKwosi+41XOXPwuEw=="
         }
       },
       "is_incremental": false,
@@ -405,15 +408,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Diagnostics/Adapter diagnostics.md",
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Diagnostics/Adapter diagnostics.html",
-          "hash": "MUqk60b9dhqkckTZdVs0Sw=="
+          "hash": "Z53PVQhLI7zc0pDx3QL0pA=="
         }
       },
       "is_incremental": false,
@@ -628,6 +628,17 @@
       "output": {
         "resource": {
           "relative_path": "V1/main/V1/images/ConfigurationFolder.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "V1/main/V1/images/Diagnostics_System.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "V1/main/V1/images/Diagnostics_System.jpg"
         }
       },
       "is_incremental": false,

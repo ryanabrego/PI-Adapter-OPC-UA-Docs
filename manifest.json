@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/OSIsoft Adapter for OPC UA overview/OSIsoft Adapter for OPC UA principles of operation.html",
-          "hash": "bXwpvuA/YO4Q3eLngrZ+4A=="
+          "hash": "knlHGikcyVk6oyzPBH26LA=="
         }
       },
       "is_incremental": false,
@@ -258,15 +258,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Administration/Delete an adapter component.md",
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Administration/Delete an adapter component.html",
-          "hash": "gDVL7aiCB3mIbCW7h18/TA=="
+          "hash": "6PtHgR19sWxKwt5AsZjV5w=="
         }
       },
       "is_incremental": false,
@@ -483,15 +480,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Health/Adapter health.md",
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Health/Adapter health.html",
-          "hash": "rT1AE6DTpijEBlLRJHAA3Q=="
+          "hash": "aeGFqgGx7xSmOQ9Ack0qpg=="
         }
       },
       "is_incremental": false,
@@ -612,6 +606,61 @@
         ".html": {
           "relative_path": "V1/main/V1/Troubleshooting/toc.html",
           "hash": "eOaW0wvgLnZPjia590tr2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "V1/main/V1/images/AdapterHealthAFHierarchy.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "V1/main/V1/images/AdapterHealthAFHierarchy.PNG"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "V1/main/V1/images/ConfigurationFolder.png",
+      "output": {
+        "resource": {
+          "relative_path": "V1/main/V1/images/ConfigurationFolder.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "V1/main/V1/images/LogsFolder.png",
+      "output": {
+        "resource": {
+          "relative_path": "V1/main/V1/images/LogsFolder.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "V1/main/V1/images/RemovedConfigurations.png",
+      "output": {
+        "resource": {
+          "relative_path": "V1/main/V1/images/RemovedConfigurations.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "V1/main/V1/images/RemovedLogs.png",
+      "output": {
+        "resource": {
+          "relative_path": "V1/main/V1/images/RemovedLogs.png"
         }
       },
       "is_incremental": false,

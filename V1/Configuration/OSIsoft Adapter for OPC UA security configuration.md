@@ -23,7 +23,7 @@ OPC UA adapter generates a self-signed certificate when the first secure connect
    Linux example using command-line:
 
    ```bash
-   mv /usr/share/OSIsoft/EdgeDataStore/OpcUa1/Certificates/RejectedCertificates/certsSimulationServer\ \[F9823DCF607063DBCECCF6F8F39FD2584F46AEBB\].der /usr/share/OSIsoft/EdgeDataStore/OpcUa1/Certificates/Trusted/certs/
+   mv /usr/share/OSIsoft/Adapters/OpcUa/OpcUa/OpcUa1/Certificates/RejectedCertificates/certsSimulationServer\ \[F9823DCF607063DBCECCF6F8F39FD2584F46AEBB\].der /usr/share/OSIsoft/Adapters/OpcUa/OpcUa/OpcUa1/Certificates/Trusted/certs/
    ```
 
    **Note:** Administrator or root privileges are required to perform this operation.
@@ -40,21 +40,21 @@ OPC UA adapter generates a self-signed certificate when the first secure connect
 
 #### Adapter rejected certificates
 
-Windows: `%programdata%\OSIsoft\EdgeDataStore\{ComponentId}\Certificates\RejectedCertificates\certs`
+Windows: `%programdata%\OSIsoft\Adapters\OpcUa\OpcUa\{ComponentId}\Certificates\RejectedCertificates\certs`
 
-Linux: `/usr/share/OSIsoft/EdgeDataStore/{ComponentId}/Certificates/RejectedCertificates/certs`
+Linux: `/usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates/RejectedCertificates/certs`
 
 
 #### Adapter trusted certificates
 
-Windows: `%programdata%\OSIsoft\EdgeDataStore\{ComponentId}\Certificates\Trusted\certs`
+Windows: `%programdata%\OSIsoft\Adapters\OpcUa\OpcUa\{ComponentId}\Certificates\Trusted\certs`
 
-Linux: `/usr/share/OSIsoft/EdgeDataStore/{ComponentId}/Certificates/Trusted/certs`
+Linux: `/usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates/Trusted/certs`
 
 
 #### Adapter's certificate
 
-Windows: `%programdata%\OSIsoft\EdgeDataStore\{ComponentId}\Certificates`
+Windows: `%programdata%\OSIsoft\Adapters\OpcUa\OpcUa\{ComponentId}\Certificates`
 
-Linux: `/usr/share/OSIsoft/EdgeDataStore/{ComponentId}/Certificates`
+Linux: `/usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates`
 

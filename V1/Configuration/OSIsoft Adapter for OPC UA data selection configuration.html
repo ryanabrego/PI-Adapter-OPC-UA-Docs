@@ -123,13 +123,11 @@ Linux: /usr/share/OSIsoft/Adapters/OpcUa/OpcUa/Configuration/OpcUa1_DataSelectio
 <p><strong>Note:</strong> You cannot modify OPC UA data selection configurations manually. You must use the REST endpoints to add or edit the configuration.</p>
 <p>Complete the following to configure the OPC UA data selection:</p>
 <ol>
-<li><p>Using any text editor, create a file that contains an OPC UA data selection in JSON form.</p>
-<ul>
+<li>Using any text editor, create a file that contains an OPC UA data selection in JSON form.<ul>
 <li>For content structure, see <a href="#opc-ua-data-selection-example">OPC UA data selection example</a>.</li>
 </ul>
 </li>
-<li><p>Update the parameters as needed. For a table of all available parameters, see <a href="#parameters-for-opc-ua-data-selection">Parameters for OPC UA data selection</a>.</p>
-</li>
+<li>Update the parameters as needed. For a table of all available parameters, see <a href="#parameters-for-opc-ua-data-selection">Parameters for OPC UA data selection</a>.</li>
 <li>Save the file as <em>DataSelection.config.json</em>.</li>
 <li>Use any <a class="xref" href="../main/V1/Configuration/Configuration%20tools.html">Configuration tool</a> capable of making HTTP requests to execute a POST command with the contents of that file to the following endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;adapterId&gt;/DataSelection/</code></li>
 </ol>
@@ -160,6 +158,9 @@ Linux: /usr/share/OSIsoft/Adapters/OpcUa/OpcUa/Configuration/OpcUa1_DataSelectio
 </tr>
 </tbody>
 </table>
+<p>The full schema definition for the OPC UA data selection configuration is in the <em>OpcUa_DataSelection_schema.json</em> here:</p>
+<p>Windows: <em>%Program Files%\OSIsoft\Adapters\AdapterName\Schemas</em></p>
+<p>Linux: <em>/opt/OSIsoft/Adapters/AdapterName/Schemas</em></p>
 <h2 id="parameters-for-opc-ua-data-selection">Parameters for OPC UA data selection</h2>
 <p>The following parameters can be used to configure OPC UA data selection:</p>
 <table>

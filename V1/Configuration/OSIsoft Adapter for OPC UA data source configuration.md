@@ -39,9 +39,9 @@ The following table shows the basic behavior of the _OpcUa_DataSource_schema.jso
 
 The full schema definition for the OPC UA data source configuration is in the _OpcUa_DataSource_schema.json_ here:
 
-Windows: *%Program Files%\OSIsoft\Adapters\AdapterName\Schemas*
+Windows: *%Program Files%\OSIsoft\Adapters\OpcUa\Schemas*
 
-Linux: */opt/OSIsoft/Adapters/AdapterName/Schemas*
+Linux: */opt/OSIsoft/Adapters/OpcUa/Schemas*
 
 ## OPC UA data source parameters
 

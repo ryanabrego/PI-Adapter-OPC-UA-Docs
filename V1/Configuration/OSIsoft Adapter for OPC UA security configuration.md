@@ -10,7 +10,7 @@ OPC UA adapter generates a self-signed certificate when the first secure connect
 
 ## Configure OPC UA adapter security
 
-1. In your data source configuration, set `UseSecureConnection` to **true**. For more information, see [Data source configuration](xref:OPCUADataSourceConfiguration).
+1. In your data source configuration, set `UseSecureConnection` to **true**. For more information, see [OSIsoft Adapter for OPC UA data source configuration](xref:OSIsoftAdapterForOPCUADataSourceConfiguration).
 
    The adapter verifies whether the server certificate is present in the [adapter trusted certificates](#adapter-trusted-certificates) folder and is therefore trusted. In case the certificates were not exchanged before the first attemped connection, the adapter persists the server certificate within the [adapter rejected certificates](#adapter-rejected-certificates) folder and the following warning message about the rejected server certificate will be printed:
 
@@ -30,7 +30,7 @@ OPC UA adapter generates a self-signed certificate when the first secure connect
 
    Once the certificate is in the adapter trusted certificates folder, the adapter trusts the server and the connection attempt proceeds in making the connection call to the configured server.
   
-3. Add the [adapter's certificate](#adapter's-certificate) to the server's trust store.
+3. Add the [certificate of the adapter](#certificate-of-the-adapter) to the server's trust store.
 
    The connection succeeds only when the adapter certificate is trusted on the server side. For more details on how to make a client certificate trusted, see your OPC UA server documentation. In general, servers work in a similar fashion as the clients, hence you can take a similar approach for making the server certificate trusted on the client side.
    
@@ -52,7 +52,7 @@ Windows: `%programdata%\OSIsoft\EdgeDataStore\{ComponentId}\Certificates\Trusted
 Linux: `/usr/share/OSIsoft/EdgeDataStore/{ComponentId}/Certificates/Trusted/certs`
 
 
-#### Adapter's certificate
+#### Certificate of the adapter's certificate
 
 Windows: `%programdata%\OSIsoft\EdgeDataStore\{ComponentId}\Certificates`
 

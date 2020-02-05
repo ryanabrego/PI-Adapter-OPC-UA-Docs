@@ -313,18 +313,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "V1/main/V1/Configuration/Adapter configuration.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/main/V1/Configuration/Adapter configuration.html",
-          "hash": "jCYCRcUAEf3MGydcuRMHXQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Configuration/Buffering configuration.md",
       "output": {
         ".html": {
@@ -365,7 +353,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Configuration/Health and diagnostics configuration.html",
-          "hash": "SZyEXIUA5cPZPbCnAr9A1Q=="
+          "hash": "wxCztm0ZRD+HM3prN8mmXw=="
         }
       },
       "is_incremental": false,
@@ -378,6 +366,18 @@
         ".html": {
           "relative_path": "V1/main/V1/Configuration/Message logging configuration.html",
           "hash": "Fwp/tF30j8AEjdeTSzQiBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/main/V1/Configuration/System and adapter configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/main/V1/Configuration/System and adapter configuration.html",
+          "hash": "Ij5aDG1wIJojJ2wvUArG9A=="
         }
       },
       "is_incremental": false,
@@ -733,7 +733,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "sEjdnwzurPB5+8nWeQtLKQ=="
+          "hash": "FzNZT1c91P3LnjVW5ao/0w=="
         }
       },
       "is_incremental": false,

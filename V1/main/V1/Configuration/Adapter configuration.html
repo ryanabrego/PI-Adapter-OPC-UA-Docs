@@ -80,6 +80,16 @@
 
 <p>You can configure OSIsoft System and adapter components entirely using a single call for replacing the existing configuration.</p>
 <h2 id="import-configuration">Import configuration</h2>
+<p>Complete the following to import the full adapter configuration using REST client:</p>
+<ol>
+<li>Start any tool capable of making HTTP requests.</li>
+<li><p>Execute a PUT command with the contents of the JSON file to the following endpoint: <code>http://localhost:5590/api/v1/configuration -d &#39;{JSON file name}&#39;</code></p>
+<p> Example using curl:</p>
+<pre><code class="lang-cmdline">curl -X http://localhost:5590/api/v1/configuration -d &#39;{JSON file name}&#39;
+</code></pre><p> <strong>Note:</strong> In order for some of the adapter specific configurations to take effect, you have to restart the adapter.</p>
+<p> If the operation fails due to errors in the configuration, the count of the error and suitable error message(s) are returned in the result.</p>
+</li>
+</ol>
 <h3 id="rest-urls">REST URLs</h3>
 <table>
 <thead>
@@ -171,15 +181,7 @@
         }
     }
 }
-</code></pre><h3 id="import-full-adapter-configuration-using-rest-client">Import full adapter configuration using REST client</h3>
-<ul>
-<li>To import the full adapter configuration, run the following command:</li>
-</ul>
-<pre><code>curl -X http://localhost:5590/api/v1/configuration -d &#39;{ JSON content }&#39;
-</code></pre><p><strong>Note:</strong> In order for some of the adapter specific configurations to take effect, you have to restart the adapter.</p>
-<h3 id="configuration-errors">Configuration errors</h3>
-<p>If the operation fails due to errors in the configuration, the count of the error and suitable error message(s) are returned in the result. </p>
-</article>
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

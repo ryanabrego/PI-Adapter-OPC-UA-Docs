@@ -43,7 +43,7 @@ Windows: *%Program Files%\OSIsoft\Adapters\AdapterName\Schemas*
 
 Linux: */opt/OSIsoft/Adapters/AdapterName/Schemas*
 
-## Parameters for OPC UA data source
+## OPC UA data source parameters
 
 The following parameters can be used to configure an OPC UA data source:
 

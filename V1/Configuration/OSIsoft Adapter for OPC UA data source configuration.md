@@ -4,7 +4,7 @@ uid: OSIsoftAdapterForOPCUADataSourceConfiguration
 
 # OSIsoft Adapter for OPC UA data source configuration
 
-To use the OPC UA adapter, you must configure the data source from which it will receive data.
+To use the OPC UA adapter, you must configure the data source from which it will be polling data.
 
 ## Configure OPC UA data source
 

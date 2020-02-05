@@ -106,7 +106,7 @@
 <li><p>Save the JSON as <em>AddComponent.json</em>. </p>
 </li>
 <li><p>Use any tool capable of making HTTP requests to execute a POST command with the contents of that file to the following endpoint: <code>http://localhost:5595/api/v1/configuration/system/components</code></p>
-<p> The following example shows the HTTP request using curl (run this command from the same directory where the file is located):</p>
+<p> Example using curl (run this command from the same directory where the file is located):</p>
 <pre><code class="lang-bash">curl -i -d &quot;@AddComponent.json&quot; -H &quot;Content-Type: application/json&quot; http://localhost:5595/api/v1/configuration/system/components
 </code></pre><p> After the curl command completes successfully, you can configure or use the new component.</p>
 </li>

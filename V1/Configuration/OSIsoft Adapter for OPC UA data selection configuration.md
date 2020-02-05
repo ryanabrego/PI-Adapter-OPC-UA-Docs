@@ -14,15 +14,15 @@ You can either have the data selection configuration file generated for you or y
 
 A default OPC UA data selection file will be created if there is no OPC UA data selection configuration, but a valid OPC UA data source exists.
 
-**Note:** To avoid possibly expensive browse operations, OSIsoft recommends that you manually create a data selection file instead of generating the default data selection file. For more information, see [Configure OPC UA data selection](#configure-opc-ua-data-selection)
+**Note:** To avoid possibly expensive browse operations, OSIsoft recommends that you manually create a data selection file instead of generating the default data selection file. For more information, see [Configure OPC UA data selection](#configure-opc-ua-data-selection).
 
 Complete the following steps in order for this default data selection file to be generated:
 
-1. Add an [OPC UA adapter](xref:EdgeDataStoreConfiguration) with a unique ComponentId. 
+1. Add an OPC UA adapter with a unique ComponentId. For more information, see [System components configuration](xref:SystemComponentsConfiguration).
 
   During the installation of Edge Data Store, enabling the OPC UA adapter results in addition of a unique component that also satisfies this condition.
   
-2. Configure a valid [OPC UA data source](xref:opcUaOverview).
+2. Configure a valid OPC UA data source. For more information, see [OSIsoft Adapter for OPC UA data source configuration](xref:OSIsoftAdapterForOPCUADataSourceConfiguration).
 
   Once you complete these steps, a default OPC UA data selection configuration file will be generated in the configuration directory for the corresponding platform.
   
@@ -70,9 +70,9 @@ Complete the following to configure the OPC UA data selection:
 
 1. Using any text editor, create a file that contains an OPC UA data selection in JSON form.
     - For content structure, see [OPC UA data selection example](#opc-ua-data-selection-example).
-2. Update the parameters as needed. For a table of all available parameters, see [Parameters for OPC UA data selection](#parameters-for-opc-ua-data-selection).
+2. Update the parameters as needed. For a table of all available parameters, see [OPC UA data selection](#opc-ua-data-selection-parameters).
 2. Save the file as _DataSelection.config.json_.
-3. Use any [Configuration tool](xref:ConfigurationTools) capable of making HTTP requests to execute a POST command with the contents of that file to the following endpoint: `http://localhost:5590/api/v1/configuration/<adapterId>/DataSelection/`
+3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to execute a POST command with the contents of that file to the following endpoint: `http://localhost:5590/api/v1/configuration/<adapterId>/DataSelection/`
 
 The following example shows the HTTPS request using curl (run this command from the same directory where the file is located):
 
@@ -96,7 +96,7 @@ Windows: *%Program Files%\OSIsoft\Adapters\AdapterName\Schemas*
 
 Linux: */opt/OSIsoft/Adapters/AdapterName/Schemas*
 
-## Parameters for OPC UA data selection
+## OPC UA data selection parameters
 
 The following parameters can be used to configure OPC UA data selection:
 

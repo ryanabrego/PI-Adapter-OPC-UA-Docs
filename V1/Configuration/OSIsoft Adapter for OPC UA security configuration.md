@@ -52,7 +52,7 @@ Windows: `%programdata%\OSIsoft\EdgeDataStore\{ComponentId}\Certificates\Trusted
 Linux: `/usr/share/OSIsoft/EdgeDataStore/{ComponentId}/Certificates/Trusted/certs`
 
 
-#### Certificate of the adapter's certificate
+#### Certificate of the adapter
 
 Windows: `%programdata%\OSIsoft\EdgeDataStore\{ComponentId}\Certificates`
 

@@ -27,7 +27,7 @@ The following example shows the HTTPS request using curl (run this command from 
 curl -v -d "@DataSource.config.json" -H "Content-Type: application/json" "http://localhost:5590/api/v1/configuration/OpcUa1/DataSource"
 ```
 
-**Note:** After you have completed data source configuration, the next step is to configure data selection. You can either have a default data selection file generated or you can create the data selection file yourself. For more information, see [Configure data selection](xref:ConfigureDataSourceOPCUA).
+**Note:** After you have completed data source configuration, the next step is to configure data selection. You can either have a default data selection file generated or you can create the data selection file yourself. For more information, see [OSIsoft Adapter for OPC UA data selection configuration](xref:OSIsoftAdapterForOPCUADataSelectionConfiguration).
 
 ## OPC UA data source schema
 

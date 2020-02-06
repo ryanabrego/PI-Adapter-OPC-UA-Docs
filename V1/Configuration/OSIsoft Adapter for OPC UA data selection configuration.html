@@ -131,7 +131,7 @@ Linux: /usr/share/OSIsoft/Adapters/OpcUa/OpcUa/Configuration/OpcUa1_DataSelectio
 <li>Save the file as <em>DataSelection.config.json</em>.</li>
 <li>Use any of the <a class="xref" href="../main/V1/Configuration/Configuration%20tools.html">Configuration tools</a> capable of making HTTP requests to execute a POST command with the contents of that file to the following endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;adapterId&gt;/DataSelection/</code></li>
 </ol>
-<p>The following example shows the HTTPS request using curl (run this command from the same directory where the file is located):</p>
+<p>Example using curl (run this command from the same directory where the file is located):</p>
 <p><strong>Note:</strong> During installation, you can add a single OPC UA adapter named OpcUA1. The following example uses this component name.</p>
 <pre><code class="lang-bash">curl -v -d &quot;@DataSelection.config.json&quot; -H &quot;Content-Type: application/json&quot; &quot;http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection&quot;
 </code></pre><h2 id="opc-ua-data-selection-schema">OPC UA data selection schema</h2>

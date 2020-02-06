@@ -54,7 +54,7 @@ Linux: `/usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates/Trust
 
 #### Certificate of the adapter
 
-Windows: `%programdata%\OSIsoft\Adapters\OpcUa\OpcUa\{ComponentId}\Certificates`
+Windows: `%programdata%\OSIsoft\Adapters\OpcUa\OpcUa\{ComponentId}\Certificates\My\certs`
 
-Linux: `/usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates`
+Linux: `/usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates\My\certs`
 

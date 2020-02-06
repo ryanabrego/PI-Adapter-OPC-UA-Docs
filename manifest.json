@@ -139,6 +139,33 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "V1/edgecmd/V1/EdgeCmd utility/Configure adapter component.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/edgecmd/V1/EdgeCmd utility/Configure adapter component.html",
+          "hash": "CXAiV69vd8dWvECmyC9nSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "V1/edgecmd/V1/EdgeCmd utility/Configure adapter.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/edgecmd/V1/EdgeCmd utility/Configure adapter.html",
+          "hash": "DzgqHCywiCjXooLJ+RURuQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "V1/edgecmd/V1/EdgeCmd utility/Delete configuration.md",
       "output": {
@@ -156,7 +183,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/edgecmd/V1/EdgeCmd utility/EdgeCmd commands.html",
-          "hash": "MWRu92v/T7NozuzvI0m9DQ=="
+          "hash": "OQwhXizU/L/d13VnJgRmSw=="
         }
       },
       "is_incremental": false,
@@ -168,7 +195,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/edgecmd/V1/EdgeCmd utility/EdgeCmd utility.html",
-          "hash": "6UsoTL9QcSxGC5j+HS3mVg=="
+          "hash": "XqXXBCu7ZYZs5vrDjmhtaA=="
         }
       },
       "is_incremental": false,
@@ -383,7 +410,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Configuration/System components configuration.html",
-          "hash": "iCQF0KV7UhY82ilk6v3vnA=="
+          "hash": "pXhR2DTU7macFwGLeZAwZQ=="
         }
       },
       "is_incremental": false,
@@ -742,7 +769,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "bXlUalIL+T0eRJywLSn3dQ=="
+          "hash": "EzayUIMQJCCtERCIQswCrw=="
         }
       },
       "is_incremental": false,
@@ -797,7 +824,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 52,
+          "total_file_count": 54,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

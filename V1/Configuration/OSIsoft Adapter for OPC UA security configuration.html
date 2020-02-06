@@ -88,7 +88,7 @@
 </code></pre></li>
 <li><p>Manually move the server certificate from the <a href="#adapter-rejected-certificates"><em>RejectedCertificates\certs</em></a> folder to the <a href="#adapter-trusted-certificates"><em>Trusted\certs</em></a> folder using a file explorer or command-line interpreter.</p>
 <p>Linux example using command-line:</p>
-<pre><code class="lang-bash">mv /usr/share/OSIsoft/EdgeDataStore/OpcUa1/Certificates/RejectedCertificates/certsSimulationServer\ \[F9823DCF607063DBCECCF6F8F39FD2584F46AEBB\].der /usr/share/OSIsoft/EdgeDataStore/OpcUa1/Certificates/Trusted/certs/
+<pre><code class="lang-bash">mv /usr/share/OSIsoft/Adapters/OpcUa/OpcUa/OpcUa1/Certificates/RejectedCertificates/certsSimulationServer\ \[F9823DCF607063DBCECCF6F8F39FD2584F46AEBB\].der /usr/share/OSIsoft/Adapters/OpcUa/OpcUa/OpcUa1/Certificates/Trusted/certs/
 </code></pre><p><strong>Note:</strong> Administrator or root privileges are required to perform this operation.</p>
 <p>Once the certificate is in the adapter trusted certificates folder, the adapter trusts the server and the connection attempt proceeds in making the connection call to the configured server.</p>
 </li>
@@ -99,14 +99,14 @@
 </ol>
 <h3 id="certificate-locations">Certificate locations</h3>
 <h4 id="adapter-rejected-certificates">Adapter rejected certificates</h4>
-<p>Windows: <code>%programdata%\OSIsoft\EdgeDataStore\{ComponentId}\Certificates\RejectedCertificates\certs</code></p>
-<p>Linux: <code>/usr/share/OSIsoft/EdgeDataStore/{ComponentId}/Certificates/RejectedCertificates/certs</code></p>
+<p>Windows: <code>%programdata%\OSIsoft\Adapters\OpcUa\OpcUa\{ComponentId}\Certificates\RejectedCertificates\certs</code></p>
+<p>Linux: <code>/usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates/RejectedCertificates/certs</code></p>
 <h4 id="adapter-trusted-certificates">Adapter trusted certificates</h4>
-<p>Windows: <code>%programdata%\OSIsoft\EdgeDataStore\{ComponentId}\Certificates\Trusted\certs</code></p>
-<p>Linux: <code>/usr/share/OSIsoft/EdgeDataStore/{ComponentId}/Certificates/Trusted/certs</code></p>
+<p>Windows: <code>%programdata%\OSIsoft\Adapters\OpcUa\OpcUa\{ComponentId}\Certificates\Trusted\certs</code></p>
+<p>Linux: <code>/usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates/Trusted/certs</code></p>
 <h4 id="certificate-of-the-adapter">Certificate of the adapter</h4>
-<p>Windows: <code>%programdata%\OSIsoft\EdgeDataStore\{ComponentId}\Certificates</code></p>
-<p>Linux: <code>/usr/share/OSIsoft/EdgeDataStore/{ComponentId}/Certificates</code></p>
+<p>Windows: <code>%programdata%\OSIsoft\Adapters\OpcUa\OpcUa\{ComponentId}\Certificates\My\certs</code></p>
+<p>Linux: <code>/usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates\My\certs</code></p>
 </article>
           </div>
           

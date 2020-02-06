@@ -74,7 +74,7 @@ Complete the following to configure the OPC UA data selection:
 2. Save the file as _DataSelection.config.json_.
 3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to execute a POST command with the contents of that file to the following endpoint: `http://localhost:5590/api/v1/configuration/<adapterId>/DataSelection/`
 
-The following example shows the HTTPS request using curl (run this command from the same directory where the file is located):
+Example using curl (run this command from the same directory where the file is located):
 
 **Note:** During installation, you can add a single OPC UA adapter named OpcUA1. The following example uses this component name.
 

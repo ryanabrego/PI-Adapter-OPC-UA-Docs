@@ -29,7 +29,7 @@ The following table lists OPC UA variable types that the OPC UA adapter supports
 ## Export operation
 
 
-The OPC UA EDS adapter is able to export available OPC UA dynamic variables by browsing the OPC UA hierarchies or sub-hierarchies.
+The OPC UA adapter is able to export available OPC UA dynamic variables by browsing the OPC UA hierarchies or sub-hierarchies.
 
 ### Export operation actions
 

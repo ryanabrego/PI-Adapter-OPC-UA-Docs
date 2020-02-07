@@ -19,9 +19,6 @@ references:
 - uid: BufferingConfiguration
   name: Buffering configuration
   href: V1/main/V1/Configuration/Buffering%20configuration.html
-- uid: Configuration
-  name: Configuration
-  href: V1/Configuration/Configuration.html
 - uid: ConfigurationTools
   name: Configuration tools
   href: V1/main/V1/Configuration/Configuration%20tools.html
@@ -85,6 +82,9 @@ references:
 - uid: NextHealthMessageExpected
   name: Next health message expected
   href: V1/main/V1/Health/Next%20health%20message%20expected.html
+- uid: OPCUAConfiguration
+  name: Configuration
+  href: V1/Configuration/Configuration.html
 - uid: OSIsoftAdapterForOPCUADataSelectionConfiguration
   name: OSIsoft Adapter for OPC UA data selection configuration
   href: V1/Configuration/OSIsoft%20Adapter%20for%20OPC%20UA%20data%20selection%20configuration.html

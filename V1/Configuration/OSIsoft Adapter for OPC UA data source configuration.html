@@ -83,14 +83,12 @@
 <p><strong>Note:</strong> You cannot modify OPC UA data source configurations manually. You must use the REST endpoints to add or edit the configuration.</p>
 <p>Complete the following to configure the OPC UA data source:</p>
 <ol>
-<li><p>Using any text editor, create a file that contains an OPC UA data source in JSON form.</p>
-<ul>
+<li>Using any text editor, create a file that contains an OPC UA data source in JSON form.<ul>
 <li>For content structure, see <a href="#opc-ua-data-source-example">OPC UA data source example</a>.</li>
+<li>For a table of all available parameters, see <a href="#opc-ua-data-source-parameters">OPC UA data source parameters</a>.</li>
 </ul>
 </li>
-<li><p>Update the parameters as needed. For a table of all available parameters, see <a href="#opc-ua-data-source-parameters">OPC UA data source parameters</a>.</p>
-</li>
-<li>Save the file as <em>DataSource.config.json</em>.</li>
+<li>Save the file, for example as <em>DataSource.config.json</em>.</li>
 <li>Use any of the <a class="xref" href="../main/V1/Configuration/Configuration%20tools.html">Configuration tools</a> capable of making HTTP requests to execute a POST command with the contents of that file to the following endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;adapterId&gt;/DataSource/</code>. </li>
 </ol>
 <p>Example using curl (run this command from the same directory where the file is located):</p>

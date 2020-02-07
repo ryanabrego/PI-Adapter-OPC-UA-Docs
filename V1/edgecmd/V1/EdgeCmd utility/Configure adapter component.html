@@ -78,9 +78,9 @@
             <article class="content wrap" id="_content" data-uid="ConfigureAdapterComponent">
 <h1 id="configure-adapter-component">Configure adapter component</h1>
 
-<p>The EdgeCmd utility enables you to add, configure, and delete Edge Data Store components.</p>
+<p>The EdgeCmd utility enables you to add, configure, and delete adapter components.</p>
 <h2 id="view-configured-components">View configured components</h2>
-<p>Complete the following to view the components currently configured on Edge Data Store.</p>
+<p>Complete the following to view the components currently configured on the adapter.</p>
 <ol>
 <li>Open command line.</li>
 <li><p>Type the following in the command line and press Enter.</p>
@@ -92,14 +92,14 @@
 <ol>
 <li>Open command line.</li>
 <li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> and <code>&lt;componentType&gt;</code> with the values that you want and press Enter.</p>
-<p> <strong>Note:</strong> Valid component types are <code>Modbus</code> and <code>OpcUa</code>. If you are trying to register a Modbus EDS adapter, use <code>Modbus</code> and if you are trying to register an OPC UA adapter, use <code>OpcUa</code>.</p>
+<p> <strong>Note:</strong> The only valid component type is the adapter type. For example, if you are trying to register a new Modbus component, use <code>Modbus</code> and if you are trying to register an OPC UA component, use <code>OpcUa</code>. Refer to the specific adapter&#39;s user guide for that adapter&#39;s component type. </p>
 <pre><code class="lang-bash">edgecmd Configuration System Components componentId=&lt;componentId&gt; componentType=&lt;componentType&gt;
 </code></pre><p> <strong>Example</strong>: Modbus adapter component registration</p>
 <pre><code class="lang-bash">edgecmd Configuration System Components componentId=Modbus1 componentType=Modbus
 </code></pre></li>
 </ol>
 <h2 id="configure-components">Configure components</h2>
-<p>The Modbus TCP EDS adapter and OPC UA EDS adapter each have three configurable facets: data source, data selection, and logging. Complete the following to configure a facet.</p>
+<p>The adapters have the following configurable facets: data source, data selection, and logging. Complete the following to configure a facet.</p>
 <ol>
 <li>Open command line.</li>
 <li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> and <code>&lt;facetName&gt;</code> with the values that you want.</p>
@@ -110,16 +110,16 @@
 <pre><code class="lang-bash">edgecmd Configuration Modbus1 DataSource IpAddress=117.23.45.110 port=502 ConnectTimeout=15000 StreamIdPrefix=&quot;DataSource1&quot;
 </code></pre></li>
 </ol>
-<p>For detailed information on how to configure each adapter, see <a href="xref:opcUaOverview">OPC UA EDS adapter</a> and <a href="xref:modbusOverview">Modbus TCP EDS adapter</a>.</p>
+<p>For detailed information on how to configure each adapter, see the user guide for the corresponding adapter.</p>
 <h2 id="delete-components">Delete components</h2>
-<p>Complete the following to delete components from the Edge Data Store.</p>
+<p>Complete the following to delete components from the adapter.</p>
 <ol>
 <li>Open command line.</li>
 <li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> with the ID of the component that you want to delete, and press Enter.</p>
 <pre><code class="lang-bash">edgecmd Configuration System Components id=&lt;componentId&gt; delete
 </code></pre></li>
 </ol>
-<p><strong>Note:</strong> You cannot delete the Storage component because it is required for Edge Data Store to operate.</p>
+<p><strong>Note:</strong> You cannot delete the Egress component because it is required for Edge Data Store to operate.</p>
 </article>
           </div>
           

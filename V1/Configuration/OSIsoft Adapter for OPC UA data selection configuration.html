@@ -125,10 +125,10 @@ Linux: /usr/share/OSIsoft/Adapters/OpcUa/OpcUa/Configuration/OpcUa1_DataSelectio
 <ol>
 <li>Using any text editor, create a file that contains an OPC UA data selection in JSON form.<ul>
 <li>For content structure, see <a href="#opc-ua-data-selection-example">OPC UA data selection example</a>.</li>
+<li>For a table of all available parameters, see <a href="#opc-ua-data-selection-parameters">OPC UA data selection</a>.</li>
 </ul>
 </li>
-<li>Update the parameters as needed. For a table of all available parameters, see <a href="#opc-ua-data-selection-parameters">OPC UA data selection</a>.</li>
-<li>Save the file as <em>DataSelection.config.json</em>.</li>
+<li>Save the file, for example as <em>DataSelection.config.json</em>.</li>
 <li>Use any of the <a class="xref" href="../main/V1/Configuration/Configuration%20tools.html">Configuration tools</a> capable of making HTTP requests to execute a POST command with the contents of that file to the following endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;adapterId&gt;/DataSelection/</code></li>
 </ol>
 <p>Example using curl (run this command from the same directory where the file is located):</p>

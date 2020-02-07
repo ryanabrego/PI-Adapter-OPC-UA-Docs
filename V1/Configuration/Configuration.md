@@ -1,5 +1,5 @@
 ---
-uid: Configuration
+uid: OPCUAConfiguration
 ---
 
 # Configuration

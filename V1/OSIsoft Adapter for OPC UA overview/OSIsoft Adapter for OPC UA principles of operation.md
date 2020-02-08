@@ -4,7 +4,7 @@ uid: OSIsoftAdapterForOPCUAPrinciplesOfOperation
 
 # OSIsoft Adapter for OPC UA principles of operation
 
-OPC UA adapter operations operations focus on data collection and streams creation.
+This adapter's operations focus on data collection and streams creation.
 
 ## Adapter configuration
 

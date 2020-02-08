@@ -10,6 +10,8 @@ OPC UA adapter generates a self-signed certificate when the first secure connect
 
 ## Configure OPC UA adapter security
 
+Complete the following procedure to configure OPC UA adapter security:
+
 1. In your data source configuration, set `UseSecureConnection` to **true**. For more information, see [OSIsoft Adapter for OPC UA data source configuration](xref:OSIsoftAdapterForOPCUADataSourceConfiguration).
 
    The adapter verifies whether the server certificate is present in the [adapter trusted certificates](#adapter-trusted-certificates) folder and is therefore trusted. In case the certificates were not exchanged before the first attemped connection, the adapter persists the server certificate within the [adapter rejected certificates](#adapter-rejected-certificates) folder and the following warning message about the rejected server certificate will be printed:

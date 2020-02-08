@@ -4,7 +4,7 @@ uid: OSIsoftAdapterForOPCUASupportedFeatures
 
 # OSIsoft Adapter for OPC UA supported features
 
-OPC UA adapter features include register and data types as well as bitmaps.
+OPC UA adapter features include data types as well as bitmaps.
 
 ## Data types
 

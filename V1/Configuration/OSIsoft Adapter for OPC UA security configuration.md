@@ -42,21 +42,39 @@ Complete the following procedure to configure OPC UA adapter security:
 
 #### Adapter rejected certificates
 
-Windows: `%programdata%\OSIsoft\Adapters\OpcUa\OpcUa\{ComponentId}\Certificates\RejectedCertificates\certs`
+Windows: 
+```
+%programdata%\OSIsoft\Adapters\OpcUa\OpcUa\{ComponentId}\Certificates\RejectedCertificates\certs
+```
 
-Linux: `/usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates/RejectedCertificates/certs`
+Linux: 
+```
+/usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates/RejectedCertificates/certs
+```
 
 
 #### Adapter trusted certificates
 
-Windows: `%programdata%\OSIsoft\Adapters\OpcUa\OpcUa\{ComponentId}\Certificates\Trusted\certs`
+Windows: 
+```
+%programdata%\OSIsoft\Adapters\OpcUa\OpcUa\{ComponentId}\Certificates\Trusted\certs
+```
 
-Linux: `/usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates/Trusted/certs`
+Linux: 
+```
+/usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates/Trusted/certs
+```
 
 
 #### Certificate of the adapter
 
-Windows: `%programdata%\OSIsoft\Adapters\OpcUa\OpcUa\{ComponentId}\Certificates\My\certs`
+Windows: 
+```
+%programdata%\OSIsoft\Adapters\OpcUa\OpcUa\{ComponentId}\Certificates\My\certs
+```
 
-Linux: `/usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates\My\certs`
+Linux: 
+```
+/usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates\My\certs
+```
 

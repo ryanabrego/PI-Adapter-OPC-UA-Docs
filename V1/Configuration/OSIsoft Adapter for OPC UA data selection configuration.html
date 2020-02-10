@@ -79,7 +79,7 @@
 <h1 id="osisoft-adapter-for-opc-ua-data-selection-configuration">OSIsoft Adapter for OPC UA data selection configuration</h1>
 
 <p>In addition to the data source configuration, you need to provide a data selection configuration to specify the data you want the OPC UA adapter to collect from the data sources. </p>
-<p>When you add a data source, the OPC UA adapter browses the entire OPC UA server address space and exports the available OPC UA variables into a JSON file for data selection. Data is collected automatically based upon user demands. OPC UA data from OPC UA variables is read through subscriptions (unsolicited reads).</p>
+<p>When you add a data source, the OPC UA adapter browses the entire OPC UA server address space and exports the available OPC UA variables into a JSON file for data selection. Comma-separated collection of nodeIds (RootNodeIds) serve as filters to browse only a subset of the OPC UA server. Data is collected automatically based upon user demands. OPC UA data from OPC UA variables is read through subscriptions (unsolicited reads).</p>
 <p>You can either have the data selection configuration file generated for you or you can create it manually yourself.</p>
 <h2 id="generate-default-opc-ua-data-selection-configuration-file">Generate default OPC UA data selection configuration file</h2>
 <p>A default OPC UA data selection file will be created if there is no OPC UA data selection configuration, but a valid OPC UA data source exists.</p>
@@ -119,7 +119,7 @@
 <li>Use any of the <a class="xref" href="../main/V1/Configuration/Configuration%20tools.html">Configuration tools</a> capable of making HTTP requests to execute a POST command with the contents of that file to the following endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;adapterId&gt;/DataSelection/</code></li>
 </ol>
 <p>Example using curl (run this command from the same directory where the file is located):</p>
-<p><strong>Note:</strong> During installation, you can add a single OPC UA adapter named OpcUA1. The following example uses this component name.</p>
+<p><strong>Note:</strong> The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see <a class="xref" href="../main/V1/Configuration/System%20components%20configuration.html">System components configuration</a>.</p>
 <pre><code class="lang-bash">curl -v -d &quot;@DataSelection.config.json&quot; -H &quot;Content-Type: application/json&quot; &quot;http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection&quot;
 </code></pre><h2 id="opc-ua-data-selection-schema">OPC UA data selection schema</h2>
 <p>The full schema definition for the OPC UA data selection configuration is in the <em>OpcUa_DataSelection_schema.json</em> here:</p>

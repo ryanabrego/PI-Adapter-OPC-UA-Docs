@@ -139,8 +139,8 @@
 <td><strong>EndpointURL</strong></td>
 <td>Required</td>
 <td><code>string</code></td>
-<td>Yes</td>
-<td>The endpoint URL of the OPC UA server. The following is an example of the URL format: opc.tcp://OPCServerHost:Port/OpcUa/SimulationServer<br><br><strong>Note:</strong> If you change the EndpointURL on a configured OPC UA adapter that has ComponentID_DataSelection.json file exported, you need to remove the <em>ComponentID_DataSelection.json</em> file from the configuration directory to trigger a new browse (export).</td>
+<td>No</td>
+<td>The endpoint URL of the OPC UA server in opc.tcp format. The following is an example of the URL format: opc.tcp://OPCServerHost:Port/OpcUa/SimulationServer<br><br><strong>Note:</strong> If you change the EndpointURL on a configured OPC UA adapter that has ComponentID_DataSelection.json file exported, you need to remove the <em>ComponentID_DataSelection.json</em> file from the configuration directory to trigger a new browse (export).</td>
 </tr>
 <tr>
 <td><strong>UseSecureConnection</strong></td>
@@ -161,7 +161,7 @@
 <td>Optional</td>
 <td><code>string</code></td>
 <td>Yes</td>
-<td>Password for accessing the OPC UA server.<br><br><strong>Note:</strong> OSIsoft recommends using REST to configure the data source when the password must be specified.</td>
+<td>Password for accessing the OPC UA server.<br><br><strong>Note:</strong> OSIsoft recommends using REST to configure the data source when the password must be specified because REST will encrypt the password. If you do not use REST, the plain text password will be stored on-disk.</td>
 </tr>
 <tr>
 <td><strong>RootNodeIds</strong></td>
@@ -175,7 +175,7 @@
 <td>Optional</td>
 <td><code>string</code></td>
 <td>No</td>
-<td>Specifies whether the incoming timestamp is taken from the source, from the OPC UA server, or should be created by the OPC UA adapter instance. <strong>Source</strong> - Default and recommended setting. The timestamp is taken from the source timestamp field. The source is what provides data for the item to the OPC UA server, such as a field device. <strong>Server</strong> - In case the OPC UA item has an invalid source timestamp field, the Server timestamp can be used. <strong>Connector</strong> - The OPC UA adapter generates a timestamp for the item upon receiving it from the OPC UA server.</td>
+<td>Specifies whether the incoming timestamp is taken from the source, from the OPC UA server, or should be created by the OPC UA adapter instance. <strong>Source</strong> - Default and recommended setting. The timestamp is taken from the source timestamp field. The source is what provides data for the item to the OPC UA server, such as a field device. <strong>Server</strong> - In case the OPC UA item has an invalid source timestamp field, the Server timestamp can be used. <strong>Adapter</strong> - The OPC UA adapter generates a timestamp for the item upon receiving it from the OPC UA server.</td>
 </tr>
 <tr>
 <td><strong>StreamPrefix</strong></td>
@@ -189,14 +189,14 @@
 <td>Optional</td>
 <td><code>boolean</code></td>
 <td>No</td>
-<td>Parameter applied to all data items collected from the data source that have custom stream ID configured. If configured, the adapter will apply the StreamIdPrefix property to all the streams with custom ID configured. The property does not affect any streams with default ID configured</td>
+<td>Parameter applied to all data items collected from the data source that have custom stream ID configured. If set to <code>true</code>, the adapter will apply the <strong>StreamPrefix</strong> property to all streams with custom ID configured. The property does not affect any streams with default ID configured.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="opc-ua-data-source-example">OPC UA data source example</h2>
 <p>The following is an example of valid OPC UA data source configuration:</p>
 <pre><code class="lang-json">{
-    &quot;EndpointUrl&quot;: &quot;opc.tcp://IP-Address/TestOPCUAServer&quot;,
+    &quot;EndpointUrl&quot;: &quot;opc.tcp://&lt;IP-Address&gt;:&lt;Port&gt;/&lt;TestOPCUAServer&gt;&quot;,
     &quot;UseSecureConnection&quot;: true,
     &quot;UserName&quot;: null,
     &quot;Password&quot;: null,

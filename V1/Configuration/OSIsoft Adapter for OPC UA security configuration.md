@@ -25,7 +25,7 @@ Complete the following procedure to configure OPC UA adapter security:
    Linux example using command-line:
 
    ```bash
-   mv /usr/share/OSIsoft/Adapters/OpcUa/OpcUa/OpcUa1/Certificates/RejectedCertificates/certsSimulationServer\ \[F9823DCF607063DBCECCF6F8F39FD2584F46AEBB\].der /usr/share/OSIsoft/Adapters/OpcUa/OpcUa/OpcUa1/Certificates/Trusted/certs/
+   sudo mv /usr/share/OSIsoft/Adapters/OpcUa/OpcUa/OpcUa1/Certificates/RejectedCertificates/certsSimulationServer\ \[F9823DCF607063DBCECCF6F8F39FD2584F46AEBB\].der /usr/share/OSIsoft/Adapters/OpcUa/OpcUa/OpcUa1/Certificates/Trusted/certs/
    ```
 
    **Note:** Administrator or root privileges are required to perform this operation.
@@ -34,7 +34,7 @@ Complete the following procedure to configure OPC UA adapter security:
   
 3. Add the [certificate of the adapter](#certificate-of-the-adapter) to the server's trust store.
 
-   The connection succeeds only when the adapter certificate is trusted on the server side. For more details on how to make a client certificate trusted, see your OPC UA server documentation. In general, servers work in a similar fashion as the clients, hence you can take a similar approach for making the server certificate trusted on the client side.
+   The connection succeeds only when the adapter certificate is trusted on the server side. For more details on how to make a client certificate trusted, see your OPC UA server documentation. In general, servers work in a similar fashion to the clients, hence you can take a similar approach for making the server certificate trusted on the client side.
    
    When certificates are mutually trusted, the connection attempt succeeds and the adapter is connected to the most secure endpoint provided by the server.
 

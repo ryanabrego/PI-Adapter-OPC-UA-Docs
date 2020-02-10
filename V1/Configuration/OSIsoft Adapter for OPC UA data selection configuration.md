@@ -19,41 +19,24 @@ A default OPC UA data selection file will be created if there is no OPC UA data 
 Complete the following procedure for this default data selection file to be generated:
 
 1. Add an OPC UA adapter with a unique ComponentId. For more information, see [System components configuration](xref:SystemComponentsConfiguration).
-
-  During the installation of Edge Data Store, enabling the OPC UA adapter results in addition of a unique component that also satisfies this condition.
   
 2. Configure a valid OPC UA data source. For more information, see [OSIsoft Adapter for OPC UA data source configuration](xref:OSIsoftAdapterForOPCUADataSourceConfiguration).
 
   Once you complete these steps, a default OPC UA data selection configuration file will be generated in the configuration directory for the corresponding platform.
   
-  The following are example locations of the file created. In this example, it is assumed that the ComponentId of the OPC UA component is the default OpcUa1:
+  The following are example locations of the file created. In this example, it is assumed that the ComponentId of the OPC UA component is OpcUa1:
 
   Windows: *%programdata%\OSIsoft\Adapters\OpcUa\OpcUa\Configuration\OpcUa1_DataSelection.json*
    
   Linux: */usr/share/OSIsoft/Adapters/OpcUa/OpcUa/Configuration/OpcUa1_DataSelection.json*
 
 3. Copy the file to a different directory.
+    - For content structure, see [OPC UA data selection example](#opc-ua-data-selection-example). 
 
-  The contents of the file will look something like:
+4. Using any text editor, change the value of any **Selected** key from `false` to `true` in the file.
 
-  ```json
-  [
-   {
-     "Selected": false,
-     "Name": "Cold Side Inlet Temperature",
-     "NodeId": "ns=2;s=Line1.HeatExchanger1001.ColdSideInletTemperature",
-     "StreamId": null
-    },
-    {
-     "Selected": false,
-     "Name": "Cold Side Outlet Temperature",
-     "NodeId": "ns=2;s=Line1.HeatExchanger1001.ColdSideOutletTemperature",
-     "StreamId": null
-    }
-  ]
-  ```
+   Once the configuration is updated, the adapter will subscribe to data for all items that are set to *Selected=true*.
 
-4. In a text editor, edit the file and change the value of any Selected key from false to true in order to transfer the OPC UA data to be stored in Edge Data Store. 
 5. In the same directory where you edited the file, run the following curl command:
 
   ```bash
@@ -102,7 +85,7 @@ The following parameters can be used to configure OPC UA data selection:
 |---------------|----------|------|----------|-------------|
 | **Selected** | Optional | `boolean` | No | Use this field to select or clear a measurement. To select an item, set to true. To remove an item, leave the field empty or set to false.  If not configured, the default value is false.|
 | **Name**      | Optional | `string` | Yes |The optional friendly name of the data item collected from the data source. If not configured, the default value will be the stream id. |
-| **NodeId**    | Required | `string` | Yes | The NodeId of the variable. |
+| **NodeId**    | Required | `string` | No | The NodeId of the variable.<br><br>Examples<br>`"ns=5;AString"`<br>`"ns=2;i=203"`<br>`"ns=<NamespaceIndex>;<IdentifierType>=<Identifer>"` |
 | **StreamID** | Optional | `string` | Yes | The custom stream ID used to create the streams. If not specified, the OPC UA adapter will generate a default stream ID based on the measurement configuration. A properly configured custom stream ID follows these rules:<br><br>Is not case-sensitive.<br>Can contain spaces.<br>Cannot start with two underscores ("__").<br>Can contain a maximum of 100 characters.<br>Cannot use the following characters: / : ? # [ ] @ ! $ & ' ( ) \ * + , ; = % < > &#124;<br>Cannot start or end with a period.<br>Cannot contain consecutive periods.<br>Cannot consist of only periods.
 
 ## OPC UA data selection example

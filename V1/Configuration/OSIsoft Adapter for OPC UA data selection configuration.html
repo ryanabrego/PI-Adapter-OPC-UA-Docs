@@ -87,32 +87,20 @@
 <p>Complete the following procedure for this default data selection file to be generated:</p>
 <ol>
 <li><p>Add an OPC UA adapter with a unique ComponentId. For more information, see <a class="xref" href="../main/V1/Configuration/System%20components%20configuration.html">System components configuration</a>.</p>
-<p>During the installation of Edge Data Store, enabling the OPC UA adapter results in addition of a unique component that also satisfies this condition.</p>
 </li>
 <li><p>Configure a valid OPC UA data source. For more information, see <a class="xref" href="OSIsoft%20Adapter%20for%20OPC%20UA%20data%20source%20configuration.html">OSIsoft Adapter for OPC UA data source configuration</a>.</p>
 <p>Once you complete these steps, a default OPC UA data selection configuration file will be generated in the configuration directory for the corresponding platform.</p>
-<p>The following are example locations of the file created. In this example, it is assumed that the ComponentId of the OPC UA component is the default OpcUa1:</p>
+<p>The following are example locations of the file created. In this example, it is assumed that the ComponentId of the OPC UA component is OpcUa1:</p>
 <p>Windows: <em>%programdata%\OSIsoft\Adapters\OpcUa\OpcUa\Configuration\OpcUa1_DataSelection.json</em></p>
 <p>Linux: <em>/usr/share/OSIsoft/Adapters/OpcUa/OpcUa/Configuration/OpcUa1_DataSelection.json</em></p>
 </li>
 <li><p>Copy the file to a different directory.</p>
-<p>The contents of the file will look something like:</p>
-<pre><code class="lang-json">[
-{
-  &quot;Selected&quot;: false,
-  &quot;Name&quot;: &quot;Cold Side Inlet Temperature&quot;,
-  &quot;NodeId&quot;: &quot;ns=2;s=Line1.HeatExchanger1001.ColdSideInletTemperature&quot;,
-  &quot;StreamId&quot;: null
- },
- {
-  &quot;Selected&quot;: false,
-  &quot;Name&quot;: &quot;Cold Side Outlet Temperature&quot;,
-  &quot;NodeId&quot;: &quot;ns=2;s=Line1.HeatExchanger1001.ColdSideOutletTemperature&quot;,
-  &quot;StreamId&quot;: null
- }
-]
-</code></pre></li>
-<li><p>In a text editor, edit the file and change the value of any Selected key from false to true in order to transfer the OPC UA data to be stored in Edge Data Store. </p>
+<ul>
+<li>For content structure, see <a href="#opc-ua-data-selection-example">OPC UA data selection example</a>. </li>
+</ul>
+</li>
+<li><p>Using any text editor, change the value of any <strong>Selected</strong> key from <code>false</code> to <code>true</code> in the file.</p>
+<p>Once the configuration is updated, the adapter will subscribe to data for all items that are set to <em>Selected=true</em>.</p>
 </li>
 <li><p>In the same directory where you edited the file, run the following curl command:</p>
 <pre><code class="lang-bash">curl -i -d &quot;@OpcUa1_DataSelection.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT http://localhost:5590/api/v1/configuration/OpcUa1/Dataselection
@@ -191,8 +179,8 @@
 <td><strong>NodeId</strong></td>
 <td>Required</td>
 <td><code>string</code></td>
-<td>Yes</td>
-<td>The NodeId of the variable.</td>
+<td>No</td>
+<td>The NodeId of the variable.<br><br>Examples<br><code>&quot;ns=5;AString&quot;</code><br><code>&quot;ns=2;i=203&quot;</code><br><code>&quot;ns=&lt;NamespaceIndex&gt;;&lt;IdentifierType&gt;=&lt;Identifer&gt;&quot;</code></td>
 </tr>
 <tr>
 <td><strong>StreamID</strong></td>

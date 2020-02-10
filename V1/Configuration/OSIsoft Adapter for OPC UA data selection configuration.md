@@ -65,12 +65,6 @@ curl -v -d "@DataSelection.config.json" -H "Content-Type: application/json" "htt
 
 ## OPC UA data selection schema
 
-The following table shows the basic behavior of the _OpcUa_DataSelection_schema.json_ file.
-
-| Abstract            | Extensible | Status       | Identifiable | Custom properties | Additional properties |
-| ------------------- | ---------- | ------------ | ------------ | ----------------- | --------------------- |
-| Can be instantiated | Yes        | Experimental | No           | Forbidden         | Forbidden             |
-
 The full schema definition for the OPC UA data selection configuration is in the _OpcUa_DataSelection_schema.json_ here:
 
 Windows: *%Program Files%\OSIsoft\Adapters\OpcUa\Schemas*

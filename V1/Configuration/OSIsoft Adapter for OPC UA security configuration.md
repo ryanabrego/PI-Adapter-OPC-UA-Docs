@@ -34,7 +34,7 @@ Complete the following procedure to configure OPC UA adapter security:
   
 3. Add the [certificate of the adapter](#certificate-of-the-adapter) to the server's trust store.
 
-   The connection succeeds only when the adapter certificate is trusted on the server side. For more details on how to make a client certificate trusted, see your OPC UA server documentation. In general, servers work in a similar fashion to the clients, hence you can take a similar approach for making the server certificate trusted on the client side.
+   The connection succeeds only when the adapter certificate is trusted on the server side. For more details on how to make a client certificate trusted, see your OPC UA server documentation. In general, servers work in a similar fashion to the clients, hence you can take a similar approach for making the client certificate trusted on the server side.
    
    When certificates are mutually trusted, the connection attempt succeeds and the adapter is connected to the most secure endpoint provided by the server.
 

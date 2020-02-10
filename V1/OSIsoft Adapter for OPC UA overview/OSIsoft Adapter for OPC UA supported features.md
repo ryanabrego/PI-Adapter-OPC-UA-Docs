@@ -8,7 +8,7 @@ This adapter provides several features including data types and bitmaps.
 
 ## Data types
 
-The following table lists OPC UA variable types that the OPC UA adapter supports data collection from and types of streams that are going to be created.
+The following table lists OPC UA variable types that the adapter supports data collection from and types of streams that are going to be created.
 
 | OPC UA data type | Stream data type |
 |------------------|------------------|
@@ -29,7 +29,7 @@ The following table lists OPC UA variable types that the OPC UA adapter supports
 ## Export operation
 
 
-The OPC UA adapter is able to export available OPC UA dynamic variables by browsing the OPC UA hierarchies or sub-hierarchies.
+The adapter is able to export available OPC UA dynamic variables by browsing the OPC UA hierarchies or sub-hierarchies.
 
 ### Export operation actions
 

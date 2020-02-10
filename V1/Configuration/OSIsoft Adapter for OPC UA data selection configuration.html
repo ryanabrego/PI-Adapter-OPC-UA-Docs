@@ -122,29 +122,6 @@
 <p><strong>Note:</strong> During installation, you can add a single OPC UA adapter named OpcUA1. The following example uses this component name.</p>
 <pre><code class="lang-bash">curl -v -d &quot;@DataSelection.config.json&quot; -H &quot;Content-Type: application/json&quot; &quot;http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection&quot;
 </code></pre><h2 id="opc-ua-data-selection-schema">OPC UA data selection schema</h2>
-<p>The following table shows the basic behavior of the <em>OpcUa_DataSelection_schema.json</em> file.</p>
-<table>
-<thead>
-<tr>
-<th>Abstract</th>
-<th>Extensible</th>
-<th>Status</th>
-<th>Identifiable</th>
-<th>Custom properties</th>
-<th>Additional properties</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Can be instantiated</td>
-<td>Yes</td>
-<td>Experimental</td>
-<td>No</td>
-<td>Forbidden</td>
-<td>Forbidden</td>
-</tr>
-</tbody>
-</table>
 <p>The full schema definition for the OPC UA data selection configuration is in the <em>OpcUa_DataSelection_schema.json</em> here:</p>
 <p>Windows: <em>%Program Files%\OSIsoft\Adapters\OpcUa\Schemas</em></p>
 <p>Linux: <em>/opt/OSIsoft/Adapters/OpcUa/Schemas</em></p>

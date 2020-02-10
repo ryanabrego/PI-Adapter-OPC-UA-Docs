@@ -96,29 +96,6 @@
 <pre><code class="lang-bash">curl -v -d &quot;@DataSource.config.json&quot; -H &quot;Content-Type: application/json&quot; &quot;http://localhost:5590/api/v1/configuration/OpcUa1/DataSource&quot;
 </code></pre><p><strong>Note:</strong> After you have completed data source configuration, the next step is to configure data selection. You can either have a default data selection file generated or you can create the data selection file yourself. For more information, see <a class="xref" href="OSIsoft%20Adapter%20for%20OPC%20UA%20data%20selection%20configuration.html">OSIsoft Adapter for OPC UA data selection configuration</a>.</p>
 <h2 id="opc-ua-data-source-schema">OPC UA data source schema</h2>
-<p>The following table shows the basic behavior of the <em>OpcUa_DataSource_schema.json</em> file.</p>
-<table>
-<thead>
-<tr>
-<th>Abstract</th>
-<th>Extensible</th>
-<th>Status</th>
-<th>Identifiable</th>
-<th>Custom properties</th>
-<th>Additional properties</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Can be instantiated</td>
-<td>Yes</td>
-<td>Experimental</td>
-<td>No</td>
-<td>Forbidden</td>
-<td>Forbidden</td>
-</tr>
-</tbody>
-</table>
 <p>The full schema definition for the OPC UA data source configuration is in the <em>OpcUa_DataSource_schema.json</em> here:</p>
 <p>Windows: <em>%Program Files%\OSIsoft\Adapters\OpcUa\Schemas</em></p>
 <p>Linux: <em>/opt/OSIsoft/Adapters/OpcUa/Schemas</em></p>

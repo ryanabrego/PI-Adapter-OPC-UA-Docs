@@ -30,12 +30,6 @@ curl -v -d "@DataSource.config.json" -H "Content-Type: application/json" "http:/
 
 ## OPC UA data source schema
 
-The following table shows the basic behavior of the _OpcUa_DataSource_schema.json_ file.
-
-| Abstract            | Extensible | Status       | Identifiable | Custom properties | Additional properties |
-| ------------------- | ---------- | ------------ | ------------ | ----------------- | --------------------- |
-| Can be instantiated | Yes        | Experimental | No           | Forbidden         | Forbidden             |
-
 The full schema definition for the OPC UA data source configuration is in the _OpcUa_DataSource_schema.json_ here:
 
 Windows: *%Program Files%\OSIsoft\Adapters\OpcUa\Schemas*

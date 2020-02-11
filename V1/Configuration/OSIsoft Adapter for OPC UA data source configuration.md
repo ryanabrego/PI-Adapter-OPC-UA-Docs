@@ -38,7 +38,7 @@ Linux: */opt/OSIsoft/Adapters/OpcUa/Schemas*
 
 ## OPC UA data source parameters
 
-The following parameters can be used to configure an OPC UA data source:
+The following parameters are available for configuring an OPC UA data source:
 
 | Parameter | Required | Type | Nullable | Description |
 |-----------|----------|------|----------|-------------|

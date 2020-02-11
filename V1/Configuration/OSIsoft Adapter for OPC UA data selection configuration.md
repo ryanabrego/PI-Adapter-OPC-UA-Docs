@@ -73,7 +73,7 @@ Linux: */opt/OSIsoft/Adapters/OpcUa/Schemas*
 
 ## OPC UA data selection parameters
 
-The following parameters are available for configuring OPC UA data selection:
+The following parameters are available for configuring an OPC UA data selection:
 
 | Parameter     | Required | Type | Nullable | Description |
 |---------------|----------|------|----------|-------------|

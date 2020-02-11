@@ -32,7 +32,7 @@ curl -v -d "@DataSource.config.json" -H "Content-Type: application/json" http://
 
 The full schema definition for the OPC UA data source configuration is in the _OpcUa_DataSource_schema.json_ here:
 
-Windows: *%Program Files%\OSIsoft\Adapters\OpcUa\Schemas*
+Windows: *%ProgramFiles%\OSIsoft\Adapters\OpcUa\Schemas*
 
 Linux: */opt/OSIsoft/Adapters/OpcUa/Schemas*
 

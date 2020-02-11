@@ -25,7 +25,7 @@ Complete the following procedure to configure OPC UA adapter security:
    Linux example using command-line:
 
    ```bash
-   sudo mv /usr/share/OSIsoft/Adapters/OpcUa/OpcUa/OpcUa1/Certificates/RejectedCertificates/certsSimulationServer\ \[F9823DCF607063DBCECCF6F8F39FD2584F46AEBB\].der /usr/share/OSIsoft/Adapters/OpcUa/OpcUa/OpcUa1/Certificates/Trusted/certs/
+   sudo mv /usr/share/OSIsoft/Adapters/OpcUa/OpcUa/OpcUa1/Certificates/RejectedCertificates/certs/'SimulationServer [F9823DCF607063DBCECCF6F8F39FD2584F46AEBB].der' /usr/share/OSIsoft/Adapters/OpcUa/OpcUa/OpcUa1/Certificates/Trusted/certs/OpcUa1/Certificates/Trusted/certs/
    ```
 
    **Note:** Administrator or root privileges are required to perform this operation.

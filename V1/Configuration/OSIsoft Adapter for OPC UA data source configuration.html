@@ -93,7 +93,7 @@
 </ol>
 <p>Example using curl (run this command from the same directory where the file is located):</p>
 <p><strong>Note:</strong> The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see <a class="xref" href="../main/V1/Configuration/System%20components%20configuration.html">System components configuration</a>.</p>
-<pre><code class="lang-bash">curl -d &quot;@DataSource.config.json&quot; -H &quot;Content-Type: application/json&quot; -X POST http://localhost:5590/api/v1/configuration/OpcUa1/DataSource&quot;
+<pre><code class="lang-bash">curl -d &quot;@DataSource.config.json&quot; -H &quot;Content-Type: application/json&quot; -X POST &quot;http://localhost:5590/api/v1/configuration/OpcUa1/DataSource&quot;
 </code></pre><p><strong>Note:</strong> After you have completed data source configuration, the next step is to configure data selection. You can either have a default data selection file generated or you can create the data selection file yourself. For more information, see <a class="xref" href="OSIsoft%20Adapter%20for%20OPC%20UA%20data%20selection%20configuration.html">OSIsoft Adapter for OPC UA data selection configuration</a>.</p>
 <h2 id="opc-ua-data-source-schema">OPC UA data source schema</h2>
 <p>The full schema definition for the OPC UA data source configuration is in the <em>OpcUa_DataSource_schema.json</em> here:</p>

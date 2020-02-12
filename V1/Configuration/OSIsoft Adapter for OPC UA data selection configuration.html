@@ -103,7 +103,7 @@
 <p>Once the configuration is updated, the adapter will subscribe to data for all items that are set to <em>Selected=true</em>.</p>
 </li>
 <li><p>In the same directory where you edited the file, run the following curl command:</p>
-<pre><code class="lang-bash">curl -i -d &quot;@OpcUa1_DataSelection.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT http://localhost:5590/api/v1/configuration/OpcUa1/Dataselection
+<pre><code class="lang-bash">curl -i -d &quot;@OpcUa1_DataSelection.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT &quot;http://localhost:5590/api/v1/configuration/OpcUa1/Dataselection&quot;
 </code></pre></li>
 </ol>
 <h2 id="configure-opc-ua-data-selection">Configure OPC UA data selection</h2>

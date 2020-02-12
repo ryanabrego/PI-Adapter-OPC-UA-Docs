@@ -43,12 +43,12 @@ Complete the following procedure to configure OPC UA adapter security:
 #### Adapter rejected certificates
 
 Windows: 
-```
+```filepath
 %programdata%\OSIsoft\Adapters\OpcUa\OpcUa\{ComponentId}\Certificates\RejectedCertificates\certs
 ```
 
 Linux: 
-```
+```filepath
 /usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates/RejectedCertificates/certs
 ```
 
@@ -56,12 +56,12 @@ Linux:
 #### Adapter trusted certificates
 
 Windows: 
-```
+```filepath
 %programdata%\OSIsoft\Adapters\OpcUa\OpcUa\{ComponentId}\Certificates\Trusted\certs
 ```
 
 Linux: 
-```
+```filepath
 /usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates/Trusted/certs
 ```
 

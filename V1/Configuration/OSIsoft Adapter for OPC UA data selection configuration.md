@@ -108,3 +108,13 @@ The following is an example of valid OPC UA data selection configuration:
   }
 ]
 ```
+
+## REST URLs
+
+| Relative URL | HTTP verb | Action |
+| ------------ | --------- | ------ |
+| api/v1/configuration/_ComponentId_/DataSelection  | GET | Retrieves the OPC UA data selection configuration |
+| api/v1/configuration/_ComponentId_/DataSelection  | PUT | Configures or updates the OPC UA data selection configuration |
+| api/v1/configuration/_ComponentId_/DataSelection | DELETE | Deletes the OPC UA data selection configuration |
+
+**Note:** Replace _ComponentId_ with the Id of your OPC UA component, for example OpcUa1.

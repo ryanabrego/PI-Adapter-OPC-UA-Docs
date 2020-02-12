@@ -40,7 +40,7 @@ Complete the following procedure for this default data selection file to be gene
 5. In the same directory where you edited the file, run the following curl command:
 
   ```bash
-  curl -i -d "@OpcUa1_DataSelection.json" -H "Content-Type: application/json" -X PUT http://localhost:5590/api/v1/configuration/OpcUa1/Dataselection
+  curl -i -d "@OpcUa1_DataSelection.json" -H "Content-Type: application/json" -X PUT "http://localhost:5590/api/v1/configuration/OpcUa1/Dataselection"
   ```
 
 ## Configure OPC UA data selection

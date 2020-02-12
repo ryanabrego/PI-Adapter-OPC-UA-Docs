@@ -69,3 +69,10 @@ The following is an example of valid OPC UA data source configuration:
 }
 ```
 
+## REST URLs
+
+| Relative URL | HTTP verb | Action |
+| ------------ | --------- | ------ |
+| api/v1/configuration/OpcUa1/DataSource | GET | Retrieves the OPC UA data source configuration |
+| api/v1/configuration/OpcUa1/DataSource | PUT | Configures or updates the OPC UA data source configuration |
+| api/v1/configuration/OpcUa1/DataSource | DELETE | Deletes the OPC UA data source configuration |

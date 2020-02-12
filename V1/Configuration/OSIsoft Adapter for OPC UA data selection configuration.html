@@ -120,7 +120,7 @@
 </ol>
 <p>Example using curl (run this command from the same directory where the file is located):</p>
 <p><strong>Note:</strong> The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see <a class="xref" href="../main/V1/Configuration/System%20components%20configuration.html">System components configuration</a>.</p>
-<pre><code class="lang-bash">curl -v -d &quot;@DataSelection.config.json&quot; -H &quot;Content-Type: application/json&quot; &quot;http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection&quot;
+<pre><code class="lang-bash">curl -d &quot;@DataSelection.config.json&quot; -H &quot;Content-Type: application/json&quot; -X POST &quot;http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection&quot;
 </code></pre><h2 id="opc-ua-data-selection-schema">OPC UA data selection schema</h2>
 <p>The full schema definition for the OPC UA data selection configuration is in the <em>OpcUa_DataSelection_schema.json</em> here:</p>
 <p>Windows: <em>%ProgramFiles%\OSIsoft\Adapters\OpcUa\Schemas</em></p>

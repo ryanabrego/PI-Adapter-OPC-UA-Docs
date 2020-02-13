@@ -39,9 +39,11 @@ Complete the following procedure for this default data selection file to be gene
 
 5. In the same directory where you edited the file, run the following curl command:
 
-  ```bash
-  curl -i -d "@OpcUa1_DataSelection.json" -H "Content-Type: application/json" -X PUT "http://localhost:5590/api/v1/configuration/OpcUa1/Dataselection"
-  ```
+    **Note:** `5590` is the default port number. If you selected a different port number, replace it with that value.
+
+      ```bash
+      curl -i -d "@OpcUa1_DataSelection.json" -H "Content-Type: application/json" -X PUT      "http://localhost:5590/api/v1/configuration/OpcUa1/Dataselection"
+      ```
 
 ## Configure OPC UA data selection
 
@@ -55,13 +57,13 @@ Complete the following to configure the OPC UA data selection:
 2. Save the file, for example as _DataSelection.config.json_.
 3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to execute a POST command with the contents of that file to the following endpoint: `http://localhost:5590/api/v1/configuration/<adapterId>/DataSelection/`
 
-Example using curl (run this command from the same directory where the file is located):
+    Example using curl (run this command from the same directory where the file is located):
 
-**Note:** The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration).
+    **Note:** The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration). `5590` is the default port number. If you selected a different port number, replace it with that value.
 
-```bash
-curl -d "@DataSelection.config.json" -H "Content-Type: application/json" -X POST "http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection"
-```
+    ```bash
+    curl -d "@DataSelection.config.json" -H "Content-Type: application/json" -X POST "http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection"
+    ```
 
 ## OPC UA data selection schema
 

@@ -4,8 +4,13 @@ uid: OSIsoftAdapterForOPCUAOverview
 
 # OSIsoft Adapter for OPC UA overview
 
-OPC UA is an open standard, which ensures interoperability, security, and reliability of industrial automation devices and systems. OPC UA is recognized as one of the key communication and data modeling technologies of Industry 4.0, due to the fact that it works with many software platforms, and is completely scalable and flexible.
+The OSIsoft Adapter for OPC UA is a data-collection component that transfers time-series data from source devices to OSIsoft OMF endpoints in OSIsoft Cloud Services or PI Servers. OPC Unified Architecture (OPC UA) is an open standard, machine-to-machine communication protocol for industrial automation developed by the OPC Foundation. The OPC UA adapter can connect to any device that uses the OPC UA communication protocol.
 
-All adapters are developed operating system-agnostic.  You can add a single adapter during installation. For more information, see [Installation](xref:Installation).
+The OSIsoft OPC UA Adapter is installed with a download kit obtained from the OSIsoft Customer Portal and works on devices running either Windows or Linux operating systems. 
 
-The OPC UA adapter is configured with data source and data selection JSON files. It transfers time series data from the data source devices to a defined endpoint. The data source configurations are identical with other adapters, but OPC UA supports an option to generate a data selection file template that you can manually edit and use for subsequent configuration. For details, see [OSIsoft Adapter for OPC UA data selection configuration](xref:OSIsoftAdapterForOPCUADataSelectionConfiguration). Once you create a template file, you can reuse it on both Linux and Windows without changes.
+All functions of the adapter are configured using JSON files. For data ingress, an adapter system component must be defined for each device to which the adapter will connect. Each adapter system component is then configured with the connection information for the device, the data to collect, and the security for the connection. For data egress, configurations are needed to specify the destination for the data and the security for the outgoing connection. Additional configurations are available to egress health and diagnostics data, add data buffering to protect against data loss, and record logging information for troubleshooting. 
+
+Once the adapter is configured and sending data, use administration functions to manage the adapter or individual ingress components of the adapter. Use health and diagnostics functions to monitor the status of connected devices, adapter system functions, the number of active data streams, the rate of data ingress, the rate of errors, and the rate of data egress.
+
+The EdgeCmd utility is an OSIsoft proprietary command line tool that is used to configure and administer an adapter on both Linux and Windows operating systems. It is installed separately from the adapter and provides an alternative to REST tools.
+

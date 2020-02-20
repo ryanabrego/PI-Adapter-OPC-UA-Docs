@@ -18,11 +18,11 @@ Complete the following procedure to configure the OPC UA data source:
 2. Save the file, for example as _DataSource.config.json_.
 3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to execute a POST command with the contents of that file to the following endpoint: `http://localhost:5590/api/v1/configuration/<adapterId>/DataSource/`. 
 
-    **Note:** `5590` is the default port number. If you selected a different port number, replace it with that value.
+      **Note:** The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration).
+    
+    `5590` is the default port number. If you selected a different port number, replace it with that value.
 
     Example using curl (run this command from the same directory where the file is located):
-
-    **Note:** The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration).
 
     ```bash
     curl -d "@DataSource.config.json" -H "Content-Type: application/json" -X POST "http://localhost:5590/api/v1/configuration/OpcUa1/DataSource"

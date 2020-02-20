@@ -28,6 +28,26 @@ The OPC UA adapter creates types upon receiving the value update for a stream. O
 
 The OPC UA adapter collects time-series data from selected OPC UA dynamic variables through OPC UA subscriptions (unsolicited reads). The adapter supports the Data Access (DA) part of OPC UA specification.
 
+### Data types
+
+The following table lists OPC UA variable types that the adapter supports data collection from and types of streams that are going to be created.
+
+| OPC UA data type | Stream data type |
+|------------------|------------------|
+| Boolean          | Boolean          |
+| Byte             | Int16            |
+| SByte            | Int16            |
+| Int16            | Int16            |
+| UInt16           | UInt16           |
+| Int32            | Int32            |
+| UInt32           | UInt32           |
+| Int64            | Int64            |
+| UInt64           | UInt64           |
+| Float            | Float32          |
+| Double           | Float64          |
+| DateTime         | DateTime         |
+| String           | String           |
+
 ## Streams by OPC UA adapter
 
 The OPC UA adapter creates a stream with two properties per selected OPC UA item. The properties are described in the following table:

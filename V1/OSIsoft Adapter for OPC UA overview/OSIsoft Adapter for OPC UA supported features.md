@@ -4,8 +4,6 @@ uid: OSIsoftAdapterForOPCUASupportedFeatures
 
 # OSIsoft Adapter for OPC UA supported features
 
-This adapter provides several features, focusing on data types.
-
 ## Data types
 
 The following table lists OPC UA variable types that the adapter supports data collection from and types of streams that are going to be created.

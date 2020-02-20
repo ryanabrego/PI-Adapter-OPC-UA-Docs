@@ -59,7 +59,9 @@ Complete the following to configure the OPC UA data selection:
 
     Example using curl (run this command from the same directory where the file is located):
 
-    **Note:** The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration). `5590` is the default port number. If you selected a different port number, replace it with that value.
+    **Note:** The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration). 
+    
+    `5590` is the default port number. If you selected a different port number, replace it with that value.
 
     ```bash
     curl -d "@DataSelection.config.json" -H "Content-Type: application/json" -X POST "http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection"

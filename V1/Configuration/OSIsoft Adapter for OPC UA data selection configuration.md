@@ -14,7 +14,7 @@ You can either have the data selection configuration file generated for you or y
 
 A default OPC UA data selection file will be created if there is no OPC UA data selection configuration, but a valid OPC UA data source exists.
 
-**Note:** To avoid possibly expensive browse operations, OSIsoft recommends that you manually create a data selection file instead of generating the default data selection file. For more information, see [Configure OPC UA data selection](#configure-opc-ua-data-selection).
+**Note:** To avoid possible time and resource expensive browse operations due to reasons described previously, OSIsoft recommends that you manually create a data selection file instead of generating the default data selection file. For more information, see [Configure OPC UA data selection](#configure-opc-ua-data-selection).
 
 Complete the following procedure for this default data selection file to be generated:
 
@@ -22,13 +22,13 @@ Complete the following procedure for this default data selection file to be gene
   
 2. Configure a valid OPC UA data source. For more information, see [OSIsoft Adapter for OPC UA data source configuration](xref:OSIsoftAdapterForOPCUADataSourceConfiguration).
 
-  Once you complete these steps, a default OPC UA data selection configuration file will be generated in the configuration directory for the corresponding platform.
+   Once you complete these steps, a default OPC UA data selection configuration file will be generated in the configuration directory for the corresponding platform.
   
-  The following are example locations of the file created. In this example, it is assumed that the ComponentId of the OPC UA component is OpcUa1:
+   The following are example locations of the file created. In this example, it is assumed that the ComponentId of the OPC UA component is OpcUa1:
 
-  Windows: *%programdata%\OSIsoft\Adapters\OpcUa\OpcUa\Configuration\OpcUa1_DataSelection.json*
+   Windows: *%programdata%\OSIsoft\Adapters\OpcUa\OpcUa\Configuration\OpcUa1_DataSelection.json*
    
-  Linux: */usr/share/OSIsoft/Adapters/OpcUa/OpcUa/Configuration/OpcUa1_DataSelection.json*
+   Linux: */usr/share/OSIsoft/Adapters/OpcUa/OpcUa/Configuration/OpcUa1_DataSelection.json*
 
 3. Copy the file to a different directory.
     - For content structure, see [OPC UA data selection example](#opc-ua-data-selection-example). 

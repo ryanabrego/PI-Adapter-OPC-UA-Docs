@@ -64,7 +64,3 @@ Stream ID is a unique identifier for each stream created by the adapter for a gi
 ```
 
 **Note:** The naming convention is affected by StreamPrefix and ApplyPrefixToStreamID settings in data source configuration. For more information, see [OSIsoft Adapter for OPC UA data source configuration](xref:OSIsoftAdapterForOPCUADataSourceConfiguration).
-
-## In-memory buffering
-
-The OPC UA adapter provides in-memory buffering, which is used when you do not specify a location in the local file system to store buffer streams. For more information on buffering, see [Buffering configuration](xref:BufferingConfiguration).

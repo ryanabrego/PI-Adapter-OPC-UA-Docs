@@ -78,8 +78,8 @@
             <article class="content wrap" id="_content" data-uid="OSIsoftAdapterForOPCUADataSelectionConfiguration">
 <h1 id="osisoft-adapter-for-opc-ua-data-selection-configuration">OSIsoft Adapter for OPC UA data selection configuration</h1>
 
-<p>In addition to the data source configuration, you need to provide a data selection configuration to specify the data you want the OPC UA adapter to collect from the data sources. </p>
-<p>When you add a data source, the OPC UA adapter browses the entire OPC UA server address space and exports the available OPC UA variables into a JSON file for data selection. Comma-separated collection of nodeIds (RootNodeIds) serve as filters to browse only a subset of the OPC UA server. Data is collected automatically based upon user demands. OPC UA data from OPC UA variables is read through subscriptions (unsolicited reads).</p>
+<p>In addition to the data source configuration, you need to provide a data selection configuration to specify the data you want the adapter to collect from the data sources. </p>
+<p>When you add a data source, the adapter browses the entire OPC UA server address space and exports the available OPC UA variables into a JSON file for data selection. Comma-separated collection of nodeIds (RootNodeIds) serve as filters to browse only a subset of the OPC UA server. Data is collected automatically based upon user demands. OPC UA data from OPC UA variables is read through subscriptions (unsolicited reads).</p>
 <p>You can either have the data selection configuration file generated for you or you can create it manually yourself.</p>
 <h2 id="generate-default-opc-ua-data-selection-configuration-file">Generate default OPC UA data selection configuration file</h2>
 <p>A default OPC UA data selection file will be created if there is no OPC UA data selection configuration, but a valid OPC UA data source exists.</p>
@@ -167,7 +167,7 @@
 <td>Optional</td>
 <td><code>string</code></td>
 <td>Yes</td>
-<td>The custom stream ID used to create the streams. If not specified, the OPC UA adapter will generate a default stream ID based on the measurement configuration. A properly configured custom stream ID follows these rules:<br><br>Is not case-sensitive.<br>Can contain spaces.<br>Cannot start with two underscores (&quot;__&quot;).<br>Can contain a maximum of 100 characters.<br>Cannot use the following characters: / : ? # [ ] @ ! $ &amp; &#39; ( ) \ * + , ; = % &lt; &gt; &#124;<br>Cannot start or end with a period.<br>Cannot contain consecutive periods.<br>Cannot consist of only periods.</td>
+<td>The custom stream ID used to create the streams. If not specified, the adapter will generate a default stream ID based on the measurement configuration. A properly configured custom stream ID follows these rules:<br><br>Is not case-sensitive.<br>Can contain spaces.<br>Cannot start with two underscores (&quot;__&quot;).<br>Can contain a maximum of 100 characters.<br>Cannot use the following characters: / : ? # [ ] @ ! $ &amp; &#39; ( ) \ * + , ; = % &lt; &gt; &#124;<br>Cannot start or end with a period.<br>Cannot contain consecutive periods.<br>Cannot consist of only periods.</td>
 </tr>
 </tbody>
 </table>

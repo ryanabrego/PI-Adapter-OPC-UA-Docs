@@ -151,7 +151,7 @@
 </tr>
 <tr>
 <td><strong>IncomingTimestamp</strong></td>
-<td>Optional</td>
+<td>Required</td>
 <td><code>string</code></td>
 <td>No</td>
 <td>Specifies whether the incoming timestamp is taken from the source, from the OPC UA server, or should be created by the adapter instance. <strong>Source</strong> - Default and recommended setting. The timestamp is taken from the source timestamp field. The source is what provides data for the item to the OPC UA server, such as a field device. <strong>Server</strong> - In case the OPC UA item has an invalid source timestamp field, the Server timestamp can be used. <strong>Adapter</strong> - The adapter generates a timestamp for the item upon receiving it from the OPC UA server.</td>

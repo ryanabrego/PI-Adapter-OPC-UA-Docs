@@ -37,15 +37,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "UidNotFound"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Configuration/Configuration.md",
       "output": {
         ".html": {
           "relative_path": "V1/Configuration/Configuration.html",
-          "hash": "USRQi6MQP3n7NySGvtlqBQ=="
+          "hash": "2ZMJa+m5KQCwhMv3e+6+vg=="
         }
       },
       "is_incremental": false,
@@ -256,6 +253,21 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "V1/edgecmd/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/edgecmd/index.html",
+          "hash": "2dKu/qUvEyXnvOOORgakiA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "V1/edgecmd/toc.yml",
       "output": {
@@ -395,7 +407,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/V1/Configuration/Configuration tools.html",
-          "hash": "OAVjGb+194cwdPAJoIig2A=="
+          "hash": "v5lLi97AJcpkMC1uaKGitw=="
         }
       },
       "is_incremental": false,
@@ -851,7 +863,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 55,
+          "total_file_count": 56,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

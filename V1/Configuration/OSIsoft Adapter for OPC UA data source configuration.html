@@ -109,7 +109,6 @@
 <th>Parameter</th>
 <th>Required</th>
 <th>Type</th>
-<th>Nullable</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -118,56 +117,48 @@
 <td><strong>EndpointURL</strong></td>
 <td>Required</td>
 <td><code>string</code></td>
-<td>No</td>
 <td>The endpoint URL of the OPC UA server in opc.tcp format. The following is an example of the URL format: opc.tcp://OPCServerHost:Port/OpcUa/SimulationServer<br><br><strong>Note:</strong> If you change the EndpointURL on a configured adapter that has ComponentID_DataSelection.json file exported, you need to remove the <em>ComponentID_DataSelection.json</em> file from the configuration directory to trigger a new browse (export).</td>
 </tr>
 <tr>
 <td><strong>UseSecureConnection</strong></td>
 <td>Optional</td>
 <td><code>boolean</code></td>
-<td>No</td>
 <td>When set to true, the adapter connects to a secure endpoint using OPC UA certificate exchange operation. The default is true. When set to false, the adapter connects to an unsecured endpoint of the server and certificate exchange operation is not required.<br><br><strong>Note:</strong> OSIsoft recommends setting this option to false for testing purposes only.</td>
 </tr>
 <tr>
 <td><strong>UserName</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>Yes</td>
 <td>User name for accessing the OPC UA server.</td>
 </tr>
 <tr>
 <td><strong>Password</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>Yes</td>
 <td>Password for accessing the OPC UA server.<br><br><strong>Note:</strong> OSIsoft recommends using REST to configure the data source when the password must be specified because REST will encrypt the password. If you do not use REST, the plain text password will be stored on-disk.</td>
 </tr>
 <tr>
 <td><strong>RootNodeIds</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>Yes</td>
 <td>List of comma-separated NodeIds of those objects from which the adapter browses the OPC UA server address space. This option allows selecting only subsets of the OPC UA address by explicitly listing one or more NodeIds which are used to start the initial browse.<br><br>Examples:<br><code>&quot;ns=5;s=85/0:Simulation&quot;</code><br><code>&quot;ns=3;s=DataItems&quot;</code><br><br>If not specified, it means that the whole address space will be browsed.</td>
 </tr>
 <tr>
 <td><strong>IncomingTimestamp</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>No</td>
 <td>Specifies whether the incoming timestamp is taken from the source, from the OPC UA server, or should be created by the adapter instance. <strong>Source</strong> - Default and recommended setting. The timestamp is taken from the source timestamp field. The source is what provides data for the item to the OPC UA server, such as a field device. <strong>Server</strong> - In case the OPC UA item has an invalid source timestamp field, the Server timestamp can be used. <strong>Adapter</strong> - The adapter generates a timestamp for the item upon receiving it from the OPC UA server.</td>
 </tr>
 <tr>
 <td><strong>StreamPrefix</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>Yes</td>
 <td>Specifies what prefix is used for Stream IDs and names. Naming convention is StreamPrefixNodeId and StreamPrefixName. <strong>Note:</strong> An empty string means no prefix will be added to the Stream IDs and names. Null value means ComponentID followed by dot character will be added to the stream IDs and names (for example, OpcUa1.NodeId).</td>
 </tr>
 <tr>
 <td><strong>ApplyPrefixToStreamId</strong></td>
 <td>Optional</td>
 <td><code>boolean</code></td>
-<td>No</td>
 <td>Parameter applied to all data items collected from the data source that have custom stream ID configured. If set to <code>true</code>, the adapter will apply the <strong>StreamPrefix</strong> property to all streams with custom ID configured. The property does not affect any streams with default ID configured.</td>
 </tr>
 </tbody>

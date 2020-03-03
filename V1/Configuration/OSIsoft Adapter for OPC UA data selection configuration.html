@@ -136,7 +136,6 @@
 <th>Parameter</th>
 <th>Required</th>
 <th>Type</th>
-<th>Nullable</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -145,28 +144,24 @@
 <td><strong>Selected</strong></td>
 <td>Optional</td>
 <td><code>boolean</code></td>
-<td>No</td>
 <td>Use this field to select or clear a measurement. To select an item, set to true. To remove an item, leave the field empty or set to false.  If not configured, the default value is true.</td>
 </tr>
 <tr>
 <td><strong>Name</strong></td>
 <td>Required</td>
 <td><code>string</code></td>
-<td>Yes</td>
 <td>The optional friendly name of the data item collected from the data source.</td>
 </tr>
 <tr>
 <td><strong>NodeId</strong></td>
 <td>Required</td>
 <td><code>string</code></td>
-<td>No</td>
 <td>The NodeId of the variable.<br><br>Examples<br><code>&quot;ns=5;AString&quot;</code><br><code>&quot;ns=2;i=203&quot;</code><br><code>&quot;ns=&lt;NamespaceIndex&gt;;&lt;IdentifierType&gt;=&lt;Identifer&gt;&quot;</code></td>
 </tr>
 <tr>
 <td><strong>StreamID</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>Yes</td>
 <td>The custom stream ID used to create the streams. If not specified, the adapter will generate a default stream ID based on the measurement configuration. A properly configured custom stream ID follows these rules:<br><br>Is not case-sensitive.<br>Can contain spaces.<br>Cannot start with two underscores (&quot;__&quot;).<br>Can contain a maximum of 100 characters.<br>Cannot use the following characters: / : ? # [ ] @ ! $ &amp; &#39; ( ) \ * + , ; = % &lt; &gt; &#124;<br>Cannot start or end with a period.<br>Cannot contain consecutive periods.<br>Cannot consist of only periods.</td>
 </tr>
 </tbody>

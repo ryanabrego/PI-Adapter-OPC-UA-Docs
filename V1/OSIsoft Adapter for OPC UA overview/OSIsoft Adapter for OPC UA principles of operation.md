@@ -24,7 +24,7 @@ The OPC UA adapter uses the binary opc.tcp protocol to communicate with the OPC 
 
 The OPC UA adapter creates types upon receiving the value update for a stream. One stream is created for every selected OPC UA item in the data selection configuration.
 
-## Streams by OPC UA adapter
+### Streams by OPC UA adapter
 
 The OPC UA adapter creates a stream with two properties per selected OPC UA item. The properties are described in the following table:
 

@@ -88,7 +88,28 @@ The following parameters are available for configuring an OPC UA data selection:
 
 ## OPC UA data selection example
 
-The following is an example of valid OPC UA data selection configuration:
+The following are examples of valid OPC UA data selection configurations:
+
+**Minimum data selection configuration**:
+
+```json
+[
+ {
+    "Name": "Random1",
+    "NodeId": "ns=5;s=Random1"
+  },
+  {
+    "Name": "Sawtooth1",
+    "NodeId": "ns=5;s=Sawtooth1"
+  },
+  {
+    "Name": "Sinusoid1",
+    "NodeId": "ns=5;s=Sinusoid1"
+  }
+]
+```
+
+**Maximum data selection configuration**:
 
 ```json
 [

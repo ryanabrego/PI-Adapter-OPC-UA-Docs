@@ -20,7 +20,7 @@ Complete the following procedure to configure adapter security:
    ~~2019-09-08 11:45:48.093 +01:00~~ [Warning] Rejected Certificate: "DC=MyServer.MyDomain.int, O=OSIsoft, CN=Simulation
    ```
 
-2. Manually move the server certificate from the [_RejectedCertificates\certs_](#adapter-rejected-certificates) folder to the [_Trusted\certs_](#adapter-trusted-certificates) folder using a file explorer or command-line interpreter.
+2. Manually move the server certificate from the [Adapter rejected certificates](#adapter-rejected-certificates) location to the [Adapter trusted certificates](#adapter-trusted-certificates) location using a file explorer or command-line interpreter.
 
    Linux example using command-line:
 
@@ -34,7 +34,7 @@ Complete the following procedure to configure adapter security:
   
 3. Add the [certificate of the adapter](#certificate-of-the-adapter) to the server's trust store.
 
-   The connection succeeds only when the adapter certificate is trusted on the server side. For more details on how to make a client certificate trusted, see your OPC UA server documentation. In general, servers work in a similar fashion to the clients, hence you can take a similar approach for making the client certificate trusted on the server side.
+   The connection succeeds only when the adapter certificate is trusted on the server side. <br> For more details on how to make a client certificate trusted, see your OPC UA server documentation. <br> In general, servers work in a similar fashion to the clients, hence you can take a similar approach for making the client certificate trusted on the server side.
    
    When certificates are mutually trusted, the connection attempt succeeds and the adapter is connected to the most secure endpoint provided by the server.
 

@@ -1,9 +1,6 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: AccessEdgeCmdUtility
-  name: Access EdgeCmd utility
-  href: V1/edgecmd/V1/EdgeCmd%20utility/Access%20EdgeCmd%20utility.html
 - uid: AdapterDiagnostics
   name: Adapter diagnostics
   href: V1/main/V1/Diagnostics/Adapter%20diagnostics.html
@@ -22,30 +19,15 @@ references:
 - uid: ConfigurationTools
   name: Configuration tools
   href: V1/main/V1/Configuration/Configuration%20tools.html
-- uid: Configure adapter
-  name: Configure adapter
-  href: V1/edgecmd/V1/EdgeCmd%20utility/Configure%20adapter.html
-- uid: ConfigureAdapterComponent
-  name: Configure adapter component
-  href: V1/edgecmd/V1/EdgeCmd%20utility/Configure%20adapter%20component.html
 - uid: DeleteAnAdapterComponent
   name: Delete an adapter component
   href: V1/main/V1/Administration/Delete%20an%20adapter%20component.html
-- uid: DeleteConfiguration
-  name: Delete configuration
-  href: V1/edgecmd/V1/EdgeCmd%20utility/Delete%20configuration.html
 - uid: DeviceStatus
   name: Device status
   href: V1/main/V1/Health/Device%20status.html
 - uid: DiagnosticsConfiguration
   name: Diagnostics configuration
   href: V1/main/V1/Configuration/Diagnostics%20configuration.html
-- uid: Edgecmd commands
-  name: EdgeCmd commands
-  href: V1/edgecmd/V1/EdgeCmd%20utility/EdgeCmd%20commands.html
-- uid: EdgecmdUtility
-  name: EdgeCmd utility
-  href: V1/edgecmd/V1/EdgeCmd%20utility/EdgeCmd%20utility.html
 - uid: Egress_DataEndpoints_schema
   name: Egress endpoint configuration schema
   href: V1/main/V1/ARCHIVE/Egress_DataEndpoints_schema.html
@@ -103,12 +85,6 @@ references:
 - uid: OSIsoftAdapterForOPCUASupportedFeatures
   name: OSIsoft Adapter for OPC UA supported features
   href: V1/ARCHIVE/OSIsoft%20Adapter%20for%20OPC%20UA%20supported%20features.html
-- uid: RetreiveExistingConfiguration
-  name: Retrieve existing configuration
-  href: V1/edgecmd/V1/EdgeCmd%20utility/Retrieve%20existing%20configuration.html
-- uid: RetrieveEdgeCmdUtilityHelp
-  name: Retrieve EdgeCmd utility help
-  href: V1/edgecmd/V1/EdgeCmd%20utility/Retrieve%20EdgeCmd%20utility%20help.html
 - uid: RetrieveProductVersionInformation
   name: Retrieve product version information
   href: V1/main/V1/Administration/Retrieve%20product%20version%20information.html
@@ -118,9 +94,6 @@ references:
 - uid: StartAndStopIngressComponent
   name: Start and stop ingress component
   href: V1/main/V1/Administration/Start%20and%20stop%20ingress%20component.html
-- uid: StartOrStopAComponent
-  name: Start or stop a component
-  href: V1/edgecmd/V1/EdgeCmd%20utility/Start%20or%20stop%20a%20component.html
 - uid: StreamCount
   name: Stream count
   href: V1/main/V1/Diagnostics/Stream%20count.html

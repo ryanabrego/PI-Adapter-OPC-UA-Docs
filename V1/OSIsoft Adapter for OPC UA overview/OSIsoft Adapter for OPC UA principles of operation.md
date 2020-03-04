@@ -8,7 +8,7 @@ This adapter's operations focus on data collection and streams creation.
 
 ## Adapter configuration
 
-In order for the OPC UA adapter to start data collection, you need to configure the adapter by defining the following:
+For the OPC UA adapter to start data collection, you need to configure the adapter by defining the following:
 
 - Data source: Provide the data source from which the adapter should collect data.
 - Data selection: Perform selection of OPC UA items to which the adapter should subscribe for data.

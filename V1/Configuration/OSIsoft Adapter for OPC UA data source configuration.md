@@ -56,7 +56,17 @@ The following parameters are available for configuring an OPC UA data source:
 
 ## OPC UA data source example
 
-The following is an example of valid OPC UA data source configuration:
+The following are examples of valid OPC UA data source configurations:
+
+**Minimum data source configuration**
+
+```json
+{
+    "EndpointUrl": "opc.tcp://<IP-Address>:<Port>/<TestOPCUAServer>"
+}
+```
+
+**Maximum data source configuration**
 
 ```json
 {

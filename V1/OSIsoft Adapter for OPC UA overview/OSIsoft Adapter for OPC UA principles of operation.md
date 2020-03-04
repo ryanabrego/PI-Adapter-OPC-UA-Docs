@@ -24,6 +24,23 @@ The OPC UA adapter uses the binary opc.tcp protocol to communicate with the OPC 
 
 The OPC UA adapter creates types upon receiving the value update for a stream. One stream is created for every selected OPC UA item in the data selection configuration.
 
+## Streams by OPC UA adapter
+
+The OPC UA adapter creates a stream with two properties per selected OPC UA item. The properties are described in the following table:
+
+| Property name | Data type | Description |
+|---------------|-----------|-------------|
+| Timestamp     | DateTime  | Timestamp of the given OPC UA item value update. |
+| Value         | Based on type of incoming OPC UA value | Value of the given OPC UA item update. |
+
+Stream ID is a unique identifier for each stream created by the adapter for a given OPC UA item. If the Custom Stream ID is specified for the OPC UA item in data selection configuration, the OPC UA adapter uses that as a stream ID for the stream. Otherwise, the adapter constructs the stream ID using the following format constructed from the OPC UA item node ID:
+
+```
+<Adapter Component ID>.<Namespace>.<Identifier>
+```
+
+**Note:** The naming convention is affected by StreamPrefix and ApplyPrefixToStreamID settings in data source configuration. For more information, see [OSIsoft Adapter for OPC UA data source configuration](xref:OSIsoftAdapterForOPCUADataSourceConfiguration).
+
 ## Data collection
 
 The OPC UA adapter collects time-series data from selected OPC UA dynamic variables through OPC UA subscriptions (unsolicited reads). The adapter supports the Data Access (DA) part of OPC UA specification.
@@ -48,19 +65,4 @@ The following table lists OPC UA variable types that the adapter supports data c
 | DateTime         | DateTime         |
 | String           | String           |
 
-## Streams by OPC UA adapter
 
-The OPC UA adapter creates a stream with two properties per selected OPC UA item. The properties are described in the following table:
-
-| Property name | Data type | Description |
-|---------------|-----------|-------------|
-| Timestamp     | DateTime  | Timestamp of the given OPC UA item value update. |
-| Value         | Based on type of incoming OPC UA value | Value of the given OPC UA item update. |
-
-Stream ID is a unique identifier for each stream created by the adapter for a given OPC UA item. If the Custom Stream ID is specified for the OPC UA item in data selection configuration, the OPC UA adapter uses that as a stream ID for the stream. Otherwise, the adapter constructs the stream ID using the following format constructed from the OPC UA item node ID:
-
-```
-<Adapter Component ID>.<Namespace>.<Identifier>
-```
-
-**Note:** The naming convention is affected by StreamPrefix and ApplyPrefixToStreamID settings in data source configuration. For more information, see [OSIsoft Adapter for OPC UA data source configuration](xref:OSIsoftAdapterForOPCUADataSourceConfiguration).

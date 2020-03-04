@@ -164,7 +164,12 @@
 </tbody>
 </table>
 <h2 id="opc-ua-data-source-example">OPC UA data source example</h2>
-<p>The following is an example of valid OPC UA data source configuration:</p>
+<p>The following are examples of valid OPC UA data source configurations:</p>
+<p><strong>Minimum data source configuration</strong></p>
+<pre><code class="lang-json">{
+    &quot;EndpointUrl&quot;: &quot;opc.tcp://&lt;IP-Address&gt;:&lt;Port&gt;/&lt;TestOPCUAServer&gt;&quot;
+}
+</code></pre><p><strong>Maximum data source configuration</strong></p>
 <pre><code class="lang-json">{
     &quot;EndpointUrl&quot;: &quot;opc.tcp://&lt;IP-Address&gt;:&lt;Port&gt;/&lt;TestOPCUAServer&gt;&quot;,
     &quot;UseSecureConnection&quot;: true,

@@ -84,12 +84,12 @@
 <p>Complete the following procedure to configure the OPC UA data source:</p>
 <ol>
 <li>Using any text editor, create a file that contains an OPC UA data source in JSON form.<ul>
-<li>For content structure, see <a href="#opc-ua-data-source-example">OPC UA data source example</a>.</li>
+<li>For content structure, see <a href="#opc-ua-data-source-examples">OPC UA data source examples</a>.</li>
 <li>For a table of all available parameters, see <a href="#opc-ua-data-source-parameters">OPC UA data source parameters</a>.</li>
 </ul>
 </li>
 <li>Save the file, for example as <em>DataSource.config.json</em>.</li>
-<li><p>Use any of the <a class="xref" href="../main/V1/Configuration/Configuration%20tools.html">Configuration tools</a> capable of making HTTP requests to execute a POST command with the contents of that file to the following endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;adapterId&gt;/DataSource/</code>. </p>
+<li><p>Use any of the <a class="xref" href="../main/V1/Configuration/Configuration%20tools.html">Configuration tools</a> capable of making HTTP requests to execute a POST command with the contents of that file to the following endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;adapterId&gt;/DataSource/</code>.</p>
 <p>   <strong>Note:</strong> The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see <a class="xref" href="../main/V1/Configuration/System%20components%20configuration.html">System components configuration</a>.</p>
 <p> <code>5590</code> is the default port number. If you selected a different port number, replace it with that value.</p>
 <p> Example using curl (run this command from the same directory where the file is located):</p>
@@ -163,13 +163,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="opc-ua-data-source-example">OPC UA data source example</h2>
+<h2 id="opc-ua-data-source-examples">OPC UA data source examples</h2>
 <p>The following are examples of valid OPC UA data source configurations:</p>
-<p><strong>Minimum data source configuration</strong></p>
+<h3 id="minimum-data-source-configuration">Minimum data source configuration</h3>
 <pre><code class="lang-json">{
     &quot;EndpointUrl&quot;: &quot;opc.tcp://&lt;IP-Address&gt;:&lt;Port&gt;/&lt;TestOPCUAServer&gt;&quot;
 }
-</code></pre><p><strong>Maximum data source configuration</strong></p>
+</code></pre><h3 id="maximum-data-source-configuration">Maximum data source configuration</h3>
 <pre><code class="lang-json">{
     &quot;EndpointUrl&quot;: &quot;opc.tcp://&lt;IP-Address&gt;:&lt;Port&gt;/&lt;TestOPCUAServer&gt;&quot;,
     &quot;UseSecureConnection&quot;: true,

@@ -14,7 +14,7 @@ Complete the following procedure to configure adapter security:
 
 1. In your data source configuration, set `UseSecureConnection` to **true**. For more information, see [OSIsoft Adapter for OPC UA data source configuration](xref:OSIsoftAdapterForOPCUADataSourceConfiguration).
 
-   The adapter verifies whether the server certificate is present in the [adapter trusted certificates](#adapter-trusted-certificates) folder and is therefore trusted. In case the certificates were not exchanged before the first attemped connection, the adapter persists the server certificate within the [adapter rejected certificates](#adapter-rejected-certificates) folder and the following warning message about the rejected server certificate will be printed:
+   The adapter verifies whether the server certificate is present in the [adapter trusted certificates](#adapter-trusted-certificates) folder and is therefore trusted. In case the certificates were not exchanged before the first attempted connection, the adapter persists the server certificate within the [adapter rejected certificates](#adapter-rejected-certificates) folder and the following warning message about the rejected server certificate will be printed:
 
    ```bash
    ~~2019-09-08 11:45:48.093 +01:00~~ [Warning] Rejected Certificate: "DC=MyServer.MyDomain.int, O=OSIsoft, CN=Simulation
@@ -35,32 +35,35 @@ Complete the following procedure to configure adapter security:
 3. Add the [certificate of the adapter](#certificate-of-the-adapter) to the server's trust store.
 
    The connection succeeds only when the adapter certificate is trusted on the server side. <br> For more details on how to make a client certificate trusted, see your OPC UA server documentation. <br> In general, servers work in a similar fashion to the clients, hence you can take a similar approach for making the client certificate trusted on the server side.
-   
+
    When certificates are mutually trusted, the connection attempt succeeds and the adapter is connected to the most secure endpoint provided by the server.
 
 ### Certificate locations
 
 #### Adapter rejected certificates
 
-Windows: 
+Windows:
+
 ```filepath
 %programdata%\OSIsoft\Adapters\OpcUa\OpcUa\{ComponentId}\Certificates\RejectedCertificates\certs
 ```
 
-Linux: 
+Linux:
+
 ```filepath
 /usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates/RejectedCertificates/certs
 ```
 
-
 #### Adapter trusted certificates
 
-Windows: 
+Windows:
+
 ```filepath
 %programdata%\OSIsoft\Adapters\OpcUa\OpcUa\{ComponentId}\Certificates\Trusted\certs
 ```
 
-Linux: 
+Linux:
+
 ```filepath
 /usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates/Trusted/certs
 ```

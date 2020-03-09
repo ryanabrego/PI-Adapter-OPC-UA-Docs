@@ -84,7 +84,7 @@
 <p>Complete the following procedure to configure adapter security:</p>
 <ol>
 <li><p>In your data source configuration, set <code>UseSecureConnection</code> to <strong>true</strong>. For more information, see <a class="xref" href="OSIsoft%20Adapter%20for%20OPC%20UA%20data%20source%20configuration.html">OSIsoft Adapter for OPC UA data source configuration</a>.</p>
-<p>The adapter verifies whether the server certificate is present in the <a href="#adapter-trusted-certificates">adapter trusted certificates</a> folder and is therefore trusted. In case the certificates were not exchanged before the first attemped connection, the adapter persists the server certificate within the <a href="#adapter-rejected-certificates">adapter rejected certificates</a> folder and the following warning message about the rejected server certificate will be printed:</p>
+<p>The adapter verifies whether the server certificate is present in the <a href="#adapter-trusted-certificates">adapter trusted certificates</a> folder and is therefore trusted. In case the certificates were not exchanged before the first attempted connection, the adapter persists the server certificate within the <a href="#adapter-rejected-certificates">adapter rejected certificates</a> folder and the following warning message about the rejected server certificate will be printed:</p>
 <pre><code class="lang-bash">~~2019-09-08 11:45:48.093 +01:00~~ [Warning] Rejected Certificate: &quot;DC=MyServer.MyDomain.int, O=OSIsoft, CN=Simulation
 </code></pre></li>
 <li><p>Manually move the server certificate from the <a href="#adapter-rejected-certificates">Adapter rejected certificates</a> location to the <a href="#adapter-trusted-certificates">Adapter trusted certificates</a> location using a file explorer or command-line interpreter.</p>
@@ -100,14 +100,14 @@
 </ol>
 <h3 id="certificate-locations">Certificate locations</h3>
 <h4 id="adapter-rejected-certificates">Adapter rejected certificates</h4>
-<p>Windows: </p>
+<p>Windows:</p>
 <pre><code class="lang-filepath">%programdata%\OSIsoft\Adapters\OpcUa\OpcUa\{ComponentId}\Certificates\RejectedCertificates\certs
-</code></pre><p>Linux: </p>
+</code></pre><p>Linux:</p>
 <pre><code class="lang-filepath">/usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates/RejectedCertificates/certs
 </code></pre><h4 id="adapter-trusted-certificates">Adapter trusted certificates</h4>
-<p>Windows: </p>
+<p>Windows:</p>
 <pre><code class="lang-filepath">%programdata%\OSIsoft\Adapters\OpcUa\OpcUa\{ComponentId}\Certificates\Trusted\certs
-</code></pre><p>Linux: </p>
+</code></pre><p>Linux:</p>
 <pre><code class="lang-filepath">/usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates/Trusted/certs
 </code></pre><h4 id="certificate-of-the-adapter">Certificate of the adapter</h4>
 <p>Windows: </p>

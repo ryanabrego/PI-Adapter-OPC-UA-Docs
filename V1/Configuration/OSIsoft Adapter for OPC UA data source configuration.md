@@ -13,13 +13,13 @@ To use the adapter, you must configure the data source from which it will be pol
 Complete the following procedure to configure the OPC UA data source:
 
 1. Using any text editor, create a file that contains an OPC UA data source in JSON form.
-    - For content structure, see [OPC UA data source example](#opc-ua-data-source-example).
+    - For content structure, see [OPC UA data source examples](#opc-ua-data-source-examples).
     - For a table of all available parameters, see [OPC UA data source parameters](#opc-ua-data-source-parameters).
 2. Save the file, for example as _DataSource.config.json_.
-3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to execute a POST command with the contents of that file to the following endpoint: `http://localhost:5590/api/v1/configuration/<adapterId>/DataSource/`. 
+3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to execute a POST command with the contents of that file to the following endpoint: `http://localhost:5590/api/v1/configuration/<adapterId>/DataSource/`.
 
       **Note:** The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration).
-    
+
     `5590` is the default port number. If you selected a different port number, replace it with that value.
 
     Example using curl (run this command from the same directory where the file is located):
@@ -49,16 +49,15 @@ The following parameters are available for configuring an OPC UA data source:
 | **UserName** | Optional | `string` | User name for accessing the OPC UA server. |
 | **Password** | Optional | `string` | Password for accessing the OPC UA server.<br><br>**Note:** OSIsoft recommends using REST to configure the data source when the password must be specified because REST will encrypt the password. If you do not use REST, the plain text password will be stored on-disk.|
 | **RootNodeIds** | Optional | `string` | List of comma-separated NodeIds of those objects from which the adapter browses the OPC UA server address space. This option allows selecting only subsets of the OPC UA address by explicitly listing one or more NodeIds which are used to start the initial browse.<br><br>Examples:<br>`"ns=5;s=85/0:Simulation"`<br>`"ns=3;s=DataItems"`<br><br>If not specified, it means that the whole address space will be browsed.|
-| **IncomingTimestamp**	| Optional | `string` | Specifies whether the incoming timestamp is taken from the source, from the OPC UA server, or should be created by the adapter instance. **Source** - Default and recommended setting. The timestamp is taken from the source timestamp field. The source is what provides data for the item to the OPC UA server, such as a field device. **Server** - In case the OPC UA item has an invalid source timestamp field, the Server timestamp can be used. **Adapter** - The adapter generates a timestamp for the item upon receiving it from the OPC UA server.|
+| **IncomingTimestamp** | Optional | `string` | Specifies whether the incoming timestamp is taken from the source, from the OPC UA server, or should be created by the adapter instance. **Source** - Default and recommended setting. The timestamp is taken from the source timestamp field. The source is what provides data for the item to the OPC UA server, such as a field device. **Server** - In case the OPC UA item has an invalid source timestamp field, the Server timestamp can be used. **Adapter** - The adapter generates a timestamp for the item upon receiving it from the OPC UA server.|
 | **StreamPrefix** | Optional | `string` | Specifies what prefix is used for Stream IDs and names. Naming convention is StreamPrefixNodeId and StreamPrefixName. **Note:** An empty string means no prefix will be added to the Stream IDs and names. Null value means ComponentID followed by dot character will be added to the stream IDs and names (for example, OpcUa1.NodeId).|
 | **ApplyPrefixToStreamId** | Optional | `boolean` | Parameter applied to all data items collected from the data source that have custom stream ID configured. If set to `true`, the adapter will apply the **StreamPrefix** property to all streams with custom ID configured. The property does not affect any streams with default ID configured.|
 
-
-## OPC UA data source example
+## OPC UA data source examples
 
 The following are examples of valid OPC UA data source configurations:
 
-**Minimum data source configuration**
+### Minimum data source configuration
 
 ```json
 {
@@ -66,7 +65,7 @@ The following are examples of valid OPC UA data source configurations:
 }
 ```
 
-**Maximum data source configuration**
+### Maximum data source configuration
 
 ```json
 {

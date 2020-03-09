@@ -4,7 +4,7 @@ uid: OSIsoftAdapterForOPCUADataSelectionConfiguration
 
 # OSIsoft Adapter for OPC UA data selection configuration
 
-In addition to the data source configuration, you need to provide a data selection configuration to specify the data you want the adapter to collect from the data sources. 
+In addition to the data source configuration, you need to provide a data selection configuration to specify the data you want the adapter to collect from the data sources.
 
 When you add a data source, the adapter browses the entire OPC UA server address space and exports the available OPC UA variables into a JSON file for data selection. Comma-separated collection of nodeIds (RootNodeIds) serve as filters to browse only a subset of the OPC UA server. Data is collected automatically based upon user demands. OPC UA data from OPC UA variables is read through subscriptions (unsolicited reads).
 
@@ -27,11 +27,11 @@ Complete the following procedure for this default data selection file to be gene
    The following are example locations of the file created. In this example, it is assumed that the ComponentId of the OPC UA component is OpcUa1:
 
    Windows: *%programdata%\OSIsoft\Adapters\OpcUa\OpcUa\Configuration\OpcUa1_DataSelection.json*
-   
+  
    Linux: */usr/share/OSIsoft/Adapters/OpcUa/OpcUa/Configuration/OpcUa1_DataSelection.json*
 
 3. Copy the file to a different directory.
-    - For content structure, see [OPC UA data selection example](#opc-ua-data-selection-example). 
+    - For content structure, see [OPC UA data selection example](#opc-ua-data-selection-example).
 
 4. Using any text editor, change the value of any **Selected** key from `false` to `true` in the file.
 
@@ -59,8 +59,8 @@ Complete the following to configure the OPC UA data selection:
 
     Example using curl (run this command from the same directory where the file is located):
 
-    **Note:** The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration). 
-    
+    **Note:** The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration).
+  
     `5590` is the default port number. If you selected a different port number, replace it with that value.
 
     ```bash

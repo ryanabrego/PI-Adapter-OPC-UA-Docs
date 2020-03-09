@@ -68,16 +68,16 @@ Linux:
 /usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates/Trusted/certs
 ```
 
-
 #### Certificate of the adapter
 
-Windows: 
+Windows:
+
 ```filepath
 %programdata%\OSIsoft\Adapters\OpcUa\OpcUa\{ComponentId}\Certificates\My\certs
 ```
 
-Linux: 
+Linux:
+
 ```filepath
 /usr/share/OSIsoft/Adapters/OpcUa/OpcUa/{ComponentId}/Certificates/My/certs
 ```
-

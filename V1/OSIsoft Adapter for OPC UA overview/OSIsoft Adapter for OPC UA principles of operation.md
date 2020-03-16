@@ -4,11 +4,11 @@ uid: OSIsoftAdapterForOPCUAPrinciplesOfOperation
 
 # OSIsoft Adapter for OPC UA principles of operation
 
-This adapter's operations focus on data collection and streams creation.
+This adapter's operations focus on data collection and stream creation.
 
 ## Adapter configuration
 
-For the OPC UA adapter to start data collection, you need to configure the adapter by defining the following:
+For the OPC UA adapter to start data collection, configure the following:
 
 - Data source: Provide the data source from which the adapter should collect data.
 - Data selection: Perform selection of OPC UA items to which the adapter should subscribe for data.
@@ -20,9 +20,11 @@ For more information, see [OSIsoft Adapter for OPC UA data source configuration]
 
 The OPC UA adapter uses the binary opc.tcp protocol to communicate with the OPC UA servers. When a secured connection is enabled, the X.509-type client and server certificates are exchanged and verified and the connection between the OPC UA adapter and the configured OPC UA server is established.
 
+For more information on secure connections, see [OSIsoft Adapter for OPC UA security configuration](xref:OSIsoftAdapterForOPCUASecurityConfiguration).
+
 ## Data collection
 
-The OPC UA adapter collects time-series data from selected OPC UA dynamic variables through OPC UA subscriptions (unsolicited reads). The adapter supports the Data Access (DA) part of OPC UA specification.
+The OPC UA adapter collects time-series data from selected OPC UA dynamic variables through OPC UA subscriptions (unsolicited reads). The adapter supports the Data Access (DA) part of OPC UA specification. For more information, see [Unified Architecture (https://opcfoundation.org/developer-tools/specifications-unified-architecture/part-8-data-access)](https://opcfoundation.org/developer-tools/specifications-unified-architecture/part-8-data-access).
 
 ### Data types
 

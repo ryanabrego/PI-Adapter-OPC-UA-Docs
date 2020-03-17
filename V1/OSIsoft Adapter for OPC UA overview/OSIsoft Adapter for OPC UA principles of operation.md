@@ -28,7 +28,7 @@ The OPC UA adapter collects time-series data from selected OPC UA dynamic variab
 
 ### Data types
 
-The following table lists OPC UA variable types that the adapter supports data collection from and types of streams that are going to be created.
+The following table lists OPC UA variable types that the adapter supports data collection from and types of streams that will be created.
 
 | OPC UA data type | Stream data type |
 |------------------|------------------|
@@ -59,7 +59,7 @@ The OPC UA adapter creates a stream with two properties per selected OPC UA item
 | Timestamp     | DateTime  | Timestamp of the given OPC UA item value update. |
 | Value         | Based on type of incoming OPC UA value | Value of the given OPC UA item update. |
 
-Stream ID is a unique identifier for each stream created by the adapter for a given OPC UA item. If the Custom Stream ID is specified for the OPC UA item in data selection configuration, the OPC UA adapter uses that as a stream ID for the stream. Otherwise, the adapter constructs the stream ID using the following format constructed from the OPC UA item node ID:
+Stream ID is a unique identifier for each stream created by the adapter for a given OPC UA item. If the custom stream ID is specified for the OPC UA item in data selection configuration, the OPC UA adapter uses that as a stream ID for the stream. Otherwise, the adapter constructs the stream ID using the following format, which is constructed from the OPC UA item node ID:
 
 ```code
 <Adapter Component ID>.<Namespace>.<Identifier>

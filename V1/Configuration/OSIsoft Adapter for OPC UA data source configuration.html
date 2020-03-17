@@ -81,7 +81,7 @@
 <p>To use the adapter, you must configure the data source from which it will be polling data.</p>
 <h2 id="configure-opc-ua-data-source">Configure OPC UA data source</h2>
 <p><strong>Note:</strong> You cannot modify OPC UA data source configurations manually. You must use the REST endpoints to add or edit the configuration.</p>
-<p>Complete the following procedure to configure the OPC UA data source:</p>
+<p>Complete the following procedure to configure an OPC UA data source:</p>
 <ol>
 <li>Using any text editor, create a file that contains an OPC UA data source in JSON form.<ul>
 <li>For content structure, see <a href="#opc-ua-data-source-examples">OPC UA data source examples</a>.</li>
@@ -96,7 +96,7 @@
 <pre><code class="lang-bash">curl -d &quot;@DataSource.config.json&quot; -H &quot;Content-Type: application/json&quot; -X POST &quot;http://localhost:5590/api/v1/configuration/OpcUa1/DataSource&quot;
 </code></pre></li>
 </ol>
-<p><strong>Note:</strong> After you have completed data source configuration, the next step is to configure data selection. You can either have a default data selection file generated or you can create the data selection file yourself. For more information, see <a class="xref" href="OSIsoft%20Adapter%20for%20OPC%20UA%20data%20selection%20configuration.html">OSIsoft Adapter for OPC UA data selection configuration</a>.</p>
+<p><strong>Note:</strong> After you have completed data source configuration, the next step is to configure data selection. You can decide to have a default data selection file generated automatically or you can create the data selection file yourself. For more information, see <a class="xref" href="OSIsoft%20Adapter%20for%20OPC%20UA%20data%20selection%20configuration.html">OSIsoft Adapter for OPC UA data selection configuration</a>.</p>
 <h2 id="opc-ua-data-source-schema">OPC UA data source schema</h2>
 <p>The full schema definition for the OPC UA data source configuration is in the <em>OpcUa_DataSource_schema.json</em> here:</p>
 <p>Windows: <em>%ProgramFiles%\OSIsoft\Adapters\OpcUa\Schemas</em></p>
@@ -117,7 +117,7 @@
 <td><strong>EndpointURL</strong></td>
 <td>Required</td>
 <td><code>string</code></td>
-<td>The endpoint URL of the OPC UA server in opc.tcp format. The following is an example of the URL format: opc.tcp://OPCServerHost:Port/OpcUa/SimulationServer<br><br><strong>Note:</strong> If you change the EndpointURL on a configured adapter that has ComponentID_DataSelection.json file exported, you need to remove the <em>ComponentID_DataSelection.json</em> file from the configuration directory to trigger a new browse (export).</td>
+<td>The endpoint URL of the OPC UA server in opc.tcp format. The following is an example of the URL format: opc.tcp://OPCServerHost:Port/OpcUa/SimulationServer<br><br><strong>Note:</strong> If you change the EndpointURL on a configured adapter that has <em>ComponentID_DataSelection</em>.json file exported, you need to remove the <em>ComponentID_DataSelection.json</em> file from the configuration directory to trigger a new browse (export).</td>
 </tr>
 <tr>
 <td><strong>UseSecureConnection</strong></td>
@@ -141,19 +141,19 @@
 <td><strong>RootNodeIds</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>List of comma-separated NodeIds of those objects from which the adapter browses the OPC UA server address space. This option allows selecting only subsets of the OPC UA address by explicitly listing one or more NodeIds which are used to start the initial browse.<br><br>Examples:<br><code>&quot;ns=5;s=85/0:Simulation&quot;</code><br><code>&quot;ns=3;s=DataItems&quot;</code><br><br>If not specified, it means that the whole address space will be browsed.</td>
+<td>List of comma-separated NodeIds of those objects from which the adapter browses the OPC UA server address space. This option allows to select only subsets of the OPC UA address by explicitly listing one or more NodeIds which are used to start the initial browse.<br><br>Examples:<br><code>&quot;ns=5;s=85/0:Simulation&quot;</code><br><code>&quot;ns=3;s=DataItems&quot;</code><br><br>If not specified, it means that the whole address space will be browsed.</td>
 </tr>
 <tr>
 <td><strong>IncomingTimestamp</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>Specifies whether the incoming timestamp is taken from the source, from the OPC UA server, or should be created by the adapter instance. <strong>Source</strong> - Default and recommended setting. The timestamp is taken from the source timestamp field. The source is what provides data for the item to the OPC UA server, such as a field device. <strong>Server</strong> - In case the OPC UA item has an invalid source timestamp field, the Server timestamp can be used. <strong>Adapter</strong> - The adapter generates a timestamp for the item upon receiving it from the OPC UA server.</td>
+<td>Specifies whether the incoming timestamp is taken from the source, from the OPC UA server, or should be created by the adapter instance. <br> <strong>Source</strong> - Default and recommended setting. The timestamp is taken from the source timestamp field. The source is what provides data for the item to the OPC UA server, such as a field device.<br> <strong>Server</strong> - In case the OPC UA item has an invalid source timestamp field, the Server timestamp can be used. <strong>Adapter</strong> - The adapter generates a timestamp for the item upon receiving it from the OPC UA server.</td>
 </tr>
 <tr>
 <td><strong>StreamPrefix</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>Specifies what prefix is used for Stream IDs and names. Naming convention is StreamPrefixNodeId and StreamPrefixName. <strong>Note:</strong> An empty string means no prefix will be added to the Stream IDs and names. Null value means ComponentID followed by dot character will be added to the stream IDs and names (for example, OpcUa1.NodeId).</td>
+<td>Specifies what prefix is used for Stream IDs and names. The naming convention is StreamPrefixNodeId and StreamPrefixName. <strong>Note:</strong> An empty string means no prefix will be added to the Stream IDs and names. Null value means ComponentID followed by dot character will be added to the stream IDs and names (for example, <em>OpcUa1</em>.NodeId).</td>
 </tr>
 <tr>
 <td><strong>ApplyPrefixToStreamId</strong></td>

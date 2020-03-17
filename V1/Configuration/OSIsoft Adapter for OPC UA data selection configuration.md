@@ -8,13 +8,13 @@ In addition to the data source configuration, you need to provide a data selecti
 
 When you add a data source, the adapter browses the entire OPC UA server address space and exports the available OPC UA variables into a JSON file for data selection. Comma-separated collection of nodeIds (RootNodeIds) serve as filters to browse only a subset of the OPC UA server. Data is collected automatically based upon user demands. OPC UA data from OPC UA variables is read through subscriptions (unsolicited reads).
 
-You can either have the data selection configuration file generated for you or you can create it manually yourself.
+You can decide to have the data selection configuration file generated automatically or you can create it manually yourself.
 
 ## Generate default OPC UA data selection configuration file
 
-A default OPC UA data selection file will be created if there is no OPC UA data selection configuration, but a valid OPC UA data source exists.
+A default OPC UA data selection file will be created if there is no OPC UA data selection configuration although a valid data source exists.
 
-**Note:** To avoid possible time and resource expensive browse operations due to reasons described previously, OSIsoft recommends that you manually create a data selection file instead of generating the default data selection file. For more information, see [Configure OPC UA data selection](#configure-opc-ua-data-selection).
+**Note:** To avoid possible time and resource expensive browse operations due to reasons described previously, OSIsoft recommends that you manually create a data selection file instead of automatically creating the default data selection file. For more information, see [Configure OPC UA data selection](#configure-opc-ua-data-selection).
 
 Complete the following procedure for this default data selection file to be generated:
 

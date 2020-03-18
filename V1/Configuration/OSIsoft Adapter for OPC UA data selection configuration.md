@@ -49,7 +49,7 @@ Complete the following procedure for this default data selection file to be gene
 
 **Note:** You cannot modify OPC UA data selection configurations manually. You must use the REST endpoints to add or edit the configuration.
 
-Complete the following to configure the OPC UA data selection:
+Complete the following procedure to configure the OPC UA data selection:
 
 1. Using any text editor, create a file that contains an OPC UA data selection in JSON form.
     - For content structure, see [OPC UA data selection example](#opc-ua-data-selection-example).

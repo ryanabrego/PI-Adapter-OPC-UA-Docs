@@ -10,6 +10,7 @@ uid: index
   - [OSIsoft Adapter for OPC UA principles of operation](xref:OSIsoftAdapterForOPCUAPrinciplesOfOperation)
 - [Installation](xref:Installation)
   - [Install the adapter](xref:InstallTheAdapter)
+  - [Install OSIsoft Adapter for OPC UA using Docker](xref:InstallOSIsoftAdapterForOPCUAUsingDocker)
   - [Uninstall the adapter](xref:UninstallTheAdapter)
 - [Configuration](xref:OPCUAConfiguration)
   - [Configuration tools](xref:ConfigurationTools)

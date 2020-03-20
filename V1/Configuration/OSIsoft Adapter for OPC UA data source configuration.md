@@ -16,7 +16,7 @@ Complete the following procedure to configure an OPC UA data source:
     - For content structure, see [OPC UA data source examples](#opc-ua-data-source-examples).
     - For a table of all available parameters, see [OPC UA data source parameters](#opc-ua-data-source-parameters).
 2. Save the file, for example as _DataSource.config.json_.
-3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to execute a POST command with the contents of that file to the following endpoint: `http://localhost:5590/api/v1/configuration/<adapterId>/DataSource/`.
+3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to execute a PUT command with the contents of that file to the following endpoint: `http://localhost:5590/api/v1/configuration/<adapterId>/DataSource/`.
 
       **Note:** The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration).
 
@@ -25,7 +25,7 @@ Complete the following procedure to configure an OPC UA data source:
     Example using curl (run this command from the same directory where the file is located):
 
     ```bash
-    curl -d "@DataSource.config.json" -H "Content-Type: application/json" -X POST "http://localhost:5590/api/v1/configuration/OpcUa1/DataSource"
+    curl -d "@DataSource.config.json" -H "Content-Type: application/json" -X PUT "http://localhost:5590/api/v1/configuration/OpcUa1/DataSource"
     ```
 
 **Note:** After you have completed data source configuration, the next step is to configure data selection. You can decide to have a default data selection file generated automatically or you can create the data selection file yourself. For more information, see [OSIsoft Adapter for OPC UA data selection configuration](xref:OSIsoftAdapterForOPCUADataSelectionConfiguration).

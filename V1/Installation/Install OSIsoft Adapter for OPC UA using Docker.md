@@ -6,7 +6,7 @@ uid: InstallOSIsoftAdapterForOPCUAUsingDocker
 
 Docker is a set of tools that can be used on Linux to manage application deployments. If you want to use Docker, you must be familiar with the underlying technology and have determined that it is appropriate for your planned use of the OPC UA Adapter. Docker is not a requirement to use OPC UA Adapter.
 
-This topic provides examples of how to create a Docker container with the OPC UA Adapter. 
+This topic provides examples of how to create a Docker container with the OPC UA Adapter.
 
 ## Create a startup script for the Adapter
 
@@ -21,12 +21,12 @@ where you plan to create the container. The script varies slightly by processor.
 defaultPort=5590
 #regexp to only accept numerals
 re='^[0-9]+$'
-	
+
 portConfigFile="/OpcUa_linux-arm/appsettings.json"
 
 #validate the port number input
 if [ -z $portnum ] ; then
-	portnum=${defaultPort} 
+	portnum=${defaultPort}
 	echo "Default value selected." ;
 else
 	echo $portnum | grep -q -E $re
@@ -58,12 +58,12 @@ exec /OpcUa_linux-arm/OSIsoft.Data.System.Host
 defaultPort=5590
 #regexp to only accept numerals
 re='^[0-9]+$'
-	
+
 portConfigFile="/OpcUa_linux-arm64/appsettings.json"
 
 #validate the port number input
 if [ -z $portnum ] ; then
-	portnum=${defaultPort} 
+	portnum=${defaultPort}
 	echo "Default value selected." ;
 else
 	echo $portnum | grep -q -E $re
@@ -95,12 +95,12 @@ exec /OpcUa_linux-arm64/OSIsoft.Data.System.Host
 defaultPort=5590
 #regexp to only accept numerals
 re='^[0-9]+$'
-	
+
 portConfigFile="/OpcUa_linux-x64/appsettings.json"
 
 #validate the port number input
 if [ -z $portnum ] ; then
-	portnum=${defaultPort} 
+	portnum=${defaultPort}
 	echo "Default value selected." ;
 else
 	echo $portnum | grep -q -E $re
@@ -128,48 +128,49 @@ exec /OpcUa_linux-x64/OSIsoft.Data.System.Host
 
 1. Create the following Dockerfile in the directory where you want to create and run the container. Dockerfile is the required name of the file, and which variation you will use depends on the operating system you are using:
 
-### ARM32
+	**ARM32**
 
-```bash
-FROM ubuntu
-WORKDIR /
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libicu60 libssl1.0.0
-COPY opcuadockerstart.sh /
-RUN chmod +x /opcuadockerstart.sh
-ADD ./OpcUa_linux-arm.tar.gz .
-ENTRYPOINT ["/opcuadockerstart.sh"]
-```
-### ARM64
+	```bash
+	FROM ubuntu
+	WORKDIR /
+	RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libicu60 libssl1.0.0
+	COPY opcuadockerstart.sh /
+	RUN chmod +x /opcuadockerstart.sh
+	ADD ./OpcUa_linux-arm.tar.gz .
+	ENTRYPOINT ["/opcuadockerstart.sh"]
+	```
 
-```bash
-FROM ubuntu
-WORKDIR /
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libicu60 libssl1.0.0
-COPY opcuadockerstart.sh /
-RUN chmod +x /opcuadockerstart.sh
-ADD ./OpcUa_linux-arm64.tar.gz .
-ENTRYPOINT ["/opcuadockerstart.sh"]
-```
+	**ARM64**
 
-### AMD64 (x64)
+	```bash
+	FROM ubuntu
+	WORKDIR /
+	RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libicu60 libssl1.0.0
+	COPY opcuadockerstart.sh /
+	RUN chmod +x /opcuadockerstart.sh
+	ADD ./OpcUa_linux-arm64.tar.gz .
+	ENTRYPOINT ["/opcuadockerstart.sh"]
+	```
 
-```bash
-FROM ubuntu
-WORKDIR /
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libicu60 libssl1.0.0
-COPY opcuadockerstart.sh /
-RUN chmod +x /opcuadockerstart.sh
-ADD ./OpcUa_linux-x64.tar.gz .
-ENTRYPOINT ["/opcuadockerstart.sh"]
-```
+	**AMD64 (x64)**
+
+	```bash
+	FROM ubuntu
+	WORKDIR /
+	RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libicu60 libssl1.0.0
+	COPY opcuadockerstart.sh /
+	RUN chmod +x /opcuadockerstart.sh
+	ADD ./OpcUa_linux-x64.tar.gz .
+	ENTRYPOINT ["/opcuadockerstart.sh"]
+	```
 
 2. Copy the appropriate OpcUa_linux-(x64, arm, or arm64 depending upon platform).tar.gz file to the same directory as the Dockerfile.
 
 3. Run the following command line in the same directory (sudo may be necessary):
 
-```bash
-docker build -t opcuaadapter .
-```
+	```bash
+	docker build -t opcuaadapter .
+	```
 
 ## Run the OPC UA Adapter Docker containers
 
@@ -193,22 +194,21 @@ Complete the following to run the container:
 1. Open a terminal window.
 2. Type the following in the command line (sudo may be necessary):
 
-```bash
-docker run -d --network host -v /opcua:/usr/share/OSIsoft/ opcuaadapter
-```
+	```bash
+	docker run -d --network host -v /opcua:/usr/share/OSIsoft/ opcuaadapter
+	```
 
 Port 5590 is accessible from the host and you can make REST calls to OPC UA Adapter from applications on the local host computer. In this example, all data that would be written to the container is instead written to the host directory. In this example the host directory is a directory on the local machine, /opcua. You can specify any directory.
 
 ### Port number change
 
-To use a different port other than 5590 you can specify a portnum variable on the docker run command line. For example, in order to 
-start up the adapter using port 6000 instead of 5590 you would use the command line:
+To use a different port other than 5590 you can specify a portnum variable on the docker run command line. For example, in order to start up the adapter using port 6000 instead of 5590 you would use the command line:
 
 ```bash
 docker run -d -e portnum=6000 --network host opcuaadapter
 ```
 
-Then instead of accessing the REST API using port 5590 you would use port 6000. The following curl command would return 
+Then instead of accessing the REST API using port 5590 you would use port 6000. The following curl command would return
 the configuration for the container.
 
 ```bash

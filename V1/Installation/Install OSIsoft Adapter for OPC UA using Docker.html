@@ -83,7 +83,7 @@
 <p>This topic provides examples of how to create a Docker container with the OPC UA adapter.</p>
 <h2 id="create-a-startup-script-for-the-adapter">Create a startup script for the Adapter</h2>
 <ol>
-<li><p>Using any text editor, create a script similar to one of the following.</p>
+<li><p>Using any text editor, create a script similar to the following. Use the variation according to your operating system.</p>
 <h3 id="arm32">ARM32</h3>
 <pre><code class="lang-bash">#!/bin/sh
 #local variables
@@ -190,7 +190,8 @@ where you plan to create the container. <br>The script varies slightly by proces
 </ol>
 <h2 id="create-a-docker-container-containing-the-opc-ua-adapter">Create a Docker container containing the OPC UA Adapter</h2>
 <ol>
-<li><p>Create the following Dockerfile in the directory where you want to create and run the container. Dockerfile is the required name of the file, and which variation you will use depends on the operating system you are using:</p>
+<li><p>Create the following Dockerfile in the directory where you want to create and run the container.</p>
+<p> <strong>Note:</strong> Dockerfile is the required name of the file. Use the variation according to your operating system:</p>
 <p> <strong>ARM32</strong></p>
 <pre><code class="lang-bash">FROM ubuntu
 WORKDIR /
@@ -216,7 +217,7 @@ RUN chmod +x /opcuadockerstart.sh
 ADD ./OpcUa_linux-x64.tar.gz .
 ENTRYPOINT [&quot;/opcuadockerstart.sh&quot;]
 </code></pre></li>
-<li><p>Copy the appropriate OpcUa_linux-(x64, arm, or arm64 depending upon platform).tar.gz file to the same directory as the Dockerfile.</p>
+<li><p>Copy the <em>OpcUa_linux-&lt;platform&gt;.tar.gz</em> file to the same directory as the Dockerfile.</p>
 </li>
 <li><p>Run the following command line in the same directory (sudo may be necessary):</p>
 <pre><code class="lang-bash">docker build -t opcuaadapter .
@@ -227,27 +228,27 @@ ENTRYPOINT [&quot;/opcuadockerstart.sh&quot;]
 <p>Complete the following to run the container:</p>
 <ol>
 <li>Open command line.</li>
-<li>Type the following in the command line (sudo may be necessary):</li>
-</ol>
+<li><p>Type the following in the command line (sudo may be necessary):</p>
 <pre><code class="lang-bash">docker run -d --network host opcuaadapter
-</code></pre><p>Port 5590 is accessible from the host and you can make REST calls to OPC UA Adapter from applications on the local host computer. In this example, all data stored by the OPC UA Adapter is stored in the container itself. When the container is deleted, the data stored is also deleted.</p>
+</code></pre></li>
+</ol>
+<p>Port 5590 is accessible from the host and you can make REST calls to OPC UA adapter from applications on the local host computer. In this example, all data stored by the OPC UA adapter is stored in the container itself. When the container is deleted, the data stored is also deleted.</p>
 <h3 id="persistent-storage-on-the-local-file-system-from-docker">Persistent storage on the local file system from Docker</h3>
 <p>Complete the following to run the container:</p>
 <ol>
-<li>Open a terminal window.</li>
+<li>Open command line.</li>
 <li><p>Type the following in the command line (sudo may be necessary):</p>
 <pre><code class="lang-bash">docker run -d --network host -v /opcua:/usr/share/OSIsoft/ opcuaadapter
 </code></pre></li>
 </ol>
-<p>Port 5590 is accessible from the host and you can make REST calls to OPC UA Adapter from applications on the local host computer. In this example, all data that would be written to the container is instead written to the host directory. In this example the host directory is a directory on the local machine, /opcua. You can specify any directory.</p>
+<p>Port 5590 is accessible from the host and you can make REST calls to OPC UA Adapter from applications on the local host computer. In this example, all data that is written to the container is instead written to the host directory. In this example, the host directory is a directory on the local machine, <em>/opcua</em>. You can specify any directory.</p>
 <h3 id="port-number-change">Port number change</h3>
-<p>To use a different port other than 5590 you can specify a portnum variable on the docker run command line. For example, in order to start up the adapter using port 6000 instead of 5590 you would use the command line:</p>
+<p>To use a different port other than 5590 you can specify a <strong>portnum</strong> variable on the <code>docker run</code> command line. For example, to start the adapter using port 6000 instead of 5590, you use the command line:</p>
 <pre><code class="lang-bash">docker run -d -e portnum=6000 --network host opcuaadapter
-</code></pre><p>Then instead of accessing the REST API using port 5590 you would use port 6000. The following curl command would return
-the configuration for the container.</p>
+</code></pre><p>Instead of accessing the REST API using port 5590 you use port 6000. The following curl command returns the configuration for the container.</p>
 <pre><code class="lang-bash">curl http://localhost:6000/api/v1/configuration
 </code></pre><h3 id="limiting-local-host-access-to-docker">Limiting local host access to Docker</h3>
-<p>If you remove the <code>--network host</code> option from the docker run command, no REST access is possible from outside the container. This may be of value where you want to host an application in the same container as OPC UA Adapter, and do not want to have external REST access enabled.</p>
+<p>If you remove the <code>--network host</code> option from the docker run command, no REST access is possible from outside the container. This may be of value where you want to host an application in the same container as OPC UA adapter and do not want to have external REST access enabled.</p>
 </article>
           </div>
           

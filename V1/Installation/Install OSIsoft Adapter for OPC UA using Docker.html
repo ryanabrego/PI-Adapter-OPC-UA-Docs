@@ -78,11 +78,12 @@
             <article class="content wrap" id="_content" data-uid="InstallOSIsoftAdapterForOPCUAUsingDocker">
 <h1 id="install-osisoft-adapter-for-opc-ua-using-docker">Install OSIsoft Adapter for OPC UA using Docker</h1>
 
-<p>Docker is a set of tools that can be used on Linux to manage application deployments. If you want to use Docker, you must be familiar with the underlying technology and have determined that it is appropriate for your planned use of the OPC UA Adapter. Docker is not a requirement to use OPC UA Adapter.</p>
-<p>This topic provides examples of how to create a Docker container with the OPC UA Adapter.</p>
+<p>Docker is a set of tools that you can use on Linux to manage application deployments.</p>
+<p><strong>Note:</strong> If you want to use Docker, you must be familiar with the underlying technology and have determined that it is appropriate for your planned use of the OPC UA adapter. Docker is not a requirement to use OPC UA adapter.</p>
+<p>This topic provides examples of how to create a Docker container with the OPC UA adapter.</p>
 <h2 id="create-a-startup-script-for-the-adapter">Create a startup script for the Adapter</h2>
-<p>Using the text editor of your choice, create a script similar to the following and put it in the directory
-where you plan to create the container. The script varies slightly by processor. Name the script opcuadockerstart.sh.</p>
+<ol>
+<li><p>Using any text editor, create a script similar to one of the following.</p>
 <h3 id="arm32">ARM32</h3>
 <pre><code class="lang-bash">#!/bin/sh
 #local variables
@@ -109,10 +110,10 @@ echo &quot;configuring port ${portnum}&quot;
 #write out the port config file
 cat &gt; ${portConfigFile} &lt;&lt; EOF
 {
-  &quot;ApplicationSettings&quot;: {
+&quot;ApplicationSettings&quot;: {
     &quot;Port&quot;: ${portnum},
     &quot;ApplicationDataDirectory&quot;: &quot;/usr/share/OSIsoft/Adapters/OpcUa/OpcUa&quot;
-  }
+}
 }
 EOF
 exec /OpcUa_linux-arm/OSIsoft.Data.System.Host
@@ -142,10 +143,10 @@ echo &quot;configuring port ${portnum}&quot;
 #write out the port config file
 cat &gt; ${portConfigFile} &lt;&lt; EOF
 {
-  &quot;ApplicationSettings&quot;: {
+&quot;ApplicationSettings&quot;: {
     &quot;Port&quot;: ${portnum},
     &quot;ApplicationDataDirectory&quot;: &quot;/usr/share/OSIsoft/Adapters/OpcUa/OpcUa&quot;
-  }
+}
 }
 EOF
 exec /OpcUa_linux-arm64/OSIsoft.Data.System.Host
@@ -175,14 +176,19 @@ echo &quot;configuring port ${portnum}&quot;
 #write out the port config file
 cat &gt; ${portConfigFile} &lt;&lt; EOF
 {
-  &quot;ApplicationSettings&quot;: {
+&quot;ApplicationSettings&quot;: {
     &quot;Port&quot;: ${portnum},
     &quot;ApplicationDataDirectory&quot;: &quot;/usr/share/OSIsoft/Adapters/OpcUa/OpcUa&quot;
-  }
+}
 }
 EOF
 exec /OpcUa_linux-x64/OSIsoft.Data.System.Host
-</code></pre><h2 id="create-a-docker-container-containing-the-opc-ua-adapter">Create a Docker container containing the OPC UA Adapter</h2>
+</code></pre></li>
+<li><p>Save the script as <em>opcuadockerstart.sh</em> in the directory
+where you plan to create the container. <br>The script varies slightly by processor.</p>
+</li>
+</ol>
+<h2 id="create-a-docker-container-containing-the-opc-ua-adapter">Create a Docker container containing the OPC UA Adapter</h2>
 <ol>
 <li><p>Create the following Dockerfile in the directory where you want to create and run the container. Dockerfile is the required name of the file, and which variation you will use depends on the operating system you are using:</p>
 <p> <strong>ARM32</strong></p>

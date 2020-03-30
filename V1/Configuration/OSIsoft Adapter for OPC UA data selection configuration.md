@@ -153,7 +153,7 @@ The following are examples of valid OPC UA data selection configurations:
 | api/v1/configuration/_ComponentId_/DataSelection  | GET | Retrieves the OPC UA data selection configuration |
 | api/v1/configuration/_ComponentId_/DataSelection  | PUT | Configures or updates the OPC UA data selection configuration |
 | api/v1/configuration/_ComponentId_/DataSelection | DELETE | Deletes the OPC UA data selection configuration |
-| api/v1/configuration/_ComponentId_/DataSelection | PATCH | Allows partial updating of configured data selection within an array. **Note:** To identify the data selection items to be updated, Id must be included in the array. |
+| api/v1/configuration/_ComponentId_/DataSelection | PATCH | Allows partial updating of configured data selection within an array. **Note:** To identify the data selection items to be updated, *NodeId* must be included in the array. |
 | api/v1/configuration/_ComponentId_/DataSelection/_NodeId_  | PUT | Creates a new data selection with the specified *NodeId*
 
 **Note:** Replace _ComponentId_ with the Id of your OPC UA component, for example OpcUa1.

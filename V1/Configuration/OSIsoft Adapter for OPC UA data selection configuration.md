@@ -63,7 +63,7 @@ Complete the following procedure to configure the OPC UA data selection:
   
     `5590` is the default port number. If you selected a different port number, replace it with that value.
 
-    - **POST** endpoint: `http://localhost:5590/api/v1/configuration/<adapterId>/DataSelection/`
+    - **POST** endpoint: `http://localhost:5590/api/v1/configuration/<componentId>/DataSelection/`
 
       Example using curl (run this command from the same directory where the file is located):
 
@@ -71,7 +71,7 @@ Complete the following procedure to configure the OPC UA data selection:
       curl -d "@DataSelection.config.json" -H "Content-Type: application/json" -X POST "http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection"
       ```
 
-    - **PUT** endpoint: `http://localhost:5590/api/v1/configuration/<adapterId>/DataSelection/<NodeId>`
+    - **PUT** endpoint: `http://localhost:5590/api/v1/configuration/<componentId>/DataSelection/<NodeId>`
 
       Example using curl (run this command from the same directory where the file is located):
 

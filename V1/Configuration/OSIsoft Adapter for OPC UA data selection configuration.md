@@ -55,17 +55,29 @@ Complete the following procedure to configure the OPC UA data selection:
     - For content structure, see [OPC UA data selection example](#opc-ua-data-selection-example).
     - For a table of all available parameters, see [OPC UA data selection](#opc-ua-data-selection-parameters).
 2. Save the file, for example as _DataSelection.config.json_.
-3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to execute a PUT command with the contents of that file to the following endpoint: `http://localhost:5590/api/v1/configuration/<adapterId>/DataSelection/`
+3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to execute either a POST or PUT command to their appropriate endpoint:
 
     Example using curl (run this command from the same directory where the file is located):
 
-    **Note:** The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration).
+    **Note:** The following examples use OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration).
   
     `5590` is the default port number. If you selected a different port number, replace it with that value.
 
-    ```bash
-    curl -d "@DataSelection.config.json" -H "Content-Type: application/json" -X PUT "http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection"
-    ```
+    - **POST** endpoint: `http://localhost:5590/api/v1/configuration/<componentId>/DataSelection/`
+
+      Example using curl (run this command from the same directory where the file is located):
+
+      ```bash
+      curl -d "@DataSelection.config.json" -H "Content-Type: application/json" -X POST "http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection"
+      ```
+
+    - **PUT** endpoint: `http://localhost:5590/api/v1/configuration/<componentId>/DataSelection/<NodeId>`
+
+      Example using curl (run this command from the same directory where the file is located):
+
+        ```bash
+        curl -d "@DataSelection.config.json" -H "Content-Type: application/json" -X PUT "http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection/ns=5;s=Random1"
+        ```
 
 ## OPC UA data selection schema
 
@@ -141,5 +153,7 @@ The following are examples of valid OPC UA data selection configurations:
 | api/v1/configuration/_ComponentId_/DataSelection  | GET | Retrieves the OPC UA data selection configuration |
 | api/v1/configuration/_ComponentId_/DataSelection  | PUT | Configures or updates the OPC UA data selection configuration |
 | api/v1/configuration/_ComponentId_/DataSelection | DELETE | Deletes the OPC UA data selection configuration |
+| api/v1/configuration/_ComponentId_/DataSelection | PATCH | Allows partial updating of configured data selection items. <br>**Note:** The request must be an array containing one or more data selection items. Each data selection item in the array must include its *NodeId*. |
+| api/v1/configuration/_ComponentId_/DataSelection/_NodeId_  | PUT | Updates or creates a new data selection with the specified *NodeId*
 
 **Note:** Replace _ComponentId_ with the Id of your OPC UA component, for example OpcUa1.

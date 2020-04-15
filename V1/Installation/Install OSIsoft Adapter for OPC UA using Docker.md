@@ -131,7 +131,7 @@ This topic provides examples of how to create a Docker container with the OPC UA
 		EOF
 		exec /OpcUa_linux-x64/OSIsoft.Data.System.Host
 	</pre>
-	</details>
+	</details><br>
 
 2. Name the script *opcuadockerstart.sh* and save it to the directory where you plan to create the container.
 

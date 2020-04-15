@@ -145,8 +145,8 @@
      cat > ${portConfigFile} < eof="" {="" "applicationsettings":="" {="" "port":="" ${portnum},="" "applicationdatadirectory":="" "/usr/share/osisoft/adapters/opcua/opcua"="" }="" }="" eof="" exec="" pcua_linux-arm64/osisoft.data.system.host=""></pre>
  </details>
 
-<p> <details>
- <summary>AMD64</summary><p>
+ <details>
+ <summary>AMD64</summary>
  <pre>
 
      #!/bin/sh
@@ -173,7 +173,7 @@
      echo "configuring port ${portnum}"
      #write out the port config file
      cat > ${portConfigFile} < eof="" {="" "applicationsettings":="" {="" "port":="" ${portnum},="" "applicationdatadirectory":="" "/usr/share/osisoft/adapters/opcua/opcua"="" }="" }="" eof="" exec="" pcua_linux-x64/osisoft.data.system.host=""></pre>
-<p> </details><br></p>
+ </details>
 </li>
 <li><p>Name the script <em>opcuadockerstart.sh</em> and save it to the directory where you plan to create the container.</p>
 </li>

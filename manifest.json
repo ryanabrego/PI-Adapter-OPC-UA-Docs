@@ -122,6 +122,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "V1/images/OSIsoft Adapter for OPC UA architecture diagram.png",
+      "output": {
+        "resource": {
+          "relative_path": "V1/images/OSIsoft Adapter for OPC UA architecture diagram.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "V1/images/atlas_icon.png",
       "output": {
         "resource": {

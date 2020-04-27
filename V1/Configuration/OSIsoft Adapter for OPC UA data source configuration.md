@@ -50,8 +50,8 @@ The following parameters are available for configuring an OPC UA data source:
 | **Password** | Optional | `string` | Password for accessing the OPC UA server.<br><br>**Note:** OSIsoft recommends using REST to configure the data source when the password must be specified because REST will encrypt the password. If you do not use REST, the plain text password will be stored on-disk.|
 | **RootNodeIds** | Optional | `string` | List of comma-separated NodeIds of those objects from which the adapter browses the OPC UA server address space. This option allows to select only subsets of the OPC UA address by explicitly listing one or more NodeIds which are used to start the initial browse.<br><br>Examples:<br>`"ns=5;s=85/0:Simulation"`<br>`"ns=3;s=DataItems"`<br><br>If not specified, it means that the whole address space will be browsed.|
 | **IncomingTimestamp** | Optional | `string` | Specifies whether the incoming timestamp is taken from the source, from the OPC UA server, or should be created by the adapter instance. <br> **Source** - Default and recommended setting. The timestamp is taken from the source timestamp field. The source is what provides data for the item to the OPC UA server, such as a field device.<br> **Server** - In case the OPC UA item has an invalid source timestamp field, the Server timestamp can be used. **Adapter** - The adapter generates a timestamp for the item upon receiving it from the OPC UA server.|
-| **StreamIdPrefix** | Optional | `string` | Specifies what prefix is used for Stream IDs. The naming convention is StreamIdPrefix.StreamId. **Note:** An empty string means no prefix will be added to the Stream IDs and names. Null value will default to ComponentID followed by dot character will be added to the stream IDs (for example, *OpcUa1*.NodeId).|
-| **DefaultStreamIdPattern** | Optional | `string` | Specifies the default stream Id pattern to use. Possible parameters: {NamespaceIndex}, {Identifier}, {BrowseName}, {NodeId}. Null value will default to {NodeId}. |
+| **StreamIdPrefix** | Optional | `string` | Specifies what prefix is used for Stream IDs. The naming convention is StreamIdPrefix.StreamId. **Note:** An empty string means no prefix will be added to the Stream IDs and names. Null value will default to ComponentID followed by dot character will be added to the stream IDs (for example, *OpcUa1*.NamespaceIndex.Identifier).|
+| **DefaultStreamIdPattern** | Optional | `string` | Specifies the default stream Id pattern to use. Possible parameters: {NamespaceIndex}, {Identifier}, {Name}. Null value will default to {NamespaceIndex.Identifier}. |
 
 ## OPC UA data source examples
 
@@ -76,7 +76,7 @@ The following are examples of valid OPC UA data source configurations:
     "RootNodeIds": null,
     "IncomingTimestamp": "Source",
     "StreamIdPrefix": null,
-    "DefaultStreamIdPattern": "{NodeId}"
+    "DefaultStreamIdPattern": "{NamespaceIndex.Identifier}"
 }
 ```
 

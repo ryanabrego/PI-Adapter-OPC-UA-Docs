@@ -153,13 +153,13 @@
 <td><strong>StreamIdPrefix</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>Specifies what prefix is used for Stream IDs. The naming convention is StreamIdPrefix.StreamId. <strong>Note:</strong> An empty string means no prefix will be added to the Stream IDs and names. Null value will default to ComponentID followed by dot character will be added to the stream IDs (for example, <em>OpcUa1</em>.NodeId).</td>
+<td>Specifies what prefix is used for Stream IDs. The naming convention is StreamIdPrefix.StreamId. <strong>Note:</strong> An empty string means no prefix will be added to the Stream IDs and names. Null value will default to ComponentID followed by dot character will be added to the stream IDs (for example, <em>OpcUa1</em>.NamespaceIndex.Identifier).</td>
 </tr>
 <tr>
 <td><strong>DefaultStreamIdPattern</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>Specifies the default stream Id pattern to use. Possible parameters: {NamespaceIndex}, {Identifier}, {BrowseName}, {NodeId}. Null value will default to {NodeId}.</td>
+<td>Specifies the default stream Id pattern to use. Possible parameters: {NamespaceIndex}, {Identifier}, {Name}. Null value will default to {NamespaceIndex.Identifier}.</td>
 </tr>
 </tbody>
 </table>
@@ -178,7 +178,7 @@
     &quot;RootNodeIds&quot;: null,
     &quot;IncomingTimestamp&quot;: &quot;Source&quot;,
     &quot;StreamIdPrefix&quot;: null,
-    &quot;DefaultStreamIdPattern&quot;: &quot;{NodeId}&quot;
+    &quot;DefaultStreamIdPattern&quot;: &quot;{NamespaceIndex.Identifier}&quot;
 }
 </code></pre><h2 id="rest-urls">REST URLs</h2>
 <table>

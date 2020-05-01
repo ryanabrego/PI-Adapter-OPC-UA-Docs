@@ -68,7 +68,7 @@ Linux: */opt/OSIsoft/Adapters/OpcUa/Schemas*
 
 The following parameters are available for configuring an OPC UA client settings:
 
-**Note**: All intervals, delays, and timeouts require the string to be formatted like this: \[d:\]h:mm:ss\[.FFFFFFF\] where the items in brackets are optional. d = days, h = hours, mm = minutes, ss = seconds, F = fractional portion of a second. Example: 05:07:10:40.150 for 5 days, 7 hours, 10 minutes, 40 seconds, and .150 seconds. 
+**Note**: All intervals, delays, and timeouts require the string to be formatted like this: \[d:\]h:mm:ss\[.FFFFFFF\] where the items in brackets are optional. d = days, h = hours, mm = minutes, ss = seconds, F = fractional portion of a second. Example: "05:07:10:40.150" for 5 days, 7 hours, 10 minutes, 40 seconds, and .150 seconds. 
 
 | Parameter     | Required | Type | Description |
 |---------------|----------|------|-------------|

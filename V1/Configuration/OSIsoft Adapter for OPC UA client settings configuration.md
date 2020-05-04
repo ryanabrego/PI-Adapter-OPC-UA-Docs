@@ -32,21 +32,13 @@ Complete the following procedure to configure the OPC UA client settings:
     - For content structure, see [OPC UA client settings example](#opc-ua-client-settings-example).
     - For a table of all available parameters, see [OPC UA client settings](#opc-ua-client-settings-parameters).
 2. Save the file, for example as _ClientSettings.json_.
-3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to execute either a POST or PUT command to their appropriate endpoint:
+3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to execute a PUT command to its appropriate endpoint:
 
     Example using curl (run this command from the same directory where the file is located):
 
     **Note:** The following examples use OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration).
   
     `5590` is the default port number. If you selected a different port number, replace it with that value.
-
-    - **POST** endpoint: `http://localhost:5590/api/v1/configuration/<componentId>/ClientSettings/`
-
-      Example using curl (run this command from the same directory where the file is located):
-
-      ```bash
-      curl -d "@ClientSettings.config.json" -H "Content-Type: application/json" -X POST "http://localhost:5590/api/v1/configuration/OpcUa1/ClientSettings"
-      ```
 
     - **PUT** endpoint: `http://localhost:5590/api/v1/configuration/<componentId>/ClientSettings/`
 
@@ -74,18 +66,18 @@ The following parameters are available for configuring an OPC UA client settings
 |---------------|----------|------|-------------|
 | **MaxBrowseReferencesToReturn**      | Optional | `integer` | Maximum number of references returned from browse call.  |
 | **MaxNodesToBrowse**      | Optional | `integer` | Maximum number of nodes to browse in one call. |
-| **ReconnectDelay**      | Optional | `string` | Delay between reconnection attempts. |
-| **RecreateSubscriptionDelay**      | Optional | `string` | Delay between successful reconnection and subsequent subscription recreation. |
-| **SessionRequestTimeout**      | Optional | `string` | Default request timeout. |
-| **ConnectionTimeout**      | Optional | `string` | Connection timeout. |
+| **ReconnectDelay**      | Optional | `TimeSpan` | Delay between reconnection attempts. |
+| **RecreateSubscriptionDelay**      | Optional | `TimeSpan` | Delay between successful reconnection and subsequent subscription recreation. |
+| **SessionRequestTimeout**      | Optional | `TimeSpan` | Default request timeout. |
+| **ConnectionTimeout**      | Optional | `TimeSpan` | Connection timeout. |
 | **SessionAllowInsecureCredentials**      | Optional | `boolean` | When set to true credentials can be communicated over unencrypted channel. |
 | **SessionMaxOperationsPerRequest**      | Optional | `integer` | Default maximum operation per request. |
-| **BrowseTimeout**      | Optional | `string` | Browse operation timeout. |
+| **BrowseTimeout**      | Optional | `TimeSpan` | Browse operation timeout. |
 | **MaxMonitoredItemsPerCall**      | Optional | `integer` | Maximum number of monitored items that can be added to subscription in one call. |
 | **MaxNotificationsPerPublish**      | Optional | `integer` | Maximum notification messages in one publish message. |
-| **PublishingInterval**      | Optional | `string` | Publishing interval of the subscription. |
-| **CreateMonitoredItemsTimeout**      | Optional | `string` | Create monitored items timeout. |
-| **SamplingInterval**      | Optional | `string` | Monitored item sampling interval. |
+| **PublishingInterval**      | Optional | `TimeSpan` | Publishing interval of the subscription. |
+| **CreateMonitoredItemsTimeout**      | Optional | `TimeSpan` | Create monitored items timeout. |
+| **SamplingInterval**      | Optional | `TimeSpan` | Monitored item sampling interval. |
 | **MonitoredItemQueueSize**      | Optional | `integer` | Monitored item queue size. |
 | **MaxInternalQueueSize**      | Optional | `integer` | Maximum number of items that can be in the adapter internal queue. |
 

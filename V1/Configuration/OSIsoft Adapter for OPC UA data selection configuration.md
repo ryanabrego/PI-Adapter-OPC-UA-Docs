@@ -57,8 +57,6 @@ Complete the following procedure to configure the OPC UA data selection:
 2. Save the file, for example as _DataSelection.config.json_.
 3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to execute either a POST or PUT command to their appropriate endpoint:
 
-    Example using curl (run this command from the same directory where the file is located):
-
     **Note:** The following examples use OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration).
   
     `5590` is the default port number. If you selected a different port number, replace it with that value.

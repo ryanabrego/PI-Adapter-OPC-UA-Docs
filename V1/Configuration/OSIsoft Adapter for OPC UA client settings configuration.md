@@ -24,7 +24,7 @@ Complete the following procedure for this default client settings file to be gen
   
    Linux: */usr/share/OSIsoft/Adapters/OpcUa/Configuration/OpcUa1_ClientSettings.json*
 
-## Configure OPC UA Client Settings
+## Configure OPC UA client settings
 
 Complete the following procedure to configure the OPC UA client settings:
 
@@ -34,13 +34,11 @@ Complete the following procedure to configure the OPC UA client settings:
 2. Save the file, for example as _ClientSettings.json_.
 3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to execute a PUT command to its appropriate endpoint:
 
-    Example using curl (run this command from the same directory where the file is located):
-
-    **Note:** The following examples use OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration).
+    **Note:** The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration).
   
     `5590` is the default port number. If you selected a different port number, replace it with that value.
 
-    - **PUT** endpoint: `http://localhost:5590/api/v1/configuration/<componentId>/ClientSettings/`
+    **PUT** endpoint: `http://localhost:5590/api/v1/configuration/<componentId>/ClientSettings/`
 
       Example using curl (run this command from the same directory where the file is located):
 
@@ -58,7 +56,7 @@ Linux: */opt/OSIsoft/Adapters/OpcUa/Schemas*
 
 ## OPC UA client settings parameters
 
-The following parameters are available for configuring an OPC UA client settings:
+The following parameters are available for configuring OPC UA client settings:
 
 **Note**: All intervals, delays, and timeouts require the string to be formatted like this: \[d:\]h:mm:ss\[.FFFFFFF\] where the items in brackets are optional. d = days, h = hours, mm = minutes, ss = seconds, F = fractional portion of a second. Example: "05:07:10:40.150" for 5 days, 7 hours, 10 minutes, 40 seconds, and .150 seconds. 
 

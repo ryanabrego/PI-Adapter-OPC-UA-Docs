@@ -4,6 +4,8 @@
   href: ../main/V1/Configuration/System components configuration.md
 - name: OSIsoft Adapter for OPC UA data source configuration 
   href: OSIsoft Adapter for OPC UA data source configuration.md
+- name: OSIsoft Adapter for OPC UA client settings configuration
+  href: OSIsoft Adapter for OPC UA client settings configuration.md
 - name: OSIsoft Adapter for OPC UA data selection configuration
   href: OSIsoft Adapter for OPC UA data selection configuration.md
 - name: OSIsoft Adapter for OPC UA security configuration

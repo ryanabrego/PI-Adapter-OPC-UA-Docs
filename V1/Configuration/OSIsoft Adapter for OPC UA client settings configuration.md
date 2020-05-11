@@ -4,7 +4,7 @@ uid: OSIsoftAdapterForOPCUAClientSettingsConfiuraion
 
 # OSIsoft Adapter for OPC UA client settings configuration
 
-Client settings configuration will be automatically generated when a new data source is added. You may change the configuration to suit your needs.
+If you experience problems with timeouts or when OPC UA limits are exceeded in terms of browse or subscription operation, you can change the client settings configuration, which is automatically generated when a new data source is added.
 
 ## Generate default OPC UA client settings configuration file
 

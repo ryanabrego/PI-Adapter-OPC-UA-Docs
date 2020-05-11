@@ -50,6 +50,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.html",
+          "hash": "eEypcjs5kdYSmpEpYWYQ5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md",
       "output": {
         ".html": {
@@ -696,7 +708,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/toc.html",
-          "hash": "iOC6uFwmErmA8g2ZaLpyaQ=="
+          "hash": "NDry1ritPliStZaRzWqjZQ=="
         }
       },
       "is_incremental": false,
@@ -729,7 +741,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 47,
+          "total_file_count": 48,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

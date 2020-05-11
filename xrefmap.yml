@@ -70,6 +70,9 @@ references:
 - uid: OPCUAConfiguration
   name: Configuration
   href: V1/Configuration/Configuration.html
+- uid: OSIsoftAdapterForOPCUAClientSettingsConfiguration
+  name: OSIsoft Adapter for OPC UA client settings configuration
+  href: V1/Configuration/OSIsoft%20Adapter%20for%20OPC%20UA%20client%20settings%20configuration.html
 - uid: OSIsoftAdapterForOPCUADataSelectionConfiguration
   name: OSIsoft Adapter for OPC UA data selection configuration
   href: V1/Configuration/OSIsoft%20Adapter%20for%20OPC%20UA%20data%20selection%20configuration.html

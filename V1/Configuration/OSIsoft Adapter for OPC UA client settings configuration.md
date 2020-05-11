@@ -1,5 +1,5 @@
 ---
-uid: OSIsoftAdapterForOPCUAClientSettingsConfiuraion
+uid: OSIsoftAdapterForOPCUAClientSettingsConfiguration
 ---
 
 # OSIsoft Adapter for OPC UA client settings configuration

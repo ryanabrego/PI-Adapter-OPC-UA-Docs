@@ -8,6 +8,8 @@
   href: OSIsoft Adapter for OPC UA client settings configuration.md
 - name: OSIsoft Adapter for OPC UA data selection configuration
   href: OSIsoft Adapter for OPC UA data selection configuration.md
+- name: Data filters configuration
+  href: ../main/V1/Configuration/Data filters configuration.md
 - name: OSIsoft Adapter for OPC UA security configuration
   href: OSIsoft Adapter for OPC UA security configuration.md
 - name: Egress endpoints configuration

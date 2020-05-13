@@ -61,8 +61,13 @@ The OPC UA adapter creates a stream with two properties for each selected OPC UA
 
 Certain metadata are sent with each stream created. Metadata common for every adapter type are
 
-- **componentId**: Specifies the type of adapter, for example _OpcUa_
-- **componentType**: Specifies the data source, for example _OpcUa1_
+- **ComponentId**: Specifies the type of adapter, for example _OpcUa_
+- **ComponentType**: Specifies the data source, for example _OpcUa1_
+
+Metadata specific to the OPC UA adapter are
+
+- **BrowseName**: The browse name as provided by the OPC UA server
+- **SourceId**: Unique identifier of an OPC UA stream provided by the adapter
 
 Each stream created by  the adapter for a given OPC UA item has a unique identifier (Stream ID). If a custom stream ID is specified for the OPC UA item in data selection configuration, the OPC UA adapter uses that stream ID to create the stream. Otherwise, the adapter constructs the stream ID using the following format, which is constructed from the OPC UA item node ID:
 

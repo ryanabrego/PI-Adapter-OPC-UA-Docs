@@ -94,7 +94,7 @@ The following parameters are available for configuring an OPC UA data selection:
 | **Selected** | Optional | `boolean` | Use this field to select or clear a measurement. To select an item, set to true. To remove an item, leave the field empty or set to false.  If not configured, the default value is true.|
 | **Name**      | Required | `string` | The friendly name of the data item collected from the data source. |
 | **NodeId**    | Required | `string` | The NodeId of the variable.<br><br>Examples<br>`"ns=5;AString"`<br>`"ns=2;i=203"`<br>`"ns=<NamespaceIndex>;<IdentifierType>=<Identifer>"` |
-| **StreamID** | Optional | `string` | The custom stream ID used to create the streams. If not specified, the adapter will generate a default stream ID based on the measurement configuration. A properly configured custom stream ID follows these rules:<br><br>Is not case-sensitive.<br>Can contain spaces.<br>Cannot start with two underscores ("__").<br>Can contain a maximum of 100 characters.<br>Cannot use the following characters: / : ? # [ ] @ ! $ & ' ( ) \ * + , ; = % < > &#124;<br>Cannot start or end with a period.<br>Cannot contain consecutive periods.<br>Cannot consist of only periods.
+| **StreamID** | Optional | `string` | The custom stream ID used to create the streams. If not specified, the adapter will generate a default stream ID based on the measurement configuration. The StreamId serves as the unique identifier of a data selection item. A properly configured custom stream ID follows these rules:<br><br>Is not case-sensitive.<br>Can contain spaces.<br>Cannot start with two underscores ("__").<br>Can contain a maximum of 100 characters.<br>Cannot use the following characters: / : ? # [ ] @ ! $ & ' ( ) \ * + , ; = % < > &#124;<br>Cannot start or end with a period.<br>Cannot contain consecutive periods.<br>Cannot consist of only periods.
 
 ## OPC UA data selection example
 
@@ -151,7 +151,8 @@ The following are examples of valid OPC UA data selection configurations:
 | api/v1/configuration/_ComponentId_/DataSelection  | GET | Retrieves the OPC UA data selection configuration |
 | api/v1/configuration/_ComponentId_/DataSelection  | PUT | Configures or updates the OPC UA data selection configuration |
 | api/v1/configuration/_ComponentId_/DataSelection | DELETE | Deletes the OPC UA data selection configuration |
-| api/v1/configuration/_ComponentId_/DataSelection | PATCH | Allows partial updating of configured data selection items. <br>**Note:** The request must be an array containing one or more data selection items. Each data selection item in the array must include its *NodeId*. |
-| api/v1/configuration/_ComponentId_/DataSelection/_NodeId_  | PUT | Updates or creates a new data selection with the specified *NodeId*
+| api/v1/configuration/_ComponentId_/DataSelection | PATCH | Allows partial updating of configured data selection items. <br>**Note:** The request must be an array containing one or more data selection items. Each data selection item in the array must include its *StreamId*. |
+| api/v1/configuration/_ComponentId_/DataSelection/_NodeId_  | PUT | Updates or creates a new data selection with the specified *NodeId*|
+| api/v1/configuration/_ComponentId_/DataSelection/_StreamId_ | DELETE | Deletes a specific data selection item of the OPC UA data selection configuration |
 
 **Note:** Replace _ComponentId_ with the Id of your OPC UA component, for example OpcUa1.

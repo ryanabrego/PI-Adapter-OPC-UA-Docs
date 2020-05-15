@@ -67,7 +67,7 @@ Certain metadata are sent with each stream created. Metadata common for every ad
 Metadata specific to the OPC UA adapter are
 
 - **BrowseName**: The browse name as provided by the OPC UA server
-- **SourceId**: Unique identifier of an OPC UA stream provided by the OPC UA server
+- **SourceId**: The NodeId provided by the OPC UA server
 
 Each stream created by  the adapter for a given OPC UA item has a unique identifier (Stream ID). If a custom stream ID is specified for the OPC UA item in data selection configuration, the OPC UA adapter uses that stream ID to create the stream. Otherwise, the adapter constructs the stream ID using the following format, which is constructed from the OPC UA item node ID:
 

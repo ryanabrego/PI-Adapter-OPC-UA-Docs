@@ -52,17 +52,27 @@ The OPC UA adapter creates types upon receiving the value update for a stream. O
 
 ### Streams by OPC UA adapter
 
-The OPC UA adapter creates a stream with two properties per selected OPC UA item. The properties are described in the following table:
+The OPC UA adapter creates a stream with two properties for each selected OPC UA item. The properties are described in the following table:
 
 | Property name | Data type | Description |
 |---------------|-----------|-------------|
 | Timestamp     | DateTime  | Timestamp of the given OPC UA item value update. |
 | Value         | Based on type of incoming OPC UA value | Value of the given OPC UA item update. |
 
-Stream ID is a unique identifier for each stream created by the adapter for a given OPC UA item. If the custom stream ID is specified for the OPC UA item in data selection configuration, the OPC UA adapter uses that as a stream ID for the stream. Otherwise, the adapter constructs the stream ID using the following format, which is constructed from the OPC UA item node ID:
+Certain metadata are sent with each stream created. Metadata common for every adapter type are
+
+- **ComponentId**: Specifies the type of adapter, for example _OpcUa_
+- **ComponentType**: Specifies the data source, for example _OpcUa1_
+
+Metadata specific to the OPC UA adapter are
+
+- **BrowseName**: The browse name as provided by the OPC UA server
+- **SourceId**: The NodeId provided by the OPC UA server
+
+Each stream created by  the adapter for a given OPC UA item has a unique identifier (Stream ID). If a custom stream ID is specified for the OPC UA item in data selection configuration, the OPC UA adapter uses that stream ID to create the stream. Otherwise, the adapter constructs the stream ID using the following format, which is constructed from the OPC UA item node ID:
 
 ```code
-<Adapter Component ID>.<Namespace>.<Identifier>
+<Adapter Component ID>.<NamespaceIndex>.<Identifier>
 ```
 
 **Note:** The naming convention is affected by StreamPrefix and ApplyPrefixToStreamID settings in data source configuration. For more information, see [OSIsoft Adapter for OPC UA data source configuration](xref:OSIsoftAdapterForOPCUADataSourceConfiguration).

@@ -1,4 +1,4 @@
-- name: Versions
+- name: OSIsoft Adapter for OPC UA versions
   dropdown: true
   items:
   - name: OSIsoft Adapter for OPC UA 1.0

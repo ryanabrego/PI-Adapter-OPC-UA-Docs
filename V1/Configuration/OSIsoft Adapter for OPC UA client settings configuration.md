@@ -4,11 +4,11 @@ uid: OSIsoftAdapterForOPCUAClientSettingsConfiguration
 
 # OSIsoft Adapter for OPC UA client settings configuration
 
-If you experience problems with timeouts or when OPC UA limits are exceeded in terms of browse or subscription operation, you can change the client settings configuration, which is automatically generated when a new data source is added.
+The client settings configuration is automatically generated when a new data source is added. If you experience problems with timeouts or when OPC UA limits are exceeded in terms of browse or subscription operation, you can change the client settings configuration.
 
 ## Generate default OPC UA client settings configuration file
 
-A default OPC UA client settings file will be created if there is no OPC UA client setings configuration although a valid data source exists and the adapter is running.
+A default OPC UA client settings file is created if there is no OPC UA client settings configuration even though a valid data source exists and the adapter is running.
 
 Complete the following procedure for this default client settings file to be generated:
 
@@ -16,7 +16,7 @@ Complete the following procedure for this default client settings file to be gen
   
 2. Configure a valid OPC UA data source. For more information, see [OSIsoft Adapter for OPC UA data source configuration](xref:OSIsoftAdapterForOPCUADataSourceConfiguration).
 
-   Once you complete these steps, a default OPC UA client settings configuration file will be generated in the configuration directory for the corresponding platform.
+   Once you complete these steps, a default OPC UA client settings configuration file is generated in the configuration directory for the corresponding platform.
   
    The following are example locations of the file created. In this example, it is assumed that the ComponentId of the OPC UA component is OpcUa1:
 
@@ -28,7 +28,7 @@ Complete the following procedure for this default client settings file to be gen
 
 Complete the following procedure to configure the OPC UA client settings:
 
-1. Using any text editor, create a file that contains an OPC UA client settings in JSON form.
+1. Using any text editor, create a file that contains the OPC UA client settings in JSON form.
     - For content structure, see [OPC UA client settings example](#opc-ua-client-settings-example).
     - For a table of all available parameters, see [OPC UA client settings](#opc-ua-client-settings-parameters).
 2. Save the file, for example as _ClientSettings.json_.
@@ -42,9 +42,9 @@ Complete the following procedure to configure the OPC UA client settings:
 
       Example using curl (run this command from the same directory where the file is located):
 
-        ```bash
-        curl -d "@ClientSettings.config.json" -H "Content-Type: application/json" -X PUT "http://localhost:5590/api/v1/configuration/OpcUa1/ClientSettings"
-        ```
+    ```bash
+    curl -d "@ClientSettings.config.json" -H "Content-Type: application/json" -X PUT "http://localhost:5590/api/v1/configuration/OpcUa1/ClientSettings"
+    ```
 
 ## OPC UA client settings schema
 
@@ -58,7 +58,7 @@ Linux: */opt/OSIsoft/Adapters/OpcUa/Schemas*
 
 The following parameters are available for configuring OPC UA client settings:
 
-**Note**: All intervals, delays, and timeouts require the string to be formatted like this: \[d:\]h:mm:ss\[.FFFFFFF\] where the items in brackets are optional. d = days, h = hours, mm = minutes, ss = seconds, F = fractional portion of a second. Example: "05:07:10:40.150" for 5 days, 7 hours, 10 minutes, 40 seconds, and .150 seconds. 
+**Note**: All intervals, delays, and timeouts require the string to be formatted like this:<br> `\[d:\]h:mm:ss\[.FFFFFFF\]` where the items in brackets are optional.<br> d = days, h = hours, mm = minutes, ss = seconds, F = fractional portion of a second.<br> Example: `"05:07:10:40.150"` for 5 days, 7 hours, 10 minutes, 40 seconds, and .150 seconds.
 
 | Parameter     | Required | Type | Description |
 |---------------|----------|------|-------------|
@@ -80,17 +80,6 @@ The following parameters are available for configuring OPC UA client settings:
 | **MaxInternalQueueSize**      | Optional | `integer` | Maximum number of items that can be in the adapter internal queue. |
 
 ## OPC UA client settings example
-
-The following are examples of valid OPC UA client settings configurations:
-
-**Minimum client settings configuration**:
-
-```json
- {
- }
-```
-
-**Maximum client settings configuration**:
 
 ```json
 {

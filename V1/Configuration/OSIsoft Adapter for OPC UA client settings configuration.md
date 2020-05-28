@@ -32,7 +32,7 @@ Complete the following procedure to configure the OPC UA client settings:
     - For content structure, see [OPC UA client settings example](#opc-ua-client-settings-example).
     - For a table of all available parameters, see [OPC UA client settings](#opc-ua-client-settings-parameters).
 2. Save the file, for example as _ClientSettings.json_.
-3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to execute a PUT command to its appropriate endpoint:
+3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to run a PUT command to its appropriate endpoint:
 
     **Note:** The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration).
   
@@ -40,11 +40,13 @@ Complete the following procedure to configure the OPC UA client settings:
 
     **PUT** endpoint: `http://localhost:5590/api/v1/configuration/<componentId>/ClientSettings/`
 
-      Example using curl (run this command from the same directory where the file is located):
+      Example using `curl`:
 
     ```bash
     curl -d "@ClientSettings.config.json" -H "Content-Type: application/json" -X PUT "http://localhost:5590/api/v1/configuration/OpcUa1/ClientSettings"
     ```
+
+    **Note:** Run this command from the same directory where the file is located.
 
 ## OPC UA client settings schema
 

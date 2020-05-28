@@ -37,7 +37,7 @@ Complete the following procedure for this default data selection file to be gene
 
    Once the configuration is updated, the adapter will subscribe to data for all items that are set to *Selected=true*.
 
-5. In the same directory where you edited the file, run the following curl command:
+5. In the same directory where you edited the file, run the following `curl` command:
 
     **Note:** `5590` is the default port number. If you selected a different port number, replace it with that value.
 
@@ -55,7 +55,7 @@ Complete the following procedure to configure the OPC UA data selection:
     - For content structure, see [OPC UA data selection example](#opc-ua-data-selection-example).
     - For a table of all available parameters, see [OPC UA data selection](#opc-ua-data-selection-parameters).
 2. Save the file, for example as _DataSelection.config.json_.
-3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to execute either a POST or PUT command to their appropriate endpoint:
+3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to run either a POST or PUT command to their appropriate endpoint:
 
     **Note:** The following examples use OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration).
   
@@ -63,19 +63,23 @@ Complete the following procedure to configure the OPC UA data selection:
 
     - **POST** endpoint: `http://localhost:5590/api/v1/configuration/<componentId>/DataSelection/`
 
-      Example using curl (run this command from the same directory where the file is located):
+      Example using `curl`:
 
       ```bash
       curl -d "@DataSelection.config.json" -H "Content-Type: application/json" -X POST "http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection"
       ```
 
+      **Note:** Run this command from the same directory where the file is located.
+
     - **PUT** endpoint: `http://localhost:5590/api/v1/configuration/<componentId>/DataSelection/<NodeId>`
 
-      Example using curl (run this command from the same directory where the file is located):
+      Example using `curl`:
 
         ```bash
         curl -d "@DataSelection.config.json" -H "Content-Type: application/json" -X PUT "http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection/ns=5;s=Random1"
         ```
+
+        **Note:** Run this command from the same directory where the file is located.
 
 ## OPC UA data selection schema
 

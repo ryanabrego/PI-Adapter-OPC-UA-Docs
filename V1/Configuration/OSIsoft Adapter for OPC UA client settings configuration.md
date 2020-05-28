@@ -12,27 +12,27 @@ A default OPC UA client settings file is created if there is no OPC UA client se
 
 Complete the following procedure for this default client settings file to be generated:
 
-1. Add an OPC UA adapter with a unique ComponentId. For more information, see [System components configuration](xref:SystemComponentsConfiguration).
+1. Add an OPC UA adapter with a unique `ComponentId`. For more information, see [System components configuration](xref:SystemComponentsConfiguration).
   
 2. Configure a valid OPC UA data source. For more information, see [OSIsoft Adapter for OPC UA data source configuration](xref:OSIsoftAdapterForOPCUADataSourceConfiguration).
 
    Once you complete these steps, a default OPC UA client settings configuration file is generated in the configuration directory for the corresponding platform.
   
-   The following are example locations of the file created. In this example, it is assumed that the ComponentId of the OPC UA component is OpcUa1:
+   The following are example locations of the file created. In this example, it is assumed that the `ComponentId` of the OPC UA component is OpcUa1:
 
-   Windows: *%programdata%\OSIsoft\Adapters\OpcUa\Configuration\OpcUa1_ClientSettings.json*
+   Windows: `%programdata%\OSIsoft\Adapters\OpcUa\Configuration\OpcUa1_ClientSettings.json`
   
-   Linux: */usr/share/OSIsoft/Adapters/OpcUa/Configuration/OpcUa1_ClientSettings.json*
+   Linux: `/usr/share/OSIsoft/Adapters/OpcUa/Configuration/OpcUa1_ClientSettings.json`
 
 ## Configure OPC UA client settings
 
-Complete the following procedure to configure the OPC UA client settings:
+Complete the following steps to configure the OPC UA client settings:
 
-1. Using any text editor, create a file that contains the OPC UA client settings in JSON form.
+1. Using any text editor, create a file that contains the OPC UA client settings in the JSON format.
     - For content structure, see [OPC UA client settings example](#opc-ua-client-settings-example).
-    - For a table of all available parameters, see [OPC UA client settings](#opc-ua-client-settings-parameters).
-2. Save the file, for example as _ClientSettings.json_.
-3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to run a PUT command to its appropriate endpoint:
+    - For all available parameters, see [OPC UA client settings](#opc-ua-client-settings-parameters).
+2. Save the file. For example, `ClientSettings.json`.
+3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to run a `PUT` command to its appropriate endpoint:
 
     **Note:** The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration).
   
@@ -50,17 +50,17 @@ Complete the following procedure to configure the OPC UA client settings:
 
 ## OPC UA client settings schema
 
-The full schema definition for the OPC UA client settings configuration is in the _OpcUa_ClientSettings_schema.json_ here:
+The full schema definition for the OPC UA client settings configuration is in the `OpcUa_ClientSettings_schema.json` here:
 
-Windows: *%ProgramFiles%\OSIsoft\Adapters\OpcUa\Schemas*
+Windows: `%ProgramFiles%\OSIsoft\Adapters\OpcUa\Schemas`
 
-Linux: */opt/OSIsoft/Adapters/OpcUa/Schemas*
+Linux: `/opt/OSIsoft/Adapters/OpcUa/Schemas`
 
 ## OPC UA client settings parameters
 
 The following parameters are available for configuring OPC UA client settings:
 
-**Note**: All intervals, delays, and timeouts require the string to be formatted like this:<br> `\[d:\]h:mm:ss\[.FFFFFFF\]` where the items in brackets are optional.<br> d = days, h = hours, mm = minutes, ss = seconds, F = fractional portion of a second.<br> Example: `"05:07:10:40.150"` for 5 days, 7 hours, 10 minutes, 40 seconds, and .150 seconds.
+**Note**: All intervals, delays, and timeouts require the string to be formatted like this:<br> `\[d:\]h:mm:ss\[.FFFFFFF\]` where the items in brackets are optional.<br> d = days, h = hours, mm = minutes, ss = seconds, F = fractional portion of a second.<br><br> Example: `"05:07:10:40.150"` for 5 days, 7 hours, 10 minutes, 40 seconds, and .150 seconds.
 
 | Parameter     | Required | Type | Description |
 |---------------|----------|------|-------------|

@@ -102,7 +102,7 @@
 <li><p>Using any text editor, change the value of any <strong>Selected</strong> key from <code>false</code> to <code>true</code> in the file.</p>
 <p>Once the configuration is updated, the adapter will subscribe to data for all items that are set to <em>Selected=true</em>.</p>
 </li>
-<li><p>In the same directory where you edited the file, run the following curl command:</p>
+<li><p>In the same directory where you edited the file, run the following <code>curl</code> command:</p>
 <p> <strong>Note:</strong> <code>5590</code> is the default port number. If you selected a different port number, replace it with that value.</p>
 <pre><code class="lang-bash">curl -i -d &quot;@OpcUa1_DataSelection.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT      &quot;http://localhost:5590/api/v1/configuration/OpcUa1/Dataselection&quot;
 </code></pre></li>
@@ -117,18 +117,20 @@
 </ul>
 </li>
 <li>Save the file, for example as <em>DataSelection.config.json</em>.</li>
-<li><p>Use any of the <a class="xref" href="../main/V1/Configuration/Configuration%20tools.html">Configuration tools</a> capable of making HTTP requests to execute either a POST or PUT command to their appropriate endpoint:</p>
+<li><p>Use any of the <a class="xref" href="../main/V1/Configuration/Configuration%20tools.html">Configuration tools</a> capable of making HTTP requests to run either a POST or PUT command to their appropriate endpoint:</p>
 <p> <strong>Note:</strong> The following examples use OpcUa1 as the adapter component name. For more information on how to add a component, see <a class="xref" href="../main/V1/Configuration/System%20components%20configuration.html">System components configuration</a>.</p>
 <p> <code>5590</code> is the default port number. If you selected a different port number, replace it with that value.</p>
 <ul>
 <li><p><strong>POST</strong> endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;componentId&gt;/DataSelection/</code></p>
-<p>Example using curl (run this command from the same directory where the file is located):</p>
+<p>Example using <code>curl</code>:</p>
 <pre><code class="lang-bash">curl -d &quot;@DataSelection.config.json&quot; -H &quot;Content-Type: application/json&quot; -X POST &quot;http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection&quot;
-</code></pre></li>
+</code></pre><p><strong>Note:</strong> Run this command from the same directory where the file is located.</p>
+</li>
 <li><p><strong>PUT</strong> endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;componentId&gt;/DataSelection/&lt;NodeId&gt;</code></p>
-<p>Example using curl (run this command from the same directory where the file is located):</p>
+<p>Example using <code>curl</code>:</p>
 <pre><code class="lang-bash">curl -d &quot;@DataSelection.config.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT &quot;http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection/ns=5;s=Random1&quot;
-</code></pre></li>
+</code></pre><p>  <strong>Note:</strong> Run this command from the same directory where the file is located.</p>
+</li>
 </ul>
 </li>
 </ol>

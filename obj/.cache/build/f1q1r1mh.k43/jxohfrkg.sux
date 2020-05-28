@@ -94,29 +94,30 @@
 </ol>
 <h2 id="configure-opc-ua-client-settings" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="27" sourceendlinenumber="27">Configure OPC UA client settings</h2>
 <p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="29" sourceendlinenumber="29">Complete the following procedure to configure the OPC UA client settings:</p>
-<ol sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="31" sourceendlinenumber="47">
+<ol sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="31" sourceendlinenumber="49">
 <li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="31" sourceendlinenumber="33">Using any text editor, create a file that contains the OPC UA client settings in JSON form.<ul sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="32" sourceendlinenumber="33">
 <li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="32" sourceendlinenumber="32">For content structure, see <a href="#opc-ua-client-settings-example" data-raw-source="[OPC UA client settings example](#opc-ua-client-settings-example)" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="32" sourceendlinenumber="32">OPC UA client settings example</a>.</li>
 <li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="33" sourceendlinenumber="33">For a table of all available parameters, see <a href="#opc-ua-client-settings-parameters" data-raw-source="[OPC UA client settings](#opc-ua-client-settings-parameters)" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="33" sourceendlinenumber="33">OPC UA client settings</a>.</li>
 </ul>
 </li>
 <li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="34" sourceendlinenumber="34">Save the file, for example as <em>ClientSettings.json</em>.</li>
-<li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="35" sourceendlinenumber="47"><p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="35" sourceendlinenumber="35">Use any of the <a class="xref" href="../main/V1/Configuration/Configuration%20tools.html" data-raw-source="[Configuration tools](xref:ConfigurationTools)" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="35" sourceendlinenumber="35">Configuration tools</a> capable of making HTTP requests to execute a PUT command to its appropriate endpoint:</p>
+<li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="35" sourceendlinenumber="49"><p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="35" sourceendlinenumber="35">Use any of the <a class="xref" href="../main/V1/Configuration/Configuration%20tools.html" data-raw-source="[Configuration tools](xref:ConfigurationTools)" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="35" sourceendlinenumber="35">Configuration tools</a> capable of making HTTP requests to run a PUT command to its appropriate endpoint:</p>
 <p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="37" sourceendlinenumber="37"> <strong>Note:</strong> The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see <a class="xref" href="../main/V1/Configuration/System%20components%20configuration.html" data-raw-source="[System components configuration](xref:SystemComponentsConfiguration)" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="37" sourceendlinenumber="37">System components configuration</a>.</p>
 <p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="39" sourceendlinenumber="39"> <code>5590</code> is the default port number. If you selected a different port number, replace it with that value.</p>
 <p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="41" sourceendlinenumber="41"> <strong>PUT</strong> endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;componentId&gt;/ClientSettings/</code></p>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="43" sourceendlinenumber="43">   Example using curl (run this command from the same directory where the file is located):</p>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="43" sourceendlinenumber="43">   Example using <code>curl</code>:</p>
 <pre sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="45" sourceendlinenumber="47"><code class="lang-bash">curl -d &quot;@ClientSettings.config.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT &quot;http://localhost:5590/api/v1/configuration/OpcUa1/ClientSettings&quot;
-</code></pre></li>
+</code></pre><p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="49" sourceendlinenumber="49"> <strong>Note:</strong> Run this command from the same directory where the file is located.</p>
+</li>
 </ol>
-<h2 id="opc-ua-client-settings-schema" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="49" sourceendlinenumber="49">OPC UA client settings schema</h2>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="51" sourceendlinenumber="51">The full schema definition for the OPC UA client settings configuration is in the <em>OpcUa_ClientSettings_schema.json</em> here:</p>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="53" sourceendlinenumber="53">Windows: <em>%ProgramFiles%\OSIsoft\Adapters\OpcUa\Schemas</em></p>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="55" sourceendlinenumber="55">Linux: <em>/opt/OSIsoft/Adapters/OpcUa/Schemas</em></p>
-<h2 id="opc-ua-client-settings-parameters" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="57" sourceendlinenumber="57">OPC UA client settings parameters</h2>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="59" sourceendlinenumber="59">The following parameters are available for configuring OPC UA client settings:</p>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="61" sourceendlinenumber="61"><strong>Note</strong>: All intervals, delays, and timeouts require the string to be formatted like this:<br> <code>\[d:\]h:mm:ss\[.FFFFFFF\]</code> where the items in brackets are optional.<br> d = days, h = hours, mm = minutes, ss = seconds, F = fractional portion of a second.<br> Example: <code>&quot;05:07:10:40.150&quot;</code> for 5 days, 7 hours, 10 minutes, 40 seconds, and .150 seconds.</p>
-<table sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="63" sourceendlinenumber="80">
+<h2 id="opc-ua-client-settings-schema" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="51" sourceendlinenumber="51">OPC UA client settings schema</h2>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="53" sourceendlinenumber="53">The full schema definition for the OPC UA client settings configuration is in the <em>OpcUa_ClientSettings_schema.json</em> here:</p>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="55" sourceendlinenumber="55">Windows: <em>%ProgramFiles%\OSIsoft\Adapters\OpcUa\Schemas</em></p>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="57" sourceendlinenumber="57">Linux: <em>/opt/OSIsoft/Adapters/OpcUa/Schemas</em></p>
+<h2 id="opc-ua-client-settings-parameters" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="59" sourceendlinenumber="59">OPC UA client settings parameters</h2>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="61" sourceendlinenumber="61">The following parameters are available for configuring OPC UA client settings:</p>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="63" sourceendlinenumber="63"><strong>Note</strong>: All intervals, delays, and timeouts require the string to be formatted like this:<br> <code>\[d:\]h:mm:ss\[.FFFFFFF\]</code> where the items in brackets are optional.<br> d = days, h = hours, mm = minutes, ss = seconds, F = fractional portion of a second.<br> Example: <code>&quot;05:07:10:40.150&quot;</code> for 5 days, 7 hours, 10 minutes, 40 seconds, and .150 seconds.</p>
+<table sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="65" sourceendlinenumber="82">
 <thead>
 <tr>
 <th>Parameter</th>
@@ -224,8 +225,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="opc-ua-client-settings-example" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="82" sourceendlinenumber="82">OPC UA client settings example</h2>
-<pre sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="84" sourceendlinenumber="103"><code class="lang-json">{
+<h2 id="opc-ua-client-settings-example" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="84" sourceendlinenumber="84">OPC UA client settings example</h2>
+<pre sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="86" sourceendlinenumber="105"><code class="lang-json">{
     &quot;maxBrowseReferencesToReturn&quot;: 0,
     &quot;maxNodesToBrowse&quot;: 10,
     &quot;reconnectDelay&quot;: &quot;0:00:30&quot;,
@@ -243,8 +244,8 @@
     &quot;monitoredItemQueueSize&quot;: 2,
     &quot;maxInternalQueueSize&quot;: 500000
 }
-</code></pre><h2 id="rest-urls" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="105" sourceendlinenumber="105">REST URLs</h2>
-<table sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="107" sourceendlinenumber="112">
+</code></pre><h2 id="rest-urls" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="107" sourceendlinenumber="107">REST URLs</h2>
+<table sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="109" sourceendlinenumber="114">
 <thead>
 <tr>
 <th>Relative URL</th>
@@ -275,7 +276,7 @@
 </tr>
 </tbody>
 </table>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="114" sourceendlinenumber="114"><strong>Note:</strong> Replace <em>ComponentId</em> with the Id of your OPC UA component, for example OpcUa1.</p>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA client settings configuration.md" sourcestartlinenumber="116" sourceendlinenumber="116"><strong>Note:</strong> Replace <em>ComponentId</em> with the Id of your OPC UA component, for example OpcUa1.</p>
 </article>
           </div>
           

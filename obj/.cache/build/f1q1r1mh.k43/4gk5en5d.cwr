@@ -102,7 +102,7 @@
 <li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="36" sourceendlinenumber="38"><p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="36" sourceendlinenumber="36">Using any text editor, change the value of any <strong>Selected</strong> key from <code>false</code> to <code>true</code> in the file.</p>
 <p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="38" sourceendlinenumber="38">Once the configuration is updated, the adapter will subscribe to data for all items that are set to <em>Selected=true</em>.</p>
 </li>
-<li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="40" sourceendlinenumber="46"><p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="40" sourceendlinenumber="40">In the same directory where you edited the file, run the following curl command:</p>
+<li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="40" sourceendlinenumber="46"><p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="40" sourceendlinenumber="40">In the same directory where you edited the file, run the following <code>curl</code> command:</p>
 <p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="42" sourceendlinenumber="42"> <strong>Note:</strong> <code>5590</code> is the default port number. If you selected a different port number, replace it with that value.</p>
 <pre sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="44" sourceendlinenumber="46"><code class="lang-bash">curl -i -d &quot;@OpcUa1_DataSelection.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT      &quot;http://localhost:5590/api/v1/configuration/OpcUa1/Dataselection&quot;
 </code></pre></li>
@@ -110,35 +110,37 @@
 <h2 id="configure-opc-ua-data-selection" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="48" sourceendlinenumber="48">Configure OPC UA data selection</h2>
 <p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="50" sourceendlinenumber="50"><strong>Note:</strong> You cannot modify OPC UA data selection configurations manually. You must use the REST endpoints to add or edit the configuration.</p>
 <p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="52" sourceendlinenumber="52">Complete the following procedure to configure the OPC UA data selection:</p>
-<ol sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="54" sourceendlinenumber="78">
+<ol sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="54" sourceendlinenumber="82">
 <li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="54" sourceendlinenumber="56">Using any text editor, create a file that contains an OPC UA data selection in JSON form.<ul sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="55" sourceendlinenumber="56">
 <li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="55" sourceendlinenumber="55">For content structure, see <a href="#opc-ua-data-selection-example" data-raw-source="[OPC UA data selection example](#opc-ua-data-selection-example)" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="55" sourceendlinenumber="55">OPC UA data selection example</a>.</li>
 <li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="56" sourceendlinenumber="56">For a table of all available parameters, see <a href="#opc-ua-data-selection-parameters" data-raw-source="[OPC UA data selection](#opc-ua-data-selection-parameters)" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="56" sourceendlinenumber="56">OPC UA data selection</a>.</li>
 </ul>
 </li>
 <li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="57" sourceendlinenumber="57">Save the file, for example as <em>DataSelection.config.json</em>.</li>
-<li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="58" sourceendlinenumber="78"><p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="58" sourceendlinenumber="58">Use any of the <a class="xref" href="../main/V1/Configuration/Configuration%20tools.html" data-raw-source="[Configuration tools](xref:ConfigurationTools)" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="58" sourceendlinenumber="58">Configuration tools</a> capable of making HTTP requests to execute either a POST or PUT command to their appropriate endpoint:</p>
+<li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="58" sourceendlinenumber="82"><p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="58" sourceendlinenumber="58">Use any of the <a class="xref" href="../main/V1/Configuration/Configuration%20tools.html" data-raw-source="[Configuration tools](xref:ConfigurationTools)" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="58" sourceendlinenumber="58">Configuration tools</a> capable of making HTTP requests to run either a POST or PUT command to their appropriate endpoint:</p>
 <p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="60" sourceendlinenumber="60"> <strong>Note:</strong> The following examples use OpcUa1 as the adapter component name. For more information on how to add a component, see <a class="xref" href="../main/V1/Configuration/System%20components%20configuration.html" data-raw-source="[System components configuration](xref:SystemComponentsConfiguration)" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="60" sourceendlinenumber="60">System components configuration</a>.</p>
 <p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="62" sourceendlinenumber="62"> <code>5590</code> is the default port number. If you selected a different port number, replace it with that value.</p>
-<ul sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="64" sourceendlinenumber="78">
-<li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="64" sourceendlinenumber="70"><p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="64" sourceendlinenumber="64"><strong>POST</strong> endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;componentId&gt;/DataSelection/</code></p>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="66" sourceendlinenumber="66">Example using curl (run this command from the same directory where the file is located):</p>
+<ul sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="64" sourceendlinenumber="82">
+<li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="64" sourceendlinenumber="72"><p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="64" sourceendlinenumber="64"><strong>POST</strong> endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;componentId&gt;/DataSelection/</code></p>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="66" sourceendlinenumber="66">Example using <code>curl</code>:</p>
 <pre sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="68" sourceendlinenumber="70"><code class="lang-bash">curl -d &quot;@DataSelection.config.json&quot; -H &quot;Content-Type: application/json&quot; -X POST &quot;http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection&quot;
-</code></pre></li>
-<li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="72" sourceendlinenumber="78"><p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="72" sourceendlinenumber="72"><strong>PUT</strong> endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;componentId&gt;/DataSelection/&lt;NodeId&gt;</code></p>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="74" sourceendlinenumber="74">Example using curl (run this command from the same directory where the file is located):</p>
-<pre sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="76" sourceendlinenumber="78"><code class="lang-bash">curl -d &quot;@DataSelection.config.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT &quot;http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection/ns=5;s=Random1&quot;
-</code></pre></li>
+</code></pre><p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="72" sourceendlinenumber="72"><strong>Note:</strong> Run this command from the same directory where the file is located.</p>
+</li>
+<li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="74" sourceendlinenumber="82"><p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="74" sourceendlinenumber="74"><strong>PUT</strong> endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;componentId&gt;/DataSelection/&lt;NodeId&gt;</code></p>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="76" sourceendlinenumber="76">Example using <code>curl</code>:</p>
+<pre sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="78" sourceendlinenumber="80"><code class="lang-bash">curl -d &quot;@DataSelection.config.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT &quot;http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection/ns=5;s=Random1&quot;
+</code></pre><p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="82" sourceendlinenumber="82">  <strong>Note:</strong> Run this command from the same directory where the file is located.</p>
+</li>
 </ul>
 </li>
 </ol>
-<h2 id="opc-ua-data-selection-schema" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="80" sourceendlinenumber="80">OPC UA data selection schema</h2>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="82" sourceendlinenumber="82">The full schema definition for the OPC UA data selection configuration is in the <em>OpcUa_DataSelection_schema.json</em> here:</p>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="84" sourceendlinenumber="84">Windows: <em>%ProgramFiles%\OSIsoft\Adapters\OpcUa\Schemas</em></p>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="86" sourceendlinenumber="86">Linux: <em>/opt/OSIsoft/Adapters/OpcUa/Schemas</em></p>
-<h2 id="opc-ua-data-selection-parameters" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="88" sourceendlinenumber="88">OPC UA data selection parameters</h2>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="90" sourceendlinenumber="90">The following parameters are available for configuring an OPC UA data selection:</p>
-<table sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="92" sourceendlinenumber="97">
+<h2 id="opc-ua-data-selection-schema" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="84" sourceendlinenumber="84">OPC UA data selection schema</h2>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="86" sourceendlinenumber="86">The full schema definition for the OPC UA data selection configuration is in the <em>OpcUa_DataSelection_schema.json</em> here:</p>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="88" sourceendlinenumber="88">Windows: <em>%ProgramFiles%\OSIsoft\Adapters\OpcUa\Schemas</em></p>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="90" sourceendlinenumber="90">Linux: <em>/opt/OSIsoft/Adapters/OpcUa/Schemas</em></p>
+<h2 id="opc-ua-data-selection-parameters" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="92" sourceendlinenumber="92">OPC UA data selection parameters</h2>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="94" sourceendlinenumber="94">The following parameters are available for configuring an OPC UA data selection:</p>
+<table sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="96" sourceendlinenumber="101">
 <thead>
 <tr>
 <th>Parameter</th>
@@ -174,10 +176,10 @@
 </tr>
 </tbody>
 </table>
-<h2 id="opc-ua-data-selection-example" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="99" sourceendlinenumber="99">OPC UA data selection example</h2>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="101" sourceendlinenumber="101">The following are examples of valid OPC UA data selection configurations:</p>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="103" sourceendlinenumber="103"><strong>Minimum data selection configuration</strong>:</p>
-<pre sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="105" sourceendlinenumber="120"><code class="lang-json">[
+<h2 id="opc-ua-data-selection-example" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="103" sourceendlinenumber="103">OPC UA data selection example</h2>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="105" sourceendlinenumber="105">The following are examples of valid OPC UA data selection configurations:</p>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="107" sourceendlinenumber="107"><strong>Minimum data selection configuration</strong>:</p>
+<pre sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="109" sourceendlinenumber="124"><code class="lang-json">[
  {
     &quot;Name&quot;: &quot;Random1&quot;,
     &quot;NodeId&quot;: &quot;ns=5;s=Random1&quot;
@@ -191,8 +193,8 @@
     &quot;NodeId&quot;: &quot;ns=5;s=Sinusoid1&quot;
   }
 ]
-</code></pre><p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="122" sourceendlinenumber="122"><strong>Maximum data selection configuration</strong>:</p>
-<pre sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="124" sourceendlinenumber="145"><code class="lang-json">[
+</code></pre><p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="126" sourceendlinenumber="126"><strong>Maximum data selection configuration</strong>:</p>
+<pre sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="128" sourceendlinenumber="149"><code class="lang-json">[
  {
     &quot;Selected&quot;: true,
     &quot;Name&quot;: &quot;Random1&quot;,
@@ -212,8 +214,8 @@
     &quot;StreamId&quot;: null
   }
 ]
-</code></pre><h2 id="rest-urls" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="147" sourceendlinenumber="147">REST URLs</h2>
-<table sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="149" sourceendlinenumber="156">
+</code></pre><h2 id="rest-urls" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="151" sourceendlinenumber="151">REST URLs</h2>
+<table sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="153" sourceendlinenumber="160">
 <thead>
 <tr>
 <th>Relative URL</th>
@@ -254,7 +256,7 @@
 </tr>
 </tbody>
 </table>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="158" sourceendlinenumber="158"><strong>Note:</strong> Replace <em>ComponentId</em> with the Id of your OPC UA component, for example OpcUa1.</p>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data selection configuration.md" sourcestartlinenumber="162" sourceendlinenumber="162"><strong>Note:</strong> Replace <em>ComponentId</em> with the Id of your OPC UA component, for example OpcUa1.</p>
 </article>
           </div>
           

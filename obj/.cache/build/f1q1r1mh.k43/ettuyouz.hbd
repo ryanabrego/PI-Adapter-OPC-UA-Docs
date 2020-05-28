@@ -82,28 +82,29 @@
 <h2 id="configure-opc-ua-data-source" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="9" sourceendlinenumber="9">Configure OPC UA data source</h2>
 <p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="11" sourceendlinenumber="11"><strong>Note:</strong> You cannot modify OPC UA data source configurations manually. You must use the REST endpoints to add or edit the configuration.</p>
 <p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="13" sourceendlinenumber="13">Complete the following procedure to configure an OPC UA data source:</p>
-<ol sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="15" sourceendlinenumber="29">
+<ol sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="15" sourceendlinenumber="31">
 <li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="15" sourceendlinenumber="17">Using any text editor, create a file that contains an OPC UA data source in JSON form.<ul sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="16" sourceendlinenumber="17">
 <li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="16" sourceendlinenumber="16">For content structure, see <a href="#opc-ua-data-source-examples" data-raw-source="[OPC UA data source examples](#opc-ua-data-source-examples)" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="16" sourceendlinenumber="16">OPC UA data source examples</a>.</li>
 <li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="17" sourceendlinenumber="17">For a table of all available parameters, see <a href="#opc-ua-data-source-parameters" data-raw-source="[OPC UA data source parameters](#opc-ua-data-source-parameters)" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="17" sourceendlinenumber="17">OPC UA data source parameters</a>.</li>
 </ul>
 </li>
 <li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="18" sourceendlinenumber="18">Save the file, for example as <em>DataSource.config.json</em>.</li>
-<li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="19" sourceendlinenumber="29"><p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="19" sourceendlinenumber="19">Use any of the <a class="xref" href="../main/V1/Configuration/Configuration%20tools.html" data-raw-source="[Configuration tools](xref:ConfigurationTools)" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="19" sourceendlinenumber="19">Configuration tools</a> capable of making HTTP requests to execute a PUT command with the contents of that file to the following endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;adapterId&gt;/DataSource/</code>.</p>
+<li sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="19" sourceendlinenumber="31"><p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="19" sourceendlinenumber="19">Use any of the <a class="xref" href="../main/V1/Configuration/Configuration%20tools.html" data-raw-source="[Configuration tools](xref:ConfigurationTools)" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="19" sourceendlinenumber="19">Configuration tools</a> capable of making HTTP requests to run a PUT command with the contents of that file to the following endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;adapterId&gt;/DataSource/</code>.</p>
 <p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="21" sourceendlinenumber="21">   <strong>Note:</strong> The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see <a class="xref" href="../main/V1/Configuration/System%20components%20configuration.html" data-raw-source="[System components configuration](xref:SystemComponentsConfiguration)" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="21" sourceendlinenumber="21">System components configuration</a>.</p>
 <p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="23" sourceendlinenumber="23"> <code>5590</code> is the default port number. If you selected a different port number, replace it with that value.</p>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="25" sourceendlinenumber="25"> Example using curl (run this command from the same directory where the file is located):</p>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="25" sourceendlinenumber="25"> Example using <code>curl</code>:</p>
 <pre sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="27" sourceendlinenumber="29"><code class="lang-bash">curl -d &quot;@DataSource.config.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT &quot;http://localhost:5590/api/v1/configuration/OpcUa1/DataSource&quot;
-</code></pre></li>
+</code></pre><p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="31" sourceendlinenumber="31"> <strong>Note:</strong> Run this command from the same directory where the file is located.</p>
+</li>
 </ol>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="31" sourceendlinenumber="31"><strong>Note:</strong> After you have completed data source configuration, the next step is to configure data selection. You can decide to have a default data selection file generated automatically or you can create the data selection file yourself. For more information, see <a class="xref" href="OSIsoft%20Adapter%20for%20OPC%20UA%20data%20selection%20configuration.html" data-raw-source="[OSIsoft Adapter for OPC UA data selection configuration](xref:OSIsoftAdapterForOPCUADataSelectionConfiguration)" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="31" sourceendlinenumber="31">OSIsoft Adapter for OPC UA data selection configuration</a>.</p>
-<h2 id="opc-ua-data-source-schema" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="33" sourceendlinenumber="33">OPC UA data source schema</h2>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="35" sourceendlinenumber="35">The full schema definition for the OPC UA data source configuration is in the <em>OpcUa_DataSource_schema.json</em> here:</p>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="37" sourceendlinenumber="37">Windows: <em>%ProgramFiles%\OSIsoft\Adapters\OpcUa\Schemas</em></p>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="39" sourceendlinenumber="39">Linux: <em>/opt/OSIsoft/Adapters/OpcUa/Schemas</em></p>
-<h2 id="opc-ua-data-source-parameters" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="41" sourceendlinenumber="41">OPC UA data source parameters</h2>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="43" sourceendlinenumber="43">The following parameters are available for configuring an OPC UA data source:</p>
-<table sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="45" sourceendlinenumber="54">
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="33" sourceendlinenumber="33"><strong>Note:</strong> After you have completed data source configuration, the next step is to configure data selection. You can decide to have a default data selection file generated automatically or you can create the data selection file yourself. For more information, see <a class="xref" href="OSIsoft%20Adapter%20for%20OPC%20UA%20data%20selection%20configuration.html" data-raw-source="[OSIsoft Adapter for OPC UA data selection configuration](xref:OSIsoftAdapterForOPCUADataSelectionConfiguration)" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="33" sourceendlinenumber="33">OSIsoft Adapter for OPC UA data selection configuration</a>.</p>
+<h2 id="opc-ua-data-source-schema" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="35" sourceendlinenumber="35">OPC UA data source schema</h2>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="37" sourceendlinenumber="37">The full schema definition for the OPC UA data source configuration is in the <em>OpcUa_DataSource_schema.json</em> here:</p>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="39" sourceendlinenumber="39">Windows: <em>%ProgramFiles%\OSIsoft\Adapters\OpcUa\Schemas</em></p>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="41" sourceendlinenumber="41">Linux: <em>/opt/OSIsoft/Adapters/OpcUa/Schemas</em></p>
+<h2 id="opc-ua-data-source-parameters" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="43" sourceendlinenumber="43">OPC UA data source parameters</h2>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="45" sourceendlinenumber="45">The following parameters are available for configuring an OPC UA data source:</p>
+<table sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="47" sourceendlinenumber="56">
 <thead>
 <tr>
 <th>Parameter</th>
@@ -163,14 +164,14 @@
 </tr>
 </tbody>
 </table>
-<h2 id="opc-ua-data-source-examples" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="56" sourceendlinenumber="56">OPC UA data source examples</h2>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="58" sourceendlinenumber="58">The following are examples of valid OPC UA data source configurations:</p>
-<h3 id="minimum-data-source-configuration" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="60" sourceendlinenumber="60">Minimum data source configuration</h3>
-<pre sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="62" sourceendlinenumber="66"><code class="lang-json">{
+<h2 id="opc-ua-data-source-examples" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="58" sourceendlinenumber="58">OPC UA data source examples</h2>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="60" sourceendlinenumber="60">The following are examples of valid OPC UA data source configurations:</p>
+<h3 id="minimum-data-source-configuration" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="62" sourceendlinenumber="62">Minimum data source configuration</h3>
+<pre sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="64" sourceendlinenumber="68"><code class="lang-json">{
     &quot;EndpointUrl&quot;: &quot;opc.tcp://&lt;IP-Address&gt;:&lt;Port&gt;/&lt;TestOPCUAServer&gt;&quot;
 }
-</code></pre><h3 id="maximum-data-source-configuration" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="68" sourceendlinenumber="68">Maximum data source configuration</h3>
-<pre sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="70" sourceendlinenumber="81"><code class="lang-json">{
+</code></pre><h3 id="maximum-data-source-configuration" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="70" sourceendlinenumber="70">Maximum data source configuration</h3>
+<pre sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="72" sourceendlinenumber="83"><code class="lang-json">{
     &quot;EndpointUrl&quot;: &quot;opc.tcp://&lt;IP-Address&gt;:&lt;Port&gt;/&lt;TestOPCUAServer&gt;&quot;,
     &quot;UseSecureConnection&quot;: true,
     &quot;UserName&quot;: null,
@@ -180,8 +181,8 @@
     &quot;StreamIdPrefix&quot;: null,
     &quot;DefaultStreamIdPattern&quot;: &quot;{NamespaceIndex.Identifier}&quot;
 }
-</code></pre><h2 id="rest-urls" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="83" sourceendlinenumber="83">REST URLs</h2>
-<table sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="85" sourceendlinenumber="90">
+</code></pre><h2 id="rest-urls" sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="85" sourceendlinenumber="85">REST URLs</h2>
+<table sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="87" sourceendlinenumber="92">
 <thead>
 <tr>
 <th>Relative URL</th>
@@ -212,7 +213,7 @@
 </tr>
 </tbody>
 </table>
-<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="92" sourceendlinenumber="92"><strong>Note:</strong> Replace <em>ComponentId</em> with the Id of your OPC UA component, for example OpcUa1.</p>
+<p sourcefile="V1/Configuration/OSIsoft Adapter for OPC UA data source configuration.md" sourcestartlinenumber="94" sourceendlinenumber="94"><strong>Note:</strong> Replace <em>ComponentId</em> with the Id of your OPC UA component, for example OpcUa1.</p>
 </article>
           </div>
           

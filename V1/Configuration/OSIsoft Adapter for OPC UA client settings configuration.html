@@ -101,13 +101,14 @@
 </ul>
 </li>
 <li>Save the file, for example as <em>ClientSettings.json</em>.</li>
-<li><p>Use any of the <a class="xref" href="../main/V1/Configuration/Configuration%20tools.html">Configuration tools</a> capable of making HTTP requests to execute a PUT command to its appropriate endpoint:</p>
+<li><p>Use any of the <a class="xref" href="../main/V1/Configuration/Configuration%20tools.html">Configuration tools</a> capable of making HTTP requests to run a PUT command to its appropriate endpoint:</p>
 <p> <strong>Note:</strong> The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see <a class="xref" href="../main/V1/Configuration/System%20components%20configuration.html">System components configuration</a>.</p>
 <p> <code>5590</code> is the default port number. If you selected a different port number, replace it with that value.</p>
 <p> <strong>PUT</strong> endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;componentId&gt;/ClientSettings/</code></p>
-<p>   Example using curl (run this command from the same directory where the file is located):</p>
+<p>   Example using <code>curl</code>:</p>
 <pre><code class="lang-bash">curl -d &quot;@ClientSettings.config.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT &quot;http://localhost:5590/api/v1/configuration/OpcUa1/ClientSettings&quot;
-</code></pre></li>
+</code></pre><p> <strong>Note:</strong> Run this command from the same directory where the file is located.</p>
+</li>
 </ol>
 <h2 id="opc-ua-client-settings-schema">OPC UA client settings schema</h2>
 <p>The full schema definition for the OPC UA client settings configuration is in the <em>OpcUa_ClientSettings_schema.json</em> here:</p>

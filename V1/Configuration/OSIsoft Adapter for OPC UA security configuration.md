@@ -14,7 +14,7 @@ Complete the following procedure to configure adapter security:
 
 1. In your data source configuration, set `UseSecureConnection` to **true**. For more information, see [OSIsoft Adapter for OPC UA data source configuration](xref:OSIsoftAdapterForOPCUADataSourceConfiguration).
 
-   The adapter verifies whether the server certificate is present in the [adapter trusted certificates](#adapter-trusted-certificates) and hence trusts it. In case the certificates were not exchanged before the first attempted connection, the adapter persists the server certificate within the [adapter rejected certificates](#adapter-rejected-certificates) folder.The following warning message about the rejected server certificate will be printed:
+   The adapter verifies whether the server certificate is present in the [adapter trusted certificates](#adapter-trusted-certificates) and hence trusts it. In case the certificates were not exchanged before the first attempted connection, the adapter persists the server certificate within the [adapter rejected certificates](#adapter-rejected-certificates) folder. The following warning message about the rejected server certificate will be printed:
 
    ```bash
    ~~2019-09-08 11:45:48.093 +01:00~~ [Warning] Rejected Certificate: "DC=MyServer.MyDomain.int, O=OSIsoft, CN=Simulation
@@ -81,3 +81,17 @@ Linux:
 ```filepath
 /usr/share/OSIsoft/Adapters/OpcUa/Certificates/own/certs
 ```
+
+**Note:** Access to the private key of the adapter requires administrator permissions. The location of the private key is the following:
+
+   Windows:
+
+   ```filepath
+   %programdata%\OSIsoft\Adapters\OpcUa\Certificates\own\private
+   ```
+
+   Linux:
+
+   ```filepath
+   /usr/share/OSIsoft/Adapters/OpcUa/Certificates/own/private
+   ```

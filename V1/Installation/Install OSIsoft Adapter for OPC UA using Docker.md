@@ -16,122 +16,118 @@ This topic provides examples of how to create a Docker container with the OPC UA
 
 	**Note:** The script varies slightly by processor.
 
-	<details>
-	<summary><b>ARM32</b></summary>
-	<pre>
+	**ARM32**
+
+	```bash
 		
-		#!/bin/sh
-		#local variables
-		defaultPort=5590
-		#regexp to only accept numerals
-		re='^[0-9]+$'
+	#!/bin/sh
+	#local variables
+	defaultPort=5590
+	#regexp to only accept numerals
+	re='^[0-9]+$'
 
-		portConfigFile="/OpcUa_linux-arm/appsettings.json"
+	portConfigFile="/OpcUa_linux-arm/appsettings.json"
 
-		#validate the port number input
-		if [ -z $portnum ] ; then
-			portnum=${defaultPort}
-			echo "Default value selected." ;
-		else
-			echo $portnum | grep -q -E $re
-			isNum=$?
-			if [ $isNum -ne 0 ] || [ $portnum -le 1023 ] || [ $portnum -gt 49151 ] ; then
-				echo "Invalid input. Setting default value ${defaultPort} instead..."
-				portnum=${defaultPort} ;
-			fi
-		fi
+	#validate the port number input
+	if [ -z $portnum ] ; then
+					portnum=${defaultPort}
+					echo "Default value selected." ;
+	else
+					echo $portnum | grep -q -E $re
+					isNum=$?
+					if [ $isNum -ne 0 ] || [ $portnum -le 1023 ] || [ $portnum -gt 49151 ] ; then
+									echo "Invalid input. Setting default value ${defaultPort} instead..."
+									portnum=${defaultPort} ;
+					fi
+	fi
 
-		echo "configuring port ${portnum}"
-		#write out the port config file
-		cat > ${portConfigFile} << EOF
-		{
-		"ApplicationSettings": {
-			"Port": ${portnum},
-			"ApplicationDataDirectory": "/usr/share/OSIsoft/Adapters/OpcUa/OpcUa"
-			}
-		}
-		EOF
-		exec /OpcUa_linux-arm/OSIsoft.Data.System.Host
-	</pre>
-	</details>
+	echo "configuring port ${portnum}"
+	#write out the port config file
+	cat > ${portConfigFile} << EOF
+	{
+	"ApplicationSettings": {
+					"Port": ${portnum},
+					"ApplicationDataDirectory": "/usr/share/OSIsoft/Adapters/OpcUa/OpcUa"
+					}
+	}
+	EOF
+	exec /OpcUa_linux-arm/OSIsoft.Data.System.Host
+	```
+	
 
-	<details>
-	<summary><b>ARM64</b></summary>
-	<pre>
+	**ARM64**
 
-		#!/bin/sh
-		#local variables
-		defaultPort=5590
-		#regexp to only accept numerals
-		re='^[0-9]+$'
+	```bash
+	#!/bin/sh
+	#local variables
+	defaultPort=5590
+	#regexp to only accept numerals
+	re='^[0-9]+$'
 
-		portConfigFile="/OpcUa_linux-arm64/appsettings.json"
+	portConfigFile="/OpcUa_linux-arm64/appsettings.json"
 
-		#validate the port number input
-		if [ -z $portnum ] ; then
-			portnum=${defaultPort}
-			echo "Default value selected." ;
-		else
-			echo $portnum | grep -q -E $re
-			isNum=$?
-			if [ $isNum -ne 0 ] || [ $portnum -le 1023 ] || [ $portnum -gt 49151 ] ; then
-				echo "Invalid input. Setting default value ${defaultPort} instead..."
-				portnum=${defaultPort} ;
-			fi
-		fi
+	#validate the port number input
+	if [ -z $portnum ] ; then
+					portnum=${defaultPort}
+					echo "Default value selected." ;
+	else
+					echo $portnum | grep -q -E $re
+					isNum=$?
+					if [ $isNum -ne 0 ] || [ $portnum -le 1023 ] || [ $portnum -gt 49151 ] ; then
+									echo "Invalid input. Setting default value ${defaultPort} instead..."
+									portnum=${defaultPort} ;
+					fi
+	fi
 
-		echo "configuring port ${portnum}"
-		#write out the port config file
-		cat > ${portConfigFile} << EOF
-		{
-		"ApplicationSettings": {
-			"Port": ${portnum},
-			"ApplicationDataDirectory": "/usr/share/OSIsoft/Adapters/OpcUa/OpcUa"
-			}
-		}
-		EOF
-		exec /OpcUa_linux-arm64/OSIsoft.Data.System.Host
-	</pre>
-	</details>
+	echo "configuring port ${portnum}"
+	#write out the port config file
+	cat > ${portConfigFile} << EOF
+	{
+	"ApplicationSettings": {
+					"Port": ${portnum},
+					"ApplicationDataDirectory": "/usr/share/OSIsoft/Adapters/OpcUa/OpcUa"
+					}
+	}
+	EOF
+	exec /OpcUa_linux-arm64/OSIsoft.Data.System.Host
+	```
 
-	<details>
-	<summary><b>AMD64</b></summary>
-	<pre>
+	**AMD64**
 
-		#!/bin/sh
-		#local variables
-		defaultPort=5590
-		#regexp to only accept numerals
-		re='^[0-9]+$'
+	```bash
+	#!/bin/sh
+	#local variables
+	defaultPort=5590
+	#regexp to only accept numerals
+	re='^[0-9]+$'
 
-		portConfigFile="/OpcUa_linux-x64/appsettings.json"
+	portConfigFile="/OpcUa_linux-x64/appsettings.json"
 
-		#validate the port number input
-		if [ -z $portnum ] ; then
-			portnum=${defaultPort}
-			echo "Default value selected." ;
-		else
-			echo $portnum | grep -q -E $re
-			isNum=$?
-			if [ $isNum -ne 0 ] || [ $portnum -le 1023 ] || [ $portnum -gt 49151 ] ; then
-				echo "Invalid input. Setting default value ${defaultPort} instead..."
-				portnum=${defaultPort} ;
-			fi
-		fi
+	#validate the port number input
+	if [ -z $portnum ] ; then
+					portnum=${defaultPort}
+					echo "Default value selected." ;
+	else
+					echo $portnum | grep -q -E $re
+					isNum=$?
+					if [ $isNum -ne 0 ] || [ $portnum -le 1023 ] || [ $portnum -gt 49151 ] ; then
+									echo "Invalid input. Setting default value ${defaultPort} instead..."
+									portnum=${defaultPort} ;
+					fi
+	fi
 
-		echo "configuring port ${portnum}"
-		#write out the port config file
-		cat > ${portConfigFile} << EOF
-		{
-		"ApplicationSettings": {
-			"Port": ${portnum},
-			"ApplicationDataDirectory": "/usr/share/OSIsoft/Adapters/OpcUa/OpcUa"
-			}
-		}
-		EOF
-		exec /OpcUa_linux-x64/OSIsoft.Data.System.Host
-	</pre>
-	</details>
+	echo "configuring port ${portnum}"
+	#write out the port config file
+	cat > ${portConfigFile} << EOF
+	{
+	"ApplicationSettings": {
+				"Port": ${portnum},
+				"ApplicationDataDirectory": "/usr/share/OSIsoft/Adapters/OpcUa/OpcUa"
+				}
+	}
+	EOF
+	exec /OpcUa_linux-x64/OSIsoft.Data.System.Host
+	```
 	
 2. Name the script *opcuadockerstart.sh* and save it to the directory where you plan to create the container.
 

@@ -19,7 +19,6 @@ This topic provides examples of how to create a Docker container with the OPC UA
 	**ARM32**
 
 	```bash
-		
 	#!/bin/sh
 	#local variables
 	defaultPort=5590

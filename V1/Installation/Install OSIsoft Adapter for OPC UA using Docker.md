@@ -30,15 +30,15 @@ This topic provides examples of how to create a Docker container with the OPC UA
 
 	#validate the port number input
 	if [ -z $portnum ] ; then
-					portnum=${defaultPort}
-					echo "Default value selected." ;
+			portnum=${defaultPort}
+			echo "Default value selected." ;
 	else
-					echo $portnum | grep -q -E $re
-					isNum=$?
-					if [ $isNum -ne 0 ] || [ $portnum -le 1023 ] || [ $portnum -gt 49151 ] ; then
-									echo "Invalid input. Setting default value ${defaultPort} instead..."
-									portnum=${defaultPort} ;
-					fi
+			echo $portnum | grep -q -E $re
+			isNum=$?
+			if [ $isNum -ne 0 ] || [ $portnum -le 1023 ] || [ $portnum -gt 49151 ] ; then
+					echo "Invalid input. Setting default value ${defaultPort} instead..."
+					portnum=${defaultPort} ;
+			fi
 	fi
 
 	echo "configuring port ${portnum}"
@@ -46,14 +46,13 @@ This topic provides examples of how to create a Docker container with the OPC UA
 	cat > ${portConfigFile} << EOF
 	{
 	"ApplicationSettings": {
-					"Port": ${portnum},
-					"ApplicationDataDirectory": "/usr/share/OSIsoft/Adapters/OpcUa/OpcUa"
-					}
+			"Port": ${portnum},
+			"ApplicationDataDirectory": "/usr/share/OSIsoft/Adapters/OpcUa/OpcUa"
+			}
 	}
 	EOF
 	exec /OpcUa_linux-arm/OSIsoft.Data.System.Host
 	```
-	
 
 	**ARM64**
 
@@ -68,15 +67,15 @@ This topic provides examples of how to create a Docker container with the OPC UA
 
 	#validate the port number input
 	if [ -z $portnum ] ; then
-					portnum=${defaultPort}
-					echo "Default value selected." ;
+			portnum=${defaultPort}
+			echo "Default value selected." ;
 	else
-					echo $portnum | grep -q -E $re
-					isNum=$?
-					if [ $isNum -ne 0 ] || [ $portnum -le 1023 ] || [ $portnum -gt 49151 ] ; then
-									echo "Invalid input. Setting default value ${defaultPort} instead..."
-									portnum=${defaultPort} ;
-					fi
+			echo $portnum | grep -q -E $re
+			isNum=$?
+			if [ $isNum -ne 0 ] || [ $portnum -le 1023 ] || [ $portnum -gt 49151 ] ; then
+					echo "Invalid input. Setting default value ${defaultPort} instead..."
+					portnum=${defaultPort} ;
+			fi
 	fi
 
 	echo "configuring port ${portnum}"
@@ -84,9 +83,9 @@ This topic provides examples of how to create a Docker container with the OPC UA
 	cat > ${portConfigFile} << EOF
 	{
 	"ApplicationSettings": {
-					"Port": ${portnum},
-					"ApplicationDataDirectory": "/usr/share/OSIsoft/Adapters/OpcUa/OpcUa"
-					}
+			"Port": ${portnum},
+			"ApplicationDataDirectory": "/usr/share/OSIsoft/Adapters/OpcUa/OpcUa"
+			}
 	}
 	EOF
 	exec /OpcUa_linux-arm64/OSIsoft.Data.System.Host
@@ -105,15 +104,15 @@ This topic provides examples of how to create a Docker container with the OPC UA
 
 	#validate the port number input
 	if [ -z $portnum ] ; then
-					portnum=${defaultPort}
-					echo "Default value selected." ;
+			portnum=${defaultPort}
+			echo "Default value selected." ;
 	else
-					echo $portnum | grep -q -E $re
-					isNum=$?
-					if [ $isNum -ne 0 ] || [ $portnum -le 1023 ] || [ $portnum -gt 49151 ] ; then
-									echo "Invalid input. Setting default value ${defaultPort} instead..."
-									portnum=${defaultPort} ;
-					fi
+			echo $portnum | grep -q -E $re
+			isNum=$?
+			if [ $isNum -ne 0 ] || [ $portnum -le 1023 ] || [ $portnum -gt 49151 ] ; then
+					echo "Invalid input. Setting default value ${defaultPort} instead..."
+					portnum=${defaultPort} ;
+			fi
 	fi
 
 	echo "configuring port ${portnum}"
@@ -121,14 +120,14 @@ This topic provides examples of how to create a Docker container with the OPC UA
 	cat > ${portConfigFile} << EOF
 	{
 	"ApplicationSettings": {
-				"Port": ${portnum},
-				"ApplicationDataDirectory": "/usr/share/OSIsoft/Adapters/OpcUa/OpcUa"
-				}
+			"Port": ${portnum},
+			"ApplicationDataDirectory": "/usr/share/OSIsoft/Adapters/OpcUa/OpcUa"
+			}
 	}
 	EOF
 	exec /OpcUa_linux-x64/OSIsoft.Data.System.Host
 	```
-	
+
 2. Name the script *opcuadockerstart.sh* and save it to the directory where you plan to create the container.
 
 ## Create a Docker container containing the OPC UA adapter

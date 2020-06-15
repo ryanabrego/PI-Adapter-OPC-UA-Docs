@@ -126,7 +126,7 @@
 <pre><code class="lang-bash">curl -d &quot;@DataSelection.config.json&quot; -H &quot;Content-Type: application/json&quot; -X POST &quot;http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection&quot;
 </code></pre><p><strong>Note:</strong> Run this command from the same directory where the file is located.</p>
 </li>
-<li><p><strong>PUT</strong> endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;componentId&gt;/DataSelection/&lt;NodeId&gt;</code></p>
+<li><p><strong>PUT</strong> endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;componentId&gt;/DataSelection/&lt;StreamId&gt;</code></p>
 <p>Example using <code>curl</code>:</p>
 <pre><code class="lang-bash">curl -d &quot;@DataSelection.config.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT &quot;http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection/ns=5;s=Random1&quot;
 </code></pre><p>  <strong>Note:</strong> Run this command from the same directory where the file is located.</p>
@@ -158,9 +158,9 @@
 </tr>
 <tr>
 <td><strong>Name</strong></td>
-<td>Required</td>
+<td>Optional</td>
 <td><code>string</code></td>
-<td>The friendly name of the data item collected from the data source.</td>
+<td>Name of the data item collected from the data source. Default: null - results in <strong>StreamId</strong> value being used also as a <strong>Name</strong></td>
 </tr>
 <tr>
 <td><strong>NodeId</strong></td>
@@ -181,15 +181,12 @@
 <p><strong>Minimum data selection configuration</strong>:</p>
 <pre><code class="lang-json">[
  {
-    &quot;Name&quot;: &quot;Random1&quot;,
     &quot;NodeId&quot;: &quot;ns=5;s=Random1&quot;
   },
   {
-    &quot;Name&quot;: &quot;Sawtooth1&quot;,
     &quot;NodeId&quot;: &quot;ns=5;s=Sawtooth1&quot;
   },
   {
-    &quot;Name&quot;: &quot;Sinusoid1&quot;,
     &quot;NodeId&quot;: &quot;ns=5;s=Sinusoid1&quot;
   }
 ]
@@ -197,19 +194,19 @@
 <pre><code class="lang-json">[
  {
     &quot;Selected&quot;: true,
-    &quot;Name&quot;: &quot;Random1&quot;,
+    &quot;Name&quot;: &quot;CustomStreamName&quot;,
     &quot;NodeId&quot;: &quot;ns=5;s=Random1&quot;,
     &quot;StreamId&quot;: &quot;CustomStreamName&quot;
   },
   {
     &quot;Selected&quot;: false,
-    &quot;Name&quot;: &quot;Sawtooth1&quot;,
+    &quot;Name&quot;: null,
     &quot;NodeId&quot;: &quot;ns=5;s=Sawtooth1&quot;,
     &quot;StreamId&quot;: null
   },
   {
     &quot;Selected&quot;: true,
-    &quot;Name&quot;: &quot;Sinusoid1&quot;,
+    &quot;Name&quot;: &quot;5.Sinusoid1&quot;,
     &quot;NodeId&quot;: &quot;ns=5;s=Sinusoid1&quot;,
     &quot;StreamId&quot;: null
   }

@@ -8,7 +8,7 @@ OSIsoft Adapter for OPC UA is supported on a variety of platforms and processors
 
 | Operating System | Installation Kit | Processor(s) |
 |-------------------|----------------------------------|-------------|
-| Windows 10 Pro<br>Windows Server Core 2019<br>Windows Server Core 2016  | `OpcUa_win10-x64.msi`     | Intel/AMD 64-bit processors |
+| Windows 10 x64 (any version)| `OpcUa_win10-x64.msi`     | Intel/AMD 64-bit processors |
 | Debian 9 or later x64 | `OpcUa_linux-x64.deb`     | Intel/AMD 64-bit processors |
 | Debian 9 or later arm32 | `OpcUa_linux-arm.deb`  | Arm 32-bit processors |
 | Debian 9 or later arm64 | `OpcUa_linux-arm64.deb`  | Arm 64-bit processors |

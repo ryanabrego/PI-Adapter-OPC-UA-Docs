@@ -71,7 +71,7 @@ Complete the following procedure to configure the OPC UA data selection:
 
       **Note:** Run this command from the same directory where the file is located.
 
-    - **PUT** endpoint: `http://localhost:5590/api/v1/configuration/<componentId>/DataSelection/<NodeId>`
+    - **PUT** endpoint: `http://localhost:5590/api/v1/configuration/<componentId>/DataSelection/<StreamId>`
 
       Example using `curl`:
 
@@ -96,7 +96,7 @@ The following parameters are available for configuring an OPC UA data selection:
 | Parameter     | Required | Type | Description |
 |---------------|----------|------|-------------|
 | **Selected** | Optional | `boolean` | Use this field to select or clear a measurement. To select an item, set to true. To remove an item, leave the field empty or set to false.  If not configured, the default value is true.|
-| **Name**      | Required | `string` | The friendly name of the data item collected from the data source. |
+| **Name**      | Optional | `string` | Name of the data item collected from the data source. Default: null - results in **StreamId** value being used also as a **Name** |
 | **NodeId**    | Required | `string` | The NodeId of the variable.<br><br>Examples<br>`"ns=5;AString"`<br>`"ns=2;i=203"`<br>`"ns=<NamespaceIndex>;<IdentifierType>=<Identifer>"` |
 | **StreamID** | Optional | `string` | The custom stream ID used to create the streams. If not specified, the adapter will generate a default stream ID based on the measurement configuration. The StreamId serves as the unique identifier of a data selection item. A properly configured custom stream ID follows these rules:<br><br>Is not case-sensitive.<br>Can contain spaces.<br>Cannot start with two underscores ("__").<br>Can contain a maximum of 100 characters.<br>Cannot use the following characters: / : ? # [ ] @ ! $ & ' ( ) \ * + , ; = % < > &#124;<br>Cannot start or end with a period.<br>Cannot contain consecutive periods.<br>Cannot consist of only periods.
 
@@ -109,15 +109,12 @@ The following are examples of valid OPC UA data selection configurations:
 ```json
 [
  {
-    "Name": "Random1",
     "NodeId": "ns=5;s=Random1"
   },
   {
-    "Name": "Sawtooth1",
     "NodeId": "ns=5;s=Sawtooth1"
   },
   {
-    "Name": "Sinusoid1",
     "NodeId": "ns=5;s=Sinusoid1"
   }
 ]
@@ -129,19 +126,19 @@ The following are examples of valid OPC UA data selection configurations:
 [
  {
     "Selected": true,
-    "Name": "Random1",
+    "Name": "CustomStreamName",
     "NodeId": "ns=5;s=Random1",
     "StreamId": "CustomStreamName"
   },
   {
     "Selected": false,
-    "Name": "Sawtooth1",
+    "Name": null,
     "NodeId": "ns=5;s=Sawtooth1",
     "StreamId": null
   },
   {
     "Selected": true,
-    "Name": "Sinusoid1",
+    "Name": "5.Sinusoid1",
     "NodeId": "ns=5;s=Sinusoid1",
     "StreamId": null
   }

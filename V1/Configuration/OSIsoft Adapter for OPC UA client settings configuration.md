@@ -65,7 +65,8 @@ The following parameters are available for configuring OPC UA client settings:
 | Parameter     | Required | Type | Description |
 |---------------|----------|------|-------------|
 | **MaxBrowseReferencesToReturn**      | Optional | `integer` | Maximum number of references returned from browse call.  |
-| **MaxNodesToBrowse**      | Optional | `integer` | Maximum number of nodes to browse in one call. |
+| **BrowseBlockSize**      | Optional | `integer` | Maximum number of nodes to browse in one call. |
+| **ReadBlockSize**      | Optional | `integer` | Maximum number of variables to read in one call. |
 | **ReconnectDelay**      | Optional | `TimeSpan` | Delay between reconnection attempts. |
 | **RecreateSubscriptionDelay**      | Optional | `TimeSpan` | Delay between successful reconnection and subsequent subscription recreation. |
 | **SessionRequestTimeout**      | Optional | `TimeSpan` | Default request timeout. |
@@ -73,6 +74,7 @@ The following parameters are available for configuring OPC UA client settings:
 | **SessionAllowInsecureCredentials**      | Optional | `boolean` | When set to true credentials can be communicated over unencrypted channel. |
 | **SessionMaxOperationsPerRequest**      | Optional | `integer` | Default maximum operation per request. |
 | **BrowseTimeout**      | Optional | `TimeSpan` | Browse operation timeout. |
+| **ReadTimeout**      | Optional | `TimeSpan` | Read operation timeout. |
 | **MaxMonitoredItemsPerCall**      | Optional | `integer` | Maximum number of monitored items that can be added to subscription in one call. |
 | **MaxNotificationsPerPublish**      | Optional | `integer` | Maximum notification messages in one publish message. |
 | **PublishingInterval**      | Optional | `TimeSpan` | Publishing interval of the subscription. |
@@ -86,7 +88,8 @@ The following parameters are available for configuring OPC UA client settings:
 ```json
 {
     "maxBrowseReferencesToReturn": 0,
-    "maxNodesToBrowse": 10,
+    "BrowseBlockSize": 10,
+    "ReadBlockSize": 1000,
     "reconnectDelay": "0:00:30",
     "recreateSubscriptionDelay": "0:00:05",
     "sessionRequestTimeout": "0:02:00",
@@ -94,6 +97,7 @@ The following parameters are available for configuring OPC UA client settings:
     "sessionAllowInsecureCredentials": false,
     "sessionMaxOperationsPerRequest": 1000,
     "browseTimeout": "0:01:00",
+    "ReadTimeout": "0:00:30",
     "maxMonitoredItemsPerCall": 1000,
     "maxNotificationsPerPublish": 0,
     "publishingInterval": "0:00:01",

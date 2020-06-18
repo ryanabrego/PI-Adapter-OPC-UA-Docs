@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>PI Adapter for OPC UA overview </title>
+    <title>Uninstall the adapter </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="PI Adapter for OPC UA overview ">
+    <meta name="title" content="Uninstall the adapter ">
     <meta name="generator" content="docfx 2.55.0.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" href="../../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../../toc.html">
+    <meta property="docfx:tocrel" content="../../../toc.html">
     
-    <meta property="docfx:rel" content="../">
+    <meta property="docfx:rel" content="../../../../">
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -33,8 +33,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="../V1/index.html" width="46">
-                <img id="logo" src="../V1/main/V1/images/atlas_icon.png" height="46" width="46" alt="OSIsoft Edge System"> 
+              <a class="navbar-brand" href="../../../../V1/index.html" width="46">
+                <img id="logo" src="../../../../V1/main/V1/images/atlas_icon.png" height="46" width="46" alt="OSIsoft Edge System"> 
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -75,17 +75,30 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="PIAdapterForOPCUAOverview">
-<h1 id="pi-adapter-for-opc-ua-overview">PI Adapter for OPC UA overview</h1>
+            <article class="content wrap" id="_content" data-uid="UninstallTheAdapter">
+<h1 id="uninstall-the-adapter">Uninstall the adapter</h1>
 
-<p>The PI Adapter for OPC UA is a data-collection component that transfers time-series data from source devices to OMF endpoints in OSIsoft Cloud Services or PI Servers. OPC UA (OPC Unified Architecture) is an open standard, machine-to-machine communication protocol for industrial automation developed by the OPC Foundation. The adapter can connect to any device that uses the OPC UA communication protocol.</p>
-<p><img src="images/PI_Adapter_for_OPC_UA_architecture_diagram.png" alt="PI Adapter for OPC UA architecture"></p>
-<p>The adapter is installed with a download kit obtained from the OSIsoft Customer Portal and works on devices running either Windows or Linux operating systems.</p>
-<p>All functions of the adapter are configured using REST API. The configurations are stored in JSON files.
-For data ingress, an adapter component must be defined in the system components configuration for each device to which the adapter will connect. Each adapter component is then configured with the connection information for the device and the data to collect.
-For data egress, configuration is needed to specify destinations for the data, including security for the outgoing connection. Additional configurations are available to egress health and diagnostics data, add buffering configuration to protect against data loss, and record logging information for troubleshooting purposes.</p>
-<p>Once the adapter is configured and sending data, administration functions are used to manage the adapter or individual ingress components of the adapter. Health and diagnostics functions monitor the status of connected devices, adapter system functions, the number of active data streams, the rate of data ingress, the rate of errors, and the rate of data egress.</p>
-<p>The EdgeCmd utility is an OSIsoft proprietary command line tool that is used to configure and administer an adapter on both Linux and Windows operating systems. It is installed separately from the adapter.</p>
+<p>Complete the procedure appropriate for your operating system to uninstall a PI adapter:</p>
+<h2 id="windows">Windows</h2>
+<ol>
+<li><p>To delete the PI adapter program files from a Windows device, use the Windows Control Panel uninstall application process.</p>
+<p> <strong>Note:</strong> The configuration, data, and log files are not deleted by the uninstall process.</p>
+</li>
+<li><p>Optional: To delete data, configuration, and log files, delete the directory <em>%ProgramData%\OSIsoft\Adapters\AdapterName</em>.</p>
+<p> This will delete all data processed by the adapter in addition to the configuration and log files.</p>
+</li>
+</ol>
+<h2 id="linux">Linux</h2>
+<ol>
+<li><p>To delete PI Adapter software from a Linux device, open a terminal window and run the following command:</p>
+<pre><code class="lang-bash">sudo apt remove osisoft.adapter.&lt;AdapterName&gt;
+</code></pre></li>
+<li><p>Optional: To delete data, configuration, and log files, delete the directory <em>/usr/share/OSIsoft/Adapters/AdapterName</em>.</p>
+<p> This deletes all data processed  by the adapter and configuration and log files.</p>
+<p> Alternatively, run the following command:</p>
+<pre><code class="lang-bash">sudo rm -r /usr/share/OSIsoft/Adapters/&lt;AdapterName&gt;
+</code></pre></li>
+</ol>
 </article>
           </div>
           
@@ -94,7 +107,7 @@ For data egress, configuration is needed to specify destinations for the data, i
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/osisoft/OSIsoft-Adapter-OPC-UA-Docs/blob/master/V1/PI_Adapter_for_OPC_UA_overview.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/osisoft/OSIsoft-Adapter/blob/master/V1/Installation/Uninstall the adapter.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -120,8 +133,8 @@ For data egress, configuration is needed to specify destinations for the data, i
       </footer>
     </div>
     
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../../styles/main.js"></script>
   </body>
 </html>

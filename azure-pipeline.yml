@@ -7,7 +7,7 @@ trigger:
 variables:
   - group: product-readiness.docfx
   - name: gitRepo
-    value: PI-Adapter-OPC-UA-Docs
+    value: OSIsoft-Adapter-OPC-UA-Docs
 
 jobs:
   - job: Publish

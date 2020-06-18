@@ -56,14 +56,14 @@ references:
   name: Health endpoint configuration
   href: V1/main/V1/Configuration/Health%20endpoint%20configuration.html
 - uid: index
-  name: OSIsoft Adapter for OPC UA overview
+  name: PI Adapter for OPC UA overview
   href: V1/index.html
 - uid: Installation
   name: Installation
   href: V1/main/V1/Installation/Installation.html
-- uid: InstallOSIsoftAdapterForOPCUAUsingDocker
-  name: Install OSIsoft Adapter for OPC UA using Docker
-  href: V1/Installation/Install%20OSIsoft%20Adapter%20for%20OPC%20UA%20using%20Docker.html
+- uid: InstallPIAdapterForOPCUAUsingDocker
+  name: Install PI Adapter for OPC UA using Docker
+  href: V1/Installation/Install%20PI%20Adapter%20for%20OPC%20UA%20using%20Docker.html
 - uid: InstallTheAdapter
   name: Install the adapter
   href: V1/main/V1/Installation/Install%20the%20adapter.html
@@ -79,26 +79,26 @@ references:
 - uid: OPCUAConfiguration
   name: Configuration
   href: V1/Configuration/Configuration.html
-- uid: OSIsoftAdapterForOPCUAClientSettingsConfiguration
-  name: OSIsoft Adapter for OPC UA client settings configuration
-  href: V1/Configuration/OSIsoft%20Adapter%20for%20OPC%20UA%20client%20settings%20configuration.html
-- uid: OSIsoftAdapterForOPCUADataSelectionConfiguration
-  name: OSIsoft Adapter for OPC UA data selection configuration
-  href: V1/Configuration/OSIsoft%20Adapter%20for%20OPC%20UA%20data%20selection%20configuration.html
-- uid: OSIsoftAdapterForOPCUADataSourceConfiguration
-  name: OSIsoft Adapter for OPC UA data source configuration
-  href: V1/Configuration/OSIsoft%20Adapter%20for%20OPC%20UA%20data%20source%20configuration.html
-- uid: OSIsoftAdapterForOPCUAOverview
-  name: OSIsoft Adapter for OPC UA overview
+- uid: PIAdapterForOPCUAClientSettingsConfiguration
+  name: PI Adapter for OPC UA client settings configuration
+  href: V1/Configuration/PI%20Adapter%20for%20OPC%20UA%20client%20settings%20configuration.html
+- uid: PIAdapterForOPCUADataSelectionConfiguration
+  name: PI Adapter for OPC UA data selection configuration
+  href: V1/Configuration/PI%20Adapter%20for%20OPC%20UA%20data%20selection%20configuration.html
+- uid: PIAdapterForOPCUADataSourceConfiguration
+  name: PI Adapter for OPC UA data source configuration
+  href: V1/Configuration/PI%20Adapter%20for%20OPC%20UA%20data%20source%20configuration.html
+- uid: PIAdapterForOPCUAOverview
+  name: PI Adapter for OPC UA overview
   href: V1/OSIsoft_Adapter_for_OPC_UA_overview.html
-- uid: OSIsoftAdapterForOPCUAPrinciplesOfOperation
-  name: OSIsoft Adapter for OPC UA principles of operation
-  href: V1/OSIsoft%20Adapter%20for%20OPC%20UA%20overview/OSIsoft%20Adapter%20for%20OPC%20UA%20principles%20of%20operation.html
-- uid: OSIsoftAdapterForOPCUASecurityConfiguration
-  name: OSIsoft Adapter for OPC UA security configuration
-  href: V1/Configuration/OSIsoft%20Adapter%20for%20OPC%20UA%20security%20configuration.html
-- uid: OSIsoftAdapterForOPCUASupportedFeatures
-  name: OSIsoft Adapter for OPC UA supported features
+- uid: PIAdapterForOPCUAPrinciplesOfOperation
+  name: PI Adapter for OPC UA principles of operation
+  href: V1/PI%20Adapter%20for%20OPC%20UA%20overview/PI%20Adapter%20for%20OPC%20UA%20principles%20of%20operation.html
+- uid: PIAdapterForOPCUASecurityConfiguration
+  name: PI Adapter for OPC UA security configuration
+  href: V1/Configuration/PI%20Adapter%20for%20OPC%20UA%20security%20configuration.html
+- uid: PIAdapterForOPCUASupportedFeatures
+  name: PI Adapter for OPC UA supported features
   href: V1/ARCHIVE/OSIsoft%20Adapter%20for%20OPC%20UA%20supported%20features.html
 - uid: RetrieveProductVersionInformation
   name: Retrieve product version information

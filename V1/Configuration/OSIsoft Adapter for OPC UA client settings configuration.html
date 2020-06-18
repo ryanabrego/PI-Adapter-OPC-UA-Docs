@@ -134,10 +134,16 @@
 <td>Maximum number of references returned from browse call.</td>
 </tr>
 <tr>
-<td><strong>MaxNodesToBrowse</strong></td>
+<td><strong>BrowseBlockSize</strong></td>
 <td>Optional</td>
 <td><code>integer</code></td>
 <td>Maximum number of nodes to browse in one call.</td>
+</tr>
+<tr>
+<td><strong>ReadBlockSize</strong></td>
+<td>Optional</td>
+<td><code>integer</code></td>
+<td>Maximum number of variables to read in one call.</td>
 </tr>
 <tr>
 <td><strong>ReconnectDelay</strong></td>
@@ -180,6 +186,12 @@
 <td>Optional</td>
 <td><code>TimeSpan</code></td>
 <td>Browse operation timeout.</td>
+</tr>
+<tr>
+<td><strong>ReadTimeout</strong></td>
+<td>Optional</td>
+<td><code>TimeSpan</code></td>
+<td>Read operation timeout.</td>
 </tr>
 <tr>
 <td><strong>MaxMonitoredItemsPerCall</strong></td>
@@ -228,7 +240,8 @@
 <h2 id="opc-ua-client-settings-example">OPC UA client settings example</h2>
 <pre><code class="lang-json">{
     &quot;maxBrowseReferencesToReturn&quot;: 0,
-    &quot;maxNodesToBrowse&quot;: 10,
+    &quot;BrowseBlockSize&quot;: 10,
+    &quot;ReadBlockSize&quot;: 1000,
     &quot;reconnectDelay&quot;: &quot;0:00:30&quot;,
     &quot;recreateSubscriptionDelay&quot;: &quot;0:00:05&quot;,
     &quot;sessionRequestTimeout&quot;: &quot;0:02:00&quot;,
@@ -236,6 +249,7 @@
     &quot;sessionAllowInsecureCredentials&quot;: false,
     &quot;sessionMaxOperationsPerRequest&quot;: 1000,
     &quot;browseTimeout&quot;: &quot;0:01:00&quot;,
+    &quot;ReadTimeout&quot;: &quot;0:00:30&quot;,
     &quot;maxMonitoredItemsPerCall&quot;: 1000,
     &quot;maxNotificationsPerPublish&quot;: 0,
     &quot;publishingInterval&quot;: &quot;0:00:01&quot;,

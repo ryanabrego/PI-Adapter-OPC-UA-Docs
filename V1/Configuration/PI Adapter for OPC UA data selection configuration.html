@@ -86,7 +86,7 @@
 <p><strong>Note:</strong> To avoid possible time and resource expensive browse operations due to reasons described previously, OSIsoft recommends that you manually create a data selection file instead of automatically creating the default data selection file. For more information, see <a href="#configure-opc-ua-data-selection">Configure OPC UA data selection</a>.</p>
 <p>Complete the following procedure for this default data selection file to be generated:</p>
 <ol>
-<li><p>Add an OPC UA adapter with a unique ComponentId. For more information, see <a class="xref" href="../main/V1/Configuration/System%20components%20configuration.html">System components configuration</a>.</p>
+<li><p>Add an OPC UA adapter with a unique ComponentId. For more information, see <a href="xref:SystemComponentsConfiguration">System components configuration</a>.</p>
 </li>
 <li><p>Configure a valid OPC UA data source. For more information, see <a class="xref" href="PI%20Adapter%20for%20OPC%20UA%20data%20source%20configuration.html">PI Adapter for OPC UA data source configuration</a>.</p>
 <p>Once you complete these steps, a default OPC UA data selection configuration file will be generated in the configuration directory for the corresponding platform.</p>
@@ -117,8 +117,8 @@
 </ul>
 </li>
 <li>Save the file, for example as <em>DataSelection.config.json</em>.</li>
-<li><p>Use any of the <a class="xref" href="../main/V1/Configuration/Configuration%20tools.html">Configuration tools</a> capable of making HTTP requests to run either a POST or PUT command to their appropriate endpoint:</p>
-<p> <strong>Note:</strong> The following examples use OpcUa1 as the adapter component name. For more information on how to add a component, see <a class="xref" href="../main/V1/Configuration/System%20components%20configuration.html">System components configuration</a>.</p>
+<li><p>Use any of the <a href="xref:ConfigurationTools">Configuration tools</a> capable of making HTTP requests to run either a POST or PUT command to their appropriate endpoint:</p>
+<p> <strong>Note:</strong> The following examples use OpcUa1 as the adapter component name. For more information on how to add a component, see <a href="xref:SystemComponentsConfiguration">System components configuration</a>.</p>
 <p> <code>5590</code> is the default port number. If you selected a different port number, replace it with that value.</p>
 <ul>
 <li><p><strong>POST</strong> endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;componentId&gt;/DataSelection/</code></p>
@@ -262,7 +262,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/osisoft/OSIsoft-Adapter-OPC-UA-Docs/blob/master/V1/Configuration/PI Adapter for OPC UA data selection configuration.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/osisoft/PI-Adapter-OPC-UA-Docs/blob/master/V1/Configuration/PI Adapter for OPC UA data selection configuration.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

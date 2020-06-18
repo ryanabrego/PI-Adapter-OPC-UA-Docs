@@ -83,7 +83,7 @@
 <p>A default OPC UA client settings file is created if there is no OPC UA client settings configuration even though a valid data source exists and the adapter is running.</p>
 <p>Complete the following procedure for this default client settings file to be generated:</p>
 <ol>
-<li><p>Add an OPC UA adapter with a unique <code>ComponentId</code>. For more information, see <a class="xref" href="../main/V1/Configuration/System%20components%20configuration.html">System components configuration</a>.</p>
+<li><p>Add an OPC UA adapter with a unique <code>ComponentId</code>. For more information, see <a href="xref:SystemComponentsConfiguration">System components configuration</a>.</p>
 </li>
 <li><p>Configure a valid OPC UA data source. For more information, see <a class="xref" href="PI%20Adapter%20for%20OPC%20UA%20data%20source%20configuration.html">PI Adapter for OPC UA data source configuration</a>.</p>
 <p>Once you complete these steps, a default OPC UA client settings configuration file is generated in the configuration directory for the corresponding platform.</p>
@@ -101,8 +101,8 @@
 </ul>
 </li>
 <li>Save the file. For example, <code>ClientSettings.json</code>.</li>
-<li><p>Use any of the <a class="xref" href="../main/V1/Configuration/Configuration%20tools.html">Configuration tools</a> capable of making HTTP requests to run a <code>PUT</code> command to its appropriate endpoint:</p>
-<p> <strong>Note:</strong> The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see <a class="xref" href="../main/V1/Configuration/System%20components%20configuration.html">System components configuration</a>.</p>
+<li><p>Use any of the <a href="xref:ConfigurationTools">Configuration tools</a> capable of making HTTP requests to run a <code>PUT</code> command to its appropriate endpoint:</p>
+<p> <strong>Note:</strong> The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see <a href="xref:SystemComponentsConfiguration">System components configuration</a>.</p>
 <p> <code>5590</code> is the default port number. If you selected a different port number, replace it with that value.</p>
 <p> <strong>PUT</strong> endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;componentId&gt;/ClientSettings/</code></p>
 <p>   Example using <code>curl</code>:</p>
@@ -299,7 +299,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/osisoft/OSIsoft-Adapter-OPC-UA-Docs/blob/master/V1/Configuration/PI Adapter for OPC UA client settings configuration.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/osisoft/PI-Adapter-OPC-UA-Docs/blob/master/V1/Configuration/PI Adapter for OPC UA client settings configuration.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

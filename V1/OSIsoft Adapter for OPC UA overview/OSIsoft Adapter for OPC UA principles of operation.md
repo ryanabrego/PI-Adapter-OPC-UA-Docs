@@ -1,8 +1,8 @@
 ---
-uid: OSIsoftAdapterForOPCUAPrinciplesOfOperation
+uid: PIAdapterForOPCUAPrinciplesOfOperation
 ---
 
-# OSIsoft Adapter for OPC UA principles of operation
+# PI Adapter for OPC UA principles of operation
 
 This adapter's operations focus on data collection and stream creation.
 
@@ -14,13 +14,13 @@ For the OPC UA adapter to start data collection, configure the following:
 - Data selection: Perform selection of OPC UA items to which the adapter should subscribe for data.
 - Logging: Set up the logging attributes to manage the adapter logging behavior.
 
-For more information, see [OSIsoft Adapter for OPC UA data source configuration](xref:OSIsoftAdapterForOPCUADataSourceConfiguration) and [OSIsoft Adapter for OPC UA data selection configuration](xref:OSIsoftAdapterForOPCUADataSelectionConfiguration).
+For more information, see [PI Adapter for OPC UA data source configuration](xref:PIAdapterForOPCUADataSourceConfiguration) and [PI Adapter for OPC UA data selection configuration](xref:PIAdapterForOPCUADataSelectionConfiguration).
 
 ## Connection
 
 The OPC UA adapter uses the binary opc.tcp protocol to communicate with the OPC UA servers. When a secured connection is enabled, the X.509-type client and server certificates are exchanged and verified and the connection between the OPC UA adapter and the configured OPC UA server is established.
 
-For more information on secure connections, see [OSIsoft Adapter for OPC UA security configuration](xref:OSIsoftAdapterForOPCUASecurityConfiguration).
+For more information on secure connections, see [PI Adapter for OPC UA security configuration](xref:PIAdapterForOPCUASecurityConfiguration).
 
 ## Data collection
 
@@ -75,4 +75,4 @@ Each stream created by  the adapter for a given OPC UA item has a unique identif
 <Adapter Component ID>.<NamespaceIndex>.<Identifier>
 ```
 
-**Note:** The naming convention is affected by StreamPrefix and ApplyPrefixToStreamID settings in data source configuration. For more information, see [OSIsoft Adapter for OPC UA data source configuration](xref:OSIsoftAdapterForOPCUADataSourceConfiguration).
+**Note:** The naming convention is affected by StreamPrefix and ApplyPrefixToStreamID settings in data source configuration. For more information, see [PI Adapter for OPC UA data source configuration](xref:PIAdapterForOPCUADataSourceConfiguration).

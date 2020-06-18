@@ -2,11 +2,11 @@
 uid: index
 ---
 
-# OSIsoft Adapter for OPC UA overview
+# PI Adapter for OPC UA overview
 
-The OSIsoft Adapter for OPC UA is a data-collection component that transfers time-series data from source devices to OMF endpoints in OSIsoft Cloud Services or PI Servers. OPC UA (OPC Unified Architecture) is an open standard, machine-to-machine communication protocol for industrial automation developed by the OPC Foundation. The adapter can connect to any device that uses the OPC UA communication protocol.
+The PI Adapter for OPC UA is a data-collection component that transfers time-series data from source devices to OMF endpoints in OSIsoft Cloud Services or PI Servers. OPC UA (OPC Unified Architecture) is an open standard, machine-to-machine communication protocol for industrial automation developed by the OPC Foundation. The adapter can connect to any device that uses the OPC UA communication protocol.
 
-![OSIsoft Adapter for OPC UA architecture](images/OSIsoft_Adapter_for_OPC_UA_architecture_diagram.png)
+![PI Adapter for OPC UA architecture](images/OSIsoft_Adapter_for_OPC_UA_architecture_diagram.png)
 
 The adapter is installed with a download kit obtained from the OSIsoft Customer Portal and works on devices running either Windows or Linux operating systems.
 
@@ -19,22 +19,22 @@ Once the adapter is configured and sending data, administration functions are us
 The EdgeCmd utility is an OSIsoft proprietary command line tool that is used to configure and administer an adapter on both Linux and Windows operating systems. It is installed separately from the adapter.
 
 <!--
-# OSIsoft Adapter for OPC UA
+# PI Adapter for OPC UA
 
 =======
 
-- [OSIsoft Adapter for OPC UA overview](xref:OSIsoftAdapterForOPCUAOverview)
-  - [OSIsoft Adapter for OPC UA principles of operation](xref:OSIsoftAdapterForOPCUAPrinciplesOfOperation)
+- [PI Adapter for OPC UA overview](xref:PIAdapterForOPCUAOverview)
+  - [PI Adapter for OPC UA principles of operation](xref:PIAdapterForOPCUAPrinciplesOfOperation)
 - [Installation](xref:Installation)
   - [Install the adapter](xref:InstallTheAdapter)
-  - [Install OSIsoft Adapter for OPC UA using Docker](xref:InstallOSIsoftAdapterForOPCUAUsingDocker)
+  - [Install PI Adapter for OPC UA using Docker](xref:InstallPIAdapterForOPCUAUsingDocker)
   - [Uninstall the adapter](xref:UninstallTheAdapter)
 - [Configuration](xref:OPCUAConfiguration)
   - [Configuration tools](xref:ConfigurationTools)
   - [System components configuration](xref:SystemComponentsConfiguration)
-  - [OSIsoft Adapter for OPC UA data source configuration](xref:OSIsoftAdapterForOPCUADataSourceConfiguration)
-  - [OSIsoft Adapter for OPC UA data selection configuration](xref:OSIsoftAdapterForOPCUADataSelectionConfiguration)
-  - [OSIsoft Adapter for OPC UA security configuration](xref:OSIsoftAdapterForOPCUASecurityConfiguration)
+  - [PI Adapter for OPC UA data source configuration](xref:PIAdapterForOPCUADataSourceConfiguration)
+  - [PI Adapter for OPC UA data selection configuration](xref:PIAdapterForOPCUADataSelectionConfiguration)
+  - [PI Adapter for OPC UA security configuration](xref:PIAdapterForOPCUASecurityConfiguration)
   - [Egress endpoints configuration](xref:EgressEndpointsConfiguration)
   - [Health endpoint configuration](xref:HealthEndpointConfiguration)
   - [Diagnostics configuration](xref:DiagnosticsConfiguration)

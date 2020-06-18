@@ -1,8 +1,8 @@
 ---
-uid: OSIsoftAdapterForOPCUASecurityConfiguration
+uid: PIAdapterForOPCUASecurityConfiguration
 ---
 
-# OSIsoft Adapter for OPC UA security configuration
+# PI Adapter for OPC UA security configuration
 
 The OPC UA security standard is concerned with the authentication of client and server applications, the authentication of users and confidentiality of their communication. As the security model relies heavily on Transport Level Security (TLS) to establish a secure communication link with an OPC UA server, each client, including the adapter, must have a digital certificate deployed and configured. Certificates uniquely identify client applications and machines on servers, and allow for creation of a secure communication link when trusted on both sides.
 
@@ -12,7 +12,7 @@ The adapter generates a self-signed certificate when the first secure connection
 
 Complete the following procedure to configure adapter security:
 
-1. In your data source configuration, set `UseSecureConnection` to **true**. For more information, see [OSIsoft Adapter for OPC UA data source configuration](xref:OSIsoftAdapterForOPCUADataSourceConfiguration).
+1. In your data source configuration, set `UseSecureConnection` to **true**. For more information, see [PI Adapter for OPC UA data source configuration](xref:PIAdapterForOPCUADataSourceConfiguration).
 
    The adapter verifies whether the server certificate is present in the [adapter trusted certificates](#adapter-trusted-certificates) and hence trusts it. In case the certificates were not exchanged before the first attempted connection, the adapter persists the server certificate within the [adapter rejected certificates](#adapter-rejected-certificates) folder. The following warning message about the rejected server certificate will be printed:
 

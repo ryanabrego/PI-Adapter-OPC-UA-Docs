@@ -2,16 +2,16 @@
   href: ../main/V1/Configuration/Configuration tools.md
 - name: System components configuration
   href: ../main/V1/Configuration/System components configuration.md
-- name: OSIsoft Adapter for OPC UA data source configuration 
-  href: OSIsoft Adapter for OPC UA data source configuration.md
-- name: OSIsoft Adapter for OPC UA client settings configuration
-  href: OSIsoft Adapter for OPC UA client settings configuration.md
-- name: OSIsoft Adapter for OPC UA data selection configuration
-  href: OSIsoft Adapter for OPC UA data selection configuration.md
+- name: PI Adapter for OPC UA data source configuration 
+  href: PI Adapter for OPC UA data source configuration.md
+- name: PI Adapter for OPC UA client settings configuration
+  href: PI Adapter for OPC UA client settings configuration.md
+- name: PI Adapter for OPC UA data selection configuration
+  href: PI Adapter for OPC UA data selection configuration.md
 - name: Data filters configuration
   href: ../main/V1/Configuration/Data filters configuration.md
-- name: OSIsoft Adapter for OPC UA security configuration
-  href: OSIsoft Adapter for OPC UA security configuration.md
+- name: PI Adapter for OPC UA security configuration
+  href: PI Adapter for OPC UA security configuration.md
 - name: Egress endpoints configuration
   href: ../main/V1/Configuration/Egress endpoints configuration.md
 - name: Health endpoint configuration

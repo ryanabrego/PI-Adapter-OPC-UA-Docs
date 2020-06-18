@@ -1,8 +1,8 @@
 ---
-uid: OSIsoftAdapterForOPCUAClientSettingsConfiguration
+uid: PIAdapterForOPCUAClientSettingsConfiguration
 ---
 
-# OSIsoft Adapter for OPC UA client settings configuration
+# PI Adapter for OPC UA client settings configuration
 
 The client settings configuration is automatically generated when a new data source is added. If you experience problems with timeouts or when OPC UA limits are exceeded in terms of browse or subscription operation, you can change the client settings configuration.
 
@@ -14,7 +14,7 @@ Complete the following procedure for this default client settings file to be gen
 
 1. Add an OPC UA adapter with a unique `ComponentId`. For more information, see [System components configuration](xref:SystemComponentsConfiguration).
   
-2. Configure a valid OPC UA data source. For more information, see [OSIsoft Adapter for OPC UA data source configuration](xref:OSIsoftAdapterForOPCUADataSourceConfiguration).
+2. Configure a valid OPC UA data source. For more information, see [PI Adapter for OPC UA data source configuration](xref:PIAdapterForOPCUADataSourceConfiguration).
 
    Once you complete these steps, a default OPC UA client settings configuration file is generated in the configuration directory for the corresponding platform.
   

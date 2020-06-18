@@ -1,8 +1,8 @@
 ---
-uid: InstallOSIsoftAdapterForOPCUAUsingDocker
+uid: InstallPIAdapterForOPCUAUsingDocker
 ---
 
-# Install OSIsoft Adapter for OPC UA using Docker
+# Install PI Adapter for OPC UA using Docker
 
 Docker is a set of tools that you can use on Linux to manage application deployments.
 

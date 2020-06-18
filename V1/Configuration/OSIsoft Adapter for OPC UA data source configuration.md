@@ -1,8 +1,8 @@
 ---
-uid: OSIsoftAdapterForOPCUADataSourceConfiguration
+uid: PIAdapterForOPCUADataSourceConfiguration
 ---
 
-# OSIsoft Adapter for OPC UA data source configuration
+# PI Adapter for OPC UA data source configuration
 
 To use the adapter, you must configure the data source from which it will be polling data.
 
@@ -30,7 +30,7 @@ Complete the following procedure to configure an OPC UA data source:
 
     **Note:** Run this command from the same directory where the file is located.
 
-**Note:** After you have completed data source configuration, the next step is to configure data selection. You can decide to have a default data selection file generated automatically or you can create the data selection file yourself. For more information, see [OSIsoft Adapter for OPC UA data selection configuration](xref:OSIsoftAdapterForOPCUADataSelectionConfiguration).
+**Note:** After you have completed data source configuration, the next step is to configure data selection. You can decide to have a default data selection file generated automatically or you can create the data selection file yourself. For more information, see [PI Adapter for OPC UA data selection configuration](xref:PIAdapterForOPCUADataSelectionConfiguration).
 
 ## OPC UA data source schema
 

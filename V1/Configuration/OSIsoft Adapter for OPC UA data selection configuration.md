@@ -1,8 +1,8 @@
 ---
-uid: OSIsoftAdapterForOPCUADataSelectionConfiguration
+uid: PIAdapterForOPCUADataSelectionConfiguration
 ---
 
-# OSIsoft Adapter for OPC UA data selection configuration
+# PI Adapter for OPC UA data selection configuration
 
 In addition to the data source configuration, you need to provide a data selection configuration to specify the data you want the adapter to collect from the data sources.
 
@@ -20,7 +20,7 @@ Complete the following procedure for this default data selection file to be gene
 
 1. Add an OPC UA adapter with a unique ComponentId. For more information, see [System components configuration](xref:SystemComponentsConfiguration).
   
-2. Configure a valid OPC UA data source. For more information, see [OSIsoft Adapter for OPC UA data source configuration](xref:OSIsoftAdapterForOPCUADataSourceConfiguration).
+2. Configure a valid OPC UA data source. For more information, see [PI Adapter for OPC UA data source configuration](xref:PIAdapterForOPCUADataSourceConfiguration).
 
    Once you complete these steps, a default OPC UA data selection configuration file will be generated in the configuration directory for the corresponding platform.
   

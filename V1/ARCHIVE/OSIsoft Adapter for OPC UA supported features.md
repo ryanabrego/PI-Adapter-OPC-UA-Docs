@@ -1,8 +1,8 @@
 ---
-uid: OSIsoftAdapterForOPCUASupportedFeatures
+uid: PIAdapterForOPCUASupportedFeatures
 ---
 
-# OSIsoft Adapter for OPC UA supported features
+# PI Adapter for OPC UA supported features
 
 ## Data types
 

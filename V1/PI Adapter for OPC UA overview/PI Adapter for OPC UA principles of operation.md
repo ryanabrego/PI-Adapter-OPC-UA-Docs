@@ -61,8 +61,8 @@ The OPC UA adapter creates a stream with two properties for each selected OPC UA
 
 Certain metadata are sent with each stream created. Metadata common for every adapter type are
 
-- **ComponentId**: Specifies the type of adapter, for example _OpcUa_
-- **ComponentType**: Specifies the data source, for example _OpcUa1_
+- **ComponentId**: Specifies the data source, for example _OpcUa1_
+- **ComponentType**: Specifies the type of adapter, for example _OpcUa_
 
 Metadata specific to the OPC UA adapter are
 

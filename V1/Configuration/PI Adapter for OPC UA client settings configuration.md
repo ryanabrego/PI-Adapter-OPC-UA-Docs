@@ -67,21 +67,23 @@ The following parameters are available for configuring OPC UA client settings:
 | **MaxBrowseReferencesToReturn**      | Optional | `integer` | Maximum number of references returned from browse call.  |
 | **BrowseBlockSize**      | Optional | `integer` | Maximum number of nodes to browse in one call. |
 | **ReadBlockSize**      | Optional | `integer` | Maximum number of variables to read in one call. |
-| **ReconnectDelay**      | Optional | `TimeSpan` | Delay between reconnection attempts. |
-| **RecreateSubscriptionDelay**      | Optional | `TimeSpan` | Delay between successful reconnection and subsequent subscription recreation. |
-| **SessionRequestTimeout**      | Optional | `TimeSpan` | Default request timeout. |
-| **ConnectionTimeout**      | Optional | `TimeSpan` | Connection timeout. |
+| **ReconnectDelay**      | Optional | `TimeSpan` | Delay between reconnection attempts. **\***|
+| **RecreateSubscriptionDelay**      | Optional | `TimeSpan` | Delay between successful reconnection and subsequent subscription recreation. **\*** |
+| **SessionRequestTimeout**      | Optional | `TimeSpan` | Default request timeout. **\***|
+| **ConnectionTimeout**      | Optional | `TimeSpan` | Connection timeout. **\*** |
 | **SessionAllowInsecureCredentials**      | Optional | `boolean` | When set to true credentials can be communicated over unencrypted channel. |
 | **SessionMaxOperationsPerRequest**      | Optional | `integer` | Default maximum operation per request. |
-| **BrowseTimeout**      | Optional | `TimeSpan` | Browse operation timeout. |
-| **ReadTimeout**      | Optional | `TimeSpan` | Read operation timeout. |
+| **BrowseTimeout**      | Optional | `TimeSpan` | Browse operation timeout. **\***|
+| **ReadTimeout**      | Optional | `TimeSpan` | Read operation timeout. **\*** |
 | **MaxMonitoredItemsPerCall**      | Optional | `integer` | Maximum number of monitored items that can be added to subscription in one call. |
 | **MaxNotificationsPerPublish**      | Optional | `integer` | Maximum notification messages in one publish message. |
-| **PublishingInterval**      | Optional | `TimeSpan` | Publishing interval of the subscription. |
-| **CreateMonitoredItemsTimeout**      | Optional | `TimeSpan` | Create monitored items timeout. |
-| **SamplingInterval**      | Optional | `TimeSpan` | Monitored item sampling interval. |
+| **PublishingInterval**      | Optional | `TimeSpan` | Publishing interval of the subscription. **\*** |
+| **CreateMonitoredItemsTimeout**      | Optional | `TimeSpan` | Create monitored items timeout. **\***|
+| **SamplingInterval**      | Optional | `TimeSpan` | Monitored item sampling interval. **\*** |
 | **MonitoredItemQueueSize**      | Optional | `integer` | Monitored item queue size. |
 | **MaxInternalQueueSize**      | Optional | `integer` | Maximum number of items that can be in the adapter internal queue. |
+
+**\* Note:** You can also specify timespans as numbers in seconds. For example, `"ReconnectDelay": 25` specifies 25 seconds, or `"ReconnectDelay": 125` specifies 2 minutes and 5 seconds.
 
 ## OPC UA client settings example
 

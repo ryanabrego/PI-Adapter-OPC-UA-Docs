@@ -69,6 +69,13 @@ Metadata specific to the OPC UA adapter are
 - **BrowseName**: The browse name as provided by the OPC UA server
 - **SourceId**: The NodeId provided by the OPC UA server
 
+**Note:** The metadata level is set in [General configuration](xref:GeneralConfiguration). For the OPC UA adapter, the following metadata is sent for the individual level:
+
+- `None`: No metadata
+- `Low`: AdapterType (ComponentType) and DataSource (ComponentId)
+- `Medium`: AdapterType (ComponentType), DataSource (ComponentId), BrowseName, and DisplayName
+- `High`: AdapterType (ComponentType), DataSource (ComponentId), BrowseName, DisplayName, and SourceId
+
 Each stream created by  the adapter for a given OPC UA item has a unique identifier (Stream ID). If a custom stream ID is specified for the OPC UA item in data selection configuration, the OPC UA adapter uses that stream ID to create the stream. Otherwise, the adapter constructs the stream ID using the following format, which is constructed from the OPC UA item node ID:
 
 ```code

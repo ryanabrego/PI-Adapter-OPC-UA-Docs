@@ -50,7 +50,7 @@ Complete the following steps to configure the OPC UA client settings:
 
 ## OPC UA client settings schema
 
-The full schema definition for the OPC UA client settings configuration is in the `OpcUa_ClientSettings_schema.json` here:
+The full schema definition for the OPC UA client settings configuration is in the `OpcUa_ClientSettings_schema.json` file located in one of the following folders:
 
 Windows: `%ProgramFiles%\OSIsoft\Adapters\OpcUa\Schemas`
 
@@ -64,24 +64,24 @@ The following parameters are available for configuring OPC UA client settings:
 
 | Parameter     | Required | Type | Description |
 |---------------|----------|------|-------------|
-| **MaxBrowseReferencesToReturn**      | Optional | `integer` | Maximum number of references returned from browse call.  |
-| **BrowseBlockSize**      | Optional | `integer` | Maximum number of nodes to browse in one call. |
-| **ReadBlockSize**      | Optional | `integer` | Maximum number of variables to read in one call. |
-| **ReconnectDelay**      | Optional | `TimeSpan` | Delay between reconnection attempts. **\***|
-| **RecreateSubscriptionDelay**      | Optional | `TimeSpan` | Delay between successful reconnection and subsequent subscription recreation. **\*** |
-| **SessionRequestTimeout**      | Optional | `TimeSpan` | Default request timeout. **\***|
-| **ConnectionTimeout**      | Optional | `TimeSpan` | Connection timeout. **\*** |
-| **SessionAllowInsecureCredentials**      | Optional | `boolean` | When set to true credentials can be communicated over unencrypted channel. |
-| **SessionMaxOperationsPerRequest**      | Optional | `integer` | Default maximum operation per request. |
-| **BrowseTimeout**      | Optional | `TimeSpan` | Browse operation timeout. **\***|
-| **ReadTimeout**      | Optional | `TimeSpan` | Read operation timeout. **\*** |
-| **MaxMonitoredItemsPerCall**      | Optional | `integer` | Maximum number of monitored items that can be added to subscription in one call. |
-| **MaxNotificationsPerPublish**      | Optional | `integer` | Maximum notification messages in one publish message. |
-| **PublishingInterval**      | Optional | `TimeSpan` | Publishing interval of the subscription. **\*** |
-| **CreateMonitoredItemsTimeout**      | Optional | `TimeSpan` | Create monitored items timeout. **\***|
-| **SamplingInterval**      | Optional | `TimeSpan` | Monitored item sampling interval. **\*** |
-| **MonitoredItemQueueSize**      | Optional | `integer` | Monitored item queue size. |
-| **MaxInternalQueueSize**      | Optional | `integer` | Maximum number of items that can be in the adapter internal queue. |
+| **MaxBrowseReferencesToReturn**      | Optional | `integer` | Maximum number of references returned from browse call. <br><br>Minimum value: `0`<br>Maximum value: `4294967295`<br>Default value: `0`  |
+| **BrowseBlockSize**      | Optional | `integer` | Maximum number of nodes to browse in one call. <br><br>Minimum value: `1`<br>Maximum value: `429496729`<br>Default value:  `10`|
+| **ReadBlockSize**      | Optional | `integer` | Maximum number of variables to read in one call. <br><br>Minimum value: `0`<br>Maximum value: `429496729`<br>Default value: `1000` |
+| **ReconnectDelay**      | Optional | `TimeSpan` | Delay between reconnection attempts. **\*** <br><br> Allowed value: cannot be negative <br>Default value: `0:02:20`|
+| **RecreateSubscriptionDelay**      | Optional | `TimeSpan` | Delay between successful reconnection and subsequent subscription recreation. **\*** <br><br>Allowed value: cannot be negative <br> Default value: `0:00:05`|
+| **SessionRequestTimeout**      | Optional | `TimeSpan` | Default request timeout. **\*** <br><br>Allowed value: greater than `00:00:05`<br>Default value: `0:02:00`|
+| **ConnectionTimeout**      | Optional | `TimeSpan` | Connection timeout. **\*** <br><br>Allowed value: greater than `00:00:05`<br>Default value: `0:00:30` |
+| **SessionAllowInsecureCredentials**      | Optional | `boolean` | When set to true credentials can be communicated over unencrypted channel. <br><br>Allowed value: `true` or `false`<br>Default value: `false` |
+| **SessionMaxOperationsPerRequest**      | Optional | `integer` | Default maximum operation per request. <br><br>Minimum value: `0`<br>Maximum value: `429496729`<br>Default value: `1000`|
+| **BrowseTimeout**      | Optional | `TimeSpan` | Browse operation timeout. **\*** <br><br>Allowed value: greater than `00:00:05`<br>Default value: `0:01:00`|
+| **ReadTimeout**      | Optional | `TimeSpan` | Read operation timeout. **\*** <br><br>Allowed value: greater than `00:00:05`<br>Default value: `0:00:30` |
+| **MaxMonitoredItemsPerCall**      | Optional | `integer` | Maximum number of monitored items that can be added to subscription in one call. <br><br>Minimum value: `1`<br>Maximum value: `429496729`<br>Default value: `1000`|
+| **MaxNotificationsPerPublish**      | Optional | `integer` | Maximum notification messages in one publish message. <br><br>Minimum value: `0`<br>Maximum value: `429496729`<br>Default value: `0` |
+| **PublishingInterval**      | Optional | `TimeSpan` | Publishing interval of the subscription. **\*** <br><br> Allowed value: cannot be negative <br> Default value: `0:00:01`|
+| **CreateMonitoredItemsTimeout**      | Optional | `TimeSpan` | Create monitored items timeout. **\*** <br><br>Allowed value: greater than `00:00:05`<br>Default value: `0:00:30`|
+| **SamplingInterval**      | Optional | `TimeSpan` | Monitored item sampling interval. **\*** <br><br>Allowed value: cannot be negative <br>Default value: `0:00:00:5` |
+| **MonitoredItemQueueSize**      | Optional | `integer` | Monitored item queue size. <br><br>Minimum value: `1`<br> Maximum value: `429496729` <br>Default value: `2`|
+| **MaxInternalQueueSize**      | Optional | `integer` | Maximum number of items that can be in the adapter internal queue. <br><br>Minimum value: `1000`<br>Maximum value: `2147483647`<br>Default value: `500000` |
 
 **\* Note:** You can also specify timespans as numbers in seconds. For example, `"ReconnectDelay": 25` specifies 25 seconds, or `"ReconnectDelay": 125` specifies 2 minutes and 5 seconds.
 

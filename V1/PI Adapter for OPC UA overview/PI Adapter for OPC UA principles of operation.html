@@ -191,6 +191,13 @@
 <li><strong>BrowseName</strong>: The browse name as provided by the OPC UA server</li>
 <li><strong>SourceId</strong>: The NodeId provided by the OPC UA server</li>
 </ul>
+<p><strong>Note:</strong> The metadata level is set in <a class="xref" href="../main/V1/Configuration/General%20configuration.html">General configuration</a>. For the OPC UA adapter, the following metadata is sent for the individual level:</p>
+<ul>
+<li><code>None</code>: No metadata</li>
+<li><code>Low</code>: AdapterType (ComponentType) and DataSource (ComponentId)</li>
+<li><code>Medium</code>: AdapterType (ComponentType), DataSource (ComponentId), BrowseName, and DisplayName</li>
+<li><code>High</code>: AdapterType (ComponentType), DataSource (ComponentId), BrowseName, DisplayName, and SourceId</li>
+</ul>
 <p>Each stream created by  the adapter for a given OPC UA item has a unique identifier (Stream ID). If a custom stream ID is specified for the OPC UA item in data selection configuration, the OPC UA adapter uses that stream ID to create the stream. Otherwise, the adapter constructs the stream ID using the following format, which is constructed from the OPC UA item node ID:</p>
 <pre><code class="lang-code">&lt;Adapter Component ID&gt;.&lt;NamespaceIndex&gt;.&lt;Identifier&gt;
 </code></pre><p><strong>Note:</strong> The naming convention is affected by StreamPrefix and ApplyPrefixToStreamID settings in data source configuration. For more information, see <a class="xref" href="../Configuration/PI%20Adapter%20for%20OPC%20UA%20data%20source%20configuration.html">PI Adapter for OPC UA data source configuration</a>.</p>

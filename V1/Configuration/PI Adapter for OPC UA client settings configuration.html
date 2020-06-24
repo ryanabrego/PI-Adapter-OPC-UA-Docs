@@ -111,7 +111,7 @@
 </li>
 </ol>
 <h2 id="opc-ua-client-settings-schema">OPC UA client settings schema</h2>
-<p>The full schema definition for the OPC UA client settings configuration is in the <code>OpcUa_ClientSettings_schema.json</code> here:</p>
+<p>The full schema definition for the OPC UA client settings configuration is in the <code>OpcUa_ClientSettings_schema.json</code> file located in one of the following folders:</p>
 <p>Windows: <code>%ProgramFiles%\OSIsoft\Adapters\OpcUa\Schemas</code></p>
 <p>Linux: <code>/opt/OSIsoft/Adapters/OpcUa/Schemas</code></p>
 <h2 id="opc-ua-client-settings-parameters">OPC UA client settings parameters</h2>
@@ -131,112 +131,113 @@
 <td><strong>MaxBrowseReferencesToReturn</strong></td>
 <td>Optional</td>
 <td><code>integer</code></td>
-<td>Maximum number of references returned from browse call.</td>
+<td>Maximum number of references returned from browse call. <br><br>Minimum value: <code>0</code><br>Maximum value: <code>4294967295</code><br>Default value: <code>0</code></td>
 </tr>
 <tr>
 <td><strong>BrowseBlockSize</strong></td>
 <td>Optional</td>
 <td><code>integer</code></td>
-<td>Maximum number of nodes to browse in one call.</td>
+<td>Maximum number of nodes to browse in one call. <br><br>Minimum value: <code>1</code><br>Maximum value: <code>429496729</code><br>Default value:  <code>10</code></td>
 </tr>
 <tr>
 <td><strong>ReadBlockSize</strong></td>
 <td>Optional</td>
 <td><code>integer</code></td>
-<td>Maximum number of variables to read in one call.</td>
+<td>Maximum number of variables to read in one call. <br><br>Minimum value: <code>0</code><br>Maximum value: <code>429496729</code><br>Default value: <code>1000</code></td>
 </tr>
 <tr>
 <td><strong>ReconnectDelay</strong></td>
 <td>Optional</td>
 <td><code>TimeSpan</code></td>
-<td>Delay between reconnection attempts.</td>
+<td>Delay between reconnection attempts. <strong>\</strong>* <br><br> Allowed value: cannot be negative <br>Default value: <code>0:02:20</code></td>
 </tr>
 <tr>
 <td><strong>RecreateSubscriptionDelay</strong></td>
 <td>Optional</td>
 <td><code>TimeSpan</code></td>
-<td>Delay between successful reconnection and subsequent subscription recreation.</td>
+<td>Delay between successful reconnection and subsequent subscription recreation. <strong>\</strong>* <br><br>Allowed value: cannot be negative <br> Default value: <code>0:00:05</code></td>
 </tr>
 <tr>
 <td><strong>SessionRequestTimeout</strong></td>
 <td>Optional</td>
 <td><code>TimeSpan</code></td>
-<td>Default request timeout.</td>
+<td>Default request timeout. <strong>\</strong>* <br><br>Allowed value: greater than <code>00:00:05</code><br>Default value: <code>0:02:00</code></td>
 </tr>
 <tr>
 <td><strong>ConnectionTimeout</strong></td>
 <td>Optional</td>
 <td><code>TimeSpan</code></td>
-<td>Connection timeout.</td>
+<td>Connection timeout. <strong>\</strong>* <br><br>Allowed value: greater than <code>00:00:05</code><br>Default value: <code>0:00:30</code></td>
 </tr>
 <tr>
 <td><strong>SessionAllowInsecureCredentials</strong></td>
 <td>Optional</td>
 <td><code>boolean</code></td>
-<td>When set to true credentials can be communicated over unencrypted channel.</td>
+<td>When set to true credentials can be communicated over unencrypted channel. <br><br>Allowed value: <code>true</code> or <code>false</code><br>Default value: <code>false</code></td>
 </tr>
 <tr>
 <td><strong>SessionMaxOperationsPerRequest</strong></td>
 <td>Optional</td>
 <td><code>integer</code></td>
-<td>Default maximum operation per request.</td>
+<td>Default maximum operation per request. <br><br>Minimum value: <code>0</code><br>Maximum value: <code>429496729</code><br>Default value: <code>1000</code></td>
 </tr>
 <tr>
 <td><strong>BrowseTimeout</strong></td>
 <td>Optional</td>
 <td><code>TimeSpan</code></td>
-<td>Browse operation timeout.</td>
+<td>Browse operation timeout. <strong>\</strong>* <br><br>Allowed value: greater than <code>00:00:05</code><br>Default value: <code>0:01:00</code></td>
 </tr>
 <tr>
 <td><strong>ReadTimeout</strong></td>
 <td>Optional</td>
 <td><code>TimeSpan</code></td>
-<td>Read operation timeout.</td>
+<td>Read operation timeout. <strong>\</strong>* <br><br>Allowed value: greater than <code>00:00:05</code><br>Default value: <code>0:00:30</code></td>
 </tr>
 <tr>
 <td><strong>MaxMonitoredItemsPerCall</strong></td>
 <td>Optional</td>
 <td><code>integer</code></td>
-<td>Maximum number of monitored items that can be added to subscription in one call.</td>
+<td>Maximum number of monitored items that can be added to subscription in one call. <br><br>Minimum value: <code>1</code><br>Maximum value: <code>429496729</code><br>Default value: <code>1000</code></td>
 </tr>
 <tr>
 <td><strong>MaxNotificationsPerPublish</strong></td>
 <td>Optional</td>
 <td><code>integer</code></td>
-<td>Maximum notification messages in one publish message.</td>
+<td>Maximum notification messages in one publish message. <br><br>Minimum value: <code>0</code><br>Maximum value: <code>429496729</code><br>Default value: <code>0</code></td>
 </tr>
 <tr>
 <td><strong>PublishingInterval</strong></td>
 <td>Optional</td>
 <td><code>TimeSpan</code></td>
-<td>Publishing interval of the subscription.</td>
+<td>Publishing interval of the subscription. <strong>\</strong>* <br><br> Allowed value: cannot be negative <br> Default value: <code>0:00:01</code></td>
 </tr>
 <tr>
 <td><strong>CreateMonitoredItemsTimeout</strong></td>
 <td>Optional</td>
 <td><code>TimeSpan</code></td>
-<td>Create monitored items timeout.</td>
+<td>Create monitored items timeout. <strong>\</strong>* <br><br>Allowed value: greater than <code>00:00:05</code><br>Default value: <code>0:00:30</code></td>
 </tr>
 <tr>
 <td><strong>SamplingInterval</strong></td>
 <td>Optional</td>
 <td><code>TimeSpan</code></td>
-<td>Monitored item sampling interval.</td>
+<td>Monitored item sampling interval. <strong>\</strong>* <br><br>Allowed value: cannot be negative <br>Default value: <code>0:00:00:5</code></td>
 </tr>
 <tr>
 <td><strong>MonitoredItemQueueSize</strong></td>
 <td>Optional</td>
 <td><code>integer</code></td>
-<td>Monitored item queue size.</td>
+<td>Monitored item queue size. <br><br>Minimum value: <code>1</code><br> Maximum value: <code>429496729</code> <br>Default value: <code>2</code></td>
 </tr>
 <tr>
 <td><strong>MaxInternalQueueSize</strong></td>
 <td>Optional</td>
 <td><code>integer</code></td>
-<td>Maximum number of items that can be in the adapter internal queue.</td>
+<td>Maximum number of items that can be in the adapter internal queue. <br><br>Minimum value: <code>1000</code><br>Maximum value: <code>2147483647</code><br>Default value: <code>500000</code></td>
 </tr>
 </tbody>
 </table>
+<p><strong>* Note:</strong> You can also specify timespans as numbers in seconds. For example, <code>&quot;ReconnectDelay&quot;: 25</code> specifies 25 seconds, or <code>&quot;ReconnectDelay&quot;: 125</code> specifies 2 minutes and 5 seconds.</p>
 <h2 id="opc-ua-client-settings-example">OPC UA client settings example</h2>
 <pre><code class="lang-json">{
     &quot;maxBrowseReferencesToReturn&quot;: 0,

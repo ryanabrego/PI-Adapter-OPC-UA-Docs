@@ -135,9 +135,9 @@
 </li>
 </ol>
 <h2 id="opc-ua-data-selection-schema">OPC UA data selection schema</h2>
-<p>The full schema definition for the OPC UA data selection configuration is in the <em>OpcUa_DataSelection_schema.json</em> here:</p>
-<p>Windows: <em>%ProgramFiles%\OSIsoft\Adapters\OpcUa\Schemas</em></p>
-<p>Linux: <em>/opt/OSIsoft/Adapters/OpcUa/Schemas</em></p>
+<p>The full schema definition for the OPC UA data selection configuration is in the <code>OpcUa_DataSelection_schema.json</code> file located in one of the following folders:</p>
+<p>Windows: <code>%ProgramFiles%\OSIsoft\Adapters\OpcUa\Schemas</code></p>
+<p>Linux: <code>/opt/OSIsoft/Adapters/OpcUa/Schemas</code></p>
 <h2 id="opc-ua-data-selection-parameters">OPC UA data selection parameters</h2>
 <p>The following parameters are available for configuring an OPC UA data selection:</p>
 <table>
@@ -154,13 +154,13 @@
 <td><strong>Selected</strong></td>
 <td>Optional</td>
 <td><code>boolean</code></td>
-<td>Use this field to select or clear a measurement. To select an item, set to true. To remove an item, leave the field empty or set to false.  If not configured, the default value is true.</td>
+<td>Use this field to select or clear a measurement. To select an item, set to true. To remove an item, leave the field empty or set to false. <br><br>Allowed value: <code>true</code> or <code>false</code> <br>Default value: <code>true</code></td>
 </tr>
 <tr>
 <td><strong>Name</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>Name of the data item collected from the data source. Default: null - results in <strong>StreamId</strong> value being used also as a <strong>Name</strong></td>
+<td>Name of the data item collected from the data source. <br><br>Default value: <code>null</code> <br>results in <strong>StreamId</strong> value being used also as a <strong>Name</strong></td>
 </tr>
 <tr>
 <td><strong>NodeId</strong></td>

@@ -83,7 +83,7 @@ The following parameters are available for configuring OPC UA client settings:
 | **MonitoredItemQueueSize**      | Optional | `integer` | Monitored item queue size. <br><br>Minimum value: `1`<br> Maximum value: `429496729` <br>Default value: `2`|
 | **MaxInternalQueueSize**      | Optional | `integer` | Maximum number of items that can be in the adapter internal queue. <br><br>Minimum value: `1000`<br>Maximum value: `2147483647`<br>Default value: `500000` |
 
-**\* Note:** You can also specify timespans as numbers in seconds. For example, `"ReconnectDelay": 25` specifies 25 seconds, or `"ReconnectDelay": 125` specifies 2 minutes and 5 seconds.
+**\* Note:** You can also specify timespans as numbers in seconds. For example, `"ReconnectDelay": 25` specifies 25 seconds, or `"ReconnectDelay": 125.5` specifies 2 minutes and 5.5 seconds.
 
 ## OPC UA client settings example
 

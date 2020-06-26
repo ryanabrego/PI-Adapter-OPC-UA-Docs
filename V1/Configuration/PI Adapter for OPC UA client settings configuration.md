@@ -68,7 +68,7 @@ The following parameters are available for configuring OPC UA client settings:
 | **BrowseBlockSize**      | Optional | `integer` | Maximum number of nodes to browse in one call. <br><br>Minimum value: `1`<br>Maximum value: `429496729`<br>Default value:  `10`|
 | **ReadBlockSize**      | Optional | `integer` | Maximum number of variables to read in one call. <br><br>Minimum value: `0`<br>Maximum value: `429496729`<br>Default value: `1000` |
 | **ReconnectDelay**      | Optional | `TimeSpan` | Delay between reconnection attempts. **\*** <br><br> Allowed value: cannot be negative <br>Default value: `0:02:20`|
-| **RecreateSubscriptionDelay**      | Optional | `TimeSpan` | Delay between successful reconnection and subsequent subscription recreation. **\*** <br><br>Allowed value: cannot be negative <br> Default value: `0:00:05`|
+| **RecreateSubscriptionDelay**      | Optional | `TimeSpan` | Delay between successful reconnection and subsequent subscription recreation. **\*** <br><br>Allowed value: cannot be negative <br> Default value: `0:00:10`|
 | **SessionRequestTimeout**      | Optional | `TimeSpan` | Default request timeout. **\*** <br><br>Allowed value: greater than `00:00:05`<br>Default value: `0:02:00`|
 | **ConnectionTimeout**      | Optional | `TimeSpan` | Connection timeout. **\*** <br><br>Allowed value: greater than `00:00:05`<br>Default value: `0:00:30` |
 | **SessionAllowInsecureCredentials**      | Optional | `boolean` | When set to true credentials can be communicated over unencrypted channel. <br><br>Allowed value: `true` or `false`<br>Default value: `false` |

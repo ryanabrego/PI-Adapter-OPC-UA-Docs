@@ -67,19 +67,19 @@ The following parameters are available for configuring OPC UA client settings:
 | **MaxBrowseReferencesToReturn**      | Optional | `integer` | Maximum number of references returned from browse call. <br><br>Minimum value: `0`<br>Maximum value: `4294967295`<br>Default value: `0`  |
 | **BrowseBlockSize**      | Optional | `integer` | Maximum number of nodes to browse in one call. <br><br>Minimum value: `1`<br>Maximum value: `429496729`<br>Default value:  `10`|
 | **ReadBlockSize**      | Optional | `integer` | Maximum number of variables to read in one call. <br><br>Minimum value: `0`<br>Maximum value: `429496729`<br>Default value: `1000` |
-| **ReconnectDelay**      | Optional | `TimeSpan` | Delay between reconnection attempts. **\*** <br><br> Allowed value: cannot be negative <br>Default value: `0:02:20`|
-| **RecreateSubscriptionDelay**      | Optional | `TimeSpan` | Delay between successful reconnection and subsequent subscription recreation. **\*** <br><br>Allowed value: cannot be negative <br> Default value: `0:00:10`|
-| **SessionRequestTimeout**      | Optional | `TimeSpan` | Default request timeout. **\*** <br><br>Allowed value: greater than `00:00:05`<br>Default value: `0:02:00`|
-| **ConnectionTimeout**      | Optional | `TimeSpan` | Connection timeout. **\*** <br><br>Allowed value: greater than `00:00:05`<br>Default value: `0:00:30` |
+| **ReconnectDelay**      | Optional | `TimeSpan` | Delay between reconnection attempts. * <br><br> Allowed value: cannot be negative <br>Default value: `0:02:20`|
+| **RecreateSubscriptionDelay**      | Optional | `TimeSpan` | Delay between successful reconnection and subsequent subscription recreation. * <br><br>Allowed value: cannot be negative <br> Default value: `0:00:10`|
+| **SessionRequestTimeout**      | Optional | `TimeSpan` | Default request timeout. * <br><br>Allowed value: greater than `00:00:05`<br>Default value: `0:02:00`|
+| **ConnectionTimeout**      | Optional | `TimeSpan` | Connection timeout. * <br><br>Allowed value: greater than `00:00:05`<br>Default value: `0:00:30` |
 | **SessionAllowInsecureCredentials**      | Optional | `boolean` | When set to true credentials can be communicated over unencrypted channel. <br><br>Allowed value: `true` or `false`<br>Default value: `false` |
 | **SessionMaxOperationsPerRequest**      | Optional | `integer` | Default maximum operation per request. <br><br>Minimum value: `0`<br>Maximum value: `429496729`<br>Default value: `1000`|
-| **BrowseTimeout**      | Optional | `TimeSpan` | Browse operation timeout. **\*** <br><br>Allowed value: greater than `00:00:05`<br>Default value: `0:01:00`|
-| **ReadTimeout**      | Optional | `TimeSpan` | Read operation timeout. **\*** <br><br>Allowed value: greater than `00:00:05`<br>Default value: `0:00:30` |
+| **BrowseTimeout**      | Optional | `TimeSpan` | Browse operation timeout. * <br><br>Allowed value: greater than `00:00:05`<br>Default value: `0:01:00`|
+| **ReadTimeout**      | Optional | `TimeSpan` | Read operation timeout. * <br><br>Allowed value: greater than `00:00:05`<br>Default value: `0:00:30` |
 | **MaxMonitoredItemsPerCall**      | Optional | `integer` | Maximum number of monitored items that can be added to subscription in one call. <br><br>Minimum value: `1`<br>Maximum value: `429496729`<br>Default value: `1000`|
 | **MaxNotificationsPerPublish**      | Optional | `integer` | Maximum notification messages in one publish message. <br><br>Minimum value: `0`<br>Maximum value: `429496729`<br>Default value: `0` |
-| **PublishingInterval**      | Optional | `TimeSpan` | Publishing interval of the subscription. **\*** <br><br> Allowed value: cannot be negative <br> Default value: `0:00:01`|
-| **CreateMonitoredItemsTimeout**      | Optional | `TimeSpan` | Create monitored items timeout. **\*** <br><br>Allowed value: greater than `00:00:05`<br>Default value: `0:00:30`|
-| **SamplingInterval**      | Optional | `TimeSpan` | Monitored item sampling interval. **\*** <br><br>Allowed value: cannot be negative <br>Default value: `0:00:00:5` |
+| **PublishingInterval**      | Optional | `TimeSpan` | Publishing interval of the subscription. * <br><br> Allowed value: cannot be negative <br> Default value: `0:00:01`|
+| **CreateMonitoredItemsTimeout**      | Optional | `TimeSpan` | Create monitored items timeout. * <br><br>Allowed value: greater than `00:00:05`<br>Default value: `0:00:30`|
+| **SamplingInterval**      | Optional | `TimeSpan` | Monitored item sampling interval. * <br><br>Allowed value: cannot be negative <br>Default value: `0:00:00:5` |
 | **MonitoredItemQueueSize**      | Optional | `integer` | Monitored item queue size. <br><br>Minimum value: `1`<br> Maximum value: `429496729` <br>Default value: `2`|
 | **MaxInternalQueueSize**      | Optional | `integer` | Maximum number of items that can be in the adapter internal queue. <br><br>Minimum value: `1000`<br>Maximum value: `2147483647`<br>Default value: `500000` |
 

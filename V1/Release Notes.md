@@ -4,18 +4,18 @@ uid: releaseNotes
 
 # Release Notes
 
-PI Adapter for OPC UA Version 1.1<br>
+PI Adapter for OPC UA version 1.1<br>
 © 2020 OSIsoft, LLC. All rights reserved. <!--*This section may be removed if this note is part of a broader manual.*-->
 
 ## Overview
 
-This represents the initial standalone release for the PI Adapter for OPC UA. This product collects time series data and relevant metadata from an OPC UA (OPC Unified Architecture) server and sends it to configured OMF endpoints such as PI Web API and OSIsoft Cloud Services. It can also collect health and diagnostics information. It supports buffering, unsolicited data collection, automatic discovery of available data items on a data source, and various Windows and Linux-based operating systems as well as containerization.
+This represents the initial standalone release for PI Adapter for OPC UA. This product collects time series data and relevant metadata from an OPC UA (OPC Unified Architecture) server and sends it to configured OMF endpoints such as PI Web API and OSIsoft Cloud Services. PI Adapter for OPC UA can also collect health and diagnostics information. It supports buffering, unsolicited data collection, automatic discovery of available data items on a data source, and various Windows and Linux-based operating systems as well as containerization.
 
-For more information see [PI Adapter for OPC UA Overview](xref:PIAdapterForOPCUAOverview).
+For more information see [PI Adapter for OPC UA overview](xref:PIAdapterForOPCUAOverview).
 
 ## Known Issues
 
-At this time there are no known issues.
+There are no known issues at this time.
 
 ### Operating Systems and Distribution Kit Files
 
@@ -76,5 +76,3 @@ When you contact OSIsoft Technical Support, be prepared to provide this informat
 * Summary of the issue, including any relevant log files during the time the issue occurred
 
 The PI Square community has resources to help you with your technical questions.  PI Developers Club program offers specific services to developers and system integrators.
-
-_____________________________________________________________

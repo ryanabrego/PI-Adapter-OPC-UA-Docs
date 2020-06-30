@@ -4,7 +4,7 @@ uid: releaseNotes
 
 # Release Notes
 
-PI Adapter for OPC UA version 1.1<br>
+PI Adapter for OPC UA 1.1<br>
 © 2020 OSIsoft, LLC. All rights reserved. <!--*This section may be removed if this note is part of a broader manual.*-->
 
 ## Overview
@@ -30,11 +30,11 @@ No additional executable files (.msi, .exe, etc.) are included within the setup.
 
 ### Installation
 
-[Installation instructions](xref:InstallTheAdapter)
+Refer to the [Install the adapter](xref:InstallTheAdapter) instructions.
 
 ### Uninstallation
 
-[Uninstallation instructions](xref:UninstallTheAdapter)
+Refer to the [Uninstall the adapter](xref:UninstallTheAdapter) instructions.
 
 ## Security Information and Guidance
 

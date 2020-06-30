@@ -75,4 +75,4 @@ When you contact OSIsoft Technical Support, be prepared to provide this informat
 * Details of any environment changes prior to the start of the issue
 * Summary of the issue, including any relevant log files during the time the issue occurred
 
-The PI Square community has resources to help you with your technical questions.  PI Developers Club program offers specific services to developers and system integrators.
+The PI Square community has resources to help you with your technical questions. PI Developers Club program offers specific services to developers and system integrators.

@@ -157,6 +157,18 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "V1/Release Notes.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/Release Notes.html",
+          "hash": "+ePRnKsD/Pvzx+FaA4M4FQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "V1/images/PI_Adapter_for_OPC_UA_architecture_diagram.png",
       "output": {
@@ -203,6 +215,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/Templates/Release Notes Template.md",
       "output": {
@@ -802,7 +817,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 51,
+          "total_file_count": 52,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

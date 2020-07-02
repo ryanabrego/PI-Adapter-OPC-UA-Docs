@@ -1,5 +1,5 @@
 ---
-uid: releaseNotes
+uid: ReleaseNotes
 ---
 
 # Release Notes
@@ -19,22 +19,15 @@ There are no known issues at this time.
 
 ### Operating Systems and Distribution Kit Files
 
-| Operating System | Installation Kit | Processor(s) |
-|-------------------|----------------------------------|-------------|
-| Windows 10 x64 (any version)| `OpcUa_win10-x64.msi`     | Intel/AMD 64-bit processors |
-| Debian 9 or later x64 | `OpcUa_linux-x64.deb`     | Intel/AMD 64-bit processors |
-| Debian 9 or later arm32 | `OpcUa_linux-arm.deb`  | Arm 32-bit processors |
-| Debian 9 or later arm64 | `OpcUa_linux-arm64.deb`  | Arm 64-bit processors |
-
-No additional executable files (.msi, .exe, etc.) are included within the setup. For more information, see [System Requirements](xref:SystemRequirements).
+Refer to [System requirements](xref:SystemRequirements).
 
 ### Installation
 
-Refer to the [Install the adapter](xref:InstallTheAdapter) instructions.
+Refer to [Install the adapter](xref:InstallTheAdapter).
 
 ### Uninstallation
 
-Refer to the [Uninstall the adapter](xref:UninstallTheAdapter) instructions.
+Refer to [Uninstall the adapter](xref:UninstallTheAdapter).
 
 ## Security Information and Guidance
 
@@ -62,17 +55,4 @@ No security-related information is applicable to this release.
 
 ## Technical Support and Resources
 
-<!--*This section may be removed if the information is  captured within a separate topic in the same manual.*-->
-
-For technical assistance, contact OSIsoft Technical Support at +1 510-297-5828 or log a case through the OSIsoft Customer Portal. Additionally, the Contact Us page on the portal offers contact options for customers outside of the United States.
-
-When you contact OSIsoft Technical Support, be prepared to provide this information:
-
-* Product name, version, and build numbers
-* Computer platform (CPU type, operating system, and version number)
-* Time that the difficulty started
-* Log files at that time
-* Details of any environment changes prior to the start of the issue
-* Summary of the issue, including any relevant log files during the time the issue occurred
-
-The PI Square community has resources to help you with your technical questions. PI Developers Club program offers specific services to developers and system integrators.
+Refer to [Technical support and feedback](xref:TechnicalSupportAndFeedback).

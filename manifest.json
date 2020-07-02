@@ -157,15 +157,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Release Notes.md",
       "output": {
         ".html": {
           "relative_path": "V1/Release Notes.html",
-          "hash": "sbZNJ7ifuwAqavUqi1c/Tw=="
+          "hash": "/wmbtR0jxV3QmFNmILOz3A=="
         }
       },
       "is_incremental": false,
@@ -223,7 +220,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/main/Templates/Release Notes Template.html",
-          "hash": "baadspyNp4uSgeLRlzQWcw=="
+          "hash": "viFk0gs+t4PxezXk0AFAlg=="
         }
       },
       "is_incremental": false,

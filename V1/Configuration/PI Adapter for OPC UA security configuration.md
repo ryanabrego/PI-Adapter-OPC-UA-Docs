@@ -10,7 +10,7 @@ The adapter generates a self-signed certificate when the first secure connection
 
 ## Configure OPC UA adapter security
 
-Complete the following procedure to configure adapter security:
+Complete the following steps to configure adapter security:
 
 1. In your data source configuration, set `UseSecureConnection` to **true**. For more information, see [PI Adapter for OPC UA data source configuration](xref:PIAdapterForOPCUADataSourceConfiguration).
 

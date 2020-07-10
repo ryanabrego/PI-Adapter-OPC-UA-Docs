@@ -10,7 +10,7 @@ To use the adapter, you must configure the data source from which it will be pol
 
 **Note:** To modify OPC UA data source configuration, you must use the REST endpoints to add or edit the configuration.
 
-Complete the following procedure to configure an OPC UA data source:
+Complete the following steps to configure an OPC UA data source:
 
 1. Using any text editor, create a file that contains an OPC UA data source in JSON form.
     - For content structure, see [OPC UA data source examples](#opc-ua-data-source-examples).

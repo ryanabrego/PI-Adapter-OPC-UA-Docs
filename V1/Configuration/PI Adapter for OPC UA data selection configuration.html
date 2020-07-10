@@ -79,7 +79,7 @@
 <h1 id="pi-adapter-for-opc-ua-data-selection-configuration">PI Adapter for OPC UA data selection configuration</h1>
 
 <p>In addition to the data source configuration, you need to provide a data selection configuration to specify the data you want the adapter to collect from the data sources.</p>
-<p>When you add a data source, the adapter browses the entire OPC UA server address space and exports the available OPC UA variables into a JSON file for data selection. Comma-separated collection of nodeIds (RootNodeIds) serve as filters to browse only a subset of the OPC UA server. Data is collected automatically based upon user demands. OPC UA data from OPC UA variables is read through subscriptions (unsolicited reads).</p>
+<p>When you add a data source without providing a data selection configuration, the adapter browses the OPC UA server address space and populates the available OPC UA variables into the data selection configuration.  A comma-separated collection of nodeIds (RootNodeIds) in the data source configuration serves as filters to browse only a subset of the OPC UA server. Data selection items configured this way must still be selected for data retrieval. OPC UA data from OPC UA variables is read through subscriptions (unsolicited reads).</p>
 <p>You can decide to have the data selection configuration file generated automatically or you can create it manually yourself.</p>
 <h2 id="generate-default-opc-ua-data-selection-configuration-file">Generate default OPC UA data selection configuration file</h2>
 <p>A default OPC UA data selection file will be created if there is no OPC UA data selection configuration although a valid data source exists.</p>

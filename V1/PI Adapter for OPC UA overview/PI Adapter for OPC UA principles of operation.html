@@ -83,17 +83,17 @@
 <p>For the OPC UA adapter to start data collection, configure the following:</p>
 <ul>
 <li>Data source: Provide the data source from which the adapter should collect data.</li>
-<li>Data selection: Perform selection of OPC UA items to which the adapter should subscribe for data.</li>
+<li>Data selection: Select the OPC UA items to which the adapter should subscribe for data.</li>
 <li>Logging: Set up the logging attributes to manage the adapter logging behavior.</li>
 </ul>
 <p>For more information, see <a class="xref" href="../Configuration/PI%20Adapter%20for%20OPC%20UA%20data%20source%20configuration.html">PI Adapter for OPC UA data source configuration</a> and <a class="xref" href="../Configuration/PI%20Adapter%20for%20OPC%20UA%20data%20selection%20configuration.html">PI Adapter for OPC UA data selection configuration</a>.</p>
 <h2 id="connection">Connection</h2>
-<p>The OPC UA adapter uses the binary opc.tcp protocol to communicate with the OPC UA servers. When a secured connection is enabled, the X.509-type client and server certificates are exchanged and verified and the connection between the OPC UA adapter and the configured OPC UA server is established.</p>
+<p>The OPC UA adapter uses the binary opc.tcp protocol to communicate with the OPC UA servers. As part of the OPC UA server and client establishing a secured connection, each one sends its X.509-type certificate to the other for verification. Upon verification of the certificates, the server and client establishes a secured connection.</p>
 <p>For more information on secure connections, see <a class="xref" href="../Configuration/PI%20Adapter%20for%20OPC%20UA%20security%20configuration.html">PI Adapter for OPC UA security configuration</a>.</p>
 <h2 id="data-collection">Data collection</h2>
 <p>The OPC UA adapter collects time-series data from selected OPC UA dynamic variables through OPC UA subscriptions (unsolicited reads). The adapter supports the Data Access (DA) part of OPC UA specification. For more information, see <a href="https://opcfoundation.org/developer-tools/specifications-unified-architecture/part-8-data-access">Unified Architecture (https://opcfoundation.org/developer-tools/specifications-unified-architecture/part-8-data-access)</a>.</p>
 <h3 id="data-types">Data types</h3>
-<p>The following table lists OPC UA variable types that the adapter supports data collection from and types of streams that will be created.</p>
+<p>The following table lists OPC UA variable types that the adapter collects data from and types of streams that will be created.</p>
 <table>
 <thead>
 <tr>
@@ -181,7 +181,7 @@
 </tr>
 </tbody>
 </table>
-<p>Certain metadata are sent with each stream created. Metadata common for every adapter type are</p>
+<p>The OPC UA adapter sends metadata with each stream it creates. Metadata common for every adapter type are</p>
 <ul>
 <li><strong>ComponentId</strong>: Specifies the data source, for example <em>OpcUa1</em></li>
 <li><strong>ComponentType</strong>: Specifies the type of adapter, for example <em>OpcUa</em></li>
@@ -191,7 +191,7 @@
 <li><strong>BrowseName</strong>: The browse name as provided by the OPC UA server</li>
 <li><strong>SourceId</strong>: The NodeId provided by the OPC UA server</li>
 </ul>
-<p><strong>Note:</strong> The metadata level is set in <a class="xref" href="../main/V1/Configuration/General%20configuration.html">General configuration</a>. For the OPC UA adapter, the following metadata is sent for the individual level:</p>
+<p><strong>Note:</strong> A configured metadata level allows you to set the amount of metadata for the adapter. Specify the metadata level in <a class="xref" href="../main/V1/Configuration/General%20configuration.html">General configuration</a>. For the OPC UA adapter, the following metadata is sent for the individual level:</p>
 <ul>
 <li><code>None</code>: No metadata</li>
 <li><code>Low</code>: AdapterType (ComponentType) and DataSource (ComponentId)</li>

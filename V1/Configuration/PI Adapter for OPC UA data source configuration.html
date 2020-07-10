@@ -80,7 +80,7 @@
 
 <p>To use the adapter, you must configure the data source from which it will be polling data.</p>
 <h2 id="configure-opc-ua-data-source">Configure OPC UA data source</h2>
-<p><strong>Note:</strong> You cannot modify OPC UA data source configurations manually. You must use the REST endpoints to add or edit the configuration.</p>
+<p><strong>Note:</strong> To modify OPC UA data source configuration, you must use the REST endpoints to add or edit the configuration.</p>
 <p>Complete the following procedure to configure an OPC UA data source:</p>
 <ol>
 <li>Using any text editor, create a file that contains an OPC UA data source in JSON form.<ul>
@@ -96,8 +96,10 @@
 <pre><code class="lang-bash">curl -d &quot;@DataSource.config.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT &quot;http://localhost:5590/api/v1/configuration/OpcUa1/DataSource&quot;
 </code></pre><p> <strong>Note:</strong> Run this command from the same directory where the file is located.</p>
 </li>
+<li><p>Configure data selection. For more information, see <a class="xref" href="PI%20Adapter%20for%20OPC%20UA%20data%20selection%20configuration.html">PI Adapter for OPC UA data selection configuration</a>.</p>
+<p> <strong>Note:</strong> You can decide to have a default data selection file generated automatically or you can create the data selection file yourself.</p>
+</li>
 </ol>
-<p><strong>Note:</strong> After you have completed data source configuration, the next step is to configure data selection. You can decide to have a default data selection file generated automatically or you can create the data selection file yourself. For more information, see <a class="xref" href="PI%20Adapter%20for%20OPC%20UA%20data%20selection%20configuration.html">PI Adapter for OPC UA data selection configuration</a>.</p>
 <h2 id="opc-ua-data-source-schema">OPC UA data source schema</h2>
 <p>The full schema definition for the OPC UA data source configuration is in the <code>OpcUa_DataSource_schema.json</code> file located in one of the following folders:</p>
 <p>Windows: <code>%ProgramFiles%\OSIsoft\Adapters\OpcUa\Schemas</code></p>

@@ -6,7 +6,7 @@ uid: InstallPIAdapterForOPCUAUsingDocker
 
 Docker is a set of tools that you can use on Linux to manage application deployments.
 
-**Note:** If you want to use Docker, you must be familiar with the underlying technology and have determined that it is appropriate for your planned use of the OPC UA adapter. Docker is not a requirement to use OPC UA adapter.
+**Note:** If you want to use Docker, you must be familiar with the underlying technology and have determined that it is appropriate for your planned use of the OPC UA adapter. Docker is not a requirement to use OPC UA adapter. For more information on how to install the adapter without Docker, see [Install the adapter](xref:InstallTheAdapter).
 
 This topic provides examples of how to create a Docker container with the OPC UA adapter.
 
@@ -192,7 +192,9 @@ Complete the following to run the container:
 	docker run -d --network host opcuaadapter
 	```
 
-Port 5590 is accessible from the host and you can make REST calls to OPC UA adapter from applications on the local host computer. In this example, all data stored by the OPC UA adapter is stored in the container itself. When the container is deleted, the data stored is also deleted.
+Port 5590 is accessible from the host and you can make REST calls to OPC UA adapter from applications on the local host computer. In this example, all data stored by the OPC UA adapter is stored in the container itself.
+
+**Note:** When the container is deleted, the data stored is also deleted.
 
 ### Provide persistent storage for the Docker container
 

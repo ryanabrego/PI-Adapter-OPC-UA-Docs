@@ -8,9 +8,9 @@ The client settings configuration is automatically generated when a new data sou
 
 ## Generate default OPC UA client settings configuration file
 
-A default OPC UA client settings file is created if there is no OPC UA client settings configuration even though a valid data source exists and the adapter is running.
+If a valid data source exists, the adapter is running, and you do not want to configure OPC UA client settings, you can choose to generate a default OPC UA client settings file .
 
-Complete the following procedure for this default client settings file to be generated:
+Complete the following steps to generate the default client settings file:
 
 1. Add an OPC UA adapter with a unique `ComponentId`. For more information, see [System components configuration](xref:SystemComponentsConfiguration).
   

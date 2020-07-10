@@ -8,7 +8,7 @@ To use the adapter, you must configure the data source from which it will be pol
 
 ## Configure OPC UA data source
 
-**Note:** You cannot modify OPC UA data source configurations manually. You must use the REST endpoints to add or edit the configuration.
+**Note:** To modify OPC UA data source configuration, you must use the REST endpoints to add or edit the configuration.
 
 Complete the following procedure to configure an OPC UA data source:
 
@@ -30,7 +30,9 @@ Complete the following procedure to configure an OPC UA data source:
 
     **Note:** Run this command from the same directory where the file is located.
 
-**Note:** After you have completed data source configuration, the next step is to configure data selection. You can decide to have a default data selection file generated automatically or you can create the data selection file yourself. For more information, see [PI Adapter for OPC UA data selection configuration](xref:PIAdapterForOPCUADataSelectionConfiguration).
+4. Configure data selection. For more information, see [PI Adapter for OPC UA data selection configuration](xref:PIAdapterForOPCUADataSelectionConfiguration).
+
+    **Note:** You can decide to have a default data selection file generated automatically or you can create the data selection file yourself.
 
 ## OPC UA data source schema
 

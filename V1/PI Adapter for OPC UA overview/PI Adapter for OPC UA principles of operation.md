@@ -11,14 +11,14 @@ This adapter's operations focus on data collection and stream creation.
 For the OPC UA adapter to start data collection, configure the following:
 
 - Data source: Provide the data source from which the adapter should collect data.
-- Data selection: Perform selection of OPC UA items to which the adapter should subscribe for data.
+- Data selection: Select the OPC UA items to which the adapter should subscribe for data.
 - Logging: Set up the logging attributes to manage the adapter logging behavior.
 
 For more information, see [PI Adapter for OPC UA data source configuration](xref:PIAdapterForOPCUADataSourceConfiguration) and [PI Adapter for OPC UA data selection configuration](xref:PIAdapterForOPCUADataSelectionConfiguration).
 
 ## Connection
 
-The OPC UA adapter uses the binary opc.tcp protocol to communicate with the OPC UA servers. When a secured connection is enabled, the X.509-type client and server certificates are exchanged and verified and the connection between the OPC UA adapter and the configured OPC UA server is established.
+The OPC UA adapter uses the binary opc.tcp protocol to communicate with the OPC UA servers. As part of the OPC UA server and client establishing a secured connection, each one sends its X.509-type certificate to the other for verification. Upon verification of the certificates, the server and client establishes a secured connection.
 
 For more information on secure connections, see [PI Adapter for OPC UA security configuration](xref:PIAdapterForOPCUASecurityConfiguration).
 
@@ -28,7 +28,7 @@ The OPC UA adapter collects time-series data from selected OPC UA dynamic variab
 
 ### Data types
 
-The following table lists OPC UA variable types that the adapter supports data collection from and types of streams that will be created.
+The following table lists OPC UA variable types that the adapter collects data from and types of streams that will be created.
 
 | OPC UA data type | Stream data type |
 |------------------|------------------|
@@ -59,7 +59,7 @@ The OPC UA adapter creates a stream with two properties for each selected OPC UA
 | Timestamp     | DateTime  | Timestamp of the given OPC UA item value update. |
 | Value         | Based on type of incoming OPC UA value | Value of the given OPC UA item update. |
 
-Certain metadata are sent with each stream created. Metadata common for every adapter type are
+The OPC UA adapter sends metadata with each stream it creates. Metadata common for every adapter type are
 
 - **ComponentId**: Specifies the data source, for example _OpcUa1_
 - **ComponentType**: Specifies the type of adapter, for example _OpcUa_
@@ -69,7 +69,7 @@ Metadata specific to the OPC UA adapter are
 - **BrowseName**: The browse name as provided by the OPC UA server
 - **SourceId**: The NodeId provided by the OPC UA server
 
-**Note:** The metadata level is set in [General configuration](xref:GeneralConfiguration). For the OPC UA adapter, the following metadata is sent for the individual level:
+**Note:** A configured metadata level allows you to set the amount of metadata for the adapter. Specify the metadata level in [General configuration](xref:GeneralConfiguration). For the OPC UA adapter, the following metadata is sent for the individual level:
 
 - `None`: No metadata
 - `Low`: AdapterType (ComponentType) and DataSource (ComponentId)

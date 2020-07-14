@@ -12,7 +12,7 @@ This topic provides examples of how to create a Docker container with the OPC UA
 
 ## Create a startup script for the adapter
 
-1. Using any text editor, create a script similar to the following.
+1. Use a text editor to create a script similar to one of the following examples:
 
 	**Note:** The script varies slightly by processor.
 
@@ -183,7 +183,7 @@ This topic provides examples of how to create a Docker container with the OPC UA
 
 ### REST access from the local host to the Docker container
 
-Complete the following to run the container:
+Complete the following steps to run the container:
 
 1. Use the docker container image opcuaadapter created previously.
 2. Type the following in the command line (sudo may be necessary):
@@ -198,9 +198,9 @@ Port 5590 is accessible from the host and you can make REST calls to OPC UA adap
 
 ### Provide persistent storage for the Docker container
 
-Complete the following to run the container:
+Complete the following steps to run the container:
 
-1. Use the docker container image opcuaadapter created previously.
+1. Use the docker container image `opcuaadapter` created previously.
 2. Type the following in the command line (sudo may be necessary):
 
 	```bash
@@ -211,13 +211,13 @@ Port 5590 is accessible from the host and you can make REST calls to OPC UA adap
 
 ### Port number change
 
-To use a different port other than 5590 you can specify a **portnum** variable on the `docker run` command line. For example, to start the adapter using port 6000 instead of 5590, you use the command line:
+To use a different port other than 5590 you can specify a **portnum** variable on the `docker run` command line. For example, to start the adapter using port 6000 instead of 5590, use the following command:
 
 ```bash
 docker run -d -e portnum=6000 --network host opcuaadapter
 ```
 
-Instead of accessing the REST API using port 5590 you use port 6000. The following curl command returns the configuration for the container.
+This command accesses the REST API with port `6000` instead of port `5590`. The following `curl` command returns the configuration for the container.
 
 ```bash
 curl http://localhost:6000/api/v1/configuration
@@ -225,4 +225,4 @@ curl http://localhost:6000/api/v1/configuration
 
 ### Remove REST access to the Docker container
 
-If you remove the `--network host` option from the docker run command, no REST access is possible from outside the container. This may be of value where you want to host an application in the same container as OPC UA adapter and do not want to have external REST access enabled.
+If you remove the `--network host` option from the docker run command, REST access is not possible from outside the container. This may be of value where you want to host an application in the same container as OPC UA adapter but do not want to have external REST access enabled.

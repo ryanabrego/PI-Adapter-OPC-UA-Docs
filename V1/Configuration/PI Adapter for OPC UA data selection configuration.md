@@ -33,7 +33,7 @@ Complete the following steps to generate a default data selection file:
 3. Copy the file to a different directory.
     - For content structure, see [OPC UA data selection example](#opc-ua-data-selection-example).
 
-4. Using any text editor, change the value of any **Selected** key from `false` to `true` in the file.
+4. Use any text editor to change the value of any **Selected** key from `false` to `true` in the file.
 
    Once the configuration is updated, the adapter will subscribe to data for all items that are set to *Selected=true*.
 
@@ -51,10 +51,10 @@ Complete the following steps to generate a default data selection file:
 
 Complete the following procedure to configure the OPC UA data selection:
 
-1. Using any text editor, create a file that contains an OPC UA data selection in JSON form.
+1. Use any text editor to create a file that contains an OPC UA data selection in the JSON format.
     - For content structure, see [OPC UA data selection example](#opc-ua-data-selection-example).
     - For a table of all available parameters, see [OPC UA data selection](#opc-ua-data-selection-parameters).
-2. Save the file, for example as _DataSelection.config.json_.
+2. Save the file. For example, _DataSelection.config.json_.
 3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to run either a POST or PUT command to their appropriate endpoint:
 
     **Note:** The following examples use OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration).

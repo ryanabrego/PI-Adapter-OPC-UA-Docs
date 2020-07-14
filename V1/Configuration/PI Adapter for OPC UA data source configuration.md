@@ -4,7 +4,7 @@ uid: PIAdapterForOPCUADataSourceConfiguration
 
 # PI Adapter for OPC UA data source configuration
 
-To use the adapter, you must configure the data source from which it will be polling data.
+To use the adapter, you must configure the data source from which it polls data.
 
 ## Configure OPC UA data source
 
@@ -12,10 +12,10 @@ To use the adapter, you must configure the data source from which it will be pol
 
 Complete the following steps to configure an OPC UA data source:
 
-1. Using any text editor, create a file that contains an OPC UA data source in JSON form.
+1. Use any text editor to create a file that contains an OPC UA data source in the JSON format.
     - For content structure, see [OPC UA data source examples](#opc-ua-data-source-examples).
     - For a table of all available parameters, see [OPC UA data source parameters](#opc-ua-data-source-parameters).
-2. Save the file, for example as _DataSource.config.json_.
+2. Save the file. For example, _DataSource.config.json_.
 3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to run a PUT command with the contents of that file to the following endpoint: `http://localhost:5590/api/v1/configuration/<adapterId>/DataSource/`.
 
       **Note:** The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration).

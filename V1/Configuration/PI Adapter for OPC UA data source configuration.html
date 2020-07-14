@@ -78,17 +78,17 @@
             <article class="content wrap" id="_content" data-uid="PIAdapterForOPCUADataSourceConfiguration">
 <h1 id="pi-adapter-for-opc-ua-data-source-configuration">PI Adapter for OPC UA data source configuration</h1>
 
-<p>To use the adapter, you must configure the data source from which it will be polling data.</p>
+<p>To use the adapter, you must configure the data source from which it polls data.</p>
 <h2 id="configure-opc-ua-data-source">Configure OPC UA data source</h2>
 <p><strong>Note:</strong> To modify OPC UA data source configuration, you must use the REST endpoints to add or edit the configuration.</p>
 <p>Complete the following steps to configure an OPC UA data source:</p>
 <ol>
-<li>Using any text editor, create a file that contains an OPC UA data source in JSON form.<ul>
+<li>Use any text editor to create a file that contains an OPC UA data source in the JSON format.<ul>
 <li>For content structure, see <a href="#opc-ua-data-source-examples">OPC UA data source examples</a>.</li>
 <li>For a table of all available parameters, see <a href="#opc-ua-data-source-parameters">OPC UA data source parameters</a>.</li>
 </ul>
 </li>
-<li>Save the file, for example as <em>DataSource.config.json</em>.</li>
+<li>Save the file. For example, <em>DataSource.config.json</em>.</li>
 <li><p>Use any of the <a class="xref" href="../main/V1/Configuration/Configuration%20tools.html">Configuration tools</a> capable of making HTTP requests to run a PUT command with the contents of that file to the following endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;adapterId&gt;/DataSource/</code>.</p>
 <p>   <strong>Note:</strong> The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see <a class="xref" href="../main/V1/Configuration/System%20components%20configuration.html">System components configuration</a>.</p>
 <p> <code>5590</code> is the default port number. If you selected a different port number, replace it with that value.</p>

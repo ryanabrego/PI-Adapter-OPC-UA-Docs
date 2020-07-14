@@ -99,7 +99,7 @@
 <li>For content structure, see <a href="#opc-ua-data-selection-example">OPC UA data selection example</a>.</li>
 </ul>
 </li>
-<li><p>Using any text editor, change the value of any <strong>Selected</strong> key from <code>false</code> to <code>true</code> in the file.</p>
+<li><p>Use any text editor to change the value of any <strong>Selected</strong> key from <code>false</code> to <code>true</code> in the file.</p>
 <p>Once the configuration is updated, the adapter will subscribe to data for all items that are set to <em>Selected=true</em>.</p>
 </li>
 <li><p>In the same directory where you edited the file, run the following <code>curl</code> command:</p>
@@ -111,12 +111,12 @@
 <p><strong>Note:</strong> You cannot modify OPC UA data selection configurations manually. You must use the REST endpoints to add or edit the configuration.</p>
 <p>Complete the following procedure to configure the OPC UA data selection:</p>
 <ol>
-<li>Using any text editor, create a file that contains an OPC UA data selection in JSON form.<ul>
+<li>Use any text editor to create a file that contains an OPC UA data selection in the JSON format.<ul>
 <li>For content structure, see <a href="#opc-ua-data-selection-example">OPC UA data selection example</a>.</li>
 <li>For a table of all available parameters, see <a href="#opc-ua-data-selection-parameters">OPC UA data selection</a>.</li>
 </ul>
 </li>
-<li>Save the file, for example as <em>DataSelection.config.json</em>.</li>
+<li>Save the file. For example, <em>DataSelection.config.json</em>.</li>
 <li><p>Use any of the <a class="xref" href="../main/V1/Configuration/Configuration%20tools.html">Configuration tools</a> capable of making HTTP requests to run either a POST or PUT command to their appropriate endpoint:</p>
 <p> <strong>Note:</strong> The following examples use OpcUa1 as the adapter component name. For more information on how to add a component, see <a class="xref" href="../main/V1/Configuration/System%20components%20configuration.html">System components configuration</a>.</p>
 <p> <code>5590</code> is the default port number. If you selected a different port number, replace it with that value.</p>

@@ -1,6 +1,6 @@
 - name: PI Adapter for OPC UA versions
   dropdown: true
   items:
-  - name: PI Adapter for OPC UA 1.2
+  - name: PI Adapter for OPC UA 1.1
     href: V1/
     homepage: V1/PI_Adapter_for_OPC_UA_overview.md

@@ -72,10 +72,10 @@ Metadata specific to the OPC UA adapter are
 - `Medium`: AdapterType (ComponentType), DataSource (ComponentId), BrowseName, and DisplayName
 - `High`: AdapterType (ComponentType), DataSource (ComponentId), BrowseName, DisplayName, and SourceId
 
-Each stream created by  the adapter for a given OPC UA item has a unique identifier (Stream ID). If a custom stream ID is specified for the OPC UA item in data selection configuration, the OPC UA adapter uses that stream ID to create the stream. Otherwise, the adapter constructs the stream ID using the following format, which is constructed from the OPC UA item node ID:
+Each stream created by  the adapter for a given OPC UA item has a unique identifier (Stream ID). If you specify a custom stream ID for the OPC UA item in data selection configuration, the OPC UA adapter uses that stream ID to create the stream. Otherwise, the adapter constructs the stream ID using the following format, which is constructed from the OPC UA item node ID:
 
 ```code
 <Adapter Component ID>.<NamespaceIndex>.<Identifier>
 ```
 
-**Note:** The naming convention is affected by StreamPrefix and ApplyPrefixToStreamID settings in data source configuration. For more information, see [PI Adapter for OPC UA data source configuration](xref:PIAdapterForOPCUADataSourceConfiguration).
+**Note:** The naming convention is affected by StreamPrefix and DefaultStreamIdPattern settings in data source configuration. For more information, see [PI Adapter for OPC UA data source configuration](xref:PIAdapterForOPCUADataSourceConfiguration).

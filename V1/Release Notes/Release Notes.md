@@ -2,7 +2,7 @@
 uid: ReleaseNotes
 ---
 
-# Release Notes
+# Release notes
 
 PI Adapter for OPC UA 1.1
 

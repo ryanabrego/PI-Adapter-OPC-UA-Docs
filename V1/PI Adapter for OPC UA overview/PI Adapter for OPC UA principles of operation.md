@@ -48,10 +48,6 @@ The following table lists OPC UA variable types that the adapter collects data f
 
 ## Stream creation
 
-The OPC UA adapter creates types upon receiving the value update for a stream. One stream is created for every selected OPC UA item in the data selection configuration.
-
-### Streams by OPC UA adapter
-
 The OPC UA adapter creates a stream with two properties for each selected OPC UA item. The properties are described in the following table:
 
 | Property name | Data type | Description |

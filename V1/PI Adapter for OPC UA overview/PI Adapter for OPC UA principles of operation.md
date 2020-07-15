@@ -75,7 +75,8 @@ Metadata specific to the OPC UA adapter are
 Each stream created by  the adapter for a given OPC UA item has a unique identifier (Stream ID). If you specify a custom stream ID for the OPC UA item in data selection configuration, the OPC UA adapter uses that stream ID to create the stream. Otherwise, the adapter constructs the stream ID using the following format, which is constructed from the OPC UA item node ID:
 
 ```code
-<Adapter Component ID>.<NamespaceIndex>.<Identifier>
+<AdapterComponentID>.<NamespaceIndex>.<Identifier>
 ```
+NamespaceIndex refers to the number specified in the `ns` keyword in the **RootNodeIds** parameter of the data source configuration. For more information, see [PI Adapter for OPC UA data source configuration](xref:PIAdapterForOPCUADataSourceConfiguration#opc-ua-data-source-parameters).
 
-**Note:** The naming convention is affected by StreamPrefix and DefaultStreamIdPattern settings in data source configuration. For more information, see [PI Adapter for OPC UA data source configuration](xref:PIAdapterForOPCUADataSourceConfiguration).
+**Note:** The naming convention is affected by StreamPrefix and DefaultStreamIdPattern settings in data source configuration.

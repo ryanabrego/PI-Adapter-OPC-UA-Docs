@@ -6,8 +6,6 @@
   href: PI Adapter for OPC UA data source configuration.md
 - name: PI Adapter for OPC UA client settings configuration
   href: PI Adapter for OPC UA client settings configuration.md
-- name: Schedules configuration
-  href: ../main/V1/Configuration/Schedules configuration.md
 - name: PI Adapter for OPC UA data selection configuration
   href: PI Adapter for OPC UA data selection configuration.md
 - name: Data filters configuration

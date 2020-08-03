@@ -54,7 +54,7 @@ Complete the following steps to configure the OPC UA data selection:
 1. Use any text editor to create a file that contains an OPC UA data selection in the JSON format.
     - For content structure, see [OPC UA data selection example](#opc-ua-data-selection-example).
     - For a table of all available parameters, see [OPC UA data selection](#opc-ua-data-selection-parameters).
-2. Save the file. For example, _DataSelection.config.json_.
+2. Save the file. For example, _ConfigureDataSelection.json_.
 3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to run either a POST or PUT command to their appropriate endpoint:
 
     **Note:** The following examples use OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration).
@@ -66,7 +66,7 @@ Complete the following steps to configure the OPC UA data selection:
       Example using `curl`:
 
       ```bash
-      curl -d "@DataSelection.config.json" -H "Content-Type: application/json" -X POST "http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection"
+      curl -d "@ConfigureDataSelection.json" -H "Content-Type: application/json" -X POST "http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection"
       ```
 
       **Note:** Run this command from the same directory where the file is located.
@@ -76,7 +76,7 @@ Complete the following steps to configure the OPC UA data selection:
       Example using `curl`:
 
         ```bash
-        curl -d "@DataSelection.config.json" -H "Content-Type: application/json" -X PUT "http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection/ns=5;s=Random1"
+        curl -d "@ConfigureDataSelection.json" -H "Content-Type: application/json" -X PUT "http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection/ns=5;s=Random1"
         ```
 
         **Note:** Run this command from the same directory where the file is located.

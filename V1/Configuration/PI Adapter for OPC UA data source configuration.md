@@ -15,7 +15,7 @@ Complete the following steps to configure an OPC UA data source:
 1. Use any text editor to create a file that contains an OPC UA data source in the JSON format.
     - For content structure, see [OPC UA data source examples](#opc-ua-data-source-examples).
     - For a table of all available parameters, see [OPC UA data source parameters](#opc-ua-data-source-parameters).
-2. Save the file. For example, _DataSource.config.json_.
+2. Save the file. For example, _ConfigureDataSource.json_.
 3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to run a PUT command with the contents of that file to the following endpoint: `http://localhost:5590/api/v1/configuration/<adapterId>/DataSource/`.
 
       **Note:** The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration).
@@ -25,7 +25,7 @@ Complete the following steps to configure an OPC UA data source:
     Example using `curl`:
 
     ```bash
-    curl -d "@DataSource.config.json" -H "Content-Type: application/json" -X PUT "http://localhost:5590/api/v1/configuration/OpcUa1/DataSource"
+    curl -d "@ConfigureDataSource.json" -H "Content-Type: application/json" -X PUT "http://localhost:5590/api/v1/configuration/OpcUa1/DataSource"
     ```
 
     **Note:** Run this command from the same directory where the file is located.

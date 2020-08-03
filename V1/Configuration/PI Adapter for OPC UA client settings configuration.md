@@ -8,7 +8,7 @@ The client settings configuration is automatically generated when a new data sou
 
 ## Generate default OPC UA client settings configuration file
 
-If a valid data source exists, the adapter is running, and you do not want to configure OPC UA client settings, you can choose to generate a default OPC UA client settings file .
+If a valid data source exists, the adapter is running, and you do not want to configure OPC UA client settings, you can choose to generate a default OPC UA client settings file.
 
 Complete the following steps to generate the default client settings file:
 
@@ -31,7 +31,7 @@ Complete the following steps to configure the OPC UA client settings:
 1. Using any text editor, create a file that contains the OPC UA client settings in the JSON format.
     - For content structure, see [OPC UA client settings example](#opc-ua-client-settings-example).
     - For all available parameters, see [OPC UA client settings](#opc-ua-client-settings-parameters).
-2. Save the file. For example, `ClientSettings.json`.
+2. Save the file. For example, `ConfigureClientSettings.json`.
 3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to run a `PUT` command to its appropriate endpoint:
 
     **Note:** The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration).
@@ -43,7 +43,7 @@ Complete the following steps to configure the OPC UA client settings:
       Example using `curl`:
 
     ```bash
-    curl -d "@ClientSettings.config.json" -H "Content-Type: application/json" -X PUT "http://localhost:5590/api/v1/configuration/OpcUa1/ClientSettings"
+    curl -d "@ConfigureClientSettings.json" -H "Content-Type: application/json" -X PUT "http://localhost:5590/api/v1/configuration/OpcUa1/ClientSettings"
     ```
 
     **Note:** Run this command from the same directory where the file is located.

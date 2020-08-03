@@ -54,7 +54,7 @@ Complete the following steps to configure the OPC UA data selection:
 1. Use any text editor to create a file that contains an OPC UA data selection in the JSON format.
     - For content structure, see [OPC UA data selection example](#opc-ua-data-selection-example).
     - For a table of all available parameters, see [OPC UA data selection](#opc-ua-data-selection-parameters).
-2. Save the file. For example, _ConfigureDataSelection.json_.
+2. Save the file. For example, `ConfigureDataSelection.json`.
 3. Use any of the [Configuration tools](xref:ConfigurationTools) capable of making HTTP requests to run either a POST or PUT command to their appropriate endpoint:
 
     **Note:** The following examples use OpcUa1 as the adapter component name. For more information on how to add a component, see [System components configuration](xref:SystemComponentsConfiguration).

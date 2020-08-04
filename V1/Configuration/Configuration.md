@@ -16,10 +16,8 @@ Complete the following steps to establish a data flow from an OPC UA data source
 
 1. Configure one or several OPC UA system components.<br>See [System components configuration](xref:SystemComponentsConfiguration#add-a-system-component).
 
-2. Configure an OPC UA data source.<br>See [PI Adapter for OPC UA data source configuration](xref:PIAdapterForOPCUADataSourceConfiguration#configure-opc-ua-data-source).
+2. Configure an OPC UA data source for each OPC UA device.<br>See [PI Adapter for OPC UA data source configuration](xref:PIAdapterForOPCUADataSourceConfiguration#configure-opc-ua-data-source).
 
-3. Configure an OPC UA data selection.<br>See [PI Adapter for OPC UA data selection configuration](xref:PIAdapterForOPCUADataSelectionConfiguration#configure-opc-ua-data-selection).
+3. Configure an OPC UA data selection for each OPC UA data source.<br>See [PI Adapter for OPC UA data selection configuration](xref:PIAdapterForOPCUADataSelectionConfiguration#configure-opc-ua-data-selection).<br><br>**Note:** If you do not configure data selection, a default OPC UA data selection file will be created if the OPC UA data source is valid.
 
-    **Note:** If you do not configure data selection, a default OPC UA data selection file will be created if the OPC UA data source is valid.
-
-4. Configure egress endpoints.<br>See [Egress endpoint configuration](xref:EgressEndpointsConfiguration).
+4. Configure one or several egress endpoints.<br>See [Egress endpoint configuration](xref:EgressEndpointConfiguration).

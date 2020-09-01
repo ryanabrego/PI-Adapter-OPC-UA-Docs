@@ -162,7 +162,7 @@
 <td><strong>DefaultStreamIdPattern</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>Specifies the default stream Id pattern to use. Possible parameters: {NamespaceIndex}<sup>1</sup>, {Identifier}, {Name}. <br><br>Allowed value: any string<br>Default value: <code>{NamespaceIndex.Identifier}</code></td>
+<td>Specifies the default stream Id pattern to use. Possible parameters: {NamespaceIndex}<sup>1</sup>, {Identifier}, {Name}. <br><br>Allowed value: any string<br>Default value: <code>{NamespaceIndex}.{Identifier}</code></td>
 </tr>
 </tbody>
 </table>
@@ -182,7 +182,7 @@
     &quot;RootNodeIds&quot;: null,
     &quot;IncomingTimestamp&quot;: &quot;Source&quot;,
     &quot;StreamIdPrefix&quot;: null,
-    &quot;DefaultStreamIdPattern&quot;: &quot;{NamespaceIndex.Identifier}&quot;
+    &quot;DefaultStreamIdPattern&quot;: &quot;{NamespaceIndex}.{Identifier}&quot;
 }
 </code></pre><h2 id="rest-urls">REST URLs</h2>
 <table>

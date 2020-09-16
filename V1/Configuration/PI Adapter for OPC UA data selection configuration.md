@@ -104,8 +104,7 @@ The following parameters are available for configuring an OPC UA data selection:
 ## OPC UA data selection example
 
 The following are examples of valid OPC UA data selection configurations:
-
-**Minimum data selection configuration**:
+### Minimal data selection configuration
 
 ```json
 [
@@ -121,7 +120,7 @@ The following are examples of valid OPC UA data selection configurations:
 ]
 ```
 
-**Maximum data selection configuration**:
+ ### Complete data selection configuration
 
 ```json
 [

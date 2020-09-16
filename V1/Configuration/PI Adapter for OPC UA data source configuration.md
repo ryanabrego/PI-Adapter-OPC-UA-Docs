@@ -63,7 +63,7 @@ The following parameters are available for configuring an OPC UA data source:
 
 The following are examples of valid OPC UA data source configurations:
 
-### Minimum data source configuration
+### Minimal data source configuration
 
 ```json
 {
@@ -71,7 +71,7 @@ The following are examples of valid OPC UA data source configurations:
 }
 ```
 
-### Maximum data source configuration
+### Complete data source configuration
 
 ```json
 {

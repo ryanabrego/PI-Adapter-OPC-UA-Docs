@@ -50,9 +50,15 @@ jobs:
           mv .\_site $(Build.ArtifactStagingDirectory)\_site
           git clean -fd
           rmdir V1\main /s /q
+<<<<<<< HEAD
 
           echo "Check out gh-pages branch"
           git checkout gh-pages
+=======
+          
+          echo "Check out gh-pages branch"
+          git checkout gh-pages        
+>>>>>>> parent of 9b5caa2... Build Agent Modified DocFX Site
           git rm *
 
           echo "Copy DocFX output into branch"
@@ -60,8 +66,13 @@ jobs:
           rmdir obj /s /q
 
           echo "Stage changes"
+<<<<<<< HEAD
           git add .
           git checkout gh-pages
+=======
+          git add .        
+          git checkout gh-pages 
+>>>>>>> parent of 9b5caa2... Build Agent Modified DocFX Site
           git branch
 
           echo "Commit changes"

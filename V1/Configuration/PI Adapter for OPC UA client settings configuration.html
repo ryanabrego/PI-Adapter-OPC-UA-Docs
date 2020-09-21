@@ -83,7 +83,7 @@
 <p>If a valid data source exists, the adapter is running, and you do not want to configure OPC UA client settings, you can choose to generate a default OPC UA client settings file.</p>
 <p>Complete the following steps to generate the default client settings file:</p>
 <ol>
-<li><p>Add an OPC UA adapter with a unique <code>ComponentId</code>. For more information, see <a class="xref" href="../main/V1/Configuration/System%20components%20configuration.html">System components configuration</a>.</p>
+<li><p>Add an OPC UA adapter with a unique <code>ComponentId</code>. For more information, see <a class="xref" href="../../V1.2/main/V1/Configuration/System%20components%20configuration.html">System components configuration</a>.</p>
 </li>
 <li><p>Configure a valid OPC UA data source. For more information, see <a class="xref" href="PI%20Adapter%20for%20OPC%20UA%20data%20source%20configuration.html">PI Adapter for OPC UA data source configuration</a>.</p>
 <p>Once you complete these steps, a default OPC UA client settings configuration file is generated in the configuration directory for the corresponding platform.</p>
@@ -101,8 +101,8 @@
 </ul>
 </li>
 <li>Save the file. For example, <code>ConfigureClientSettings.json</code>.</li>
-<li><p>Use any of the <a class="xref" href="../main/V1/Configuration/Configuration%20tools.html">Configuration tools</a> capable of making HTTP requests to run a <code>PUT</code> command to its appropriate endpoint:</p>
-<p> <strong>Note:</strong> The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see <a class="xref" href="../main/V1/Configuration/System%20components%20configuration.html">System components configuration</a>.</p>
+<li><p>Use any of the <a class="xref" href="../../V1.2/main/V1/Configuration/Configuration%20tools.html">Configuration tools</a> capable of making HTTP requests to run a <code>PUT</code> command to its appropriate endpoint:</p>
+<p> <strong>Note:</strong> The following example uses OpcUa1 as the adapter component name. For more information on how to add a component, see <a class="xref" href="../../V1.2/main/V1/Configuration/System%20components%20configuration.html">System components configuration</a>.</p>
 <p> <code>5590</code> is the default port number. If you selected a different port number, replace it with that value.</p>
 <p> <strong>PUT</strong> endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;componentId&gt;/ClientSettings/</code></p>
 <p>   Example using <code>curl</code>:</p>

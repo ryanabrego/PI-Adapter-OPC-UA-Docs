@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Configuration/configuration-1-2.html",
-          "hash": "rWOvEHUjyf7NT/hC+e8GMQ=="
+          "hash": "n3N30yYPsC3Mr1esA9Qmmw=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Configuration/pi-adapter-for-opc-ua-client-settings-configuration-1-2.html",
-          "hash": "1+6YbzrnL5mUOOpMfZpIKQ=="
+          "hash": "tTj3IFg1QayBcvfmM1m8jA=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Configuration/pi-adapter-for-opc-ua-data-selection-configuration-1-2.html",
-          "hash": "Z8U//EFNBy22/Skfnt37KQ=="
+          "hash": "kmVGjjtu9iBSVDdeA0HCog=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Configuration/pi-adapter-for-opc-ua-data-source-configuration-1-2.html",
-          "hash": "uAad/qAQ+LAR7CBOmORo9w=="
+          "hash": "wzmXcnLHpUaYhtbLGiucRw=="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Configuration/pi-adapter-for-opc-ua-security-configuration-1-2.html",
-          "hash": "0eyJ0o6uKiDD5uaJHvD2Cw=="
+          "hash": "NP3y3+Hgc1lijmcxdFISeQ=="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Installation/install-pi-adapter-for-opc-ua-using-docker-1-2.html",
-          "hash": "8a6546TZ6bwCD3KCG7tzuA=="
+          "hash": "zEMkQ3KWxnz2UtTOD8GGCA=="
         }
       },
       "is_incremental": false,
@@ -102,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Installation/system-requirements-1-2.html",
-          "hash": "8V6eD08dHf4WhR7Qj6rpMA=="
+          "hash": "p+VtzFDZlMfvNEA9IOsDgA=="
         }
       },
       "is_incremental": false,
@@ -114,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/PI Adapter for OPC UA overview/pi-adapter-for-opc-ua-principles-of-operation-1-2.html",
-          "hash": "IQSVDWzPr3OLoUTr39j1Jg=="
+          "hash": "evZOH71yuBKzRlp9h6urew=="
         }
       },
       "is_incremental": false,
@@ -126,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/README.html",
-          "hash": "H8jW+9dk7HkMrJCspIQz8g=="
+          "hash": "e6nHQ/YpUYAkokQm4gvvtw=="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,29 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Release Notes/release-notes-1-2.html",
-          "hash": "GCc1T4eFlhr8vnz7m+pYBQ=="
+          "hash": "yn5aPqAXyeNtqb6OaDJC7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "V1.2/images/PI_Adapter_for_OPC_UA_architecture_diagram-1-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "V1.2/images/PI_Adapter_for_OPC_UA_architecture_diagram-1-2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "V1.2/images/atlas_icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "V1.2/images/atlas_icon.png"
         }
       },
       "is_incremental": false,
@@ -157,7 +179,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/index.html",
-          "hash": "04hGYfObf4f7g1sp10zTeA=="
+          "hash": "HVVxittLYIEdeG6VJZiW2A=="
         }
       },
       "is_incremental": false,
@@ -172,7 +194,23 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/pi-adapter-for-opc-ua-overview-1-2.html",
-          "hash": "5/xThQL6INALu3GWvaW5+Q=="
+          "hash": "8n6tTgowqxC1X+zJhV+Ulg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidTocInclude",
+        "InvalidFileLink"
+      ],
+      "type": "Toc",
+      "source_relative_path": "V1.2/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "V1.2/toc.html",
+          "hash": "fw4/EWpS2nCwdHL0s9nBpg=="
         }
       },
       "is_incremental": false,
@@ -792,9 +830,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1.3/Technical-support-and-feedback-1-3.md",
       "output": {
@@ -1194,6 +1229,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/main/V1/Technical support and feedback.md",
       "output": {

@@ -4,3 +4,6 @@
   - name: PI Adapter for OPC UA 1.1
     href: V1/
     homepage: V1/index.md
+  - name: PI Adapter for OPC UA 1.2
+    href: V1.2/
+    homepage: V1.2/index.md

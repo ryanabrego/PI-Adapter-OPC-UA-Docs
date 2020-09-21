@@ -15,7 +15,7 @@ references:
   href: V1/main/V1/Health/Adapter%20health.html
 - uid: AdapterHealth1-3
   name: Adapter health
-  href: V1/main/V1.3/Health/Adapter-health1-3.html
+  href: V1/main/V1.3/Health/adapter-health-1-3.html
 - uid: AdapterMetadata
   name: Adapter metadata
   href: V1/main/V1/Metadata/Adapter%20Metadata.html
@@ -102,7 +102,7 @@ references:
   href: V1/main/V1.3/Configuration/Health-endpoint-configuration-1-3.html
 - uid: index
   name: PI Adapter for OPC UA overview
-  href: V1/index.html
+  href: V1.2/index.html
 - uid: Installation
   name: Installation
   href: V1/main/V1/Installation/Installation.html
@@ -112,6 +112,9 @@ references:
 - uid: InstallPIAdapterForOPCUAUsingDocker
   name: Install PI Adapter for OPC UA using Docker
   href: V1/Installation/Install%20PI%20Adapter%20for%20OPC%20UA%20using%20Docker.html
+- uid: InstallPIAdapterForOPCUAUsingDocker1-2
+  name: Install PI Adapter for OPC UA using Docker
+  href: V1.2/Installation/install-pi-adapter-for-opc-ua-using-docker-1-2.html
 - uid: InstallTheAdapter
   name: Install the adapter
   href: V1/main/V1/Installation/Install%20the%20adapter.html
@@ -139,24 +142,45 @@ references:
 - uid: OPCUAConfiguration
   name: Configuration
   href: V1/Configuration/Configuration.html
+- uid: OPCUAConfiguration1-2
+  name: Configuration
+  href: V1.2/Configuration/configuration-1-2.html
 - uid: PIAdapterForOPCUAClientSettingsConfiguration
   name: PI Adapter for OPC UA client settings configuration
   href: V1/Configuration/PI%20Adapter%20for%20OPC%20UA%20client%20settings%20configuration.html
+- uid: PIAdapterForOPCUAClientSettingsConfiguration1-2
+  name: PI Adapter for OPC UA client settings configuration
+  href: V1.2/Configuration/pi-adapter-for-opc-ua-client-settings-configuration-1-2.html
 - uid: PIAdapterForOPCUADataSelectionConfiguration
   name: PI Adapter for OPC UA data selection configuration
   href: V1/Configuration/PI%20Adapter%20for%20OPC%20UA%20data%20selection%20configuration.html
+- uid: PIAdapterForOPCUADataSelectionConfiguration1-2
+  name: PI Adapter for OPC UA data selection configuration
+  href: V1.2/Configuration/pi-adapter-for-opc-ua-data-selection-configuration-1-2.html
 - uid: PIAdapterForOPCUADataSourceConfiguration
   name: PI Adapter for OPC UA data source configuration
   href: V1/Configuration/PI%20Adapter%20for%20OPC%20UA%20data%20source%20configuration.html
+- uid: PIAdapterForOPCUADataSourceConfiguration1-2
+  name: PI Adapter for OPC UA data source configuration
+  href: V1.2/Configuration/pi-adapter-for-opc-ua-data-source-configuration-1-2.html
 - uid: PIAdapterForOPCUAOverview
   name: PI Adapter for OPC UA overview
   href: V1/PI_Adapter_for_OPC_UA_overview.html
+- uid: PIAdapterForOPCUAOverview1-2
+  name: PI Adapter for OPC UA overview
+  href: V1.2/pi-adapter-for-opc-ua-overview-1-2.html
 - uid: PIAdapterForOPCUAPrinciplesOfOperation
   name: PI Adapter for OPC UA principles of operation
   href: V1/PI%20Adapter%20for%20OPC%20UA%20overview/PI%20Adapter%20for%20OPC%20UA%20principles%20of%20operation.html
+- uid: PIAdapterForOPCUAPrinciplesOfOperation1-2
+  name: PI Adapter for OPC UA principles of operation
+  href: V1.2/PI%20Adapter%20for%20OPC%20UA%20overview/pi-adapter-for-opc-ua-principles-of-operation-1-2.html
 - uid: PIAdapterForOPCUASecurityConfiguration
   name: PI Adapter for OPC UA security configuration
   href: V1/Configuration/PI%20Adapter%20for%20OPC%20UA%20security%20configuration.html
+- uid: PIAdapterForOPCUASecurityConfiguration1-2
+  name: PI Adapter for OPC UA security configuration
+  href: V1.2/Configuration/pi-adapter-for-opc-ua-security-configuration-1-2.html
 - uid: PIAdapterForOPCUASupportedFeatures
   name: PI Adapter for OPC UA supported features
   href: V1/ARCHIVE/OSIsoft%20Adapter%20for%20OPC%20UA%20supported%20features.html
@@ -166,6 +190,9 @@ references:
 - uid: ReleaseNotes
   name: Release notes
   href: V1/Release%20Notes/Release%20Notes.html
+- uid: ReleaseNotes1-2
+  name: Release notes
+  href: V1.2/Release%20Notes/release-notes-1-2.html
 - uid: RetrieveProductVersionInformation
   name: Retrieve product version information
   href: V1/main/V1/Administration/Retrieve%20product%20version%20information.html
@@ -217,15 +244,15 @@ references:
 - uid: SystemRequirements
   name: System requirements
   href: V1/Installation/System%20requirements.html
+- uid: SystemRequirements1-2
+  name: System requirements
+  href: V1.2/Installation/system-requirements-1-2.html
 - uid: TechnicalSupportAndFeedback
   name: Technical support and feedback
   href: V1/main/V1.3/Technical-support-and-feedback-1-3.html
 - uid: Troubleshooting
   name: Troubleshooting
   href: V1/main/V1/Troubleshooting/Troubleshooting.html
-- uid: Troubleshooting1-3
-  name: Troubleshooting
-  href: V1/main/V1.3/Troubleshooting/Troubleshooting-1-3.html
 - uid: UninstallTheAdapter
   name: Uninstall the adapter
   href: V1/main/V1/Installation/Uninstall%20the%20adapter.html

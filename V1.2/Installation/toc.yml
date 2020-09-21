@@ -1,0 +1,8 @@
+- name: System requirements
+  href: system-requirements-1-2.md
+- name: Install the adapter
+  href: ../main/V1/Installation/install-the-adapter-1-3.md
+- name: Install PI Adapter for OPC UA using Docker
+  href: install-pi-adapter-for-opc-ua-using-docker-1-2.md
+- name: Uninstall the adapter
+  href: ../main/V1/Installation/uninstall-the-adapter-1-3.md

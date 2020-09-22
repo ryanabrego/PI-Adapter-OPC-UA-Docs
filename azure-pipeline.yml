@@ -40,7 +40,7 @@ jobs:
           cd ..\..
 
           echo "Run DocFX"
-          docfx.exe docfx.json --template ./_exported_templates/default
+          docfx.exe ./docfx.json --template ./_exported_templates/default
 
           echo "Set up Git"
           git config user.name az-pipeline
@@ -52,7 +52,7 @@ jobs:
           rmdir V1\main /s /q
 
           echo "Check out gh-pages branch"
-          git checkout gh-pages
+          git checkout gh-pages        
           git rm *
 
           echo "Copy DocFX output into branch"
@@ -60,8 +60,8 @@ jobs:
           rmdir obj /s /q
 
           echo "Stage changes"
-          git add .
-          git checkout gh-pages
+          git add .        
+          git checkout gh-pages 
           git branch
 
           echo "Commit changes"

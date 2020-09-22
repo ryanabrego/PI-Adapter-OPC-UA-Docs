@@ -1,6 +1,3 @@
-[submodule "V1/main"]
-	path = V1/main
-	url = ../PI-Adapter.git
-[submodule "V1.2/main"]
-	path = V1.2/main
+[submodule "V1/Main"]
+	path = V1/Main
 	url = ../PI-Adapter.git

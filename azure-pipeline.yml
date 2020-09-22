@@ -52,21 +52,20 @@ jobs:
           rmdir V1\main /s /q
 
           echo "Check out gh-pages branch"
-          git checkout gh-pages        
-          git rm *
-
-          echo "Copy DocFX output into branch"
-          Xcopy /E /I $(Build.ArtifactStagingDirectory)\_site\* .
-          rmdir obj /s /q
+          git checkout gh-pages
 
           echo "Check branch"
           for /f %%i in ('git branch --show-current') do set BRANCH=%%i
           if not %BRANCH%==gh-pages exit /b 1
+          git branch
+
+          echo "Copy DocFX output into branch"
+          git rm *
+          Xcopy /E /I $(Build.ArtifactStagingDirectory)\_site\* .
+          rmdir obj /s /q
 
           echo "Stage changes"
-          git add .        
-          git checkout gh-pages 
-          git branch
+          git add .
 
           echo "Commit changes"
           git commit -m "Build Agent Modified DocFX Site"

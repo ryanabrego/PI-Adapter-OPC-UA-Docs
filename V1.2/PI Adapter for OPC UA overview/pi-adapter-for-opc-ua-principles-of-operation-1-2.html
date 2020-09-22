@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>PI Adapter for OPC UA principles of operation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="PI Adapter for OPC UA principles of operation ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../V1/index.html" width="46">
+                <img id="logo" src="../../V1/Main/V1/images/atlas_icon.png" height="46" width="46" alt="OSIsoft Edge System"> 
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PIAdapterForOPCUAPrinciplesOfOperation1-2">
+<h1 id="pi-adapter-for-opc-ua-principles-of-operation">PI Adapter for OPC UA principles of operation</h1>
+
+<p>This adapter&#39;s operations focus on data collection and stream creation.</p>
+<h2 id="adapter-configuration">Adapter configuration</h2>
+<p>For the OPC UA adapter to start data collection, configure the following:</p>
+<ul>
+<li>Data source: Provide the data source from which the adapter should collect data.</li>
+<li>Data selection: Select the OPC UA items to which the adapter should subscribe for data.</li>
+<li>Logging: Set up the logging attributes to manage the adapter logging behavior.</li>
+</ul>
+<p>For more information, see <a class="xref" href="../Configuration/pi-adapter-for-opc-ua-data-source-configuration-1-2.html">PI Adapter for OPC UA data source configuration</a> and <a class="xref" href="../Configuration/pi-adapter-for-opc-ua-data-selection-configuration-1-2.html">PI Adapter for OPC UA data selection configuration</a>.</p>
+<h2 id="connection">Connection</h2>
+<p>The OPC UA adapter uses the binary opc.tcp protocol to communicate with the OPC UA servers. As part of the OPC UA server and client establishing a secured connection, each one sends its X.509-type certificate to the other for verification. Upon verification of the certificates, the server and client establishes a secured connection.</p>
+<p>For more information on secure connections, see <a class="xref" href="../Configuration/pi-adapter-for-opc-ua-security-configuration-1-2.html">PI Adapter for OPC UA security configuration</a>.</p>
+<h2 id="data-collection">Data collection</h2>
+<p>The OPC UA adapter collects time-series data from selected OPC UA dynamic variables through OPC UA subscriptions (unsolicited reads). The adapter supports the Data Access (DA) part of OPC UA specification. For more information, see <a href="https://opcfoundation.org/developer-tools/specifications-unified-architecture/part-8-data-access">Unified Architecture (https://opcfoundation.org/developer-tools/specifications-unified-architecture/part-8-data-access)</a>.</p>
+<h3 id="data-types">Data types</h3>
+<p>The following table lists OPC UA variable types that the adapter collects data from and types of streams that will be created.</p>
+<table>
+<thead>
+<tr>
+<th>OPC UA data type</th>
+<th>Stream data type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Boolean</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td>Byte</td>
+<td>Int16</td>
+</tr>
+<tr>
+<td>SByte</td>
+<td>Int16</td>
+</tr>
+<tr>
+<td>Int16</td>
+<td>Int16</td>
+</tr>
+<tr>
+<td>UInt16</td>
+<td>UInt16</td>
+</tr>
+<tr>
+<td>Int32</td>
+<td>Int32</td>
+</tr>
+<tr>
+<td>UInt32</td>
+<td>UInt32</td>
+</tr>
+<tr>
+<td>Int64</td>
+<td>Int64</td>
+</tr>
+<tr>
+<td>UInt64</td>
+<td>UInt64</td>
+</tr>
+<tr>
+<td>Float</td>
+<td>Float32</td>
+</tr>
+<tr>
+<td>Double</td>
+<td>Float64</td>
+</tr>
+<tr>
+<td>DateTime</td>
+<td>DateTime</td>
+</tr>
+<tr>
+<td>String</td>
+<td>String</td>
+</tr>
+</tbody>
+</table>
+<h2 id="stream-creation">Stream creation</h2>
+<p>The OPC UA adapter creates a stream with two properties for each selected OPC UA item. The properties are described in the following table:</p>
+<table>
+<thead>
+<tr>
+<th>Property name</th>
+<th>Data type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Timestamp</td>
+<td>DateTime</td>
+<td>Timestamp of the given OPC UA item value update.</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>Based on type of incoming OPC UA value</td>
+<td>Value of the given OPC UA item update.</td>
+</tr>
+</tbody>
+</table>
+<p>The OPC UA adapter sends metadata with each stream it creates. Metadata common for every adapter type are</p>
+<ul>
+<li><strong>ComponentId</strong>: Specifies the data source, for example <em>OpcUa1</em></li>
+<li><strong>ComponentType</strong>: Specifies the type of adapter, for example <em>OpcUa</em></li>
+</ul>
+<p>Metadata specific to the OPC UA adapter are</p>
+<ul>
+<li><strong>BrowseName</strong>: The browse name as provided by the OPC UA server</li>
+<li><strong>SourceId</strong>: The NodeId provided by the OPC UA server</li>
+</ul>
+<p><strong>Note:</strong> A configured metadata level allows you to set the amount of metadata for the adapter. Specify the metadata level in <a class="xref" href="../Main/V1.3/Configuration/General-configuration-1-3.html">General configuration</a>. For the OPC UA adapter, the following metadata is sent for the individual level:</p>
+<ul>
+<li><code>None</code>: No metadata</li>
+<li><code>Low</code>: AdapterType (ComponentType) and DataSource (ComponentId)</li>
+<li><code>Medium</code>: AdapterType (ComponentType), DataSource (ComponentId), BrowseName, and DisplayName</li>
+<li><code>High</code>: AdapterType (ComponentType), DataSource (ComponentId), BrowseName, DisplayName, and SourceId</li>
+</ul>
+<p>Each stream created by  the adapter for a given OPC UA item has a unique identifier (Stream ID). If you specify a custom stream ID for the OPC UA item in data selection configuration, the OPC UA adapter uses that stream ID to create the stream. Otherwise, the adapter constructs the stream ID using the following format, which is constructed from the OPC UA item node ID:</p>
+<pre><code class="lang-code">&lt;AdapterComponentID&gt;.&lt;NamespaceIndex&gt;.&lt;Identifier&gt;
+</code></pre><p>NamespaceIndex refers to the number specified in the <code>ns</code> keyword in the <strong>RootNodeIds</strong> parameter of the data source configuration. For more information, see <a class="xref" href="../Configuration/pi-adapter-for-opc-ua-data-source-configuration-1-2.html#opc-ua-data-source-parameters">PI Adapter for OPC UA data source configuration</a>.</p>
+<p><strong>Note:</strong> The naming convention is affected by StreamPrefix and DefaultStreamIdPattern settings in data source configuration.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/osisoft/PI-Adapter-OPC-UA-Docs/blob/master/V1.2/PI Adapter for OPC UA overview/pi-adapter-for-opc-ua-principles-of-operation-1-2.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span><a href="https://www.osisoft.com/copyright/">© 2019 - 2020 OSIsoft, LLC. All rights reserved.</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

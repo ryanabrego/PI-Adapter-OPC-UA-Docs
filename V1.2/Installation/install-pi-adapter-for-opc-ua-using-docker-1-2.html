@@ -117,7 +117,7 @@ fi
 <p> <strong>ARM32</strong></p>
 <pre><code class="lang-bash">FROM ubuntu
 WORKDIR /
-RUN apt-get update &amp;&amp; DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libicu60 libssl1.0.0
+RUN apt-get update &amp;&amp; DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libicu60 libssl1.1 curl
 COPY opcuadockerstart.sh /
 RUN chmod +x /opcuadockerstart.sh
 ADD ./OpcUa_linux-arm.tar.gz .
@@ -125,7 +125,7 @@ ENTRYPOINT [&quot;/opcuadockerstart.sh&quot;]
 </code></pre><p> <strong>ARM64</strong></p>
 <pre><code class="lang-bash">FROM ubuntu
 WORKDIR /
-RUN apt-get update &amp;&amp; DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libicu60 libssl1.0.0
+RUN apt-get update &amp;&amp; DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libicu60 libssl1.1 curl
 COPY opcuadockerstart.sh /
 RUN chmod +x /opcuadockerstart.sh
 ADD ./OpcUa_linux-arm64.tar.gz .
@@ -133,7 +133,7 @@ ENTRYPOINT [&quot;/opcuadockerstart.sh&quot;]
 </code></pre><p> <strong>AMD64 (x64)</strong></p>
 <pre><code class="lang-bash">FROM ubuntu
 WORKDIR /
-RUN apt-get update &amp;&amp; DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libicu60 libssl1.0.0
+RUN apt-get update &amp;&amp; DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libicu60 libssl1.1 curl
 COPY opcuadockerstart.sh /
 RUN chmod +x /opcuadockerstart.sh
 ADD ./OpcUa_linux-x64.tar.gz .

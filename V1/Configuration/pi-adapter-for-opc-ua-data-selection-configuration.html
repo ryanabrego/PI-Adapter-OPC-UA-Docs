@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>PI Adapter for OPC UA data selection configuration </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="PI Adapter for OPC UA data selection configuration ">
+    <meta name="generator" content="docfx 2.56.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../V1/index.html" width="46">
+                <img id="logo" src="../../V1/Main/V1/images/atlas_icon.png" height="46" width="46" alt="OSIsoft Edge System"> 
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PIAdapterForOPCUADataSelectionConfiguration">
+<h1 id="pi-adapter-for-opc-ua-data-selection-configuration">PI Adapter for OPC UA data selection configuration</h1>
+
+<p>In addition to the data source configuration, you need to provide a data selection configuration to specify the data you want the adapter to collect from the data sources.</p>
+<p>When you add a data source without providing a data selection configuration, the adapter browses the OPC UA server address space and populates the available OPC UA variables into the data selection configuration.  A comma-separated collection of nodeIds (RootNodeIds) in the data source configuration serves as filters to browse only a subset of the OPC UA server. Data selection items configured this way must still be selected for data retrieval. OPC UA data from OPC UA variables is read through subscriptions (unsolicited reads).</p>
+<p>You can decide to have the data selection configuration file generated automatically or you can create it manually yourself.</p>
+<h2 id="generate-default-opc-ua-data-selection-configuration-file">Generate default OPC UA data selection configuration file</h2>
+<p>A default OPC UA data selection file will be created if there is no OPC UA data selection configuration although a valid data source exists.</p>
+<p><strong>Note:</strong> To avoid possible time and resource expensive browse operations due to reasons described previously, OSIsoft recommends that you manually create a data selection file instead of automatically creating the default data selection file. For more information, see <a href="#configure-opc-ua-data-selection">Configure OPC UA data selection</a>.</p>
+<p>Complete the following steps to generate a default data selection file:</p>
+<ol>
+<li><p>Add an OPC UA adapter with a unique ComponentId. For more information, see <a class="xref" href="../../V1.2/Main/V1/Configuration/system-components-configuration.html">System components configuration</a>.</p>
+</li>
+<li><p>Configure a valid OPC UA data source. For more information, see <a class="xref" href="pi-adapter-for-opc-ua-data-source-configuration.html">PI Adapter for OPC UA data source configuration</a>.</p>
+<p>Once you complete these steps, a default OPC UA data selection configuration file will be generated in the configuration directory for the corresponding platform.</p>
+<p>The following are example locations of the file created. In this example, it is assumed that the ComponentId of the OPC UA component is OpcUa1:</p>
+<p>Windows: <em>%programdata%\OSIsoft\Adapters\OpcUa\OpcUa\Configuration\OpcUa1_DataSelection.json</em></p>
+<p>Linux: <em>/usr/share/OSIsoft/Adapters/OpcUa/OpcUa/Configuration/OpcUa1_DataSelection.json</em></p>
+</li>
+<li><p>Copy the file to a different directory.</p>
+<ul>
+<li>For content structure, see <a href="#opc-ua-data-selection-example">OPC UA data selection example</a>.</li>
+</ul>
+</li>
+<li><p>Use any text editor to change the value of any <strong>Selected</strong> key from <code>false</code> to <code>true</code> in the file.</p>
+<p>Once the configuration is updated, the adapter will subscribe to data for all items that are set to <em>Selected=true</em>.</p>
+</li>
+<li><p>In the same directory where you edited the file, run the following <code>curl</code> command:</p>
+<p> <strong>Note:</strong> <code>5590</code> is the default port number. If you selected a different port number, replace it with that value.</p>
+<pre><code class="lang-bash">curl -i -d &quot;@OpcUa1_DataSelection.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT      &quot;http://localhost:5590/api/v1/configuration/OpcUa1/Dataselection&quot;
+</code></pre></li>
+</ol>
+<h2 id="configure-opc-ua-data-selection">Configure OPC UA data selection</h2>
+<p><strong>Note:</strong> You cannot modify OPC UA data selection configurations manually. You must use the REST endpoints to add or edit the configuration.</p>
+<p>Complete the following steps to configure the OPC UA data selection:</p>
+<ol>
+<li>Use any text editor to create a file that contains an OPC UA data selection in the JSON format.<ul>
+<li>For content structure, see <a href="#opc-ua-data-selection-example">OPC UA data selection example</a>.</li>
+<li>For a table of all available parameters, see <a href="#opc-ua-data-selection-parameters">OPC UA data selection</a>.</li>
+</ul>
+</li>
+<li>Save the file. For example, <code>ConfigureDataSelection.json</code>.</li>
+<li><p>Use any of the <a class="xref" href="../../V1.2/Main/V1/Configuration/configuration-tools.html">Configuration tools</a> capable of making HTTP requests to run either a POST or PUT command to their appropriate endpoint:</p>
+<p> <strong>Note:</strong> The following examples use OpcUa1 as the adapter component name. For more information on how to add a component, see <a class="xref" href="../../V1.2/Main/V1/Configuration/system-components-configuration.html">System components configuration</a>.</p>
+<p> <code>5590</code> is the default port number. If you selected a different port number, replace it with that value.</p>
+<ul>
+<li><p><strong>POST</strong> endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;componentId&gt;/DataSelection/</code></p>
+<p>Example using <code>curl</code>:</p>
+<pre><code class="lang-bash">curl -d &quot;@ConfigureDataSelection.json&quot; -H &quot;Content-Type: application/json&quot; -X POST &quot;http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection&quot;
+</code></pre><p><strong>Note:</strong> Run this command from the same directory where the file is located.</p>
+</li>
+<li><p><strong>PUT</strong> endpoint: <code>http://localhost:5590/api/v1/configuration/&lt;componentId&gt;/DataSelection/&lt;StreamId&gt;</code></p>
+<p>Example using <code>curl</code>:</p>
+<pre><code class="lang-bash">curl -d &quot;@ConfigureDataSelection.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT &quot;http://localhost:5590/api/v1/configuration/OpcUa1/DataSelection/ns=5;s=Random1&quot;
+</code></pre><p>  <strong>Note:</strong> Run this command from the same directory where the file is located.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="opc-ua-data-selection-schema">OPC UA data selection schema</h2>
+<p>The full schema definition for the OPC UA data selection configuration is in the <code>OpcUa_DataSelection_schema.json</code> file located in one of the following folders:</p>
+<p>Windows: <code>%ProgramFiles%\OSIsoft\Adapters\OpcUa\Schemas</code></p>
+<p>Linux: <code>/opt/OSIsoft/Adapters/OpcUa/Schemas</code></p>
+<h2 id="opc-ua-data-selection-parameters">OPC UA data selection parameters</h2>
+<p>The following parameters are available for configuring an OPC UA data selection:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Selected</strong></td>
+<td>Optional</td>
+<td><code>boolean</code></td>
+<td>Use this field to select or clear a measurement. To select an item, set to true. To remove an item, leave the field empty or set to false. <br><br>Allowed value: <code>true</code> or <code>false</code> <br>Default value: <code>true</code></td>
+</tr>
+<tr>
+<td><strong>Name</strong></td>
+<td>Optional</td>
+<td><code>string</code></td>
+<td>Name of the data item collected from the data source. <br><br>Default value: <code>null</code> <br>results in <strong>StreamId</strong> value being used also as a <strong>Name</strong></td>
+</tr>
+<tr>
+<td><strong>NodeId</strong></td>
+<td>Required</td>
+<td><code>string</code></td>
+<td>The NodeId of the variable.<br><br>Examples<br><code>&quot;ns=5;AString&quot;</code><br><code>&quot;ns=2;i=203&quot;</code><br><code>&quot;ns=&lt;NamespaceIndex&gt;;&lt;IdentifierType&gt;=&lt;Identifer&gt;&quot;</code></td>
+</tr>
+<tr>
+<td><strong>StreamID</strong></td>
+<td>Optional</td>
+<td><code>string</code></td>
+<td>The custom stream ID used to create the streams. If not specified, the adapter will generate a default stream ID based on the measurement configuration. The StreamId serves as the unique identifier of a data selection item. A properly configured custom stream ID follows these rules:<br><br>Is not case-sensitive.<br>Can contain spaces.<br>Cannot start with two underscores (&quot;__&quot;).<br>Can contain a maximum of 100 characters.<br>Cannot use the following characters: / : ? # [ ] @ ! $ &amp; &#39; ( ) \ * + , ; = % &lt; &gt; &#124;<br>Cannot start or end with a period.<br>Cannot contain consecutive periods.<br>Cannot consist of only periods.</td>
+</tr>
+<tr>
+<td><strong>DataFilterID</strong></td>
+<td>Optional</td>
+<td><code>string</code></td>
+<td>Enables data filtering for this data selection item if the ID of a data filter is specified. If no value is specified or set to null, all read values are output without filtering.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="opc-ua-data-selection-example">OPC UA data selection example</h2>
+<p>The following are examples of valid OPC UA data selection configurations:</p>
+<h3 id="minimal-data-selection-configuration">Minimal data selection configuration</h3>
+<pre><code class="lang-json">[
+ {
+    &quot;NodeId&quot;: &quot;ns=5;s=Random1&quot;
+  },
+  {
+    &quot;NodeId&quot;: &quot;ns=5;s=Sawtooth1&quot;
+  },
+  {
+    &quot;NodeId&quot;: &quot;ns=5;s=Sinusoid1&quot;
+  }
+]
+</code></pre><h3 id="complete-data-selection-configuration">Complete data selection configuration</h3>
+<pre><code class="lang-json">[
+ {
+    &quot;Selected&quot;: true,
+    &quot;Name&quot;: &quot;CustomStreamName&quot;,
+    &quot;NodeId&quot;: &quot;ns=5;s=Random1&quot;,
+    &quot;StreamId&quot;: &quot;CustomStreamName&quot;
+  },
+  {
+    &quot;Selected&quot;: false,
+    &quot;Name&quot;: null,
+    &quot;NodeId&quot;: &quot;ns=5;s=Sawtooth1&quot;,
+    &quot;StreamId&quot;: null
+  },
+  {
+    &quot;Selected&quot;: true,
+    &quot;Name&quot;: &quot;5.Sinusoid1&quot;,
+    &quot;NodeId&quot;: &quot;ns=5;s=Sinusoid1&quot;,
+    &quot;StreamId&quot;: null
+  }
+]
+</code></pre><h2 id="rest-urls">REST URLs</h2>
+<table>
+<thead>
+<tr>
+<th>Relative URL</th>
+<th>HTTP verb</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>api/v1/configuration/<em>ComponentId</em>/DataSelection</td>
+<td>GET</td>
+<td>Retrieves the OPC UA data selection configuration</td>
+</tr>
+<tr>
+<td>api/v1/configuration/<em>ComponentId</em>/DataSelection</td>
+<td>PUT</td>
+<td>Configures or updates the OPC UA data selection configuration</td>
+</tr>
+<tr>
+<td>api/v1/configuration/<em>ComponentId</em>/DataSelection</td>
+<td>DELETE</td>
+<td>Deletes the OPC UA data selection configuration</td>
+</tr>
+<tr>
+<td>api/v1/configuration/<em>ComponentId</em>/DataSelection</td>
+<td>PATCH</td>
+<td>Allows partial updating of configured data selection items. <br><strong>Note:</strong> The request must be an array containing one or more data selection items. Each data selection item in the array must include its <em>StreamId</em>.</td>
+</tr>
+<tr>
+<td>api/v1/configuration/<em>ComponentId</em>/DataSelection/<em>StreamId</em></td>
+<td>PUT</td>
+<td>Updates or creates a new data selection with the specified <em>StreamId</em></td>
+</tr>
+<tr>
+<td>api/v1/configuration/<em>ComponentId</em>/DataSelection/<em>StreamId</em></td>
+<td>DELETE</td>
+<td>Deletes a specific data selection item of the OPC UA data selection configuration</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong> Replace <em>ComponentId</em> with the Id of your OPC UA component, for example OpcUa1.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/osisoft/PI-Adapter-OPC-UA-Docs/blob/master/V1/Configuration/pi-adapter-for-opc-ua-data-selection-configuration.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span><a href="https://www.osisoft.com/copyright/">© 2019 - 2020 OSIsoft, LLC. All rights reserved.</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

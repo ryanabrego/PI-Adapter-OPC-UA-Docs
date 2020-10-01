@@ -3,7 +3,6 @@ uid: InstallPIAdapterForOPCUAUsingDocker1-2
 ---
 
 # Install PI Adapter for OPC UA using Docker
-
 Docker is a set of tools that you can use on Linux to manage application deployments.
 
 **Note:** If you want to use Docker, you must be familiar with the underlying technology and have determined that it is appropriate for your planned use of the OPC UA adapter. Docker is not a requirement to use OPC UA adapter. For more information on how to install the adapter without Docker, see [Install the adapter](xref:InstallTheAdapter1-3).
@@ -11,7 +10,6 @@ Docker is a set of tools that you can use on Linux to manage application deploym
 This topic provides examples of how to create a Docker container with the OPC UA adapter.
 
 ## Create a startup script for the adapter
-
 1. Use a text editor to create a script similar to one of the following examples:
 
 	**Note:** The script varies slightly by processor.
@@ -62,7 +60,7 @@ This topic provides examples of how to create a Docker container with the OPC UA
 	```bash
 	FROM ubuntu
 	WORKDIR /
-	RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libicu60 libssl1.1 curl
+	RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libicu60 libssl1.0.0
 	COPY opcuadockerstart.sh /
 	RUN chmod +x /opcuadockerstart.sh
 	ADD ./OpcUa_linux-arm.tar.gz .
@@ -74,7 +72,7 @@ This topic provides examples of how to create a Docker container with the OPC UA
 	```bash
 	FROM ubuntu
 	WORKDIR /
-	RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libicu60 libssl1.1 curl
+	RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libicu60 libssl1.0.0
 	COPY opcuadockerstart.sh /
 	RUN chmod +x /opcuadockerstart.sh
 	ADD ./OpcUa_linux-arm64.tar.gz .
@@ -86,7 +84,7 @@ This topic provides examples of how to create a Docker container with the OPC UA
 	```bash
 	FROM ubuntu
 	WORKDIR /
-	RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libicu60 libssl1.1 curl
+	RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libicu60 libssl1.0.0
 	COPY opcuadockerstart.sh /
 	RUN chmod +x /opcuadockerstart.sh
 	ADD ./OpcUa_linux-x64.tar.gz .

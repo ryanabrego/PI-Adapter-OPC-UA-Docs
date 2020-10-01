@@ -1,20 +1,20 @@
 - name: PI Adapter for OPC UA overview
-  href: PI Adapter for OPC UA overview/toc.yml
+  href: PI-Adapter-for-OPC-UA-overview/toc.yml
   topicHref: index.md
   homepage: index.md
 - name: Installation
   href: Installation/toc.yml
-  topicHref: main/V1.3/Installation/installation-1-3.md
+  topicHref: main/V1.3/Installation/installation.md
 - name: Configuration
   href: Configuration/toc.yml
-  topicHref: Configuration/configuration-1-2.md
+  topicHref: Configuration/configuration.md
 - name: Administration
   href: main/V1.3/Administration/toc.yml
-  topicHref: main/V1.3/Administration/administration-1-3.md
+  topicHref: main/V1.3/Administration/administration.md
 - name: Health and diagnostics
   href: main/V1.3/Health/toc.yml
-  topicHref: main/V1.3/Health/health-and-diagnostics-1-3.md
+  topicHref: main/V1.3/Health/health-and-diagnostics.md
 - name: Release notes
-  href: Release notes/release-notes-1-2.md
+  href: Release-notes/release-notes.md
 - name: Technical support and feedback
-  href: main/V1.3/technical-support-and-feedback-1-3.md
+  href: main/V1.3/technical-support-and-feedback.md

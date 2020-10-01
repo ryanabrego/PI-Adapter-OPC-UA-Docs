@@ -6,7 +6,7 @@ uid: PIAdapterForOPCUAOverview1-2
 
 The PI Adapter for OPC UA is a data-collection component that transfers time-series data from source devices to OMF endpoints in OSIsoft Cloud Services or PI Servers. OPC UA (OPC Unified Architecture) is an open standard, machine-to-machine communication protocol for industrial automation developed by the OPC Foundation. The adapter can connect to any device that uses the OPC UA communication protocol.
 
-![PI Adapter for OPC UA architecture](images/PI_Adapter_for_OPC_UA_architecture_diagram.png)
+![PI Adapter for OPC UA architecture](images/pi-adapter-for-opc-ua-architecture-diagram.png)
 
 ## Adapter installation
 

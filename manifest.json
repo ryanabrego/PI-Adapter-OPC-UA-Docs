@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Agent/_work/1/s",
+  "source_base_path": "C:/source/PI-Adapter-OPC-UA-Docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "BkbFJ4vFkjMRDS62BEm27Q=="
+          "hash": "pjEzu+IJFT9Rpfe2Ij1UBg=="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Configuration/configuration.html",
-          "hash": "oEYpA37NrzGhhUYoPn+Frg=="
+          "hash": "C3It3tjcjPxUGCpdA0RbjA=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Configuration/pi-adapter-for-opc-ua-client-settings-configuration.html",
-          "hash": "pf03zgJrUx2uPo1UV4bnxg=="
+          "hash": "3dhV4U1J7G8tBO/YRlxb6Q=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Configuration/pi-adapter-for-opc-ua-data-selection-configuration.html",
-          "hash": "F0ZIbR8OY5MVMeoD3Gj6ig=="
+          "hash": "PpZZzN1zHSpOQsC45/+fNA=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Configuration/pi-adapter-for-opc-ua-data-source-configuration.html",
-          "hash": "hYSUGVwagLyvmNBoT/zDUg=="
+          "hash": "x+H/u+8x0ffO02M+8eBLIw=="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Configuration/pi-adapter-for-opc-ua-security-configuration.html",
-          "hash": "6TG1o6mK6kn1M7O7RHgI2A=="
+          "hash": "hkv8t+O7dQG4Ioj15MtY6w=="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Installation/install-pi-adapter-for-opc-ua-using-docker.html",
-          "hash": "Y6J7BNLeV+eJf+iTgxy7rQ=="
+          "hash": "ntNd7cZUZbe/PwUC10QpvQ=="
         }
       },
       "is_incremental": false,
@@ -102,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Installation/system-requirements.html",
-          "hash": "3YUEuCkP1trff+GiZKzKTg=="
+          "hash": "96wODlzj51teseuJF/zbbg=="
         }
       },
       "is_incremental": false,
@@ -121,6 +121,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/Templates/Markdown Release Notes template-V1.md",
       "output": {
@@ -163,6 +166,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Administration/retrieve-product-version-information.md",
       "output": {
@@ -175,6 +181,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Administration/start-and-stop-an-adapter.md",
       "output": {
@@ -187,6 +196,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Administration/start-and-stop-ingress-component.md",
       "output": {
@@ -259,18 +271,24 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Configuration/egress-endpoints-configuration.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Configuration/egress-endpoints-configuration.html",
-          "hash": "nS2c9cvd4AFh5UrkJIHrUg=="
+          "hash": "zWkaKcvFtprijDk0ozaAxQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Configuration/general-configuration.md",
       "output": {
@@ -283,6 +301,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Configuration/health-endpoint-configuration.md",
       "output": {
@@ -307,9 +328,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Configuration/schedules-configuration.md",
       "output": {
@@ -322,9 +340,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Configuration/system-and-adapter-configuration.md",
       "output": {
@@ -337,9 +352,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Configuration/system-components-configuration.md",
       "output": {
@@ -388,6 +400,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Diagnostics/io-rate.md",
       "output": {
@@ -400,6 +415,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Diagnostics/stream-count.md",
       "output": {
@@ -424,9 +442,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Health/adapter-health.md",
       "output": {
@@ -511,9 +526,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Metadata/adapter-metadata.md",
       "output": {
@@ -640,9 +652,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/ARCHIVE/Adapter diagnostics_old.md",
       "output": {
@@ -655,9 +664,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/ARCHIVE/Diagnostics configuration.md",
       "output": {
@@ -671,7 +677,6 @@
     },
     {
       "log_codes": [
-        "DuplicateUids",
         "InvalidFileLink"
       ],
       "type": "Conceptual",
@@ -702,7 +707,6 @@
     },
     {
       "log_codes": [
-        "DuplicateUids",
         "InvalidFileLink"
       ],
       "type": "Conceptual",
@@ -717,9 +721,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/Administration/retrieve-product-version-information.md",
       "output": {
@@ -780,9 +781,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/Configuration/buffering-configuration.md",
       "output": {
@@ -795,9 +793,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/Configuration/configuration-tools.md",
       "output": {
@@ -870,9 +865,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/Configuration/logging-configuration.md",
       "output": {
@@ -885,9 +877,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/Configuration/schedules-configuration.md",
       "output": {
@@ -900,9 +889,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/Configuration/system-and-adapter-configuration.md",
       "output": {
@@ -927,6 +913,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/Diagnostics/System.md",
       "output": {
@@ -940,6 +929,7 @@
     },
     {
       "log_codes": [
+        "DuplicateUids",
         "InvalidFileLink"
       ],
       "type": "Conceptual",
@@ -954,6 +944,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/Diagnostics/egress-diagnostics.md",
       "output": {
@@ -966,6 +959,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/Diagnostics/error-rate.md",
       "output": {
@@ -978,6 +974,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/Diagnostics/io-rate.md",
       "output": {
@@ -1006,6 +1005,7 @@
     },
     {
       "log_codes": [
+        "DuplicateUids",
         "InvalidFileLink"
       ],
       "type": "Conceptual",
@@ -1071,9 +1071,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/Installation/Installation.md",
       "output": {
@@ -1098,9 +1095,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/Installation/uninstall-the-adapter.md",
       "output": {
@@ -1113,9 +1107,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/Metadata/adapter-metadata.md",
       "output": {
@@ -1172,7 +1163,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/PI-Adapter-for-OPC-UA-overview/pi-adapter-for-opc-ua-principles-of-operation.html",
-          "hash": "0BEAWXDEwnONFNVNrdoVYQ=="
+          "hash": "NKzYnrVpflp8CHS5VbZQMw=="
         }
       },
       "is_incremental": false,
@@ -1184,7 +1175,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/README.html",
-          "hash": "INY1IWkC6mAz4xx+zjEyiw=="
+          "hash": "l0XiG8sazvWL2eGg1hci1Q=="
         }
       },
       "is_incremental": false,
@@ -1196,7 +1187,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Release-notes/release-notes.html",
-          "hash": "ksN8gbLdQrJuUxa7YY4WBQ=="
+          "hash": "erkXwHKtLdymsP/uD97exA=="
         }
       },
       "is_incremental": false,
@@ -1233,7 +1224,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/index.html",
-          "hash": "4iaB0RUV0y4QHF8uGYrbsw=="
+          "hash": "Lt/ZO8ZMEUM+JR7oBPtkfw=="
         }
       },
       "is_incremental": false,
@@ -1245,7 +1236,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/pi-adapter-for-opc-ua-overview.html",
-          "hash": "XcxBWinBm0x7ki7ynCajEw=="
+          "hash": "FrSjmtma+cWIQoiiHFyQtg=="
         }
       },
       "is_incremental": false,
@@ -1269,7 +1260,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/ARCHIVE/OSIsoft Adapter for OPC UA supported features.html",
-          "hash": "oYGokvNRvlCckMkbAdRBPA=="
+          "hash": "Rskgn3cHLbvQc60I3FDk2A=="
         }
       },
       "is_incremental": false,
@@ -1281,7 +1272,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Configuration/Configuration.html",
-          "hash": "NM4UViQ0PVGfznfnwNVTVg=="
+          "hash": "rZdBd0YnhsKI5wgb1MkgsQ=="
         }
       },
       "is_incremental": false,
@@ -1293,7 +1284,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Configuration/pi-adapter-for-opc-ua-client-settings-configuration.html",
-          "hash": "HJUmVMeRDlud6r8sJeT53w=="
+          "hash": "RPkwAeAexRJwLNFhXLliWA=="
         }
       },
       "is_incremental": false,
@@ -1305,7 +1296,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Configuration/pi-adapter-for-opc-ua-data-selection-configuration.html",
-          "hash": "jND1GH/ICNEv+sprxEwyuA=="
+          "hash": "bhH0NwLUybL5DlToNLXOeg=="
         }
       },
       "is_incremental": false,
@@ -1317,7 +1308,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Configuration/pi-adapter-for-opc-ua-data-source-configuration.html",
-          "hash": "oZlfR4DDfio7nl0zKfrASA=="
+          "hash": "B9TQrYKBClAJMrjiomNPzw=="
         }
       },
       "is_incremental": false,
@@ -1329,7 +1320,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Configuration/pi-adapter-for-opc-ua-security-configuration.html",
-          "hash": "4gFAXlMDeoC2HQAwuIURmg=="
+          "hash": "e7fsOtzQRb032COxuVbpZg=="
         }
       },
       "is_incremental": false,
@@ -1341,7 +1332,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Installation/install-pi-adapter-for-opc-ua-using-docker.html",
-          "hash": "olAZmpKAPs8+xexdd0Q6xA=="
+          "hash": "gn0M7KHoPiZPMMGLXRvcHw=="
         }
       },
       "is_incremental": false,
@@ -1353,7 +1344,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Installation/system-requirements.html",
-          "hash": "paoYRvBmOoPjrHWQOVEmVg=="
+          "hash": "vdgrdJhQk+vrFLJcasFB9w=="
         }
       },
       "is_incremental": false,
@@ -1372,9 +1363,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/Templates/Markdown Release Notes template-V1.md",
       "output": {
@@ -1414,9 +1402,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Administration/retrieve-product-version-information.md",
       "output": {
@@ -1429,9 +1414,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Administration/start-and-stop-an-adapter.md",
       "output": {
@@ -1444,9 +1426,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Administration/start-and-stop-ingress-component.md",
       "output": {
@@ -1531,24 +1510,18 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Configuration/egress-endpoints-configuration.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Configuration/egress-endpoints-configuration.html",
-          "hash": "P4cgJtlhyIIOaWGiqzjefw=="
+          "hash": "1XHN0l58uGffSus6euHs5Q=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Configuration/general-configuration.md",
       "output": {
@@ -1561,9 +1534,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Configuration/health-endpoint-configuration.md",
       "output": {
@@ -1591,6 +1561,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Configuration/schedules-configuration.md",
       "output": {
@@ -1603,6 +1576,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Configuration/system-and-adapter-configuration.md",
       "output": {
@@ -1615,6 +1591,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Configuration/system-components-configuration.md",
       "output": {
@@ -1673,9 +1652,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Diagnostics/io-rate.md",
       "output": {
@@ -1688,9 +1664,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Diagnostics/stream-count.md",
       "output": {
@@ -1719,6 +1692,7 @@
     },
     {
       "log_codes": [
+        "DuplicateUids",
         "InvalidFileLink"
       ],
       "type": "Conceptual",
@@ -1836,6 +1810,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Metadata/adapter-metadata.md",
       "output": {
@@ -1872,6 +1849,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/ARCHIVE/Adapter diagnostics_old.md",
       "output": {
@@ -1884,6 +1864,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/ARCHIVE/Diagnostics configuration.md",
       "output": {
@@ -1897,6 +1880,7 @@
     },
     {
       "log_codes": [
+        "DuplicateUids",
         "InvalidFileLink"
       ],
       "type": "Conceptual",
@@ -1923,6 +1907,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Administration/delete-an-adapter-component.md",
       "output": {
@@ -1935,6 +1922,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Administration/retrieve-product-version-information.md",
       "output": {
@@ -1977,6 +1967,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Configuration/buffering-configuration.md",
       "output": {
@@ -1989,6 +1982,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Configuration/configuration-tools.md",
       "output": {
@@ -2049,6 +2045,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Configuration/logging-configuration.md",
       "output": {
@@ -2061,6 +2060,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Configuration/schedules-configuration.md",
       "output": {
@@ -2073,6 +2075,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Configuration/system-and-adapter-configuration.md",
       "output": {
@@ -2100,9 +2105,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Diagnostics/System.md",
       "output": {
@@ -2115,9 +2117,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Diagnostics/adapter-diagnostics.md",
       "output": {
@@ -2130,9 +2129,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Diagnostics/egress-diagnostics.md",
       "output": {
@@ -2145,9 +2141,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Diagnostics/error-rate.md",
       "output": {
@@ -2160,9 +2153,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Diagnostics/io-rate.md",
       "output": {
@@ -2187,9 +2177,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Health/adapter-health.md",
       "output": {
@@ -2247,6 +2234,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Installation/Installation.md",
       "output": {
@@ -2274,6 +2264,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Installation/uninstall-the-adapter.md",
       "output": {
@@ -2286,6 +2279,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Metadata/adapter-metadata.md",
       "output": {
@@ -2426,7 +2422,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/PI-Adapter-for-OPC-UA-overview/pi-adapter-for-opc-ua-principles-of-operation.html",
-          "hash": "v5NL3VW4sQgqtg3DP+VJeQ=="
+          "hash": "XD7Ndb+77/dxzetd3VLCCw=="
         }
       },
       "is_incremental": false,
@@ -2438,7 +2434,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/README.html",
-          "hash": "mZCTyD8QKmZtrqiz1sZ4sQ=="
+          "hash": "oxQl+KIvq8shZFWFU/OQWw=="
         }
       },
       "is_incremental": false,
@@ -2450,7 +2446,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Release-notes/release-notes.html",
-          "hash": "4EAKtHLtlC40dXhowP7Jgg=="
+          "hash": "FHSaQhdtTCEwSymjnrAQYw=="
         }
       },
       "is_incremental": false,
@@ -2484,7 +2480,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/index.html",
-          "hash": "cP6v2KbgJym1K8qf0Ey7Hw=="
+          "hash": "ewE7xeBtxoi/bZ64toNtKA=="
         }
       },
       "is_incremental": false,
@@ -2496,7 +2492,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/pi-adapter-for-opc-ua-overview.html",
-          "hash": "iS/WheNom8PgO3ryUFe0uw=="
+          "hash": "nfIAT062T0J35qjcf6tBqA=="
         }
       },
       "is_incremental": false,

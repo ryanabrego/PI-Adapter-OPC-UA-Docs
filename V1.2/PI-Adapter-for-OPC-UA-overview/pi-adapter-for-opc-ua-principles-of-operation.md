@@ -53,7 +53,7 @@ The OPC UA adapter creates a stream with two properties for each selected OPC UA
 | Property name | Data type | Description |
 |---------------|-----------|-------------|
 | Timestamp     | DateTime  | Timestamp of the given OPC UA item value update. |
-| Value         | Based on type of incoming OPC UA value | Value of the given OPC UA item update. |
+| Value         | Based on type of incoming OPC UA value | Value of the given OPC UA item update, which consists of multiple properties.<br><br>**Note:**<br> The EURange of the OPC UA item populates the additional **Minimum**/**Maximum** properties in OCS and the **Zero**/**Span** properties in PI Web API.<br> The Engineering unit of the OPC UA item populates the additional **UOM** property in OCS and the **EngUnits** property in PI Web API.  |
 
 The OPC UA adapter sends metadata with each stream it creates. Metadata common for every adapter type are
 

@@ -8,13 +8,13 @@ If you encounter issues with PI Adapter for OPC UA, you can attempt to troublesh
 
 ## Check configurations
 
-1. In the [data source configuration](xref:PIAdapterForOPCUADataSourceConfiguration), verify the accuracy of the configured **EndpointURL** and **RootNodeIds**.
-2. In the [data selection configuration](xref:PIAdapterForOPCUADataSelectionConfiguration), verify the accuracy of each configured data selection item.
+1. In the [data source configuration](xref:PIAdapterForOPCUADataSourceConfiguration), verify that the configured **EndpointURL**, **RootNodeIds**, and if specified, the **UserName** and **Password** are correct.
+2. In the [data selection configuration](xref:PIAdapterForOPCUADataSelectionConfiguration), verify that each configured data selection item is correct.
 
     1. For the **NodeId**, verify that the referenced root node exists in the data source configuration.
     2. If you configured **DataFilterId**, verify that the referenced data filter exists.
 
-3. In the [egress endpoints configuration](xref:EgressEndpointsConfiguration), verify the accuracy of each configured endpoint's **Endpoint** property and credentials (For a PI server or EDS endpoint **UserName** and **Password**, for an OCS endpoint **ClientId** and **ClientSecret**).
+3. In the [egress endpoints configuration](xref:EgressEndpointsConfiguration), verify that each configured endpoint's **Endpoint** property and credentials are correct (For a PI server or EDS endpoint **UserName** and **Password**, for an OCS endpoint **ClientId** and **ClientSecret**).
 
 ## Check connectivity
 

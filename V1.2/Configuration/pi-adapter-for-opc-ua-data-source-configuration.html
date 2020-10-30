@@ -8,7 +8,7 @@
     <title>PI Adapter for OPC UA data source configuration </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="PI Adapter for OPC UA data source configuration ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 2.56.4.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -144,7 +144,7 @@
 <td><strong>RootNodeIds</strong></td>
 <td>Optional</td>
 <td><code>string</code></td>
-<td>List of comma-separated NodeIds of those objects from which the adapter browses the OPC UA server address space. This option allows to select only subsets of the OPC UA address by explicitly listing one or more NodeIds which are used to start the initial browse.<br><br>Examples:<br><code>&quot;ns=5;s=85/0:Simulation&quot;</code><br><code>&quot;ns=3;s=DataItems&quot;</code><br><br>If not specified, it means that the whole address space will be browsed. <br><br>Allowed value: comma-separated collection of node Ids<br> Default value: <code>null</code></td>
+<td>List of comma-separated NodeIds of those objects from which the adapter browses the OPC UA server address space. This option allows to select only subsets of the OPC UA address by explicitly listing one or more NodeIds which are used to start the initial browse.<br><br>Examples:<br><code>&quot;ns=5;s=85/0:Simulation&quot;</code><br><code>&quot;ns=3;s=DataItems&quot;</code><br><br>If not specified, it means that the whole address space will be browsed. <br><br>Allowed value: comma-separated collection of node Ids<br> Default value: <code>null</code><br><br><strong>Note:</strong> Use this parameter in the query filter of your discovery to limit its scope. See <a class="xref" href="../Main/V1.3/Configuration/discovery-configuration.html">Discovery configuration</a>.</td>
 </tr>
 <tr>
 <td><strong>IncomingTimestamp</strong></td>

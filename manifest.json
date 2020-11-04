@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/source/PI-Adapter-OPC-UA-Docs",
+  "source_base_path": "C:/Agent/_work/1/s",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "DnXv/rbx82lCs0NteKFKgw=="
+          "hash": "pjEzu+IJFT9Rpfe2Ij1UBg=="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Configuration/configuration.html",
-          "hash": "PJlrEA7mOWhcTxu5DuJAOA=="
+          "hash": "C3It3tjcjPxUGCpdA0RbjA=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Configuration/pi-adapter-for-opc-ua-client-settings-configuration.html",
-          "hash": "d+FowfpR1CHHwS/doTEJgg=="
+          "hash": "3dhV4U1J7G8tBO/YRlxb6Q=="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Configuration/pi-adapter-for-opc-ua-data-selection-configuration.html",
-          "hash": "ybyGiFdrKoBbkYELIWdCkw=="
+          "hash": "PpZZzN1zHSpOQsC45/+fNA=="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Configuration/pi-adapter-for-opc-ua-data-source-configuration.html",
-          "hash": "KjI64/qnH2+X8QKRFbw1uQ=="
+          "hash": "yTlhpNR4x6+SrQFq0AOKgQ=="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Configuration/pi-adapter-for-opc-ua-security-configuration.html",
-          "hash": "et2yuYEDpHH60zUcjOHDFQ=="
+          "hash": "hkv8t+O7dQG4Ioj15MtY6w=="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Installation/install-pi-adapter-for-opc-ua-using-docker.html",
-          "hash": "hrvQBS9zdvsaUEywQnD+mw=="
+          "hash": "ntNd7cZUZbe/PwUC10QpvQ=="
         }
       },
       "is_incremental": false,
@@ -102,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Installation/system-requirements.html",
-          "hash": "lcdBu775Gv9iB/lixaqSYQ=="
+          "hash": "96wODlzj51teseuJF/zbbg=="
         }
       },
       "is_incremental": false,
@@ -114,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/README.html",
-          "hash": "Peci+/wOb+HRBjJGS9Ek3w=="
+          "hash": "ooKqiElmb0dfNSZjkZp8Eg=="
         }
       },
       "is_incremental": false,
@@ -129,142 +129,115 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/Templates/Markdown Release Notes template-V1.html",
-          "hash": "I/tfaqWBt9YUbDUEcwQfRQ=="
+          "hash": "URTC9k+a864PkA5INN98cw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Administration/administration.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Administration/administration.html",
-          "hash": "b/xryv1GLv7GZMmSI9+n3A=="
+          "hash": "pgYaZMzoHUrbyoURv6EMSA=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Administration/delete-an-adapter-component.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Administration/delete-an-adapter-component.html",
-          "hash": "FHhksDaJbM4YxFhspwNBQA=="
+          "hash": "cT9RXOBu350Rq1lZ2xfBTQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Administration/retrieve-product-version-information.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Administration/retrieve-product-version-information.html",
-          "hash": "zMDPpCQ6DwhwpvYi1jaZ+A=="
+          "hash": "Pzznpzcg6bMNqL4FbI2iGA=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Administration/start-and-stop-an-adapter.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Administration/start-and-stop-an-adapter.html",
-          "hash": "3xPGqMVNKPlGMlKaSHJ1Lw=="
+          "hash": "Ct055TTO33aSiBebrJEZiw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Administration/start-and-stop-ingress-component.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Administration/start-and-stop-ingress-component.html",
-          "hash": "VtE8RXFLoT0Prqh7hRszEA=="
+          "hash": "zlamdM8GBGiw32qx9Zl1CA=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Configuration/buffering-configuration.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Configuration/buffering-configuration.html",
-          "hash": "6e6pw7uwCI9Ep0s4TTfS2g=="
+          "hash": "LvWv0hv3n2f5A8m5cXJe0w=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Configuration/configuration-tools.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Configuration/configuration-tools.html",
-          "hash": "ApnaIjZytv4UTLzI5zdz2Q=="
+          "hash": "73wPpMBoHh66fW/o1sxkeQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Configuration/data-filters-configuration.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Configuration/data-filters-configuration.html",
-          "hash": "UhDmGcvez1DYN5hrQh2wSg=="
+          "hash": "5jNVTTyzTYcFAdcpq1CcXg=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Configuration/discovery-configuration.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Configuration/discovery-configuration.html",
-          "hash": "Cr0pzK9h9C7qtDi0P7mWBw=="
+          "hash": "aqh3XEdfwryY6Ewe5XNGkQ=="
         }
       },
       "is_incremental": false,
@@ -276,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Configuration/egress-endpoints-configuration.html",
-          "hash": "v09lCbMbSjI3dROS3sF9LQ=="
+          "hash": "zWkaKcvFtprijDk0ozaAxQ=="
         }
       },
       "is_incremental": false,
@@ -288,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Configuration/general-configuration.html",
-          "hash": "zffmnifJaMa3C0XdIRnhGA=="
+          "hash": "YO5TxWdD6tYc1lded5tU8g=="
         }
       },
       "is_incremental": false,
@@ -300,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Configuration/health-endpoint-configuration.html",
-          "hash": "XcSAT8WvsnRpTgGhjhxr0Q=="
+          "hash": "vv43m/2o8enkKAaAgt+/+g=="
         }
       },
       "is_incremental": false,
@@ -312,52 +285,43 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Configuration/logging-configuration.html",
-          "hash": "B4Me/4d6GWLnWc/3jr/Bsg=="
+          "hash": "LxyhH1pfdObzR843yNlRKQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Configuration/schedules-configuration.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Configuration/schedules-configuration.html",
-          "hash": "H+G+SbUHM65rIbPYwJE+xA=="
+          "hash": "Plm9axd0SygSoc58sfXLKw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Configuration/system-and-adapter-configuration.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Configuration/system-and-adapter-configuration.html",
-          "hash": "8Fg1Bp5gG5NGtO6Kv0S3Ug=="
+          "hash": "1QnHvP2/XKGk1BUtEKQmDg=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Configuration/system-components-configuration.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Configuration/system-components-configuration.html",
-          "hash": "oKidOOfllUihhRGQHyMKVA=="
+          "hash": "4KvouIm+qAUuKl/lYh+Hsw=="
         }
       },
       "is_incremental": false,
@@ -369,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Diagnostics/adapter-diagnostics.html",
-          "hash": "vwPQP8nYT37zWDjgN+qZGg=="
+          "hash": "xSopNMIvEcXYSSQ63RWEuA=="
         }
       },
       "is_incremental": false,
@@ -381,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Diagnostics/egress-diagnostics.html",
-          "hash": "a7bfBsKC+GrUe2uV+lMLpA=="
+          "hash": "SDobRLy+X0mA63rXzmbZ7w=="
         }
       },
       "is_incremental": false,
@@ -393,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Diagnostics/error-rate.html",
-          "hash": "gfRxY/ZtCCeRWvLxBDRpjQ=="
+          "hash": "IujOoR/ffr1YBsMso4GiJg=="
         }
       },
       "is_incremental": false,
@@ -405,22 +369,19 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Diagnostics/io-rate.html",
-          "hash": "NunZ5243M+6X3fwrLjIVAQ=="
+          "hash": "/a7DBWtiYhBeR0rp1IwLjA=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Diagnostics/stream-count.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Diagnostics/stream-count.html",
-          "hash": "LrwFSerFsGRUXysgWX9VgA=="
+          "hash": "QNfUYn+WMTBDGzwqMr9eBg=="
         }
       },
       "is_incremental": false,
@@ -435,7 +396,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Diagnostics/system.html",
-          "hash": "OKL5GQkr12wDAeVtYHDkMQ=="
+          "hash": "S+YOkKOy2hP+luuP9x8ncA=="
         }
       },
       "is_incremental": false,
@@ -450,7 +411,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Health/adapter-health.html",
-          "hash": "cFpLXz84xFx+RFg/tcFTSQ=="
+          "hash": "ZeDfB0fHQ8+TllkIzQBR7A=="
         }
       },
       "is_incremental": false,
@@ -465,97 +426,79 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Health/device-status.html",
-          "hash": "FETTD+bKzaTaX4jo4P0dEw=="
+          "hash": "KgsLtjgB1FJrRPTPIaExNA=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Health/health-and-diagnostics.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Health/health-and-diagnostics.html",
-          "hash": "4tDL20Zu9vlrz3bWwxa0kA=="
+          "hash": "OHLqyUZtX6eFlivbDw/WAg=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Health/next-health-message-expected.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Health/next-health-message-expected.html",
-          "hash": "0tJgnXLmH9g7m/KKySYLVg=="
+          "hash": "OgdgmzFh+ik5PtZnK3IIAQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Installation/install-the-adapter.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Installation/install-the-adapter.html",
-          "hash": "p3s0X+qn9xCuxxHhwHN8Tg=="
+          "hash": "9SgTJX6XP1fcpSBDn8GHkQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Installation/installation.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Installation/installation.html",
-          "hash": "gDNvunnrZ75PJio6HivWsQ=="
+          "hash": "kE6D5A8InOsVOmBVHYSH+g=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Installation/uninstall-the-adapter.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Installation/uninstall-the-adapter.html",
-          "hash": "t9oHEZPTPmbntSFpioPNMw=="
+          "hash": "Y6V3TmHxmtbsdtLyIEPgEw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/Metadata/adapter-metadata.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/Metadata/adapter-metadata.html",
-          "hash": "5c1RUjoY+1IqJV+nuQQaEg=="
+          "hash": "9b7przqT7yUaLbC8/YozZQ=="
         }
       },
       "is_incremental": false,
@@ -661,15 +604,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1.3/technical-support-and-feedback.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1.3/technical-support-and-feedback.html",
-          "hash": "KgZsaTsRS6TMrwrdDfHVzA=="
+          "hash": "pnN3AckXlBdgJAAefsKP+A=="
         }
       },
       "is_incremental": false,
@@ -681,22 +621,19 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/ARCHIVE/Adapter diagnostics_old.html",
-          "hash": "zirIquHg86aAXjP5c5Bw/g=="
+          "hash": "l7L6Dn0BmEIrRzlASqHxGg=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/ARCHIVE/Diagnostics configuration.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/ARCHIVE/Diagnostics configuration.html",
-          "hash": "zx6Az5nReWrwNpnbgiyxhQ=="
+          "hash": "EvqZSFRGN37PrCHHo5fdeg=="
         }
       },
       "is_incremental": false,
@@ -712,19 +649,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/ARCHIVE/Egress_DataEndpoints_schema.html",
-          "hash": "2spZ8V3n8VzVWAQBGoQv7Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "V1.2/Main/V1/Administration/Administration.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1.2/Main/V1/Administration/Administration.html",
-          "hash": "dmTdcP/SPLNmoWAACrFMuA=="
+          "hash": "ymk4P6G8KjCuTuguwaQVfg=="
         }
       },
       "is_incremental": false,
@@ -732,6 +657,22 @@
     },
     {
       "log_codes": [
+        "DuplicateUids"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "V1.2/Main/V1/Administration/Administration.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1.2/Main/V1/Administration/Administration.html",
+          "hash": "bq4Fkn31GEAL77gZBiyz6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "DuplicateUids",
         "InvalidFileLink"
       ],
       "type": "Conceptual",
@@ -739,43 +680,52 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Administration/delete-an-adapter-component.html",
-          "hash": "hw7w92X++abnHTGc+w6xOg=="
+          "hash": "cmXLaxALxBlQRHtJ9M4KUw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/Administration/retrieve-product-version-information.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Administration/retrieve-product-version-information.html",
-          "hash": "4f0uZDPb7Orp3s9VdOzCtw=="
+          "hash": "asJD4qHGZukA5jIQ/5C1tg=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/Administration/start-and-stop-an-adapter.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Administration/start-and-stop-an-adapter.html",
-          "hash": "Srbg+WYmfdjLCg4otSjKxg=="
+          "hash": "ezpFSgeTQuSiWCJopilXQA=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/Administration/start-and-stop-ingress-component.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Administration/start-and-stop-ingress-component.html",
-          "hash": "Gkebu9wTGnfQzATrDC2Grw=="
+          "hash": "ek72X5M8niL+Btkas/iHow=="
         }
       },
       "is_incremental": false,
@@ -811,7 +761,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Configuration/buffering-configuration.html",
-          "hash": "mTSWpcY1ckXbd6NpjwVceQ=="
+          "hash": "I6ZAv2G4pLk4WF/O32eENA=="
         }
       },
       "is_incremental": false,
@@ -823,7 +773,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Configuration/configuration-tools.html",
-          "hash": "iR2h2NgPC5KJfKWcqNWc0Q=="
+          "hash": "Pam55E60FgrLWIPCm/C0eA=="
         }
       },
       "is_incremental": false,
@@ -835,7 +785,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Configuration/data-filters-configuration.html",
-          "hash": "LrirtokQzHLvM3PYLBmhtg=="
+          "hash": "kv6R8ZKCB/EAHFmi9HyDkA=="
         }
       },
       "is_incremental": false,
@@ -847,7 +797,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Configuration/egress-endpoints-configuration.html",
-          "hash": "chfYyl/qODVsQHyD/bTHbw=="
+          "hash": "0udQltw93RK/LeqxjFeYPg=="
         }
       },
       "is_incremental": false,
@@ -859,7 +809,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Configuration/general-configuration.html",
-          "hash": "TyPDu49eRaIt9O3nOEmcfg=="
+          "hash": "R4+isPVp2KBpplg+dWMWtA=="
         }
       },
       "is_incremental": false,
@@ -871,7 +821,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Configuration/health-endpoint-configuration.html",
-          "hash": "+OhrCSd9g9rtWantzHZQjg=="
+          "hash": "RMibX92WGSMlvnqLA1OFaQ=="
         }
       },
       "is_incremental": false,
@@ -883,7 +833,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Configuration/logging-configuration.html",
-          "hash": "Y1hzXiD+KrWI8ACQGY3foA=="
+          "hash": "k58hZ/bg1zZ/p5zmByQPcQ=="
         }
       },
       "is_incremental": false,
@@ -895,19 +845,22 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Configuration/schedules-configuration.html",
-          "hash": "gJxhqiVezH3zeMBr6bof1g=="
+          "hash": "fZ/WOzUrqrnNhzkO0AG7Uw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/Configuration/system-and-adapter-configuration.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Configuration/system-and-adapter-configuration.html",
-          "hash": "b+wfb6RSy6nuXB92vVVGqA=="
+          "hash": "BqkcwdnxnUDGwKLlVLqgWw=="
         }
       },
       "is_incremental": false,
@@ -919,7 +872,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Configuration/system-components-configuration.html",
-          "hash": "o3zvJvE+7tYCWYyScr881A=="
+          "hash": "ZR/y5SRlJQsXteKF1rjOBw=="
         }
       },
       "is_incremental": false,
@@ -931,7 +884,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Diagnostics/System.html",
-          "hash": "KBUAI4Ogk46SNcraxqhjxg=="
+          "hash": "hTVj5a8jgk4e2aWQFOfd1w=="
         }
       },
       "is_incremental": false,
@@ -939,6 +892,7 @@
     },
     {
       "log_codes": [
+        "DuplicateUids",
         "InvalidFileLink"
       ],
       "type": "Conceptual",
@@ -946,7 +900,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Diagnostics/adapter-diagnostics.html",
-          "hash": "3atP7PFsTi9eIDA+gc8wuw=="
+          "hash": "fdIj9a7H1A/B35PUs0rXFw=="
         }
       },
       "is_incremental": false,
@@ -958,7 +912,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Diagnostics/egress-diagnostics.html",
-          "hash": "k8lnZGLCdAuF3J1QSiy4xw=="
+          "hash": "lNqZf30ghEY4KgY78GwayQ=="
         }
       },
       "is_incremental": false,
@@ -970,7 +924,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Diagnostics/error-rate.html",
-          "hash": "/2LSrGazraeHgrRMoeZbGg=="
+          "hash": "M1BuAkTEwuj6UuGv20tWNg=="
         }
       },
       "is_incremental": false,
@@ -982,7 +936,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Diagnostics/io-rate.html",
-          "hash": "mz+HlhidzaQ/IWtuRjqYkg=="
+          "hash": "oQzLjKOI3XNBCSq//fyZKA=="
         }
       },
       "is_incremental": false,
@@ -994,7 +948,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Diagnostics/stream-count.html",
-          "hash": "HARuZaKUUhpoiDBIIAUTaw=="
+          "hash": "wbLPK5Lg0bUEabVF0C8wcw=="
         }
       },
       "is_incremental": false,
@@ -1009,22 +963,19 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Health/adapter-health.html",
-          "hash": "+2KbJB9DenkwJFJZaBsQCg=="
+          "hash": "0LJQd9cxHEGbusZ2OIee0w=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/Health/device-status.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Health/device-status.html",
-          "hash": "4nA1NIUzHTucQ6PaaLElmg=="
+          "hash": "f0ssbzQOFlIe9CZWXF/sWA=="
         }
       },
       "is_incremental": false,
@@ -1039,7 +990,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Health/health-and-diagnostics.html",
-          "hash": "LBeLi/lSZZxwi3BrReN7uQ=="
+          "hash": "8X5qiPWqodEfgNK8BVClXQ=="
         }
       },
       "is_incremental": false,
@@ -1051,7 +1002,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Health/next-health-message-expected.html",
-          "hash": "RWgpJWniYB4LZK+MbW5gEg=="
+          "hash": "l/yqlnMjqRsNXL3yHlFV3Q=="
         }
       },
       "is_incremental": false,
@@ -1070,15 +1021,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/Installation/Installation.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Installation/Installation.html",
-          "hash": "JgzodUqUbO8sw2FWFA4kRQ=="
+          "hash": "c+35IY9iBhAD93D4ITSDBg=="
         }
       },
       "is_incremental": false,
@@ -1093,22 +1041,19 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Installation/install-the-adapter.html",
-          "hash": "wTXiYlLIOOMEgOPbloG6rA=="
+          "hash": "qWdY/3I8i06dawyEPzHNvQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/Installation/uninstall-the-adapter.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Installation/uninstall-the-adapter.html",
-          "hash": "TNMiQy3qittrAZAk14ARQw=="
+          "hash": "5xoKLsq/8xXqOc2dNpT2Yg=="
         }
       },
       "is_incremental": false,
@@ -1123,7 +1068,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/Metadata/adapter-metadata.html",
-          "hash": "3mi8/LtCZLFmPbWIkZqCow=="
+          "hash": "x+IzgvFuBkp0YM7eRDgwkg=="
         }
       },
       "is_incremental": false,
@@ -1142,12 +1087,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1.2/Main/V1/technical-support-and-feedback.md",
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/V1/technical-support-and-feedback.html",
-          "hash": "IaZCmdCdGcYRnMDW+u8MrQ=="
+          "hash": "vy0FmYSTl2z/sMjAcby9MQ=="
         }
       },
       "is_incremental": false,
@@ -1159,7 +1107,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Main/test.html",
-          "hash": "Huw4nwqfreoULs06Pw6Uwg=="
+          "hash": "xNBgIuGWu0R9U0eu40mhgA=="
         }
       },
       "is_incremental": false,
@@ -1171,7 +1119,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/PI-Adapter-for-OPC-UA-overview/pi-adapter-for-opc-ua-principles-of-operation.html",
-          "hash": "w8582DHauCwiUYQTUju/4g=="
+          "hash": "qDXQgtkajWv40lVuZc/hlQ=="
         }
       },
       "is_incremental": false,
@@ -1183,7 +1131,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/README.html",
-          "hash": "xDEiD2zcp3WmeJLtdNLXmA=="
+          "hash": "l0XiG8sazvWL2eGg1hci1Q=="
         }
       },
       "is_incremental": false,
@@ -1195,7 +1143,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/Release-notes/release-notes.html",
-          "hash": "KCYS78LPQytCEZJWo1y0KA=="
+          "hash": "erkXwHKtLdymsP/uD97exA=="
         }
       },
       "is_incremental": false,
@@ -1229,7 +1177,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/index.html",
-          "hash": "3oQkmWoa4IRlX/GFo3O0bQ=="
+          "hash": "Lt/ZO8ZMEUM+JR7oBPtkfw=="
         }
       },
       "is_incremental": false,
@@ -1241,7 +1189,7 @@
       "output": {
         ".html": {
           "relative_path": "V1.2/pi-adapter-for-opc-ua-overview.html",
-          "hash": "e0mPURGJZl68UGKJngL8aA=="
+          "hash": "FrSjmtma+cWIQoiiHFyQtg=="
         }
       },
       "is_incremental": false,
@@ -1265,7 +1213,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/ARCHIVE/OSIsoft Adapter for OPC UA supported features.html",
-          "hash": "jI2wQYJ3aoUqWLws0JhQuw=="
+          "hash": "Rskgn3cHLbvQc60I3FDk2A=="
         }
       },
       "is_incremental": false,
@@ -1277,7 +1225,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Configuration/Configuration.html",
-          "hash": "cV8otSBhofaW6InOfX8tZw=="
+          "hash": "rZdBd0YnhsKI5wgb1MkgsQ=="
         }
       },
       "is_incremental": false,
@@ -1289,7 +1237,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Configuration/pi-adapter-for-opc-ua-client-settings-configuration.html",
-          "hash": "DL0TAtbx2kK5aANwHfo4Ug=="
+          "hash": "RPkwAeAexRJwLNFhXLliWA=="
         }
       },
       "is_incremental": false,
@@ -1301,7 +1249,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Configuration/pi-adapter-for-opc-ua-data-selection-configuration.html",
-          "hash": "FHvan2ciEDB1I+KtRD28mw=="
+          "hash": "bhH0NwLUybL5DlToNLXOeg=="
         }
       },
       "is_incremental": false,
@@ -1313,7 +1261,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Configuration/pi-adapter-for-opc-ua-data-source-configuration.html",
-          "hash": "q5+etmWVGkZGPeS+ohzqUw=="
+          "hash": "B9TQrYKBClAJMrjiomNPzw=="
         }
       },
       "is_incremental": false,
@@ -1325,7 +1273,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Configuration/pi-adapter-for-opc-ua-security-configuration.html",
-          "hash": "fQykm65O6ocv/ROj2GAkPQ=="
+          "hash": "e7fsOtzQRb032COxuVbpZg=="
         }
       },
       "is_incremental": false,
@@ -1337,7 +1285,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Installation/install-pi-adapter-for-opc-ua-using-docker.html",
-          "hash": "9T10Mq19NU/hV/YnA/M+uw=="
+          "hash": "gn0M7KHoPiZPMMGLXRvcHw=="
         }
       },
       "is_incremental": false,
@@ -1349,7 +1297,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Installation/system-requirements.html",
-          "hash": "V/28Syb+x1ig2Mbr5KXUHQ=="
+          "hash": "vdgrdJhQk+vrFLJcasFB9w=="
         }
       },
       "is_incremental": false,
@@ -1361,7 +1309,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/README.html",
-          "hash": "TO4W/q0cePa/OLDr2EjoIA=="
+          "hash": "e7+o/zCMg3SZHfq/qQu2CQ=="
         }
       },
       "is_incremental": false,
@@ -1373,19 +1321,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/Templates/Markdown Release Notes template-V1.html",
-          "hash": "6H2OqhbgvKZn3V7O1mseVg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "V1/Main/V1.3/Administration/administration.md",
-      "output": {
-        ".html": {
-          "relative_path": "V1/Main/V1.3/Administration/administration.html",
-          "hash": "CC85gi2awjjuZJvRqm9OmA=="
+          "hash": "GRkGs7C0v0ljbnnHpJb3+Q=="
         }
       },
       "is_incremental": false,
@@ -1393,6 +1329,22 @@
     },
     {
       "log_codes": [
+        "DuplicateUids"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "V1/Main/V1.3/Administration/administration.md",
+      "output": {
+        ".html": {
+          "relative_path": "V1/Main/V1.3/Administration/administration.html",
+          "hash": "D75F9hEG3iKBb3+BX0S8zg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "DuplicateUids",
         "InvalidFileLink"
       ],
       "type": "Conceptual",
@@ -1400,43 +1352,52 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Administration/delete-an-adapter-component.html",
-          "hash": "SOr0nBDYSDA+foP6wE0j7A=="
+          "hash": "4JnMw7kWRd5P2nn2BkGgtw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Administration/retrieve-product-version-information.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Administration/retrieve-product-version-information.html",
-          "hash": "qJDjxjyk+OntwwOBJWCvdw=="
+          "hash": "H0nu3+oC2fr0ETyC7ualCw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Administration/start-and-stop-an-adapter.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Administration/start-and-stop-an-adapter.html",
-          "hash": "6ZsIpyGOHjwus9ECkLmFXA=="
+          "hash": "/ZU/Dh6k1pKI/ERnumse7Q=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Administration/start-and-stop-ingress-component.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Administration/start-and-stop-ingress-component.html",
-          "hash": "pDzQ37glr8LN+/IKg7dx2w=="
+          "hash": "yZzn//nhabYzxLy2yB+Z1Q=="
         }
       },
       "is_incremental": false,
@@ -1467,48 +1428,60 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Configuration/buffering-configuration.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Configuration/buffering-configuration.html",
-          "hash": "GjOrUn2j469c72hBnF0dIA=="
+          "hash": "qr8VXd4E6iLBH4DqQfbmcQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Configuration/configuration-tools.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Configuration/configuration-tools.html",
-          "hash": "ECl80B7DLiXHtwSkm4oFQw=="
+          "hash": "gqHT+Kiivb7529i+zP/oUw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Configuration/data-filters-configuration.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Configuration/data-filters-configuration.html",
-          "hash": "/F6aGWznnVLjIexXbs+PNw=="
+          "hash": "G9x/6mSR/9lG7rQPY3yvpw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Configuration/discovery-configuration.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Configuration/discovery-configuration.html",
-          "hash": "vkFU0HU/TIdKexoaoFb05w=="
+          "hash": "aLsUlWjAp0o7+k1S4d/EKw=="
         }
       },
       "is_incremental": false,
@@ -1523,7 +1496,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Configuration/egress-endpoints-configuration.html",
-          "hash": "le12zkcO6QfOyR6U2zqadQ=="
+          "hash": "1XHN0l58uGffSus6euHs5Q=="
         }
       },
       "is_incremental": false,
@@ -1538,7 +1511,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Configuration/general-configuration.html",
-          "hash": "p17hEg69P932gA0z526DMw=="
+          "hash": "INFZgehcrte5zfQkcrAFmg=="
         }
       },
       "is_incremental": false,
@@ -1553,7 +1526,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Configuration/health-endpoint-configuration.html",
-          "hash": "jB9Iv7sGC1VLeTXUkjiiRw=="
+          "hash": "uO085gkYi1F85bS7GUK0ww=="
         }
       },
       "is_incremental": false,
@@ -1568,43 +1541,52 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Configuration/logging-configuration.html",
-          "hash": "A6TsanQNSZZ/IOUZdL0baQ=="
+          "hash": "gIdCbR9twLM4Up7CXTg7EQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Configuration/schedules-configuration.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Configuration/schedules-configuration.html",
-          "hash": "Ay4M03SDYZwvAjjn95uHxw=="
+          "hash": "82MJzK/cw5Pzr6lvLxgfWQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Configuration/system-and-adapter-configuration.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Configuration/system-and-adapter-configuration.html",
-          "hash": "n68jahjt4sqm7MBhV/mryQ=="
+          "hash": "G7kyUDJyRhpcy/pUGgsmVA=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Configuration/system-components-configuration.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Configuration/system-components-configuration.html",
-          "hash": "qN9o+ooFoItl4wswNOZHmQ=="
+          "hash": "ufwxoKML6QLQXeIJxPS3Xg=="
         }
       },
       "is_incremental": false,
@@ -1620,7 +1602,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Diagnostics/adapter-diagnostics.html",
-          "hash": "PfxsDgGWCWftCSNDro6fxg=="
+          "hash": "iJKpJcNG8EOepmh0cUwgdw=="
         }
       },
       "is_incremental": false,
@@ -1635,7 +1617,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Diagnostics/egress-diagnostics.html",
-          "hash": "+qsVCLSUG7t2HjWmehEsAg=="
+          "hash": "8sYwn+igFJq94f9GWM72HA=="
         }
       },
       "is_incremental": false,
@@ -1650,7 +1632,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Diagnostics/error-rate.html",
-          "hash": "sjxRDb4JM2g+cmQUW8Viaw=="
+          "hash": "SQvCqmrWjLWFNVbuxhKewg=="
         }
       },
       "is_incremental": false,
@@ -1665,19 +1647,22 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Diagnostics/io-rate.html",
-          "hash": "OYPhnJLuBrF3xQWpCZ206g=="
+          "hash": "xdd3ytTUt1i9ys1ZvVPgEg=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Diagnostics/stream-count.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Diagnostics/stream-count.html",
-          "hash": "15yejMDvt4HG39kamINXeg=="
+          "hash": "U+Ax00fFfjgGgzx6PWRTYA=="
         }
       },
       "is_incremental": false,
@@ -1689,7 +1674,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Diagnostics/system.html",
-          "hash": "m7+8zONM76OaO2XAGR3lPw=="
+          "hash": "E2U+Uq/umTUVwQgaaRmYaA=="
         }
       },
       "is_incremental": false,
@@ -1704,7 +1689,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Health/adapter-health.html",
-          "hash": "fuH87fdKxBD//j/um+YgGw=="
+          "hash": "+AC37e/ITkBDWnx2qAjWEg=="
         }
       },
       "is_incremental": false,
@@ -1716,7 +1701,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Health/device-status.html",
-          "hash": "RM7KsNWWShtkGu79bfdrfQ=="
+          "hash": "pS9MMXinjJ7i8snUTZ39bw=="
         }
       },
       "is_incremental": false,
@@ -1724,6 +1709,7 @@
     },
     {
       "log_codes": [
+        "DuplicateUids",
         "InvalidFileLink"
       ],
       "type": "Conceptual",
@@ -1731,19 +1717,22 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Health/health-and-diagnostics.html",
-          "hash": "VCnwomtxUNNVzSairTfMFw=="
+          "hash": "GuqWmpM3IdszTreYAg1p5w=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Health/next-health-message-expected.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Health/next-health-message-expected.html",
-          "hash": "HeYTkB1mRJmrnXd2ibr7eg=="
+          "hash": "7H45YuyyQCsDe/bZViN5CA=="
         }
       },
       "is_incremental": false,
@@ -1762,48 +1751,60 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Installation/install-the-adapter.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Installation/install-the-adapter.html",
-          "hash": "+VDPmgnllo40wMYXAWPBtA=="
+          "hash": "3Ii5jAD6CFuVb7NIO5Zc9g=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Installation/installation.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Installation/installation.html",
-          "hash": "lzWamFmeFGymAARg0ZTFFg=="
+          "hash": "nKMXyJYLOQhHT+RPYW2fWQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Installation/uninstall-the-adapter.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Installation/uninstall-the-adapter.html",
-          "hash": "l3uCmUs8PfJFImGsKQz/rQ=="
+          "hash": "245FEvLx7uUpy9ZOdiH5uA=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/Metadata/adapter-metadata.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/Metadata/adapter-metadata.html",
-          "hash": "/gE2QcWqutm0c+Eje+MHJg=="
+          "hash": "RwVM5qKHM3JOGFQSUR2pAw=="
         }
       },
       "is_incremental": false,
@@ -1822,12 +1823,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1.3/technical-support-and-feedback.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1.3/technical-support-and-feedback.html",
-          "hash": "NUUB61W9QszkD6hD2vuXfQ=="
+          "hash": "GH5k73Gtj2ek2gIUO6jPDQ=="
         }
       },
       "is_incremental": false,
@@ -1842,19 +1846,22 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/ARCHIVE/Adapter diagnostics_old.html",
-          "hash": "xTEg7aiqhxjx5gt/6p1G9A=="
+          "hash": "ZrNNzhc2rY0lpy/DU73hRQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/ARCHIVE/Diagnostics configuration.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/ARCHIVE/Diagnostics configuration.html",
-          "hash": "gxaexJxvtn4H29bbNWCwhQ=="
+          "hash": "JDiGmNV/Sx9RFQdQ2e8Akw=="
         }
       },
       "is_incremental": false,
@@ -1869,82 +1876,67 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/ARCHIVE/Egress_DataEndpoints_schema.html",
-          "hash": "Qcs1aBGP286jROfDXQVDgg=="
+          "hash": "xAV00UBvVdUF0dB1hOEVoQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Administration/Administration.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Administration/Administration.html",
-          "hash": "AO5TcflmhHRvNyNYdgZHqg=="
+          "hash": "9XJGGL86CjnhPgGkV5SJ9g=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Administration/delete-an-adapter-component.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Administration/delete-an-adapter-component.html",
-          "hash": "1Rrb1BAi7Pj2IEHMIVJlMg=="
+          "hash": "uBAFTXZ6Kud6nMWvwGrKvg=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Administration/retrieve-product-version-information.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Administration/retrieve-product-version-information.html",
-          "hash": "kO3lsyNynIo/oCr6AquTBQ=="
+          "hash": "nFKNERYrvt8tZdN3SP48Hw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Administration/start-and-stop-an-adapter.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Administration/start-and-stop-an-adapter.html",
-          "hash": "HtQNP8zoJerfHuP8dvLvNQ=="
+          "hash": "se/rKpnnb4OiprPmWptnVQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Administration/start-and-stop-ingress-component.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Administration/start-and-stop-ingress-component.html",
-          "hash": "Y9TgO5O7p6cgBSKGGZnqCg=="
+          "hash": "dVSmqppankEYJUnZS0g9Tg=="
         }
       },
       "is_incremental": false,
@@ -1959,7 +1951,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Configuration/buffering-configuration.html",
-          "hash": "xqz8zpzCoajjWcp2kSzN7g=="
+          "hash": "+wZSprIlrjGJXGksxcXilw=="
         }
       },
       "is_incremental": false,
@@ -1974,7 +1966,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Configuration/configuration-tools.html",
-          "hash": "9kS7cA27L5PKQO3yYxdFxg=="
+          "hash": "+tbnnsJfJ9NMiRzGoPfsKw=="
         }
       },
       "is_incremental": false,
@@ -1989,7 +1981,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Configuration/data-filters-configuration.html",
-          "hash": "g8qsWanAkD1Mks++OfjaIQ=="
+          "hash": "b3iizV2BVYE4PGV9gx7nwA=="
         }
       },
       "is_incremental": false,
@@ -2004,7 +1996,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Configuration/egress-endpoints-configuration.html",
-          "hash": "+7qaPhMaGewsfP6QHVQ/tA=="
+          "hash": "Tibcu1cTxjh3eKwteTO7Lw=="
         }
       },
       "is_incremental": false,
@@ -2019,7 +2011,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Configuration/general-configuration.html",
-          "hash": "fjBZ457jGvcWLJ8Orpvl+A=="
+          "hash": "46XwEKRHEPZLAi30QL6E7A=="
         }
       },
       "is_incremental": false,
@@ -2034,7 +2026,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Configuration/health-endpoint-configuration.html",
-          "hash": "UttdddxT17/TNVBEc4/qww=="
+          "hash": "A+f/LookXoyM4Y5WYoWnzg=="
         }
       },
       "is_incremental": false,
@@ -2049,7 +2041,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Configuration/logging-configuration.html",
-          "hash": "hwIKKLfVCbSfU8z3hqh+aw=="
+          "hash": "A+3QJUhKkT3BQNE3GxMxZA=="
         }
       },
       "is_incremental": false,
@@ -2064,22 +2056,19 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Configuration/schedules-configuration.html",
-          "hash": "dFPj/NshuLu48myKjjHoFA=="
+          "hash": "chIxLQazL/p0z/FY7sZEoQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Configuration/system-and-adapter-configuration.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Configuration/system-and-adapter-configuration.html",
-          "hash": "43CfLhZ88uSPvp5ZPXXLEA=="
+          "hash": "Cnh2thJcKbKvzOpfcNs1VA=="
         }
       },
       "is_incremental": false,
@@ -2094,7 +2083,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Configuration/system-components-configuration.html",
-          "hash": "mh/dx4VUdi+7Y8iouA9ahg=="
+          "hash": "uNCalj0SAph5ROep8DiVJg=="
         }
       },
       "is_incremental": false,
@@ -2109,22 +2098,19 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Diagnostics/System.html",
-          "hash": "mM+lO6NguAFr4iwY2wFsAA=="
+          "hash": "g0cvqU1TfoLdfnEp0huJ3Q=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Diagnostics/adapter-diagnostics.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Diagnostics/adapter-diagnostics.html",
-          "hash": "ZxiEvuXYlal8K9ldSzblVA=="
+          "hash": "8V/WGHavc8TFXGbAi4tF/Q=="
         }
       },
       "is_incremental": false,
@@ -2139,7 +2125,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Diagnostics/egress-diagnostics.html",
-          "hash": "KKFxQOxvidqCbkaPHWSWlA=="
+          "hash": "+aupQQpn5H15kh8ZRxAK6A=="
         }
       },
       "is_incremental": false,
@@ -2154,7 +2140,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Diagnostics/error-rate.html",
-          "hash": "6GLRCd+27P8P02eI5UsVgQ=="
+          "hash": "2VGZloVYtzwmZsDbkQVtLQ=="
         }
       },
       "is_incremental": false,
@@ -2169,7 +2155,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Diagnostics/io-rate.html",
-          "hash": "n/Ru+H038XEgHtMQgFY56A=="
+          "hash": "hAYRjbBnm4VxBrQi0vd4qA=="
         }
       },
       "is_incremental": false,
@@ -2184,7 +2170,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Diagnostics/stream-count.html",
-          "hash": "ZCtSv8wexio/6d975VI+eA=="
+          "hash": "LcZNJQJnh/wH6vdOj+ah/w=="
         }
       },
       "is_incremental": false,
@@ -2199,19 +2185,22 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Health/adapter-health.html",
-          "hash": "CKnZrjli8Ne1HJYmtAk7Sw=="
+          "hash": "8DD+SJ0Y1aO35DjQaTAokQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Health/device-status.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Health/device-status.html",
-          "hash": "y+ePsm1Nj4MUz6onqLU+Mw=="
+          "hash": "s/qzhc1FaQgnntOBJiSrWA=="
         }
       },
       "is_incremental": false,
@@ -2226,7 +2215,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Health/health-and-diagnostics.html",
-          "hash": "bZdibuweRAcm4T7Ewnk8mQ=="
+          "hash": "hDqQ1IyECBqXyDu555/NTg=="
         }
       },
       "is_incremental": false,
@@ -2241,19 +2230,22 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Health/next-health-message-expected.html",
-          "hash": "V8+FDurMifCDABvOcZgajQ=="
+          "hash": "ZLtNxVEpGknRqJQy6iUFfg=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Installation/Installation.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Installation/Installation.html",
-          "hash": "/bLxHxYUWGhHx0FcHAQYNw=="
+          "hash": "M9hPtx8O8hsmVuLtDT+upA=="
         }
       },
       "is_incremental": false,
@@ -2265,19 +2257,22 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Installation/install-the-adapter.html",
-          "hash": "wyxnSgymesuwwHO5OCNKmA=="
+          "hash": "wXCRAF6ax460e9oOb87Esw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/Installation/uninstall-the-adapter.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Installation/uninstall-the-adapter.html",
-          "hash": "SiK3DgKXNOOlbN8PnacEhg=="
+          "hash": "6yLO72/QbM7UGjbBBeOq8A=="
         }
       },
       "is_incremental": false,
@@ -2289,7 +2284,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/Metadata/adapter-metadata.html",
-          "hash": "MUAD7wYHtHEz7vdp8eZANQ=="
+          "hash": "m8oXxwWFIPHMXTk0f4deEQ=="
         }
       },
       "is_incremental": false,
@@ -2395,15 +2390,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "V1/Main/V1/technical-support-and-feedback.md",
       "output": {
         ".html": {
           "relative_path": "V1/Main/V1/technical-support-and-feedback.html",
-          "hash": "BwNO2E/po7bkbJRm8yFsbg=="
+          "hash": "0giYsGPYh/NGjFJLLc4JjQ=="
         }
       },
       "is_incremental": false,
@@ -2415,7 +2407,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Main/test.html",
-          "hash": "Huw4nwqfreoULs06Pw6Uwg=="
+          "hash": "xNBgIuGWu0R9U0eu40mhgA=="
         }
       },
       "is_incremental": false,
@@ -2427,7 +2419,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/PI-Adapter-for-OPC-UA-overview/pi-adapter-for-opc-ua-principles-of-operation.html",
-          "hash": "Qem+a+aqD7sbMBwyzMToXQ=="
+          "hash": "XD7Ndb+77/dxzetd3VLCCw=="
         }
       },
       "is_incremental": false,
@@ -2439,7 +2431,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/README.html",
-          "hash": "fFluoBhx2vpksFdhMWNV4w=="
+          "hash": "oxQl+KIvq8shZFWFU/OQWw=="
         }
       },
       "is_incremental": false,
@@ -2451,7 +2443,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/Release-notes/release-notes.html",
-          "hash": "FQkwZ6tl1WCq2Cb2AZtIDg=="
+          "hash": "FHSaQhdtTCEwSymjnrAQYw=="
         }
       },
       "is_incremental": false,
@@ -2488,7 +2480,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/index.html",
-          "hash": "aXJzRIPtQ5NUBzg6BCj3qg=="
+          "hash": "ewE7xeBtxoi/bZ64toNtKA=="
         }
       },
       "is_incremental": false,
@@ -2500,7 +2492,7 @@
       "output": {
         ".html": {
           "relative_path": "V1/pi-adapter-for-opc-ua-overview.html",
-          "hash": "UQaBc8xiE213iF7cTbmeJg=="
+          "hash": "nfIAT062T0J35qjcf6tBqA=="
         }
       },
       "is_incremental": false,

@@ -99,7 +99,7 @@ The following parameters are available for configuring an OPC UA data selection:
 | **Name**      | Optional | `string` | Name of the data item collected from the data source. <br><br>Default value: `null` <br>results in **StreamId** value being used also as a **Name** |
 | **NodeId**    | Required | `string` | The NodeId of the variable.<br><br>Examples<br>`"ns=5;AString"`<br>`"ns=2;i=203"`<br>`"ns=<NamespaceIndex>;<IdentifierType>=<Identifer>"` |
 | **StreamID** | Optional | `string` | The custom stream ID used to create the streams. If not specified, the adapter will generate a default stream ID based on the measurement configuration. The StreamId serves as the unique identifier of a data selection item. A properly configured custom stream ID follows these rules:<br><br>Is not case-sensitive.<br>Can contain spaces.<br>Cannot start with two underscores ("__").<br>Can contain a maximum of 100 characters.<br>Cannot use the following characters: / : ? # [ ] @ ! $ & ' ( ) \ * + , ; = % < > &#124;<br>Cannot start or end with a period.<br>Cannot contain consecutive periods.<br>Cannot consist of only periods. |
-| **DataFilterID** | Optional | `string` | Enables data filtering for this data selection item if the ID of a data filter is specified. If no value is specified or set to null, all read values are output without filtering.
+| **DataFilterID** | Optional | `string` | The ID of the data filter. <br><br>Allowed value: any string <br>Default value: `null`|
 
 ## OPC UA data selection example
 

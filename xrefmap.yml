@@ -256,6 +256,18 @@ references:
 - uid: TechnicalSupportAndFeedback1-3
   name: Technical support and feedback
   href: V1.2/Main/V1.3/technical-support-and-feedback.html
+- uid: TroubleshootPIAdapterForOPCUA
+  name: Troubleshoot PI Adapter for OPC UA
+  href: V1/Troubleshooting/troubleshoot-pi-adapter-for-opc-ua.html
+- uid: TroubleshootPIAdapterForOPCUA1-2
+  name: Troubleshoot PI Adapter for OPC UA
+  href: V1.2/Troubleshooting/troubleshoot-pi-adapter-for-opc-ua.html
+- uid: TroubleshootTheAdapter
+  name: Troubleshoot the adapter
+  href: V1.2/Main/V1/Troubleshooting/troubleshoot-the-adapter.html
+- uid: TroubleshootTheAdapter1-3
+  name: Troubleshoot the adapter
+  href: V1.2/Main/V1.3/Troubleshooting/troubleshoot-the-adapter.html
 - uid: UninstallTheAdapter
   name: Uninstall the adapter
   href: V1.2/Main/V1/Installation/uninstall-the-adapter.html

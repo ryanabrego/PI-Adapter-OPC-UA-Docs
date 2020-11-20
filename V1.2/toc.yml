@@ -14,8 +14,9 @@
 - name: Health and diagnostics
   href: main/V1.3/Health/toc.yml
   topicHref: main/V1.3/Health/health-and-diagnostics.md
-- name: Troubleshoot PI Adapter for OPC UA
-  href: Troubleshooting/troubleshoot-pi-adapter-for-opc-ua.md
+- name: Troubleshooting
+  href: Troubleshooting/toc.yml
+  topicHref: Troubleshooting/troubleshoot-pi-adapter-for-opc-ua.md
 - name: Release notes
   href: Release-notes/release-notes.md
 - name: Technical support and feedback

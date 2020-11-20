@@ -1,5 +1,5 @@
 ---
-uid: TroubleshootPIAdapterForOPCUA1-2
+uid: TroubleshootPIAdapterForOPCUA
 ---
 
 # Troubleshoot PI Adapter for OPC UA

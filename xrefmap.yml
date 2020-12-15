@@ -250,6 +250,15 @@ references:
 - uid: PIAdapterForOPCUASupportedFeatures
   name: PI Adapter for OPC UA supported features
   href: V1/ARCHIVE/OSIsoft%20Adapter%20for%20OPC%20UA%20supported%20features.html
+- uid: PrepareEgressDestinations
+  name: Prepare egress destinations
+  href: V1.2/Main/V1/Configuration/egress-endpoint-configuration/prepare-egress-destinations.html
+- uid: PrepareEgressDestinations1-3
+  name: Prepare egress destinations
+  href: V1.2/Main/V1.3/Configuration/egress-endpoint-configuration/prepare-egress-destinations.html
+- uid: PrepareEgressDestinations1-4
+  name: Prepare egress destinations
+  href: V1.2/Main/V1.4/Configuration/egress-endpoint-configuration/prepare-egress-destinations.html
 - uid: releaseNotes
   name: Release notes
   href: V1.2/Main/Templates/Markdown%20Release%20Notes%20template-V1.html

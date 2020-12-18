@@ -33,6 +33,10 @@ pool:
 
 steps:
 - powershell: |
+    # This workaround for git stderr.
+    # See https://github.com/microsoft/azure-pipelines-image-generation/issues/740
+    $env:GIT_REDIRECT_STDERR = '2>&1'
+
     cd $env:Build_SourcesDirectory
 
     git submodule init

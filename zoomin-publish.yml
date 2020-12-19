@@ -49,7 +49,7 @@ steps:
     echo "Submodule checkout/pull - V1\main"
     cd V1\main
     git checkout master
-    git pull
+    # git pull
     git rev-parse HEAD
     dir
     cd ..\..
@@ -57,7 +57,7 @@ steps:
     echo "Submodule checkout/pull - V1.2\main"
     cd V1.2\main
     git checkout master
-    git pull
+    # git pull
     git rev-parse HEAD
     dir
     cd ..\..

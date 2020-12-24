@@ -355,15 +355,15 @@ references:
 - uid: TechnicalSupportAndFeedback1-4
   name: Technical support and feedback
   href: V1.2/Main/V1.4/technical-support-and-feedback.html
+- uid: Troubleshooting
+  name: Troubleshooting
+  href: V1.2/Main/V1/Troubleshooting/troubleshoot-the-adapter.html
 - uid: TroubleshootPIAdapterForOPCUA
   name: Troubleshoot PI Adapter for OPC UA
   href: V1/Troubleshooting/troubleshoot-pi-adapter-for-opc-ua.html
 - uid: TroubleshootPIAdapterForOPCUA1-2
   name: Troubleshoot PI Adapter for OPC UA
   href: V1.2/Troubleshooting/troubleshoot-pi-adapter-for-opc-ua.html
-- uid: TroubleshootTheAdapter
-  name: Troubleshoot the adapter
-  href: V1.2/Main/V1/Troubleshooting/troubleshoot-the-adapter.html
 - uid: TroubleshootTheAdapter1-3
   name: Troubleshoot the adapter
   href: V1.2/Main/V1.3/Troubleshooting/troubleshoot-the-adapter.html

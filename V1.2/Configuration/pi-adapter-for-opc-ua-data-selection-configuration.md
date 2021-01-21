@@ -42,7 +42,7 @@ Complete the following steps to generate a default data selection file:
     **Note:** `5590` is the default port number. If you selected a different port number, replace it with that value.
 
       ```bash
-      curl -i -d "@OpcUa1_DataSelection.json" -H "Content-Type: application/json" -X PUT      "http://localhost:5590/api/v1/configuration/OpcUa1/Dataselection"
+      curl -d "@OpcUa1_DataSelection.json" -H "Content-Type: application/json" -X PUT      "http://localhost:5590/api/v1/configuration/OpcUa1/Dataselection"
       ```
 
 ## Configure OPC UA data selection

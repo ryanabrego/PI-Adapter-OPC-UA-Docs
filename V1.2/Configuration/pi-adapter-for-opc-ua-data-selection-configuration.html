@@ -104,7 +104,7 @@
 </li>
 <li><p>In the same directory where you edited the file, run the following <code>curl</code> command:</p>
 <p> <strong>Note:</strong> <code>5590</code> is the default port number. If you selected a different port number, replace it with that value.</p>
-<pre><code class="lang-bash">curl -i -d &quot;@OpcUa1_DataSelection.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT      &quot;http://localhost:5590/api/v1/configuration/OpcUa1/Dataselection&quot;
+<pre><code class="lang-bash">curl -d &quot;@OpcUa1_DataSelection.json&quot; -H &quot;Content-Type: application/json&quot; -X PUT      &quot;http://localhost:5590/api/v1/configuration/OpcUa1/Dataselection&quot;
 </code></pre></li>
 </ol>
 <h2 id="configure-opc-ua-data-selection">Configure OPC UA data selection</h2>

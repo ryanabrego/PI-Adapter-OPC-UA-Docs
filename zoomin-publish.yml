@@ -1,0 +1,142 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- none
+
+# Variables
+# Use $(var) in script and task
+# Use $env:var in powershell
+
+variables:
+  - group: product-readiness.docfx
+  - group: CLGuild.VariableGroup
+  - name: gitRepo
+    value: PI-Adapter-OPC-UA-Docs
+  - name: zipFileName
+    value: $(gitRepo)--$(Build.SourceBranchName).zip
+  - name:  sftpHost
+    value: upload.zoominsoftware.io
+  - name: remoteFolder
+    value: /osisoft-be-dev.zoominsoftware.io/markdown/incoming
+  - name: localFolder
+    value: $(Build.ArtifactStagingDirectory)
+
+pool:
+  # vmImage: 'ubuntu-latest'
+
+  name: 00-OSIManaged-Containers
+  # demands: AgentType -equals osilinuxagent
+  demands: AgentType -equals osimanagedagent
+
+steps:
+
+- powershell: |
+    Set-PSRepository PSGallery -InstallationPolicy Trusted
+    Install-Module -Name Posh-SSH -Scope CurrentUser
+    Get-Command -Module posh-ssh -Noun *SFTP*
+  displayName: 'Install Posh-SSH'
+  continueOnError: true
+
+- powershell: |
+    set-variable -name "src_dir" -value "$env:Build_SourcesDirectory"
+    set-variable -name "build_timestamp" -value ($(get-date -f yyyyMMdd)+"_"+$(get-date -f HHmmss))
+    set-variable -name "build_info_file" -value "$src_dir\BuildInfo.txt"
+    new-item -path $build_info_file -itemtype file
+    
+    add-content -path $build_info_file -value "Build Time      : $build_timestamp"
+    add-content -path $build_info_file -value "Source Repo     : $env:Build_Repository_Uri"
+    add-content -path $build_info_file -value "Branch          : $env:Build_SourceBranchName"
+    add-content -path $build_info_file -value "Last Commit     : $env:Build_SourceVersion"
+    add-content -path $build_info_file -value ""
+    add-content -path $build_info_file -value "Other Build Info:"
+    add-content -path $build_info_file -value "- Agent         : $env:Agent_MachineName"
+    add-content -path $build_info_file -value "- Pipeline Name : $env:Build_DefinitionName"
+    add-content -path $build_info_file -value "- Number        : $env:Build_BuildNumber"
+    add-content -path $build_info_file -value "- Reason        : $env:Build_Reason"
+    add-content -path $build_info_file -value "- Requested For : $env:Build_RequestedFor"
+    add-content -path $build_info_file -value "- Queued By     : $env:Build_QueuedBy"
+
+  displayName: 'Write BuildInfo.txt file'
+  continueOnError: true
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(Build.SourcesDirectory)'
+    includeRootFolder: false
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(zipFileName)'
+    replaceExistingArchive: true
+  displayName: 'Zip up files'
+
+- powershell: |
+    dir -r $env:Build_ArtifactStagingDirectory
+    dir -r $env:Build_SourcesDirectory
+  displayName: 'List artifact/source files with powershell'
+  continueOnError: true
+
+- powershell: |
+    Write-Host Copying $env:zipFileName...
+    copy $env:localFolder\$env:zipFileName \\clguild01.dev.osisoft.int\Drops
+  displayName: 'Copy zip file to destination'
+  continueOnError: true
+
+- powershell: |
+    ### Create credentials
+
+    # in case password is empty
+
+    if ([string]::IsNullOrWhiteSpace($env:MAPPED_SFTPPASSPHRASE))
+    {
+      $pass = new-object System.Security.SecureString
+    }
+    else
+    {
+      $pass = $env:MAPPED_SFTPPASSPHRASE | ConvertTo-SecureString -AsPlainText -Force
+    }
+
+    $cred = new-object System.Management.Automation.PSCredential($env:MAPPED_SFTPUSER, $pass)
+
+    write-host "Logging into $env:sftpHost..."
+    $sId = New-SFTPSession -ComputerName $env:sftpHost -Credential $cred -AcceptKey -Port 22 -KeyString $env:MAPPED_SFTPKEY
+
+    $location = Get-SFTPLocation -SessionId $sId.sessionId
+    $itemlist = Get-SFTPChildItem -SessionId $sId.sessionId
+
+    write-host "SessionId: $sId.sessionId "
+    write-host "Items in location: $location"
+    write-host ($itemlist | Format-List | Out-String)
+
+    ### Change to upload directory
+
+    write-host "Set remote location to $env:remoteFolder..."
+    Set-SFTPLocation -SessionId $sId.sessionId -Path "$env:remoteFolder"
+
+    ### Upload
+
+    $localFile = "$env:localFolder/$env:zipFileName"
+    $remoteFile = "$env:remoteFolder/$env:zipFileName"
+    $remoteFolder = "$env:remoteFolder"
+    $testLocalFile = "$env:Build_SourcesDirectory/Dummy.txt"
+    $testRemoteFolder = "$env:remoteFolder/../failed"
+
+    write-host "Copy $localFile to $remoteFolder..."
+
+    # Enable the following line when we are ready to publish
+    Set-SFTPFile -SessionId $sId.sessionId -LocalFile "$localFile" -RemotePath "$remoteFolder" -Overwrite
+
+    ### Close session
+
+    Remove-SFTPSession -SessionId $sId.sessionId
+
+  displayName: 'Create credentials, log in, upload, and log out'
+  continueOnError: true
+  env:
+    MAPPED_SFTPPASSPHRASE: $(sftpPassphrase)
+    MAPPED_SFTPKEYFILE: $(sftpKeyFile)
+    MAPPED_SFTPUSER: $(ZoominSFTPUser)
+    MAPPED_SFTPKEY: $(ZoominSFTPPrivateKey)
+
+

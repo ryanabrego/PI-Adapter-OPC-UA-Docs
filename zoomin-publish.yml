@@ -2,20 +2,6 @@
 # Use $(var) in script and task
 # Use $env:var in powershell
 
-variables:
-  - group: product-readiness.docfx
-  - group: CLGuild.VariableGroup
-  - name: gitRepo
-    value: PI-Adapter-OPC-UA-Docs
-  - name: zipFileName
-    value: $(gitRepo)--$(Build.SourceBranchName).zip
-  - name:  sftpHost
-    value: upload.zoominsoftware.io
-  - name: remoteFolder
-    value: /osisoft-be-dev.zoominsoftware.io/markdown/incoming
-  - name: localFolder
-    value: $(Build.ArtifactStagingDirectory)
-
 steps:
 
 - powershell: |

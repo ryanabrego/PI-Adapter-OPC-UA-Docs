@@ -90,7 +90,7 @@ steps:
     $localFile = "$env:localFolder/$env:zipFileName"
     $remoteFile = "$env:remoteFolder/$env:zipFileName"
     $remoteFolder = "$env:remoteFolder"
-    $testLocalFile = "$env:Build_SourcesDirectory/Dummy.txt"
+    $testLocalFile = "$env:Build_SourcesDirectory/TestFile.txt"
     $testRemoteFolder = "$env:remoteFolder/../failed"
 
     write-host "Copy $localFile to $remoteFolder..."

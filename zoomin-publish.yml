@@ -1,11 +1,3 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
-trigger:
-- none
-
 # Variables
 # Use $(var) in script and task
 # Use $env:var in powershell
@@ -23,13 +15,6 @@ variables:
     value: /osisoft-be-dev.zoominsoftware.io/markdown/incoming
   - name: localFolder
     value: $(Build.ArtifactStagingDirectory)
-
-pool:
-  # vmImage: 'ubuntu-latest'
-
-  name: 00-OSIManaged-Containers
-  # demands: AgentType -equals osilinuxagent
-  demands: AgentType -equals osimanagedagent
 
 steps:
 

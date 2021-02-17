@@ -32,7 +32,7 @@ pool:
   demands: AgentType -equals osimanagedagent
 
 jobs: 
-- job: 'Upload to Zoomin'
-    steps: 
+- job: "Upload to Zoomin"
+  steps: 
 
-    - template: zoomin-publish.yml
+  - template: zoomin-publish.yml

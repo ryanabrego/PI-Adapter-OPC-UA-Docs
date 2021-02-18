@@ -95,12 +95,8 @@ steps:
     write-host "Copy $localFile to $remoteFolder..."
 
     # Enable the following line when we are ready to publish
-    Set-SFTPFile -SessionId $sId.sessionId -LocalFile "$localFile" -RemotePath "$remoteFolder" -Overwrite
+    Set-SFTPFile -SessionId $sId.sessionId -LocalFile "$testLocalFile" -RemotePath "$remoteFolder" -Overwrite
 
-    ForEach ($localFile in $itemlist)
-    {
-        Set-SFTPFile -SessionId $sId.sessionId -LocalFile "$localFile" -RemotePath "$remoteFolder" -Overwrite
-    }
     ### Close session
 
     Remove-SFTPSession -SessionId $sId.sessionId

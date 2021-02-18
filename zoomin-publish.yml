@@ -54,6 +54,13 @@ steps:
   continueOnError: true
 
 - powershell: |
+    write-host phrase $env:sftpPassphrase
+    write-host priv $(ZoominSFTPPrivateKey)
+    write-host $(ZoominSFTPUser)
+    write-host $env:remoteFolder
+  displayName: Print statement
+
+- powershell: |
     ### Create credentials
 
     # in case password is empty

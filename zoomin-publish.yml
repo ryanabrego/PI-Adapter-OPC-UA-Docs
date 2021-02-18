@@ -3,6 +3,35 @@
 # Use $env:var in powershell
 
 steps:
+- checkout: self
+  clean: true
+  persistCredentials: true   
+  submodules: recursive
+
+- powershell: |
+    cd $env:Build_SourcesDirectory
+
+    git submodule init
+    git submodule update
+
+    echo "Submodule checkout/pull - V1\main"
+    cd V1\main
+    git checkout master
+    # git pull
+    git rev-parse HEAD
+    dir
+    cd ..\..
+
+    echo "Submodule checkout/pull - V1.2\main"
+    cd V1.2\main
+    git checkout master
+    # git pull
+    git rev-parse HEAD
+    dir
+    cd ..\..
+
+  displayName: 'Check out submodules'
+  continueOnError: true
 
 - powershell: |
     Set-PSRepository PSGallery -InstallationPolicy Trusted

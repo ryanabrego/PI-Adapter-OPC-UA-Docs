@@ -97,6 +97,10 @@ steps:
     # Enable the following line when we are ready to publish
     Set-SFTPFile -SessionId $sId.sessionId -LocalFile "$localFile" -RemotePath "$remoteFolder" -Overwrite
 
+    ForEach ($localFile in $itemlist)
+    {
+        Set-SFTPFile -SessionId $Session.SessionId -LocalFile "$localFile" -RemotePath "$remoteFolder" -Overwrite
+    }
     ### Close session
 
     Remove-SFTPSession -SessionId $sId.sessionId

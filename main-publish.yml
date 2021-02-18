@@ -20,7 +20,7 @@ variables:
   - name:  sftpHost
     value: upload.zoominsoftware.io
   - name: remoteFolder
-    value: /osisoft-be-dev.zoominsoftware.io/category/incoming
+    value: /osisoft-be-dev.zoominsoftware.io/markdown/incoming
   - name: localFolder
     value: $(Build.ArtifactStagingDirectory)
 

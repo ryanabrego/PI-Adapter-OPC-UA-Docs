@@ -18,7 +18,7 @@ Using REST API, you can configure all functions of the adapter. The configuratio
 
 Once you have configured the adapter and it is sending data, you can use administration functions to manage the adapter or individual ingress components of the adapter. Health and diagnostics functions monitor the status of connected devices, adapter system functions, the number of active data streams, the rate of data ingress, the rate of errors, and the rate of data egress.
 
-## EdgeCmd utility
+## EdgeCmd utility 
 
 OSIsoft also provides the EdgeCmd utility, a proprietary command line tool to configure and administer an adapter on both Linux and Windows operating systems. EdgeCmd utility is installed separately from the adapter.
 

@@ -99,7 +99,7 @@ steps:
 
     ForEach ($localFile in $itemlist)
     {
-        Set-SFTPFile -SessionId $Session.SessionId -LocalFile "$localFile" -RemotePath "$remoteFolder" -Overwrite
+        Set-SFTPFile -SessionId $sId.sessionId -LocalFile "$localFile" -RemotePath "$remoteFolder" -Overwrite
     }
     ### Close session
 
